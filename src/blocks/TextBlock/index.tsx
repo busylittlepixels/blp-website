@@ -4,14 +4,14 @@ export const TextBlock: Block = {
   fields: [
     // required
     {
-      name: 'blockheader',
+      name: 'header',
       label: 'Header',
       type: 'text',
       required: true,
     },
     {
-      name: 'blocktext',
-      label: 'Block',
+      name: 'content',
+      label: 'Content',
       type: 'richText',
     },
   ],

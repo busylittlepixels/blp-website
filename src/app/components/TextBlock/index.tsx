@@ -11,8 +11,7 @@ const Section = tw.section`
     md:pt-20
 `
 
-export const BlockTest = ({ content }: ITextBlock) => {
-  console.log(content.blocktext[0].children[0].text)
+export const TextBlock = ({ content }: ITextBlock) => {
   return (
     <Section id={'about'}>
       <div className="relative overflow-hidden bg-white pt-16 md:pb-16">
@@ -54,7 +53,7 @@ export const BlockTest = ({ content }: ITextBlock) => {
               {content.blockName}
             </h1>
             <div className="header__underline"></div>
-            {content.blocktext[0].children[0].text}
+            {content.content[0].children[0].text}
           </div>
         </section>
       </div>

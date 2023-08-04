@@ -11,7 +11,8 @@ const Section = tw.section`
     md:pt-20
 `
 
-export const TextBlock = ({ content }: ITextBlock) => {
+export const BlockTest = ({ content }: ITextBlock) => {
+  
   return (
     <Section id={'about'}>
       <div className="relative overflow-hidden bg-white pt-16 md:pb-16">
@@ -50,12 +51,10 @@ export const TextBlock = ({ content }: ITextBlock) => {
         <section className="relative lg:px-8">
           <div className="mx-auto max-w-prose text-lg">
             <h1 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">
-              {content.blockName}
+              {content.blockheader}
             </h1>
             <div className="header__underline"></div>
             {content.blocktext[0].children[0].text}
-            <br />
-            {content.blocktext[0].children[1].text}
           </div>
         </section>
       </div>

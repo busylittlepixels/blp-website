@@ -3,8 +3,9 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
 import { Page } from './../payload-types'
-import { Gutter } from './_components/Gutter'
-import { RichText } from './_components/RichText'
+import { Gutter } from './components/Gutter'
+import { RichText } from './components/RichText'
+import { RenderBlocks } from './components/RenderBlocks'
 
 import classes from './page.module.scss'
 
@@ -20,8 +21,7 @@ export default async function Home() {
     return notFound()
   }
 
-  // eslint-disable-next-line no-console
-  console.log(home.layout)
+  
   return (
     <Fragment>
       <main className={classes.main}>
@@ -33,6 +33,7 @@ export default async function Home() {
           </div>
         </Gutter>
         <p>{home.onemore}</p>
+        <RenderBlocks content={home.layout} />
       </main>
     </Fragment>
   )

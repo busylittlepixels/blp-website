@@ -4,9 +4,9 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
 import { Page } from '../../payload-types'
-import { Gutter } from '../_components/Gutter'
-import { PageBlocks } from '../_components/PageBlocks'
-import { RichText } from '../_components/RichText'
+import { Gutter } from '../components/Gutter'
+import { RenderBlocks } from '../components/RenderBlocks'
+// import { RichText } from '../_components/RichText'
 
 import classes from '../page.module.scss'
 
@@ -25,11 +25,10 @@ export default async function About() {
         <Gutter>
           <div className={classes.body}>
             <p>{about.subtitle}</p>
-            <h3 className="font-bold text-2xl">{about.headline}</h3>
+            <h3 className="font-bold text-2xl">{about.richText[0].children[0].text}</h3>
           </div>
         </Gutter>
-        <p>{about.blah}</p>
-        <PageBlocks content={about.layout} />
+        <RenderBlocks content={about.layout} />
       </main>
     </Fragment>
   )

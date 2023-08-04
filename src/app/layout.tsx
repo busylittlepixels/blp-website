@@ -12,7 +12,7 @@ const Notice = tw.div`
 import classes from './layout.module.scss'
 
 export const metadata = {
-  title: 'CLEAN UP API',
+  title: 'BUSYLITTLEPIXELS | PAYLOAD',
   description: 'Fractional CTO & Future-Facing Web and Application Development.',
 }
 

@@ -11,8 +11,8 @@ let initialState = {
   defaultActive: 1,
 }
 
-export const ImageSlider = ({ slider }: any) => {
-  const length = slider.length
+export const ImageSlider = ({ content }: any) => {
+  const length = content.length
   const elementRef = useRef<HTMLDivElement>(null)
   const divElement: any = elementRef.current
 
@@ -95,7 +95,7 @@ export const ImageSlider = ({ slider }: any) => {
   return (
     <>
       <div className="slider__wrapper" ref={elementRef}>
-        {slider.map(
+        {content.map(
           (
             sl: {
               slideColor: string
@@ -135,10 +135,10 @@ export const ImageSlider = ({ slider }: any) => {
                 | React.ReactPortal
                 | null
                 | undefined
-              slideImage: object | undefined
+              slideImage: object | string | any
             },
             i: number,
-          ) => {
+          ): React.JSX.Element => {
             const current = ++i
             return (
               <div
@@ -172,7 +172,7 @@ export const ImageSlider = ({ slider }: any) => {
         )}
 
         <div className="slider__navi">
-          {slider.map(
+          {content.map(
             (
               sl: {
                 slideColor:

@@ -21,13 +21,18 @@ export interface Page {
     [k: string]: unknown;
   }[];
   slug?: string;
+  layout?: any;
+  headline?: string;
   subtitle?: string;
   onemore?: string;
   updatedAt: string;
   createdAt: string;
 }
+export interface Media {
+  content?: any
+}
 export interface Blocks {
-  content?: Array
+  content?: any
 }
 export interface User {
   id: string;
