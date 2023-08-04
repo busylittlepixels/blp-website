@@ -9,7 +9,7 @@ import classes from './page.module.scss'
 
 export default async function Home() {
   const home: Page = await fetch(
-    `${process.env.NEXT_PUBLIC_SERVER_URL}/api/pages?where[slug][equals]=home`,
+    `${process.env.NEXT_PUBLIC_SERVER_URL}/api/pages?where[slug][equals]=home`, { next: { revalidate: 10 }}
   )
     .then(res => res.json())
     .then(res => res?.docs?.[0])
