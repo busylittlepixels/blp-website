@@ -20,6 +20,8 @@ export interface Page {
     [k: string]: unknown;
   }[];
   slug?: string;
+  mmmbawwwls?: string;
+  onemore?: string;
   updatedAt: string;
   createdAt: string;
 }

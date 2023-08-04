@@ -18,14 +18,20 @@ export default async function Home() {
     return notFound()
   }
 
+  // console.log(home);
+
   return (
     <Fragment>
       <main className={classes.main}>
+
+        
+        <p>{home.mmmbawwwls}</p>
         <Gutter>
           <div className={classes.body}>
             <RichText content={home.richText} />
           </div>
         </Gutter>
+        <p>{home.onemore}</p>
       </main>
     </Fragment>
   )

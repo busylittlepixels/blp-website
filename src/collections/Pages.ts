@@ -33,6 +33,16 @@ export const Pages: CollectionConfig = {
         beforeValidate: [formatSlug('title')],
       },
     },
+    {
+      name: 'mmmbawwwls',
+      label: 'MBawwwls',
+      type: 'text',
+    },
+    {
+      name: 'onemore',
+      label: 'One More',
+      type: 'text',
+    },
   ],
 }
 
