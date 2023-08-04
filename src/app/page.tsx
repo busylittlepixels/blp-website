@@ -1,4 +1,3 @@
-import React, { Fragment } from 'react'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
@@ -24,7 +23,7 @@ export default async function Home() {
   const { subtitle, richText, layout } = home
   
   return (
-    <Fragment>
+    <>
       <main className={classes.main}>
         <Link href={'/about'}>Link to subdir</Link>
         <Link href={'/test-page'}>Inner</Link>
@@ -36,6 +35,6 @@ export default async function Home() {
         </Gutter>
         <RenderBlocks content={layout} />
       </main>
-    </Fragment>
+    </>
   )
 }

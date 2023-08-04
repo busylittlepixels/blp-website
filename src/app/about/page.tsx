@@ -1,5 +1,4 @@
 /* eslint-disable no-console */
-import React, { Fragment } from 'react'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
@@ -25,7 +24,7 @@ export default async function About() {
   const { layout, subtitle, richText } = about
   
   return (
-    <Fragment>
+    <>
       <main className={classes.main}>
         <Link href={'/'}>Home</Link>
         <Gutter>
@@ -36,6 +35,6 @@ export default async function About() {
         </Gutter>
         <RenderBlocks content={layout} />
       </main>
-    </Fragment>
+    </>
   )
 }
