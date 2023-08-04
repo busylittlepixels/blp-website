@@ -10,6 +10,7 @@ export interface Config {
   collections: {
     pages: Page;
     users: User;
+    media: Media; 
   };
   globals: {};
 }
@@ -20,10 +21,18 @@ export interface Page {
     [k: string]: unknown;
   }[];
   slug?: string;
-  mmmbawwwls?: string;
+  layout?: any;
+  headline?: string;
+  subtitle?: string;
   onemore?: string;
   updatedAt: string;
   createdAt: string;
+}
+export interface Media {
+  content?: any
+}
+export interface Blocks {
+  content?: any
 }
 export interface User {
   id: string;
