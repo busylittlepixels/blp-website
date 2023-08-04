@@ -20,7 +20,7 @@ export interface Page {
     [k: string]: unknown;
   }[];
   slug?: string;
-  mmmbawwwls?: string;
+  subtitle?: string;
   onemore?: string;
   updatedAt: string;
   createdAt: string;

@@ -25,7 +25,7 @@ export default async function Home() {
       <main className={classes.main}>
 
         
-        <p>{home.mmmbawwwls}</p>
+        <p>{home.subtitle}</p>
         <Gutter>
           <div className={classes.body}>
             <RichText content={home.richText} />

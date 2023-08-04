@@ -34,8 +34,8 @@ export const Pages: CollectionConfig = {
       },
     },
     {
-      name: 'mmmbawwwls',
-      label: 'MBawwwls',
+      name: 'subtitle',
+      label: 'Subtitle',
       type: 'text',
     },
     {
