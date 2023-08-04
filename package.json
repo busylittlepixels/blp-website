@@ -1,5 +1,5 @@
 {
-  "name": "payload-example-custom-server",
+  "name": "payloadmono",
   "description": "Payload custom server example.",
   "version": "1.0.0",
   "main": "dist/server.js",

@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
 import { Page } from './../payload-types'
@@ -9,7 +10,8 @@ import classes from './page.module.scss'
 
 export default async function Home() {
   const home: Page = await fetch(
-    `${process.env.NEXT_PUBLIC_SERVER_URL}/api/pages?where[slug][equals]=home`, { next: { revalidate: 10 }}
+    `${process.env.NEXT_PUBLIC_SERVER_URL}/api/pages?where[slug][equals]=home&depth=2`,
+    { next: { revalidate: 10 } },
   )
     .then(res => res.json())
     .then(res => res?.docs?.[0])
@@ -18,13 +20,12 @@ export default async function Home() {
     return notFound()
   }
 
-  // console.log(home);
-
+  // eslint-disable-next-line no-console
+  console.log(home.layout)
   return (
     <Fragment>
       <main className={classes.main}>
-
-        
+        <Link href={'/about'}>Link to subdir</Link>
         <p>{home.subtitle}</p>
         <Gutter>
           <div className={classes.body}>

@@ -1,6 +1,9 @@
+/* eslint-disable import/extensions */
 import type { CollectionConfig } from 'payload/types'
 
 import formatSlug from '../utilities/formatSlug'
+import { BlockTest } from './../blocks/BlockTest'
+import { ImageSlider } from './../blocks/ImageSlider'
 
 export const Pages: CollectionConfig = {
   slug: 'pages',
@@ -10,21 +13,117 @@ export const Pages: CollectionConfig = {
   access: {
     read: () => true,
   },
+  //   fields: [
+  //     {
+  //       name: 'title',
+  //       label: 'Title',
+  //       type: 'text',
+  //       required: true,
+  //     },
+  //     {
+  //       name: 'richText',
+  //       type: 'richText',
+  //       label: 'Content',
+  //     },
+  //     {
+  //       name: 'slug',
+  //       label: 'Slug',
+  //       type: 'text',
+  //       admin: {
+  //         position: 'sidebar',
+  //       },
+  //       hooks: {
+  //         beforeValidate: [formatSlug('title')],
+  //       },
+  //     },
+  //     {
+  //       name: 'subtitle',
+  //       label: 'Subtitle',
+  //       type: 'text',
+  //     },
+  //     {
+  //       name: 'onemore',
+  //       label: 'One More',
+  //       type: 'text',
+  //     },
+  //   ],
+  // }
+
+  // export default Pages
   fields: [
     {
-      name: 'title',
-      label: 'Title',
-      type: 'text',
-      required: true,
-    },
-    {
-      name: 'richText',
-      type: 'richText',
-      label: 'Content',
+      type: 'tabs',
+      tabs: [
+        {
+          label: 'Hero',
+          fields: [
+            {
+              name: 'title',
+              label: 'Page Title',
+              type: 'text',
+              required: true,
+            },
+            {
+              name: 'headline',
+              type: 'text',
+              admin: {
+                description: 'Add a headline the BUSY and PIXELS bits are hardcoded.',
+              },
+            },
+            {
+              name: 'richText',
+              type: 'richText',
+              label: 'Content',
+            },
+            {
+              name: 'subtitle',
+              label: 'Subtitle',
+              type: 'text',
+            },
+            {
+              name: 'onemore',
+              label: 'One More',
+              type: 'text',
+            },
+          ],
+        },
+        {
+          label: 'Page Layout',
+          fields: [
+            {
+              name: 'layout',
+              label: 'Layout',
+              type: 'blocks',
+              minRows: 0,
+              blocks: [ImageSlider, BlockTest],
+            },
+          ],
+        },
+        {
+          label: 'Meta',
+          fields: [
+            {
+              name: 'title',
+              label: 'Title',
+              type: 'text',
+            },
+            {
+              name: 'description',
+              label: 'Description',
+              type: 'textarea',
+            },
+            {
+              name: 'keywords',
+              label: 'Keywords',
+              type: 'text',
+            },
+          ],
+        },
+      ],
     },
     {
       name: 'slug',
-      label: 'Slug',
+      label: 'Page Slug',
       type: 'text',
       admin: {
         position: 'sidebar',
@@ -33,17 +132,5 @@ export const Pages: CollectionConfig = {
         beforeValidate: [formatSlug('title')],
       },
     },
-    {
-      name: 'subtitle',
-      label: 'Subtitle',
-      type: 'text',
-    },
-    {
-      name: 'onemore',
-      label: 'One More',
-      type: 'text',
-    },
   ],
 }
-
-export default Pages

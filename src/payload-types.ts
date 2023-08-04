@@ -10,6 +10,7 @@ export interface Config {
   collections: {
     pages: Page;
     users: User;
+    media: Media; 
   };
   globals: {};
 }
@@ -24,6 +25,9 @@ export interface Page {
   onemore?: string;
   updatedAt: string;
   createdAt: string;
+}
+export interface Blocks {
+  content?: Array
 }
 export interface User {
   id: string;
