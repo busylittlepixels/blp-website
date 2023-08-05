@@ -2,8 +2,8 @@
 import type { CollectionConfig } from 'payload/types'
 
 import formatSlug from '../utilities/formatSlug'
-import { BlockTest } from '../blocks_config/BlockTest'
-import { ImageSlider } from '../blocks_config/ImageSlider'
+import { BlockTest } from '../blocks/BlockTest'
+import { ImageSlider } from '../blocks/ImageSlider'
 
 export const Posts: CollectionConfig = {
   slug: 'post',

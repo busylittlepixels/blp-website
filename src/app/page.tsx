@@ -2,7 +2,6 @@ import { notFound } from 'next/navigation'
 import { Page } from './../payload-types'
 import { Team } from '../components/layout/Team'
 import { TitleContainer } from '../components/layout/TitleContainer'
-import { Contact } from '../components/layout/Contact'
 import { RenderBlocks } from '../components/layout/RenderBlocks'
 
 export default async function Home() {
@@ -24,7 +23,6 @@ export default async function Home() {
         <TitleContainer title={'little'} subtitle={subtitle}/>
         <RenderBlocks content={layout} />
         <Team />
-        <Contact />
       </main>
   )
 }

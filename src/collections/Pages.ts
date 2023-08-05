@@ -2,9 +2,11 @@
 import type { CollectionConfig } from 'payload/types'
 
 import formatSlug from '../utilities/formatSlug'
-import { BlockTest } from '../blocks_config/BlockTest'
-import { ImageSlider } from '../blocks_config/ImageSlider'
-import { TextBlock } from '../blocks_config/TextBlock'
+
+import { BlockTest } from '../blocks/BlockTest'
+import { Contact } from '../blocks/Contact'
+import { ImageSlider } from '../blocks/ImageSlider'
+import { TextBlock } from '../blocks/TextBlock'
 
 export const Pages: CollectionConfig = {
   slug: 'pages',
@@ -110,7 +112,7 @@ export const Pages: CollectionConfig = {
               label: 'Layout',
               type: 'blocks',
               minRows: 0,
-              blocks: [ImageSlider, BlockTest, TextBlock],
+              blocks: [ImageSlider, BlockTest, TextBlock, Contact],
             },
           ],
         },

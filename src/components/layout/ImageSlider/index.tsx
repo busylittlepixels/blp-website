@@ -12,7 +12,7 @@ let initialState = {
 }
 
 export const ImageSlider = ({ content }: any) => {
-  const length = content.length
+  const length = content.slider.length
   const elementRef = useRef<HTMLDivElement>(null)
   const divElement: any = elementRef.current
 
@@ -95,7 +95,7 @@ export const ImageSlider = ({ content }: any) => {
   return (
     <>
       <div className="slider__wrapper z-10" ref={elementRef}>
-        {content.map(
+        {content.slider.map(
           (
             sl: {
               slideColor: string
@@ -173,7 +173,7 @@ export const ImageSlider = ({ content }: any) => {
         )}
 
         <div className="slider__navi">
-          {content.map(
+          {content.slider.map(
             (
               sl: {
                 slideColor:
