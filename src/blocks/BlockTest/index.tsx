@@ -2,7 +2,6 @@ import type { Block } from 'payload/types'
 
 export const BlockTest: Block = {
   fields: [
-    // required
     {
       name: 'blockheader',
       label: 'Header',

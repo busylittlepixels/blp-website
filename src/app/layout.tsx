@@ -10,7 +10,7 @@ import { Footer } from '../components/shared/Footer'
 
 
 const Notice = tw.div`
-  text-center bg-red-300 text-white text-4xl font-black py-8 max-sm:mt-20
+  text-center bg-red-300 text-white text-4xl font-black py-8 mb-4
 `
 
 export const metadata = {
@@ -23,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <Nav />
+          <Notice>HERE'S AN OBNOXIOUSLY DISTRACTING CTA!</Notice>
           {children}
         <Footer />
       </body>

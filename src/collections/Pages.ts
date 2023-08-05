@@ -2,7 +2,6 @@
 import type { CollectionConfig } from 'payload/types'
 
 import formatSlug from '../utilities/formatSlug'
-
 import { BlockTest } from '../blocks/BlockTest'
 import { Contact } from '../blocks/Contact'
 import { ImageSlider } from '../blocks/ImageSlider'

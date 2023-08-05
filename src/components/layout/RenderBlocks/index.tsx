@@ -26,7 +26,6 @@ export const RenderBlocks = ({ content }: any) => {
       );
     }
   });
-
   return <>{pageBlocks}</>;
 };
 
