@@ -2,9 +2,12 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
 import { Page } from './../payload-types'
-import { Gutter } from './components/Gutter'
-import { RichText } from './components/RichText'
-import { RenderBlocks } from './components/RenderBlocks'
+import { Gutter } from '../components/layout/Gutter'
+import { RichText } from '../components/layout/RichText'
+import { Team } from '../components/layout/Team'
+import { TitleContainer } from '../components/layout/TitleContainer'
+import { Contact } from '../components/layout/Contact'
+import { RenderBlocks } from '../components/layout/RenderBlocks'
 
 import classes from './page.module.scss'
 
@@ -25,15 +28,15 @@ export default async function Home() {
   return (
     <>
       <main className={classes.main}>
-        <Link href={'/about'}>Link to subdir</Link>
-        <Link href={'/test-page'}>Inner</Link>
-        <p>{subtitle}</p>
+        <TitleContainer title={'little'} subtitle={subtitle}/>
         <Gutter>
           <div className={classes.body}>
             <RichText content={richText} />
           </div>
         </Gutter>
         <RenderBlocks content={layout} />
+        <Team />
+        <Contact />
       </main>
     </>
   )

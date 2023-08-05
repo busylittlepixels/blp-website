@@ -3,9 +3,11 @@ import Link from 'next/link'
 import tw from 'tailwind-styled-components'
 
 import '../styles/globals.css'
-import './app.scss'
 
-import { Nav } from './components/_shared/Nav'
+
+import { Nav } from '../components/shared/Nav'
+import { Footer } from '../components/shared/Footer'
+
 
 const Notice = tw.div`
   text-center bg-red-300 text-white text-4xl font-black py-8 max-sm:mt-20
@@ -22,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <Nav />
           {children}
+        <Footer />
       </body>
     </html>
   )

@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
 import { Page } from '../../payload-types'
-import { Gutter } from '../components/Gutter'
-import { RenderBlocks } from '../components/RenderBlocks'
+import { Gutter } from '../../components/layout/Gutter'
+import { RenderBlocks } from '../../components/layout/RenderBlocks'
 // import { RichText } from '../_components/RichText'
 
 import classes from '../page.module.scss'

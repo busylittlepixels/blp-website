@@ -2,8 +2,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import React, { useState, useCallback, useEffect } from "react";
-import imageLoader from '../../../../../imageLoader';
-import { isActiveLink } from '../../../../lib/utils';
+import imageLoader from '../../../../imageLoader';
+import { isActiveLink } from '../../../lib/utils';
 import { usePathname } from 'next/navigation'
 
 const links = [
@@ -15,7 +15,6 @@ const links = [
 export const Nav = () => {
     const isMobile = useState(false);
     const currentRoute = usePathname();
-    console.log(currentRoute); 
     const [navActive, setNavActive] = useState(false);
     const closeMobileNavOnClick = () => {
         if(isMobile){

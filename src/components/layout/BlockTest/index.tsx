@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import tw from 'tailwind-styled-components'
-
+import { RichText } from '../RichText'
 interface ITextBlock {
   content?: any
 }
@@ -11,9 +11,10 @@ const Section = tw.section`
     md:pt-20
 `
 
-export const TextBlock = ({ content }: ITextBlock) => {
+export const BlockTest = ({ content }: ITextBlock) => {
+  
   return (
-    <Section id={'about'}>
+    <section className={'w-full boundedContainer'}>
       <div className="relative overflow-hidden bg-white pt-16 md:pb-16">
         <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
           <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
@@ -50,13 +51,13 @@ export const TextBlock = ({ content }: ITextBlock) => {
         <section className="relative lg:px-8">
           <div className="mx-auto max-w-prose text-lg">
             <h1 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">
-              {content.blockName}
+              {content.blockheader}
             </h1>
             <div className="header__underline"></div>
-            {content.content[0].children[0].text}
+            <RichText content={content.blocktext}  className={'pt-8'}/>
           </div>
         </section>
       </div>
-    </Section>
+    </section>
   )
 }
