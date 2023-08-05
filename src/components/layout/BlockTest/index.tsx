@@ -1,15 +1,10 @@
 /* eslint-disable no-console */
-import tw from 'tailwind-styled-components'
+
 import { RichText } from '../RichText'
+
 interface ITextBlock {
   content?: any
 }
-
-const Section = tw.section`
-    bg-white 
-    px-6 
-    md:pt-20
-`
 
 export const BlockTest = ({ content }: ITextBlock) => {
   
