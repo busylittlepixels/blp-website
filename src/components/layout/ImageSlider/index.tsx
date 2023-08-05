@@ -94,7 +94,7 @@ export const ImageSlider = ({ content }: any) => {
 
   return (
     <>
-      <div className="slider__wrapper" ref={elementRef}>
+      <div className="slider__wrapper z-10" ref={elementRef}>
         {content.map(
           (
             sl: {

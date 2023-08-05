@@ -53,6 +53,7 @@ export const BlockTest = ({ content }: ITextBlock) => {
             <h1 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">
               {content.blockheader}
             </h1>
+            <h2>{content.subtitle}</h2>
             <div className="header__underline"></div>
             <RichText content={content.blocktext}  className={'pt-8'}/>
           </div>

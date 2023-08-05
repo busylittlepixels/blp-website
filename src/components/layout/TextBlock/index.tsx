@@ -51,7 +51,7 @@ export const TextBlock = ({ content }: ITextBlock) => {
         <section className="relative lg:px-8">
           <div className="mx-auto max-w-prose text-lg">
             <h1 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase">
-              {content.blockName}
+              {content.blockName} {content.displayMeta ? content.subtitle : null}
             </h1>
             <div className="header__underline"></div>
             <RichText content={content.content} className={'pt-8'}/>

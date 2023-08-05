@@ -1,13 +1,8 @@
 /* eslint-disable no-console */
-import Link from 'next/link'
+
 import { notFound } from 'next/navigation'
-
 import { Page } from '../../payload-types'
-import { Gutter } from '../../components/layout/Gutter'
 import { RenderBlocks } from '../../components/layout/RenderBlocks'
-// import { RichText } from '../_components/RichText'
-
-import classes from '../page.module.scss'
 
 export default async function About() {
   const about: Page = await fetch(
@@ -21,20 +16,11 @@ export default async function About() {
     return notFound()
   }
   
-  const { layout, subtitle, richText } = about
+  const { layout } = about
   
   return (
-    <>
-      <main className={classes.main}>
-        <Link href={'/'}>Home</Link>
-        <Gutter>
-          <div className={classes.body}>
-            <p>{subtitle}</p>
-            <h3 className="font-bold text-2xl">{richText[0].children[0].text}</h3>
-          </div>
-        </Gutter>
-        <RenderBlocks content={layout} />
-      </main>
-    </>
+    <main className={`about`}>
+      <RenderBlocks content={layout} />
+    </main>
   )
 }

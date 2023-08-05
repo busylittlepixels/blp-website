@@ -2,9 +2,9 @@
 import type { CollectionConfig } from 'payload/types'
 
 import formatSlug from '../utilities/formatSlug'
-import { BlockTest } from './../blocks/BlockTest'
-import { ImageSlider } from './../blocks/ImageSlider'
-import { TextBlock } from './../blocks/TextBlock'
+import { BlockTest } from '../blocks_config/BlockTest'
+import { ImageSlider } from '../blocks_config/ImageSlider'
+import { TextBlock } from '../blocks_config/TextBlock'
 
 export const Pages: CollectionConfig = {
   slug: 'pages',
@@ -77,9 +77,23 @@ export const Pages: CollectionConfig = {
               label: 'Content',
             },
             {
+              name: 'enableSubtitle',
+              type: 'checkbox',
+              defaultValue: true,
+            },
+            {
               name: 'subtitle',
               label: 'Subtitle',
               type: 'text',
+              admin: {
+                condition: (data, siblingData, { user }) => {
+                  if (data.enableSubtitle) {
+                    return true;
+                  } else {
+                    return false;
+                  }
+                }
+              }
             },
             {
               name: 'onemore',
