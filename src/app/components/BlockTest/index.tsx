@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import tw from 'tailwind-styled-components'
-
+import { RichText } from '../RichText'
 interface ITextBlock {
   content?: any
 }
@@ -54,7 +54,7 @@ export const BlockTest = ({ content }: ITextBlock) => {
               {content.blockheader}
             </h1>
             <div className="header__underline"></div>
-            {content.blocktext[0].children[0].text}
+            <RichText content={content.blocktext} />
           </div>
         </section>
       </div>

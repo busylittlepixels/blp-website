@@ -1,5 +1,35 @@
+@import './nav/nav.css';
 @import './slider/slider.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ 
+.shake{
+    border-radius: 5px; 
+    &:hover, &:focus {
+        animation: logoshake .5s cubic-bezier(.36,.07,.19,.97) both;
+        backface-visibility: hidden;
+        transform-origin: center;
+    }
+  }
+  
+  @keyframes logoshake {
+    0% { transform: rotate(0); }
+    15% { transform: rotate(5deg); }
+    30% { transform: rotate(-5deg); }
+    45% { transform: rotate(4deg); }
+    60% { transform: rotate(-4deg); }
+    75% { transform: rotate(2deg); }
+    85% { transform: rotate(-2deg); }
+    92% { transform: rotate(1deg); }
+    100% { transform: rotate(0); }
+}
+
+.logoHeight{
+    @apply max-h-8
+}
+
+.redText{
+    color: #f00;
+}
