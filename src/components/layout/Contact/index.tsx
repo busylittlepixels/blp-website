@@ -3,7 +3,10 @@
 import { FormEvent, useState } from 'react';
 
 type IContact = {
-    content?: string
+    content: {
+        map_url?: string
+        form_title?: string
+    }
 }
 
 export const Contact = ({ content }: IContact) => {
