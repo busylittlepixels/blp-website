@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 import tw from 'tailwind-styled-components'
 import { RichText } from '../RichText'
+import { FadeIn } from '../../shared/FadeIn'
 
 interface ITextBlock {
   content?: any
@@ -15,6 +16,7 @@ const Section = tw.section`
 export const TextBlock = ({ content }: ITextBlock) => {
   return (
     <section className={'w-full boundedContainer'}>
+      <FadeIn className="text-left">
       <div className="relative overflow-hidden bg-white pt-16 md:pb-16">
         <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
           <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
@@ -54,10 +56,11 @@ export const TextBlock = ({ content }: ITextBlock) => {
               {content.blockName} {content.displayMeta ? content.subtitle : null}
             </h1>
             <div className="header__underline"></div>
-            <RichText content={content.content} className={'pt-8'}/>
+            <RichText content={content.content} className={`text-gray-600 mt-4 article_text`} />
           </div>
         </section>
       </div>
+      </FadeIn>
     </section>
   )
 }

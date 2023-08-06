@@ -1,3 +1,4 @@
+import { FadeIn } from '../FadeIn'
 
 const currentYear = () => {
   let currentTime = new Date()
@@ -48,8 +49,9 @@ export const Footer = () => {
   return (
     <footer className="bg-black py-20 text-slate-300 md:pb-12 footer">
       <div className="grid grid-cols-1 justify-items-center gap-10 md:gap-20">
-        <SignUpForm />
-
+        <FadeIn>
+          <SignUpForm />
+        </FadeIn>
         <div className="mx-auto w-full max-w-3xl text-center text-xs font-semibold tracking-tight text-white">
           © {currentYear()} busy<span className="redText">little</span>pixels. Made with <span className="redText">&hearts;</span> in Amsterdam
         </div>

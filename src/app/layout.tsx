@@ -3,8 +3,6 @@ import Link from 'next/link'
 import tw from 'tailwind-styled-components'
 
 import '../styles/globals.css'
-
-import links from '../utilities/navigation'
 import { Nav } from '../components/shared/Nav'
 import { Footer } from '../components/shared/Footer'
 
@@ -28,12 +26,12 @@ async function getNavigation(){
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
 
-  const linnks = await getNavigation();
+  const nav = await getNavigation();
   
   return (
     <html lang="en">
       <body>
-        <Nav menu={linnks}/>
+        <Nav menu={nav}/>
           <Notice>HERE'S AN OBNOXIOUSLY DISTRACTING CTA!</Notice>
           {children}
         <Footer />

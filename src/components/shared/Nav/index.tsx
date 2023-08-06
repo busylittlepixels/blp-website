@@ -42,7 +42,7 @@ export const Nav = ({ menu }) => {
                         </button>
                     </div> : ''} */}
                     {menu.items.map((link, _id) => (
-                        <li key={link._id}><Link href={link.href} className={`nav__link text-white font-black ${currentRoute.includes(link.href) ? `active ${link.pageLink}` : ""}`} onClick={closeMobileNavOnClick}>{link.label}</Link></li>
+                        <li id={_id} key={_id}><Link href={link.href} className={`nav__link text-white font-black ${currentRoute.includes(link.href) ? `active ${link.pageLink}` : ""}`} onClick={closeMobileNavOnClick}>{link.label}</Link></li>
                     ))}
                     {/* {isMobile ? 
                         <>

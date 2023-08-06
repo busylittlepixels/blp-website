@@ -2,7 +2,9 @@ import { notFound } from 'next/navigation'
 import { Page } from './../payload-types'
 import { Team } from '../components/layout/Team'
 import { TitleContainer } from '../components/layout/TitleContainer'
+import { CallToAction } from '../components/layout/CallToAction'
 import { RenderBlocks } from '../components/layout/RenderBlocks'
+import { FadeIn } from '../components/shared/FadeIn'
 
 export default async function Home() {
   const home: Page = await fetch(
@@ -19,10 +21,12 @@ export default async function Home() {
   const { subtitle, layout } = home
   
   return (  
+    <FadeIn>
       <main className={'page'}>
         <TitleContainer title={'little'} subtitle={subtitle}/>
         <RenderBlocks content={layout} />
         <Team />
       </main>
+    </FadeIn>
   )
 }

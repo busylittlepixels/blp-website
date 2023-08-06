@@ -126,3 +126,12 @@
     }
     
   }
+
+.article_text{
+  letter-spacing: -.5px;
+  font-weight: 300;
+  display: flex;
+  font-size: 1.125rem;
+  line-height: 2.5rem;
+  text-align: justify;
+}

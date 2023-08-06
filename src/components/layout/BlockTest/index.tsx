@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 
 import { RichText } from '../RichText'
+import { FadeIn } from '../../shared/FadeIn'
 
 interface ITextBlock {
   content?: any
@@ -9,6 +10,7 @@ interface ITextBlock {
 export const BlockTest = ({ content }: ITextBlock) => {
   
   return (
+    <FadeIn>
     <section className={'w-full boundedContainer'}>
       <div className="relative overflow-hidden bg-white pt-16 md:pb-16">
         <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
@@ -50,10 +52,11 @@ export const BlockTest = ({ content }: ITextBlock) => {
             </h1>
             <h2>{content.subtitle}</h2>
             <div className="header__underline"></div>
-            <RichText content={content.blocktext}  className={'pt-8'}/>
+            <RichText content={content.blocktext}  className={`text-gray-600 mt-4 article_text`} />
           </div>
         </section>
       </div>
     </section>
+    </FadeIn>
   )
 }

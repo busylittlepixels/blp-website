@@ -3,6 +3,7 @@
 import { notFound } from 'next/navigation'
 import { Page } from '../../payload-types'
 import { RenderBlocks } from '../../components/layout/RenderBlocks'
+import { FadeIn } from '../../components/shared/FadeIn'
 
 export default async function About() {
   const about: Page = await fetch(
@@ -19,8 +20,10 @@ export default async function About() {
   const { layout } = about
   
   return (
-    <main className={`about`}>
-      <RenderBlocks content={layout} />
-    </main>
+    <FadeIn>
+      <main className={`about`}>
+        <RenderBlocks content={layout} />
+      </main>
+    </FadeIn>
   )
 }

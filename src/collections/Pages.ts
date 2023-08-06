@@ -3,12 +3,12 @@ import type { CollectionConfig } from 'payload/types'
 
 import formatSlug from '../utilities/formatSlug'
 import { BlockTest } from '../blocks/BlockTest'
+import { CallToAction } from '../blocks/CallToAction'
 import { Contact } from '../blocks/Contact'
 import { ImageSlider } from '../blocks/ImageSlider'
 import { TextBlock } from '../blocks/TextBlock'
 import { formatAppURL, revalidatePage } from '../hooks/revalidatePage'
 import { CustomButton } from '../components/custom/CustomButton'
-import CustomCell from '../components/custom/CustomCell'
 
 export const Pages: CollectionConfig = {
   slug: 'pages',
@@ -17,9 +17,6 @@ export const Pages: CollectionConfig = {
     defaultColumns: ['title', 'updatedAt'],
     preview: doc =>
       `${process.env.PAYLOAD_PUBLIC_SITE_URL}/api/preview?url=${formatAppURL({ doc })}`,
-  },
-  hooks: {
-    afterChange: [CustomButton],
   },
   access: {
     read: () => true,
@@ -121,7 +118,7 @@ export const Pages: CollectionConfig = {
               label: 'Layout',
               type: 'blocks',
               minRows: 0,
-              blocks: [ImageSlider, BlockTest, TextBlock, Contact],
+              blocks: [ImageSlider, BlockTest, TextBlock, Contact, CallToAction],
             },
           ],
         },

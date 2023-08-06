@@ -1,6 +1,7 @@
 'use client';
 
 import tw from 'tailwind-styled-components';
+import { FadeIn } from '../../shared/FadeIn';
 
 
 
@@ -25,9 +26,13 @@ export const TitleContainer = ({ title, subtitle }) => {
     return (
         <section className={`w-full md:boundedContainer`}>
             <SectionGrid className="homeAdjust">
+               
                 <HeadingContainer>
-                    <Heading>WE ARE BUSY<span style={{ "color": "red" }}>{title}</span>PIXELS.<br/>WE <span style={{ "color": "red" }}>MAKE TECH GO</span>.</Heading>
+                    <FadeIn>
+                        <Heading>WE ARE BUSY<span style={{ "color": "red" }}>{title}</span>PIXELS.<br/>WE <span style={{ "color": "red" }}>MAKE TECH GO</span>.</Heading>
+                    </FadeIn>
                 </HeadingContainer>
+                
             </SectionGrid>
         </section>
     );
