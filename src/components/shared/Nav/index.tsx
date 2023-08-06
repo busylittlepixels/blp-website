@@ -1,18 +1,10 @@
 "use client";
 import Link from 'next/link';
-import Image from 'next/image';
-import React, { useState, useCallback, useEffect } from "react";
-import imageLoader from '../../../../imageLoader';
-import { isActiveLink } from '../../../lib/utils';
+import React, { useState } from "react";
 import { usePathname } from 'next/navigation'
 
-const links = [
-    { text: "About", href: "/about" },
-    { text: "What We Do", href: "/test-page" },
-    { text: "Work", href: "/work" }
-];
+export const Nav = ({ menu }) => {
 
-export const Nav = () => {
     const isMobile = useState(false);
     const currentRoute = usePathname();
     const [navActive, setNavActive] = useState(false);
@@ -49,8 +41,8 @@ export const Nav = () => {
                             </svg>
                         </button>
                     </div> : ''} */}
-                    {links.map((link) => (
-                        <li key={link.text}><Link href={link.href} className={`nav__link text-white font-black ${currentRoute.includes(link.href) ? "active" : ""}`} onClick={closeMobileNavOnClick}>{link.text}</Link></li>
+                    {menu.items.map((link, _id) => (
+                        <li key={link._id}><Link href={link.href} className={`nav__link text-white font-black ${currentRoute.includes(link.href) ? `active ${link.pageLink}` : ""}`} onClick={closeMobileNavOnClick}>{link.label}</Link></li>
                     ))}
                     {/* {isMobile ? 
                         <>

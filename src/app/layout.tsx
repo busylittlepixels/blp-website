@@ -4,7 +4,7 @@ import tw from 'tailwind-styled-components'
 
 import '../styles/globals.css'
 
-
+import links from '../utilities/navigation'
 import { Nav } from '../components/shared/Nav'
 import { Footer } from '../components/shared/Footer'
 
@@ -18,11 +18,22 @@ export const metadata = {
   description: 'Fractional CTO & Future-Facing Web and Application Development.',
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+
+async function getNavigation(){
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_SERVER_URL}/api/globals/mainMenu`
+  )
+  return res.json();
+}
+
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+
+  const linnks = await getNavigation();
+  
   return (
     <html lang="en">
       <body>
-        <Nav />
+        <Nav menu={linnks}/>
           <Notice>HERE'S AN OBNOXIOUSLY DISTRACTING CTA!</Notice>
           {children}
         <Footer />

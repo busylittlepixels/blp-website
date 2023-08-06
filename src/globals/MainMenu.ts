@@ -41,7 +41,7 @@ export const MainMenu: GlobalConfig = {
           required: true,
         },
         {
-          name: 'pageLink',
+          name: 'href',
           type: 'text',
           admin: {
             condition: (_, { type } = {}) => type === 'link',
