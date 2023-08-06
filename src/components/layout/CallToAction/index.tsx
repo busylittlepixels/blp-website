@@ -4,10 +4,9 @@ import { RichText } from '../RichText';
 import { FadeIn, FadeInRight } from '../../shared/FadeIn';
 
 export const CallToAction = ({ content }:any) => {
-    console.log(content.content[0]);
+    
     const { headerStart, headerStyled, headerEnd, displayButton, buttonText, buttonLink, ctaImage} = content;
-    console.log(ctaImage);
-   
+    
     return (
     <div className="bg-white ">
       
