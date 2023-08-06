@@ -41,6 +41,13 @@ export const MainMenu: GlobalConfig = {
           required: true,
         },
         {
+          name: 'pageLink',
+          type: 'text',
+          admin: {
+            condition: (_, { type } = {}) => type === 'link',
+          },
+        },
+        {
           name: 'subMenu',
           label: false,
           type: 'group',

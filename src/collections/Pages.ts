@@ -6,6 +6,7 @@ import { BlockTest } from '../blocks/BlockTest'
 import { Contact } from '../blocks/Contact'
 import { ImageSlider } from '../blocks/ImageSlider'
 import { TextBlock } from '../blocks/TextBlock'
+import { formatAppURL, revalidatePage } from '../hooks/revalidatePage'
 import { CustomButton } from '../components/custom/CustomButton'
 import CustomCell from '../components/custom/CustomCell'
 
@@ -13,10 +14,17 @@ export const Pages: CollectionConfig = {
   slug: 'pages',
   admin: {
     useAsTitle: 'title',
+    defaultColumns: ['title', 'updatedAt'],
+    preview: doc =>
+      `${process.env.PAYLOAD_PUBLIC_SITE_URL}/api/preview?url=${formatAppURL({ doc })}`,
+  },
+  hooks: {
+    afterChange: [CustomButton],
   },
   access: {
     read: () => true,
   },
+  
   //   fields: [
   //     {
   //       name: 'title',
@@ -55,16 +63,6 @@ export const Pages: CollectionConfig = {
 
   // export default Pages
   fields: [
-    {
-      name: "previewButton", // required
-      label: "Preview",
-      type: "ui", // required
-      admin: {
-        components: {
-          Field: CustomButton,
-        },
-      },
-    },
     {
       type: 'tabs',
       tabs: [
@@ -158,6 +156,17 @@ export const Pages: CollectionConfig = {
       },
       hooks: {
         beforeValidate: [formatSlug('title')],
+      },
+    },
+    {
+      name: "testButton", // required
+      label: "Test Field",
+      type: "ui", // required
+      admin: {
+        position: 'sidebar',
+        components: {
+          Field: CustomButton,
+        },
       },
     },
   ],
