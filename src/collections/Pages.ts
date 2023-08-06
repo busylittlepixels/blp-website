@@ -6,6 +6,8 @@ import { BlockTest } from '../blocks/BlockTest'
 import { Contact } from '../blocks/Contact'
 import { ImageSlider } from '../blocks/ImageSlider'
 import { TextBlock } from '../blocks/TextBlock'
+import { CustomButton } from '../components/custom/CustomButton'
+import CustomCell from '../components/custom/CustomCell'
 
 export const Pages: CollectionConfig = {
   slug: 'pages',
@@ -53,6 +55,16 @@ export const Pages: CollectionConfig = {
 
   // export default Pages
   fields: [
+    {
+      name: "previewButton", // required
+      label: "Preview",
+      type: "ui", // required
+      admin: {
+        components: {
+          Field: CustomButton,
+        },
+      },
+    },
     {
       type: 'tabs',
       tabs: [
