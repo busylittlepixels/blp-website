@@ -2,8 +2,8 @@ import { notFound } from 'next/navigation'
 import { Page } from './../payload-types'
 import { Team } from '../components/layout/Team'
 import { TitleContainer } from '../components/layout/TitleContainer'
-import { CallToAction } from '../components/layout/CallToAction'
 import { RenderBlocks } from '../components/layout/RenderBlocks'
+import { GalleryGrid } from '../components/layout/GalleryGrid'
 import { FadeIn } from '../components/shared/FadeIn'
 
 export default async function Home() {
@@ -24,6 +24,7 @@ export default async function Home() {
     <FadeIn>
       <main className={'page'}>
         <TitleContainer title={'little'} subtitle={subtitle}/>
+        <GalleryGrid />
         <RenderBlocks content={layout} />
         <Team />
       </main>
