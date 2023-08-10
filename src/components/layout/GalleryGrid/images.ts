@@ -33,7 +33,8 @@ export const images: CustomImage[] = [
     original: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
     width: 320,
     height: 212,
-    title: "Pencils",
+    title: "Typescript",
+    tags: [{ value: "Typescript", title: "Payload CMS" }],
     description: "Color Pencils (Jeshu John - designerspics.com)",
   },
   {
