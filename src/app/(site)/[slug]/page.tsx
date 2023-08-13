@@ -20,9 +20,8 @@ export default async function Page({ params }) {
   
   return (
     <FadeIn>
-      <main className={`page`}>
+      <main className={`general_page`}>
         <RenderBlocks content={layout} />
-        <p>Page</p>
       </main>
     </FadeIn>
   )

@@ -1,28 +1,20 @@
 import React from 'react'
-
+import '../styles/globals.css'
 export const metadata = {
   title: 'BUSYLITTLEPIXELS',
   description: 'Fractional CTO & Future-Facing Web and Application Development.',
 }
 
 
-// async function getNavigation(){
-//   const res = await fetch(
-//     `${process.env.NEXT_PUBLIC_SERVER_URL}/api/globals/mainMenu`
-//   )
-//   return res.json();
-// }
-
-
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
-
-  // const nav = await getNavigation();
-  
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html lang="en">
-      <body>
-        {children}
-      </body>
+    <html>
+      <head />
+      <body>{children}</body>
     </html>
   )
 }
