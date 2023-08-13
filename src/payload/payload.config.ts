@@ -7,10 +7,10 @@ dotenv.config({
 
 import { buildConfig } from 'payload/config'
 
-import { Media } from './collections/Media'
-import { Pages } from './collections/Pages'
-import { Posts } from './collections/Posts'
-import { MainMenu } from './globals/MainMenu'
+import { Media } from '../collections/Media'
+import { Pages } from '../collections/Pages'
+import { Posts } from '../collections/Posts'
+import { MainMenu } from '../globals/MainMenu'
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_PUBLIC_SERVER_URL || '',
