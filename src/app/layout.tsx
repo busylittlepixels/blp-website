@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/globals.css'
 export const metadata = {
   title: 'BUSYLITTLEPIXELS',
   description: 'Fractional CTO & Future-Facing Web and Application Development.',

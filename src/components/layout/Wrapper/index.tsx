@@ -16,8 +16,9 @@ const nav = [
         href: '/about',
         pageLink: '/about',
         label: 'About'
-      }
-    ]
+    },
+
+]
 
 export const Wrapper = ({
     children,
