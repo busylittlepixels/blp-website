@@ -17,7 +17,18 @@ const nav = [
         pageLink: '/about',
         label: 'About'
     },
-
+    {
+        link: 'Work',
+        href: '/work',
+        pageLink: '/work',
+        label: 'Work'
+    },
+    {
+        link: 'Contact',
+        href: '/contact',
+        pageLink: '/contact',
+        label: 'Contact'
+    }
 ]
 
 export const Wrapper = ({
