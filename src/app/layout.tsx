@@ -41,7 +41,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang="en">
       <body>
-        <Nav menu={nav}/>
+        <Nav menu={nav} />
           <Notice>HERE'S AN OBNOXIOUSLY DISTRACTING CTA!</Notice>
           {children}
         <Footer />
