@@ -18,10 +18,10 @@ const nav = [
         label: 'About'
     },
     {
-        link: 'Work',
-        href: '/work',
-        pageLink: '/work',
-        label: 'Work'
+        link: 'What We Do',
+        href: '/what-we-do',
+        pageLink: '/what-we-do',
+        label: 'What We Do'
     },
     {
         link: 'Contact',
