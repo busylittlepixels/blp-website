@@ -22,7 +22,7 @@ export default async function About() {
   return (
     <FadeIn>
       <main className={`about`}>
-        <p>About</p>>
+        <p>About</p>
       </main>
     </FadeIn>
   )
