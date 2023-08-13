@@ -42,6 +42,7 @@ export const Nav = ({ menu }) => {
                         </button>
                     </div> : ''} */}
                     {menu.map((link, _id) => (
+                        // @ts-expect-error
                         <li id={_id} key={_id}><Link href={link.href} className={`nav__link text-white font-black ${currentRoute.includes(link.href) ? `active ${link.pageLink}` : ""}`} onClick={closeMobileNavOnClick}>{link.label}</Link></li>
                     ))}
                     {/* {isMobile ? 

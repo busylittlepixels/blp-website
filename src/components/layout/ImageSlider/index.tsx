@@ -61,9 +61,7 @@ export const ImageSlider = ({ content }: any) => {
   useEffect(() => {
     const activeElement: any = elementRef.current
     // @ts-ignore
-    const current = document.querySelector('.flex--active')
-      ? document.querySelector('.flex--active').getAttribute('data-slide')
-      : initialState.defaultActive
+    const current = document.querySelector('.flex--active') ? document.querySelector('.flex--active').getAttribute('data-slide') : initialState.defaultActive
     const autoFadeSl = activeElement.querySelector(
       '.flex__container[data-slide="' + activeSlide + '"]',
     )

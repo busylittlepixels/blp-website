@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import { Page } from './../payload-types'
+import { Page } from './../payload/payload-types'
 import { Team } from '../components/layout/Team'
 import { TitleContainer } from '../components/layout/TitleContainer'
 import { RenderBlocks } from '../components/layout/RenderBlocks'
