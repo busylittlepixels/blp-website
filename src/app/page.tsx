@@ -25,7 +25,7 @@ export default async function Home() {
     <FadeIn>
       <main className={'page'}>
         <TitleContainer title={'little'} subtitle={subtitle}/>
-        <GalleryGrid />
+        {/* <GalleryGrid /> */}
         <RenderBlocks content={layout} />
         <Stuff />
         <Team />

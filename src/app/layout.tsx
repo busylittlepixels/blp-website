@@ -17,16 +17,26 @@ export const metadata = {
 }
 
 
-async function getNavigation(){
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_SERVER_URL}/api/globals/mainMenu`
-  )
-  return res.json();
-}
+// async function getNavigation(){
+//   const res = await fetch(
+//     `${process.env.NEXT_PUBLIC_SERVER_URL}/api/globals/mainMenu`
+//   )
+//   return res.json();
+// }
+
+const nav = [
+  {
+      link: 'About',
+      href: '/about',
+      pageLink: '/about',
+      label: 'About'
+    }
+  ]
+
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
 
-  const nav = await getNavigation();
+  // const nav = await getNavigation();
   
   return (
     <html lang="en">

@@ -47,26 +47,7 @@ export const MainMenu: GlobalConfig = {
             condition: (_, { type } = {}) => type === 'link',
           },
         },
-        {
-          name: 'subMenu',
-          label: false,
-          type: 'group',
-          admin: {
-            condition: (_, { type } = {}) => type === 'subMenu',
-          },
-          fields: [
-            {
-              name: 'blocks',
-              label: 'Menu Blocks',
-              labels: {
-                singular: 'Menu Block',
-                plural: 'Menu Blocks',
-              },
-              type: 'blocks',
-              blocks: [],
-            },
-          ],
-        },
+        
       ],
     },
   ],
