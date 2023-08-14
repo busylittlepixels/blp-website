@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 'use client'
 import React from 'react';
-import { BlockTest, TextBlock, ImageSlider, Contact, CallToAction, LogoCloud } from '../../layout';
+import { BlockTest, TextBlock, ImageSlider, Contact, CallToAction, LogoCloud, Expertise } from '../../layout';
 
 export const RenderBlocks = ({ content }: any) => {
   const components: { [key: string]: React.ComponentType<any> } = {
@@ -10,7 +10,8 @@ export const RenderBlocks = ({ content }: any) => {
     ImageSlider,
     Contact,
     CallToAction,
-    LogoCloud
+    LogoCloud,
+    Expertise
     // Add more components as needed
   };
 
