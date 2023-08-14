@@ -46,7 +46,7 @@ export const Expertise = () => {
  
           <img
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-            src={"/assets/img/cerd.jpg"}
+            src={"/assets/images/cerd.jpg"}
             alt=""
           />
           

@@ -1,5 +1,5 @@
-@import './../styles/nav/nav.css';
-@import './../styles/slider/slider.css';
+@import './../styles/globals.css';
+/* @import './../styles/slider/slider.css'; */
 
 @tailwind base;
 @tailwind components;
