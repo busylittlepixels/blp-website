@@ -1,5 +1,6 @@
 import dotenv from 'dotenv'
 import path from 'path'
+import nestedDocs from "@payloadcms/plugin-nested-docs";
 
 dotenv.config({
   path: path.resolve(__dirname, '../.env'),
@@ -21,5 +22,13 @@ export default buildConfig({
   },
   routes: {
     admin: '/admin'
-  }
+  },
+  plugins: [
+    nestedDocs({
+      collections: ["pages"],
+      generateLabel: (_, doc):any => doc.title as string,
+      generateURL: (docs) =>
+        docs.reduce((url, doc) => `${url}/${doc.slug}`, ""),
+    }),
+  ],
 })
