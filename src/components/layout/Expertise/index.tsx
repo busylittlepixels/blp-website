@@ -1,12 +1,12 @@
 
 import { motion } from 'framer-motion';
-
+import { FadeIn } from '../../shared/FadeIn';
 
 export const Expertise = () => {
 
   return (
     <div className="bg-white ">
-      
+      <FadeIn>
       <div className="relative">
         <div className="mx-auto max-w-7xl">
           <div className="relative z-10 md:pt-8 lg:w-full lg:max-w-2xl">
@@ -52,6 +52,7 @@ export const Expertise = () => {
           
         </div>
       </div>
+      </FadeIn>
     </div>
   )
 }
