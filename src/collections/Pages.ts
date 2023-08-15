@@ -3,6 +3,7 @@ import type { CollectionConfig } from 'payload/types'
 
 import formatSlug from '../utilities/formatSlug'
 import { BlockTest } from '../blocks/BlockTest'
+import { Carousel } from '../blocks/Carousel'
 import { CallToAction } from '../blocks/CallToAction'
 import { Contact } from '../blocks/Contact'
 import { Expertise } from '../blocks/Expertise'
