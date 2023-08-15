@@ -10,12 +10,12 @@ interface CarouselItem {
 
 interface CarouselContainerProps {
   title?: string;
-  content?: any;
+  content?: CarouselItem[]; // Renamed 'any' to 'CarouselItem[]' for better type safety
 }
 
 export const CarouselContainer = ({ content }: CarouselContainerProps) => {
-  const carouselPanels = items
-    ? items.map((item, index) => (
+  const carouselPanels = content
+    ? content.map((item, index) => (
         <div className="mr-2" key={index}>
           <Image
             src={item.carouselImageUrl}
@@ -34,7 +34,7 @@ export const CarouselContainer = ({ content }: CarouselContainerProps) => {
     <section className="bg-white mt-24 carouselLeft mb-2">
       <div className="mx-auto max-w-7xl text-lg mb-4 pl-4">
         <h1 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-2 md:mb-6 last:mb-0 uppercase">
-          MADE IN <span style={{ color: 'red' }}>AMSTERDAM</span> AND <span style={{ color: 'red' }}>DUBLIN</span>...
+          MADE IN <span style={{ color: 'red' }}>DUBLIN</span>...
         </h1>
         <div className="header__underline"></div>
       </div>
@@ -45,6 +45,7 @@ export const CarouselContainer = ({ content }: CarouselContainerProps) => {
         autoPlaySpeed={3000}
         draggable
         infinite
+        // @ts-ignore
         responsive={responsive}
       >
         {carouselPanels}
