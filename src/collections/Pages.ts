@@ -121,7 +121,7 @@ export const Pages: CollectionConfig = {
               label: 'Layout',
               type: 'blocks',
               minRows: 0,
-              blocks: [ImageSlider, BlockTest, TextBlock, Contact, CallToAction, LogoCloud, Expertise],
+              blocks: [ImageSlider, BlockTest, TextBlock, Carousel, Contact, CallToAction, LogoCloud, Expertise],
             },
           ],
         },
