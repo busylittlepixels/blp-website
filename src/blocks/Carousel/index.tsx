@@ -38,7 +38,7 @@ export const Carousel: Block = {
       },
     },
   ],
-  slug: 'Carousel', // required
+  slug: 'CarouselContainer', // required
   imageURL: 'https://images.unsplash.com/photo-1484211318645-c4eb6a7f10c2',
   imageAltText: 'A component to render an image slider',
   interfaceName: 'carousel', // optional

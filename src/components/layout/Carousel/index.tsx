@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import imageLoader from './../../../../imageLoader';
+import imageLoader from '../../../../imageLoader';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
