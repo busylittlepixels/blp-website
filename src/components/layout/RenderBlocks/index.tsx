@@ -1,14 +1,14 @@
 /* eslint-disable no-console */
 'use client'
 import React from 'react';
-import { BlockTest, TextBlock, ImageSlider, Carousel,  Contact, CallToAction, LogoCloud, Expertise } from '../../layout';
+import { BlockTest, TextBlock, ImageSlider, CarouselContainer,  Contact, CallToAction, LogoCloud, Expertise } from '../../layout';
 
 export const RenderBlocks = ({ content }: any) => {
   const components: { [key: string]: React.ComponentType<any> } = {
     BlockTest,
     TextBlock,
     ImageSlider,
-    Carousel,
+    CarouselContainer,
     Contact,
     CallToAction,
     LogoCloud,
