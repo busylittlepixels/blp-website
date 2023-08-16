@@ -145,3 +145,11 @@
   text-align: justify;
   flex-direction: column;
 }
+
+.react-multi-carousel-list{
+  padding-left: 4px;
+}
+
+.react-multi-carousel-item{
+  max-height: 312px;
+  }

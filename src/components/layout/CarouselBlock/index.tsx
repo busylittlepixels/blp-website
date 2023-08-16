@@ -63,7 +63,7 @@ export const CarouselBlock = ({ content }: CarouselContainerProps) => {
       </div>
       <Carousel
         showDots={false}
-        arrows={false}
+        arrows={true}
         autoPlay={true}
         autoPlaySpeed={3000}
         draggable
