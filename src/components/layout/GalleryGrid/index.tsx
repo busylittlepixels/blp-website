@@ -22,8 +22,6 @@ export const GalleryGrid = ({ content }: any) => {
     const captionsRef = useRef();
     const [index, setIndex] = useState(-1);
 
-    console.log(slides);
-
     const handleClick = (index: number, item: CustomImage) => setIndex(index);
     const [descriptionMaxLines, setDescriptionMaxLines] = useState(3);
     const [descriptionTextAlign, setDescriptionTextAlign] = useState<

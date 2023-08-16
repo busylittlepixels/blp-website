@@ -4,12 +4,12 @@ export const Carousel: Block = {
   fields: [
     // required
     {
-      name: 'carousel', // required
+      name: 'carouselcontainer', // required
       type: 'array', // required
       label: 'Carousel',
       minRows: 1,
       maxRows: 10,
-      interfaceName: 'Carousel', // optional
+      interfaceName: 'carouselContainer', // optional
       labels: {
         singular: 'Slide',
         plural: 'Slides',
@@ -21,7 +21,7 @@ export const Carousel: Block = {
           type: 'text',
         },
         {
-          name: 'carouseTitle',
+          name: 'carouselTitle',
           type: 'text',
         },
         {
@@ -38,8 +38,7 @@ export const Carousel: Block = {
       },
     },
   ],
-  slug: 'CarouselContainer', // required
+  slug: 'Carousel', // required
   imageURL: 'https://images.unsplash.com/photo-1484211318645-c4eb6a7f10c2',
   imageAltText: 'A component to render an image slider',
-  interfaceName: 'carousel', // optional
 }
