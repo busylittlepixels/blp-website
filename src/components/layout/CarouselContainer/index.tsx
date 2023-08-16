@@ -31,10 +31,10 @@ interface CarouselContainerProps {
 
 export const CarouselContainer = ({ content }: CarouselContainerProps) => {
   
-  console.log(content.carousel);
+  console.log(content.carouselcontainer);
   
   
-  const carouselPanels = content ? Object.entries(content.carousel).map((item:any, index:number) => {
+  const carouselPanels = content ? Object.entries(content.carouselcontainer).map((item:any, index:number) => {
         // console.log(item[1]['carouselImageUrl']);
         return(
         <div className="mr-2" id={item[1]['carouselImageUrl']}>
