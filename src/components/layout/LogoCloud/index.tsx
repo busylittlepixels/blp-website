@@ -9,7 +9,7 @@ export const LogoCloud = ({ content }:any) => {
         <FadeIn>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:max-w-none">
-            <h1 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-2 md:mb-2 last:mb-0 uppercase text-white pb-8">{content.headerStart} <span style={{"color":"red"}}>{content.headerStyled}</span> {content.headerEnd}</h1>
+            <h1 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-2 md:mb-2 last:mb-0 uppercase text-white pb-8">WE <span style={{"color":"red"}}>PIXELED</span> FOR...</h1>
             <div className="header__underline"></div>
             <div className="mx-auto mt-10 grid grid-cols-4 items-start gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:grid-cols-4">
               <img

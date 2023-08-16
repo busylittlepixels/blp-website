@@ -5,7 +5,7 @@ import { Team } from '../../components/layout/Team'
 import { TitleContainer } from '../../components/layout/TitleContainer'
 import { RenderBlocks } from '../../components/layout/RenderBlocks'
 import { GalleryGrid } from '../../components/layout/GalleryGrid'
-import { Stuff } from '../../components/layout/Stuff'
+import { LogoCloud } from '../../components/layout/LogoCloud'
 import { FadeIn } from '../../components/shared/FadeIn'
 
 export default async function Home() {
@@ -28,7 +28,7 @@ export default async function Home() {
         <TitleContainer title={'little'} subtitle={'ass'}/>
         <GalleryGrid />
         <RenderBlocks content={layout} />
-        {/* <Stuff /> */}
+        <LogoCloud />
         <Team />
       </main>
     </FadeIn>
