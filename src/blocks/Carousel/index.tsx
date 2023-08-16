@@ -4,12 +4,12 @@ export const Carousel: Block = {
   fields: [
     // required
     {
-      name: 'carouselcontainer', // required
+      name: 'carousel', // required
       type: 'array', // required
       label: 'Carousel',
       minRows: 1,
       maxRows: 10,
-      interfaceName: 'carouselContainer', // optional
+      interfaceName: 'carousel', // optional
       labels: {
         singular: 'Slide',
         plural: 'Slides',
