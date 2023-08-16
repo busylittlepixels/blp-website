@@ -29,12 +29,12 @@ interface CarouselContainerProps {
   content?: any;
 }
 
-export const CarouselContainer = ({ content }: CarouselContainerProps) => {
+export const CarouselBlock = ({ content }: CarouselContainerProps) => {
   
-  console.log(content.carouselcontainer);
+
   
   
-  const carouselPanels = content ? Object.entries(content.carouselcontainer).map((item:any, index:number) => {
+  const carouselPanels = content ? Object.entries(content.carousel).map((item:any, index:number) => {
         // console.log(item[1]['carouselImageUrl']);
         return(
         <div className="mr-2" id={item[1]['carouselImageUrl']}>
@@ -77,4 +77,4 @@ export const CarouselContainer = ({ content }: CarouselContainerProps) => {
   );
 }
 
-export default CarouselContainer;
+export default CarouselBlock;

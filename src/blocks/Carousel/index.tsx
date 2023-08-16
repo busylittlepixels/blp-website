@@ -1,18 +1,18 @@
 import type { Block } from 'payload/types'
 
-export const Carousel: Block = {
+export const CarouselBlock: Block = {
   fields: [
     // required
     {
-      name: 'carousel', // required
+      name: 'carouselblock', // required
       type: 'array', // required
       label: 'Carousel',
       minRows: 1,
       maxRows: 10,
       interfaceName: 'carousel', // optional
       labels: {
-        singular: 'Slide',
-        plural: 'Slides',
+        singular: 'Block Slide',
+        plural: 'Block Slides',
       },
       fields: [
         // required
@@ -38,7 +38,7 @@ export const Carousel: Block = {
       },
     },
   ],
-  slug: 'Carousel', // required
+  slug: 'CarouselBlock', // required
   imageURL: 'https://images.unsplash.com/photo-1484211318645-c4eb6a7f10c2',
   imageAltText: 'A component to render an image slider',
 }

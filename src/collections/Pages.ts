@@ -4,6 +4,7 @@ import type { CollectionConfig } from 'payload/types'
 import formatSlug from '../utilities/formatSlug'
 import { BlockTest } from '../blocks/BlockTest'
 import { CallToAction } from '../blocks/CallToAction'
+import { CarouselBlock } from '../blocks/Carousel'
 import { Contact } from '../blocks/Contact'
 import { Expertise } from '../blocks/Expertise'
 import { ImageSlider } from '../blocks/ImageSlider'
@@ -120,7 +121,7 @@ export const Pages: CollectionConfig = {
               label: 'Layout',
               type: 'blocks',
               minRows: 0,
-              blocks: [ImageSlider, BlockTest, TextBlock, Contact, CallToAction, LogoCloud, Expertise],
+              blocks: [ImageSlider, BlockTest, TextBlock, CarouselBlock, Contact, CallToAction, LogoCloud, Expertise],
             },
           ],
         },
