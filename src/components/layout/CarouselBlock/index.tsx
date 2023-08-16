@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import imageLoader from '../../../../imageLoader';
+import { FadeIn } from '../../shared/FadeIn'; 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -55,24 +56,26 @@ export const CarouselBlock = ({ content }: CarouselContainerProps) => {
 
   return (
     <section className="bg-white mt-24 carouselLeft mb-2">
-      <div className="mx-auto max-w-7xl text-lg mb-4 pl-4">
-        <h1 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-2 md:mb-6 last:mb-0 uppercase">
-          MADE IN <span style={{ color: 'red' }}>DUBLN</span>...
-        </h1>
-        <div className="header__underline"></div>
-      </div>
-      <Carousel
-        showDots={false}
-        arrows={true}
-        autoPlay={true}
-        autoPlaySpeed={3000}
-        draggable
-        infinite
-        // @ts-ignore
-        responsive={responsive}
-      >
-          {carouselPanels}
-      </Carousel>
+      <FadeIn>
+        <div className="mx-auto max-w-7xl text-lg mb-4 pl-4">
+          <h1 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-2 md:mb-6 last:mb-0 uppercase">
+            MADE IN <span style={{ color: 'red' }}>DUBLN</span>...
+          </h1>
+          <div className="header__underline"></div>
+        </div>
+        <Carousel
+          showDots={false}
+          arrows={true}
+          autoPlay={true}
+          autoPlaySpeed={3000}
+          draggable
+          infinite
+          // @ts-ignore
+          responsive={responsive}
+        >
+            {carouselPanels}
+        </Carousel>
+      </FadeIn>
     </section>
   );
 }
