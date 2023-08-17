@@ -10,14 +10,14 @@ const people = [
       location: 'Dublin, Ireland'
     },
     {
-        name: 'Ronanio Fantastico',
+        name: 'Michaelangelo Fantastico',
         role: 'Co-Founder & CTO',
         imageUrl:
           'https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
         bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
         twitterUrl: '#',
         linkedinUrl: '#',
-        location: 'Amsterdam, The Netherlands'
+        location: 'Dublin, Ireland'
       },
       {
         name: 'Marieke Van Der Nietreale',
