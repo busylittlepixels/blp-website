@@ -28,7 +28,6 @@ export default async function Home() {
         <TitleContainer title={'little'} subtitle={'ass'}/>
         <GalleryGrid />
         <RenderBlocks content={layout} />
-        <LogoCloud />
         <Team />
       </main>
     </FadeIn>
