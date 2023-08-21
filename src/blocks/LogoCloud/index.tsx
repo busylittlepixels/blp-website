@@ -46,7 +46,7 @@ export const LogoCloud: Block = {
           name: 'logoImage',
           type: 'upload',
           relationTo: 'media',
-          required: true,
+          // required: true,
         },
         {
           name: 'caption',
