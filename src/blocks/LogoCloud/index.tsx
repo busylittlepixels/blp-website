@@ -25,7 +25,7 @@ export const LogoCloud: Block = {
       name: 'logos', // required
       type: 'array', // required
       label: 'Logos',
-      minRows: 1,
+      minRows: 0,
       maxRows: 10,
       interfaceName: 'LogoCloud', // optional
       labels: {
