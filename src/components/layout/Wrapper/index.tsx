@@ -38,7 +38,7 @@ export const Wrapper = ({
     return(
         <>
             <Nav menu={nav}/>
-            <Notice>HERE'S AN OBNOXIOUSLY DISTRACTING CTA!</Notice>
+            {/* <Notice>HERE'S AN OBNOXIOUSLY DISTRACTING CTA!</Notice> */}
                 {children}
             <Footer />
         </>
