@@ -3,36 +3,10 @@ import type { Block } from 'payload/types'
 export const BlockTest: Block = {
   fields: [
     {
-      type: 'row', // required
-      fields: [ // required
-        {
-          name: 'Lead String',
-          label: 'lead_string',
-          type: 'text',
-          required: true,
-          admin: {
-            width: '30%',
-          },
-        },
-        {
-          name: 'Styled String',
-          label: 'styled_string',
-          type: 'text',
-          required: true,
-          admin: {
-            width: '30%',
-          },
-        },
-        {
-          name: 'End String',
-          label: 'end_string',
-          type: 'text',
-          required: true,
-          admin: {
-            width: '30%',
-          },
-        },
-      ],
+      name: 'blockheader',
+      label: 'Header',
+      type: 'text',
+      required: true,
     },
     {
       name: 'blocktext',
