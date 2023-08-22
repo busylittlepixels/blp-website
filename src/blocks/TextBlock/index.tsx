@@ -2,12 +2,37 @@ import type { Block } from 'payload/types'
 
 export const TextBlock: Block = {
   fields: [
-    // required
     {
-      name: 'header',
-      label: 'Header',
-      type: 'text',
-      required: true,
+      type: 'row', // required
+      fields: [ // required
+        {
+          name: 'Lead String',
+          label: 'lead_string',
+          type: 'text',
+          required: true,
+          admin: {
+            width: '30%',
+          },
+        },
+        {
+          name: 'Styled String',
+          label: 'styled_string',
+          type: 'text',
+          required: true,
+          admin: {
+            width: '30%',
+          },
+        },
+        {
+          name: 'End String',
+          label: 'end_string',
+          type: 'text',
+          required: true,
+          admin: {
+            width: '30%',
+          },
+        },
+      ],
     },
     {
       name: 'content',
