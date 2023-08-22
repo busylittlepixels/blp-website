@@ -29,7 +29,7 @@ export const TitleContainer = ({ title, subtitle }) => {
                
                 <HeadingContainer>
                     <FadeIn>
-                        <Heading>WE ARE BUSY<span style={{ "color": "red" }}>{title}</span>PIXELS.<br/>WE <span style={{ "color": "red" }}>MAKE TECH GO</span>.</Heading>
+                        <Heading>WE ARE BUSY<span style={{ "color": "red" }}>{title}</span>PIXELS...<br/>& WE MAKE<span style={{ "color": "red" }}> TECH</span> GO!</Heading>
                     </FadeIn>
                 </HeadingContainer>
                 
