@@ -14,6 +14,10 @@ const Section = tw.section`
 `
 
 export const TextBlock = ({ content }: ITextBlock) => {
+
+  const hello = content.LeadString + ' ' + content.StyledString + ' ' + content.EndString;
+
+
   return (
     <section className={'w-full boundedContainer'}>
       <FadeIn className="text-left">
@@ -53,7 +57,7 @@ export const TextBlock = ({ content }: ITextBlock) => {
         <section className="relative lg:px-8">
           <div className="mx-auto max-w-prose text-lg">
             <h1 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-6 last:mb-0 uppercase leading-4" style={{"lineHeight": "1em" }}>
-              {content.header} {content.displayMeta ? content.subtitle : null}
+              {hello ? hello : content.header} {content.displayMeta ? content.subtitle : null}
             </h1>
             <div className="header__underline"></div>
             <RichText content={content.content} className={`text-gray-600 mt-4 article_text flex-col`} />
