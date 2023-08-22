@@ -6,7 +6,7 @@ import { FadeIn } from '../../../components/shared/FadeIn'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About Us - Busy Little Pixels',
+  title: 'About Us | Busy Little Pixels',
   description: 'About Us - We are Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events',
 }
 
