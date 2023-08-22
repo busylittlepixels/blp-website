@@ -15,13 +15,13 @@ const Section = tw.section`
 
 export const TextBlock = ({ content }: ITextBlock) => {
 
-  const hello = `${content.LeadString} <span className={'text-red-600'}>${content.StyledString}</span> ${content.EndString}`;
+  const hello = `${content.LeadString} <span style={{ 'color': 'red'}}>${content.StyledString}</span> ${content.EndString}`;
 
 
   return (
     <section className={'w-full boundedContainer'}>
       <FadeIn className="text-left">
-      <div className="relative overflow-hidden bg-white pt-16 md:pb-16">
+      <div className="relative overflow-hidden bg-white md:pt-16 md:pb-16">
         <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
           <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
             <svg
