@@ -20,10 +20,13 @@ export default async function About() {
   const { layout } = about
   
   return (
-    <FadeIn>
-      <main className={`about`}>
-        <RenderBlocks content={layout} />
-      </main>
-    </FadeIn>
+    <>
+      
+        <main className={`about`}>
+          <RenderBlocks content={layout} />
+        </main>
+      
+    </>
+
   )
 }

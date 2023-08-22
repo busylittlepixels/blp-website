@@ -21,7 +21,8 @@ module.exports = withPayload(
     // Point to your Payload config (Required)
     configPath: path.resolve(__dirname, "./src/payload/payload.config.ts"),
     // Point to your exported, initialized Payload instance (optional, default shown below`)
-    payloadPath: path.resolve(process.cwd(), "./src/payload/payloadClient.ts")
+    payloadPath: path.resolve(process.cwd(), "./src/payload/payloadClient.ts"),
+    basePath: '/',
     
   }
 );

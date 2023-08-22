@@ -9,8 +9,7 @@ const SiteLayout = async ({ children }: { children: React.ReactNode }) => {
   
   return (
     <Wrapper>
-        
-        {children}
+      {children}
     </Wrapper>
   )
 }

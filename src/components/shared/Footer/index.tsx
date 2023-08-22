@@ -1,9 +1,9 @@
 import { FadeIn } from '../FadeIn'
 
-const currentYear = () => {
-  let currentTime = new Date()
-  return currentTime.getFullYear()
-}
+// const currentYear = () => {
+//   let currentTime = new Date()
+//   return currentTime.getFullYear()
+// }
 
 const SignUpForm = () => {
   return (
@@ -53,7 +53,7 @@ export const Footer = () => {
           <SignUpForm />
         </FadeIn>
         <div className="mx-auto w-full max-w-3xl text-center text-xs font-semibold tracking-tight text-white">
-          © {currentYear()} busy<span className="redText">little</span>pixels. Made with <span className="redText">&hearts;</span> in Amsterdam
+          © 2023 busy<span className="redText">little</span>pixels. Made with <span className="redText">&hearts;</span> in Amsterdam
         </div>
       </div>
     </footer>

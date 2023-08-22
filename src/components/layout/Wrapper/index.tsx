@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { Nav } from '../../shared/Nav'
 import { Footer } from '../../shared/Footer'
 import tw from 'tailwind-styled-components'
@@ -37,6 +38,7 @@ export const Wrapper = ({
 
     return(
         <>
+            <Head><base href="/" /></Head>
             <Nav menu={nav}/>
             {/* <Notice>HERE'S AN OBNOXIOUSLY DISTRACTING CTA!</Notice> */}
                 {children}

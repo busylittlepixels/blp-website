@@ -19,10 +19,10 @@ export default async function Page({ params }) {
   const { layout } = page
   
   return (
-    <FadeIn>
+    <>
       <main className={`general_page`}>
         <RenderBlocks content={layout} />
       </main>
-    </FadeIn>
+    </>
   )
 }
