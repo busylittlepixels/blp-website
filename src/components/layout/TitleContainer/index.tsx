@@ -6,7 +6,7 @@ import { FadeIn } from '../../shared/FadeIn';
 
 
 const SectionGrid = tw.div`
-    grid grid-cols-1 justify-items-center gap-10 mb-6
+    grid grid-cols-1 justify-items-center gap-10 py-6
 `
 
 const HeadingContainer = tw.div`
