@@ -1,8 +1,20 @@
 import React from 'react'
 export const metadata = {
-  metadataBase: new URL('https://busylittlepixelsv2.vercel.app/'),
-  title: 'BUSYLITTLEPIXELS',
-  description: 'Fractional CTO & Future-Facing Web and Application Development.',
+  title: 'Busy Little Pixels | Web Development and Fractional CTO Services',
+  description: 'Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events',
+  keywords: 'Fractional CTO, CTO, Tech Lead, Business Lead, Online Strategy, Mobile Apps, NextJS, Craft CMS, Strapi',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  openGraph: { 
+      type: "website", 
+      url: `https://busylittlepixels.com`, 
+      title: `Busy Little Pixels | Web Development and Fractional CTO Services`,
+      description: `Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events`,
+      siteName: "Busy Little Pixels",
+  }
 }
 
 

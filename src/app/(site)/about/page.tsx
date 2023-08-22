@@ -3,6 +3,13 @@ import { notFound } from 'next/navigation'
 import { Page } from '../../../payload/payload-types'
 import { RenderBlocks } from '../../../components/layout/RenderBlocks'
 import { FadeIn } from '../../../components/shared/FadeIn'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About Us - Busy Little Pixels',
+  description: 'About Us - We are Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events',
+}
+
 
 export default async function About() {
   const about: Page = await fetch(
