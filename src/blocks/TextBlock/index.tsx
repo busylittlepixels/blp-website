@@ -6,7 +6,7 @@ export const TextBlock: Block = {
       type: 'row', // required
       fields: [ // required
         {
-          name: 'Lead String',
+          name: 'LeadString',
           label: 'lead_string',
           type: 'text',
           required: true,
@@ -15,7 +15,7 @@ export const TextBlock: Block = {
           },
         },
         {
-          name: 'Styled String',
+          name: 'StyledString',
           label: 'styled_string',
           type: 'text',
           required: true,
@@ -24,7 +24,7 @@ export const TextBlock: Block = {
           },
         },
         {
-          name: 'End String',
+          name: 'EndString',
           label: 'end_string',
           type: 'text',
           required: true,
