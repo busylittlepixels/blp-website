@@ -59,7 +59,7 @@ export const Contact = ({ content }: IContact) => {
                 <div className="lg:w-1/3 md:w-2/3 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">          
                  
                 <>
-                    <h2 className="text-black text-lg mb-1 font-black uppercase">{form_title} <span style={{ "color": "red"}}> US...</span></h2>
+                    <h2 className="text-black text-lg mb-1 font-black uppercase">{form_title} <span style={{ "color": "red"}}></span></h2>
                     <div className="header__underline"></div>
                     {result ? result :
                 <>
