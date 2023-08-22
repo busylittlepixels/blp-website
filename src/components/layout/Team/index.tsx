@@ -10,25 +10,15 @@ const people = [
       location: 'Dublin, Ireland'
     },
     {
-        name: 'Michaelangelo Fantastico',
-        role: 'Co-Founder & CTO',
-        imageUrl:
-          'https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-        bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
-        twitterUrl: '#',
-        linkedinUrl: '#',
-        location: 'Dublin, Ireland'
-      },
-      {
-        name: 'Marieke Van Der Nietreale',
-        role: 'Head of Brand',
-        imageUrl:
-          'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-        bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
-        twitterUrl: '#',
-        linkedinUrl: '#',
-        location: 'Amsterdam, The Netherlands'
-      }
+      name: 'Marieke Van Der Nietreale',
+      role: 'Head of Brand',
+      imageUrl:
+        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
+      twitterUrl: '#',
+      linkedinUrl: '#',
+      location: 'Amsterdam, The Netherlands'
+    }
     // More people...
   ]
   
@@ -58,7 +48,7 @@ const people = [
           </div>
           <ul
             role="list"
-            className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-3 relative z-10"
+            className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2 xl:grid-cols-2 relative z-10"
           >
             {people.map((person) => (
               <li key={person.name}>
