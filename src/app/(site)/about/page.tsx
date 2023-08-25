@@ -4,7 +4,6 @@ import { Page } from '../../../payload/payload-types'
 import { RenderBlocks } from '../../../components/layout/RenderBlocks'
 import { FadeIn } from '../../../components/shared/FadeIn'
 import { Metadata } from 'next'
-// import { CheckCircleIcon, InformationCircleIcon } from '@heroicons/react/20/solid'
 
 
 export const metadata: Metadata = {
@@ -14,6 +13,7 @@ export const metadata: Metadata = {
 
 
 export default async function About() {
+  
   const about: Page = await fetch(
     `${process.env.NEXT_PUBLIC_SERVER_URL}/api/pages?where[slug][equals]=about&depth=2`,
     { next: { revalidate: 10 } },
@@ -113,7 +113,7 @@ export default async function About() {
         <figure className="mt-16">
           <img
             className="aspect-video rounded-xl bg-gray-50 object-cover"
-            src="/assets/img/heart.jpeg"
+            src="/assets/images/heart.jpeg"
             alt=""
           />
           <figcaption className="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">

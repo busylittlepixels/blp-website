@@ -1,10 +1,10 @@
+'use client';
 import { notFound } from 'next/navigation'
 import { Page } from '../../payload/payload-types'
 import { Team } from '../../components/layout/Team'
 import { TitleContainer } from '../../components/layout/TitleContainer'
 import { RenderBlocks } from '../../components/layout/RenderBlocks'
 import { GalleryGrid } from '../../components/layout/GalleryGrid'
-import { LogoCloud } from '../../components/layout/LogoCloud'
 import { FadeIn } from '../../components/shared/FadeIn'
 
 export default async function Home() {
