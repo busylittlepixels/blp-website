@@ -1,5 +1,5 @@
 
-import { motion } from 'framer-motion';
+import { RichText } from '../RichText';
 import { FadeIn } from '../../shared/FadeIn';
 
 interface IExpertise {
@@ -8,10 +8,8 @@ interface IExpertise {
 }
 
 export const Expertise = ({ content }: IExpertise) => {
-  
   const { header } = content; 
 
-  console.log(content.content);
   return (
     <div className="bg-white ">
       <FadeIn>
@@ -35,8 +33,7 @@ export const Expertise = ({ content }: IExpertise) => {
                   
                 </h1>
                 <div className="header__underline"></div>
-                <p className="text-gray-600 mt-8 article_text">
-                  Unlock your business's technological potential with our fractional CTO services. Gain access to experienced CTOs, Tech Leads and Developers who provide strategic leadership on a flexible basis. We align your technology roadmap with your business objectives, identify innovation opportunities, and optimize your technology investments, keeping you ahead of the competition.</p>
+                <RichText content={content.content} className={`text-gray-600 mt-4 article_text flex-col`} />
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
                     href="#"
