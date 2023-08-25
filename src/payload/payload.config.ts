@@ -12,6 +12,7 @@ import { Media } from '../collections/Media'
 import { Pages } from '../collections/Pages'
 import { Posts } from '../collections/Posts'
 import { MainMenu } from '../globals/MainMenu'
+import Logo from '../components/custom/Logo';
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_PUBLIC_SERVER_URL || '',
@@ -22,6 +23,18 @@ export default buildConfig({
   },
   routes: {
     admin: '/admin'
+  },
+  admin: {
+    meta: {
+      titleSuffix: '- Busy Little Pixels',
+      favicon: '/assets/favicon.ico',
+      ogImage: '/assets/images/logo.png',
+    },
+    components: {
+      graphics: {
+        Logo
+      },
+    },
   },
   plugins: [
     nestedDocs({
