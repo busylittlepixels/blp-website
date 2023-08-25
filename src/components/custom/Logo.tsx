@@ -3,13 +3,12 @@ import Image from "next/image";
 
 const loginlogo = '../../../../assets/images/loginlogo.png';
 
-
 export const Logo = () => (
     <div className="logo">
       <Image
-        width={100}
-        height={100}
-        src={loginlogo}
+        width={420}
+        height={300}
+        src={'/assets/images/loginlogo.png'}
         alt="Busy Little Pixels Logo"
       />
     </div>
