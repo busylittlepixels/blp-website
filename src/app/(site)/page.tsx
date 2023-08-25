@@ -2,12 +2,10 @@ import dynamic from 'next/dynamic'
 import { notFound } from 'next/navigation'
 import { Page } from '../../payload/payload-types'
 import { Team } from '../../components/layout/Team'
-// import { RenderBlocks } from '../../components/layout/RenderBlocks'
+import { TitleContainer } from '../../components/layout/TitleContainer'
+import { RenderBlocks } from '../../components/layout/RenderBlocks'
+import { GalleryGrid } from '../../components/layout/GalleryGrid'
 import { FadeIn } from '../../components/shared/FadeIn'
-
-const TitleContainer = dynamic(() => import('../../components/layout/TitleContainer')); 
-const GalleryGrid = dynamic(() => import('../../components/layout/GalleryGrid')); 
-const RenderBlocks = dynamic(() => import('../../components/layout/RenderBlocks')); 
 
 export default async function Home() {
   const home: Page = await fetch(
