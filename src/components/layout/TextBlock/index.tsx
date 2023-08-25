@@ -69,3 +69,5 @@ export const TextBlock = ({ content }: ITextBlock) => {
     </section>
   )
 }
+
+export default TextBlock;

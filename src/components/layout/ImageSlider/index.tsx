@@ -206,3 +206,5 @@ export const ImageSlider = ({ content }: any) => {
     </>
   )
 }
+
+export default ImageSlider; 

@@ -13,7 +13,6 @@ type IContact = {
 export const Contact = ({ content }: IContact) => {
 
     const { map_url, form_title } = content;
-
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -87,3 +86,5 @@ export const Contact = ({ content }: IContact) => {
         </FadeIn>
       </section>
 )}
+
+export default Contact;

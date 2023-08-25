@@ -61,3 +61,5 @@ export const BlockTest = ({ content }: ITextBlock) => {
     </FadeIn>
   )
 }
+
+export default BlockTest;

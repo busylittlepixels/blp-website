@@ -38,7 +38,7 @@ export const CarouselBlock = ({ content }: CarouselContainerProps) => {
   const carouselPanels = content ? Object.entries(content.carouselblock).map((item:any, index:number) => {
         // console.log(item[1]['carouselImageUrl']);
         return(
-        <div className="mr-2" id={item[1]['carouselImageUrl']}>
+        <div className="mr-2" id={item[1]['carouselImageUrl']} key={item[1]['carouselImageUrl']}>
           <Image
             // @ts-ignore
             src={item[1]['carouselImageUrl']}

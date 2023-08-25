@@ -46,3 +46,5 @@ export const GalleryGrid = ({ content }: any) => {
         </div>
     );
 }
+
+export default GalleryGrid;

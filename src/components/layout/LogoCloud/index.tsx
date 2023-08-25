@@ -55,3 +55,4 @@ export const LogoCloud = ({ content }:any) => {
     )
   }
   
+  export default LogoCloud; 
