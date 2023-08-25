@@ -59,7 +59,7 @@ export const CarouselBlock = ({ content }: CarouselContainerProps) => {
       <FadeIn>
         <div className="mx-auto max-w-7xl text-lg mb-4 pl-4">
           <h1 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-2 md:mb-6 last:mb-0 uppercase">
-            MADE IN <span style={{ color: 'red' }}>DUBLIN</span>...
+            MADE IN <span style={{ color: 'red' }}>DUBLIN</span>
           </h1>
           <div className="header__underline"></div>
         </div>

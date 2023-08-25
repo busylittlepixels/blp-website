@@ -37,3 +37,5 @@ export const TitleContainer = ({ title, subtitle }) => {
         </section>
     );
 }
+
+export default TitleContainer;

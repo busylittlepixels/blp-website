@@ -15,7 +15,7 @@ const Section = tw.section`
 
 export const TextBlock = ({ content }: ITextBlock) => {
 
-  const hello = `${content.LeadString} <span style={{ 'color': 'red'}}>${content.StyledString}</span> ${content.EndString}`;
+  const hello = `${content.LeadString} style={{"color":"red"}}>${content.StyledString}</span> ${content.EndString}`;
 
 
   return (
