@@ -22,11 +22,11 @@ export default async function Page({ params }) {
   
   return (
     <>
-      <main className={`general_page`}>
-        <FadeIn>
-            <RenderBlocks content={layout} />
-        </FadeIn>
-      </main>
+    <FadeIn>
+        <main className={`general_page`}>          
+          <RenderBlocks content={layout} />
+        </main>
+      </FadeIn>
     </>
   )
 }

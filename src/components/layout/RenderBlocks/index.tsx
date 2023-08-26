@@ -1,8 +1,9 @@
 /* eslint-disable no-console */
 'use client'
 import React from 'react';
-
 import dynamic from "next/dynamic";
+
+// Use dynamic import for code splitting
 
 const BlockTest = dynamic(() => import('../BlockTest')); 
 const CarouselBlock = dynamic(() => import('../CarouselBlock')); 
