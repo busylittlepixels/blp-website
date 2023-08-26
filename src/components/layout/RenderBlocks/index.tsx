@@ -1,7 +1,17 @@
 /* eslint-disable no-console */
 'use client'
 import React from 'react';
-import { BlockTest, TextBlock, ImageSlider, CarouselBlock, Contact, CallToAction, LogoCloud, Expertise } from '../../layout';
+
+import dynamic from "next/dynamic";
+
+const BlockTest = dynamic(() => import('../BlockTest')); 
+const CarouselBlock = dynamic(() => import('../CarouselBlock')); 
+const CallToAction = dynamic(() => import('../CallToAction'));
+const Contact = dynamic(() => import('../Contact'));
+const Expertise = dynamic(() => import('../Expertise'));
+const TextBlock = dynamic(() => import('../TextBlock'));
+const LogoCloud = dynamic(() => import('../LogoCloud')); 
+const ImageSlider = dynamic(() => import('../ImageSlider')); 
 
 export const RenderBlocks = ({ content }: any) => {
   const components: { [key: string]: React.ComponentType<any> } = {
@@ -13,7 +23,6 @@ export const RenderBlocks = ({ content }: any) => {
     CallToAction,
     LogoCloud,
     Expertise
-    // Add more components as needed
   };
 
   const pageBlocks = Object.entries(content).map(([blockName, blockContent]: [string, any], index: number) => {
