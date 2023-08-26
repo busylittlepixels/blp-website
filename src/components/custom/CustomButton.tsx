@@ -3,7 +3,7 @@ import './button.css'
 
 const linkToPage = (e) => {
     e.preventDefault(); 
-    console.log('clicked');
+    // console.log('clicked');
     return <p>Clicked</p>;
 }
 
