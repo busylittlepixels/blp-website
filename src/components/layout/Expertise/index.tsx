@@ -29,7 +29,7 @@ export const Expertise = ({ content }: IExpertise) => {
            
               <div className="mx-auto max-w-7xl px-0 md:px-8">
                 <h1 className="text-4xl font-black tracking-tight text-gray-900 sm:text-6xl mb-4 uppercase">
-                { header ? header : 'We\'re Your '} <span style={{"color":"red"}}>Technology</span> Roadmap.
+                { header ? header : 'We\'re Your '} <span style={{"color":"red"}}>Technology</span> Roadmap
                   
                 </h1>
                 <div className="header__underline"></div>

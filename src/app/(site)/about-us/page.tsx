@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { Page } from '../../../payload/payload-types'
 import { RenderBlocks } from '../../../components/layout/RenderBlocks'
 import { Services } from '../../../components/layout/Services'
+import { Team } from '../../../components/layout/Team'
 import { FadeIn } from '../../../components/shared/FadeIn'
 import { Metadata } from 'next'
 
@@ -30,12 +31,15 @@ export default async function About() {
   
   return (
     <>
-      <FadeIn>
+      
         <main className={`about`}>
-          <RenderBlocks content={layout} />      
-          <Services />
+          <Team headline={'ABOUT THE '}/>
+          <FadeIn>
+            <RenderBlocks content={layout} />      
+            <Services />
+          </FadeIn>
         </main>
-      </FadeIn>
+      
     </>
 
   )

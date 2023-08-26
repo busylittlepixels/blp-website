@@ -1,3 +1,5 @@
+'use client';
+
 const people = [
     {
       name: 'Paddy Ryan',
@@ -22,9 +24,15 @@ const people = [
     // More people...
   ]
   
-
+  interface ITeam {
+    headline?: string;
+  }
   
-  export const Team = () => {
+  
+  export const Team =  ({ headline }:ITeam) => {
+
+    console.log(headline);
+
     return ( 
       <div className="bg-black py-24 sm:py-32 overflow-hidden w-full">
         <div className="hidden md:block relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
@@ -39,7 +47,7 @@ const people = [
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h1 className="text-4xl font-black tracking-tight text-white sm:text-6xl uppercase mb-4">MEET THE <span style={{ "color": "red"}}>PIXELS</span>...</h1>
+            <h1 className="text-4xl font-black tracking-tight text-white sm:text-6xl uppercase mb-4">{headline ? headline : 'MEET THE' }<span style={{ "color": "red"}}>PIXELS</span>...</h1>
             <div className="header__underline"></div>
             <p className="mt-6 text-lg leading-8 text-gray-300">
               We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
