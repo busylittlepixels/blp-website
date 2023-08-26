@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import { notFound } from 'next/navigation'
 import { Page } from '../../../payload/payload-types'
-import { RenderBlocks } from '../../../components/layout/RenderBlocks'
+// import { RenderBlocks } from '../../../components/layout/RenderBlocks'
 import { Services } from '../../../components/layout/Services'
 import { FadeIn } from '../../../components/shared/FadeIn'
 import { Metadata } from 'next'
@@ -13,26 +13,25 @@ export const metadata: Metadata = {
 }
 
 
-export default async function About() {
+export default async function ServicesPage() {
   
-  const about: Page = await fetch(
-    `${process.env.NEXT_PUBLIC_SERVER_URL}/api/pages?where[slug][equals]=about-us&depth=2`,
+  const services: Page = await fetch(
+    `${process.env.NEXT_PUBLIC_SERVER_URL}/api/pages?where[slug][equals]=services&depth=2`,
     { next: { revalidate: 10 } },
   )
     .then(res => res.json())
     .then(res => res?.docs?.[0])
   
-  if (!about) {
+  if (!services) {
     return notFound()
   }
   
-  const { layout } = about
+  const { layout } = services
   
   return (
     <>
       <FadeIn>
-        <main className={`about`}>
-          <RenderBlocks content={layout} />      
+        <main className={`services`}>
           <Services />
         </main>
       </FadeIn>

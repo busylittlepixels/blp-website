@@ -13,16 +13,34 @@ type Props = {
 
 const nav = [
     {
-        link: 'About',
-        href: '/about',
-        pageLink: '/about',
-        label: 'About'
+        link: 'About Us',
+        href: '/about-us',
+        pageLink: '/about-us',
+        label: 'About Us'
     },
     {
-        link: 'What We Do',
-        href: '/what-we-do',
-        pageLink: '/what-we-do',
-        label: 'What We Do'
+        link: 'Our Mission',
+        href: '/our-mission',
+        pageLink: '/our-mission',
+        label: 'Our Mission'
+    },
+    {
+        link: 'Services',
+        href: '/services',
+        pageLink: '/services',
+        label: 'Services'
+    },
+    {
+        link: 'Work',
+        href: '/#',
+        pageLink: '/work',
+        label: 'Work'
+    },
+    {
+        link: 'Blog',
+        href: '/#',
+        pageLink: '/blog',
+        label: 'Blog'
     },
     {
         link: 'Contact',

@@ -22,13 +22,14 @@ export default async function Home() {
   const { subtitle, layout } = home
   
   return (  
-    <FadeIn>
       <main className={'page'}>
-        <TitleContainer title={'little'} subtitle={'ass'}/>
-        <GalleryGrid />
-        <RenderBlocks content={layout} />
-        <Team />
+        <FadeIn>
+          <TitleContainer title={'little'} subtitle={'ass'}/>
+          <GalleryGrid />
+          <RenderBlocks content={layout} />
+          <Team />
+        </FadeIn>
       </main>
-    </FadeIn>
+   
   )
 }

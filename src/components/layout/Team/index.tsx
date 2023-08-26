@@ -39,7 +39,7 @@ const people = [
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h1 className="text-4xl font-black tracking-tight text-white sm:text-6xl uppercase mb-4">MEET THE <span style={{ "color": "red"}}>TEAM...</span></h1>
+            <h1 className="text-4xl font-black tracking-tight text-white sm:text-6xl uppercase mb-4">MEET THE <span style={{ "color": "red"}}>PIXELS</span>...</h1>
             <div className="header__underline"></div>
             <p className="mt-6 text-lg leading-8 text-gray-300">
               We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
