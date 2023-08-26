@@ -17,7 +17,7 @@ export const Nav = ({ menu }) => {
         return;
     }
   return (
-    <header className="px-6 text-black body-font md:sticky w-full bg-black logoShadow z-50 border-b-8 border-red-500">
+    <header className="px-6 text-black body-font md:sticky w-full bg-black logoShadow">
         <div className="mx-auto flex flex-wrap py-5 md:flex-row items-center justify-between">
             <Link href="/" className={'logoHeight'}>
                 <h1 className="text-2xl font-extrabold leading-tight text-white shake">busy<span className="redText">little</span>pixels<span className="rd_txt">.</span></h1>
