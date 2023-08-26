@@ -104,8 +104,26 @@ export const images: CustomImage[] = [
     src: "/assets/images/wireframes.png",
     original: "/assets/images/wireframes.png",
     alt: "Wood Glass",
-    width: 400,
-    height: 320,
+    width: 200,
+    height: 120,
     description: "Wireframes",
+  },
+  {
+
+    src: "/assets/images/desk.jpeg",
+    original: "/assets/images/desk.jpeg",
+    alt: "Desk",
+    width: 650,
+    height: 400,
+    description: "Desk"
+  },
+  {
+    src: "/assets/images/app.jpeg",
+    original: "/assets/images/app.jpeg",
+    alt: "We Like You Too",
+    width: 750,
+    height: 450,
+    description: "Nerd Friends",
   }
 ];
+
