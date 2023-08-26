@@ -31,10 +31,10 @@ const nav = [
         label: 'Services'
     },
     {
-        link: 'Work',
+        link: 'Work & Studio',
         href: '/#',
-        pageLink: '/work',
-        label: 'Work'
+        pageLink: '/work-and-studio',
+        label: 'Work & Studio'
     },
     {
         link: 'Blog',

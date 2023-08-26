@@ -2,10 +2,12 @@ export const Services = () => {
 
     return(
         <div className="container mx-auto w-full px-4 bg-white max-w-full">
+            <svg className="max-md:hidden absolute right-0 transform mt-12 z-10 mr-20" width="400" height="384" fill="none" viewBox="0 0 400 384"><defs><pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor"></rect></pattern></defs><rect width="400" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)"></rect></svg>
             <div className="mx-auto grid grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-0 md:px-4 sm:py-32 lg:max-w-full lg:grid-cols-2 lg:px-8">
                 <div>
                     <h2 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-12 last:mb-0 uppercase leading-4">OUR <span style={{ "color": "red"}}>SERVICES</span></h2>
                     <div className="header__underline"></div>
+                    
                     <div className="RichText_richText__qEmi6 text-gray-600 mt-4 article_text flex-col"><p><span>Crafting Tomorrow's Digital Solutions, Today...with <strong>busy<span className="red">little</span>pixels. </strong>
 
 Merging technological mastery with strategic insight and team synergy, we're more than just a service provider. We're your digital partner, eager to co-create exceptional digital journeys.</span></p></div>
@@ -69,6 +71,7 @@ Tools & Integrations: Supercharge your digital assets with integrations that str
                     <img src="https://source.unsplash.com/640x640/?app" alt="Walnut card tray filled with cards and card angled in dedicated groove." className="rounded-lg bg-gray-100"/>
                 </div>
             </div>
+            
         </div>
     )
 }
