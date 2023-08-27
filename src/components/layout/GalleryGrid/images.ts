@@ -122,7 +122,7 @@ export const images: CustomImage[] = [
     alt: "Desk",
     width: 1200,
     height: 900,
-    description: "Let's get pixelling."
+    title: "Let's get pix-ical."
   }
 ];
 

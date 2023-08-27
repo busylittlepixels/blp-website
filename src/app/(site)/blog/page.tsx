@@ -115,7 +115,7 @@ const posts = [
             </div>
         <FadeIn>
             
-            <div className="py-24 sm:py-32">
+            <div className="py-12 sm:py-32">
                 
                 <div className="container mx-auto w-full px-4 bg-white max-w-auto">
                 <div className="mx-auto max-w-7xl">

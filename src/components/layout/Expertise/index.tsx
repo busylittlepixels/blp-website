@@ -39,8 +39,8 @@ export const Expertise = ({ content }: IExpertise) => {
               </svg>
             </div>
               <div className="mx-auto max-w-7xl px-0 md:px-8">
-                <h1 className="text-4xl font-black tracking-tight text-gray-900 sm:text-6xl mb-4 uppercase">
-                { header ? header : 'We\'re Your '} <span style={{"color":"red"}}>Technology</span> Roadmap
+                <h1 className="text-3xl md:text-[3.5rem] font-black tracking-tight text-gray-900 sm:text-6xl mb-4 uppercase">
+                { header ? header : 'We\'re Your '} <span style={{"color":"red"}}>Technology Roadmap</span> 
                   
                 </h1>
                 <div className="header__underline"></div>
@@ -51,7 +51,7 @@ export const Expertise = ({ content }: IExpertise) => {
                     className="sm:w-12 btn btn-red btn-lg md:w-auto uppercase text-white px-8 py-12 z-10"
                    
                   >
-                    Learn More
+                    Our Services
                   </Link>
                 </div>
               </div>

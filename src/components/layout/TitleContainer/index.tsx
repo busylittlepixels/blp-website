@@ -28,7 +28,7 @@ export const TitleContainer = ({ title, subtitle }) => {
             <SectionGrid className="homeAdjust">
                
                 <HeadingContainer>
-                    <Heading>WE ARE BUSY<span style={{ "color": "red" }}>{title}</span>PIXELS...<br/>& WE MAKE<span style={{ "color": "red" }}> TECH</span> GO.</Heading>
+                    <Heading>WE ARE BUSY<span style={{ "color": "red" }}>{title}</span>PIXELS.<br/>& WE MAKE<span style={{ "color": "red" }}> YOUR TECH</span> GO.</Heading>
                     <div className="header__underline ml-6"></div>
                 </HeadingContainer>
                

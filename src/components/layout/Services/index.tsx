@@ -5,7 +5,7 @@ export const Services = () => {
     return(
         <div className="container mx-auto w-full px-4 bg-white max-w-auto">
             <svg className="max-md:hidden absolute right-0 transform mt-12 z-10 mr-20 mix-blend-darken" width="650" height="384" fill="none" viewBox="0 0 400 384"><defs><pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor"></rect></pattern></defs><rect width="650" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)"></rect></svg>
-            <div className="mx-auto grid grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-0 md:px-4 sm:py-32 lg:max-w-full lg:grid-cols-2 lg:px-8">
+            <div className="mx-auto grid grid-cols-1 items-center gap-y-16 gap-x-8 py-12 px-0 md:px-4 sm:py-32 lg:max-w-full lg:grid-cols-2 lg:px-8">
                 <div>
                     <h2 className="composedHeading">OUR <span style={{ "color": "red"}}>SERVICES</span></h2>
                     <div className="header__underline"></div>
