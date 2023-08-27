@@ -28,7 +28,7 @@ export const Expertise = ({ content }: IExpertise) => {
             </svg>
 
             <div className="relative px-6 py-20 sm:py-40 lg:pr-8 lg:py-20 lg:pr-0">
-            <div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
+            <div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)] -z-1">
               <svg aria-hidden="true" className="absolute inset-0 h-full w-full">
                 <defs>
                   <pattern id=":ra:" width="128" height="128" patternUnits="userSpaceOnUse" x="50%" y="100%">
@@ -48,7 +48,7 @@ export const Expertise = ({ content }: IExpertise) => {
                 <div className="mt-10 flex items-center gap-x-6">
                   <Link
                     href="/services"
-                    className="sm:w-12 btn btn-red btn-lg md:w-auto uppercase text-white px-6 py-4"
+                    className="sm:w-12 btn btn-red btn-lg md:w-auto uppercase text-white px-8 py-12 z-10"
                    
                   >
                     Learn More
