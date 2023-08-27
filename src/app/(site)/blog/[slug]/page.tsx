@@ -64,14 +64,14 @@ export default async function Page() {
               </svg>
             </div>
           <section className="px-6 max-sm:pt-10 md:py-20 bg-white pb-0 md:pb-0">
-          <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-2">
+          <div className="grid grid-cols-1 justify-items-center homeAdjust">
             <div className="max-full text-center leading-relaxed">
               <h1 className="composedHeading">REALLY INTERESTING <span style={{ "color": "red"}}>TITLE</span></h1>
+              <div className="header__underline"></div>
             </div>
             <div className="max-full text-center leading-relaxed mb-8">
-              <p className="font-semibold tracking-tighter mb-4">By: <a href="#">Paddy Ryan</a> | Category: Tech | Published: Today</p>
+              <p className="font-semibold tracking-tighter mt-8 mb-8">By: <a href="#">Paddy Ryan</a> | Category: Tech | Published: Today</p>
               <p className="article_text max-w-5xl mx-auto">Lorem ipsum dolor, adipisicing elit. Eum saepe, quisquam commodi, similique earum facilis vitae vero quasi, dicta maxime atque veniam molestias accusantium laudantium consequatur. Nihil adipisci ratione maiores, illum perspiciatis quaerat voluptatibus quidem laudantium sequi assumenda, deserunt perferendis. Deleniti quia provident voluptate unde earum, maiores modi qui fugiat.</p>
-            
             </div>
           </div>
           <motion.div

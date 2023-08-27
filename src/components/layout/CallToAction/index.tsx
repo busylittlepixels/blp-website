@@ -25,7 +25,7 @@ export const CallToAction = ({ content }:any) => {
             <div className="relative px-6 py-20 sm:py-40 lg:pr-8 lg:py-20 lg:pr-0">
                 <FadeInRight>
               <div className="mx-auto max-w-7xl px-0 md:px-8">
-                <h1 className="text-4xl font-black tracking-tight text-gray-900 sm:text-6xl mb-4 uppercase">
+                <h1 className="composedHeading">
                   {headerStart} <span style={{"color":"red"}}>{headerStyled}</span> {headerEnd}
                 </h1>
                 <div className="header__underline"></div>
