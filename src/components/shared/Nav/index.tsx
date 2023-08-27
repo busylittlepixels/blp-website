@@ -20,8 +20,9 @@ export const Nav = ({ menu }) => {
     <header className="px-6 text-black body-font md:sticky w-full bg-black logoShadow">
         <div className="mx-auto flex flex-wrap py-5 md:flex-row items-center justify-between">
             <Link href="/" className={'logoHeight'}>
-                <h1 className="text-2xl font-extrabold leading-tight text-white shake">busy<span className="redText">little</span>pixels<span className="rd_txt">.</span></h1>
+                <h1 className="text-2xl font-extrabold leading-tight text-white shake">busy<span style={{"color": "red"}}>little</span>pixels<span style={{"color": "red"}}>.</span></h1>
             </Link>
+           
             <nav className={`nav`}>
                 <div
                     onClick={() => setNavActive(!navActive)}
