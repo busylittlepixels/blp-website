@@ -121,8 +121,7 @@ export default async function Page() {
               </div>
           
           </section>
-          <section id="author" aria-labelledby="author-title" className="relative scroll-mt-14 pb-3 pt-8 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16">
-            <div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
+          <div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
               <svg aria-hidden="true" className="absolute inset-0 h-full w-full">
                 <defs>
                   <pattern id=":ra:" width="128" height="128" patternUnits="userSpaceOnUse" x="50%" y="100%">
@@ -132,86 +131,99 @@ export default async function Page() {
                 <rect width="100%" height="100%" fill="url(#:ra:)"></rect>
               </svg>
             </div>
-            <div className="relative mx-auto max-w-5xl sm:px-6">
-              <div className="bg-slate-50 max-sm:pt-12 px sm:rounded-6xl">
-                <div className="relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-slate-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
-                  <img alt="" sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem" src="https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" width="576" height="576" decoding="async" data-nimg="1" className="absolute inset-0 h-full w-full object-cover shadow-xl" loading="lazy" style={{ "color": "transparent"}} />
-                </div>
-                <div className="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32 rounded shadow-xl">
-                    
-                    <p className="mt-8 font-display font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-                      <span className="block text-red-600">Paddy Ryan –</span> Hey there, I’m the author behind 'Through the Keystroke'.</p>
-                    <p className="mt-4 text-md tracking-tight text-slate-700 article_text">I’ve been designing and developing professionally for over a decade and have worked with dozens of the biggest brands to create custom sets for their products. I’ve worked with devel of all skill levels and honed my way of teaching to really click for anyone who has the itch to start designing their own icons.</p>
-                </div>
-                </div>
-            </div>
-        </section>
        
-        <section className="px-6 py-20 md:py-20 bg-white">
-          <h3 className="pb-8 font-black text-4xl mb-6 last:mb-0 uppercase">RELATED <span style={{ "color": "red"}}></span> <span style={{ "color": "red"}}>ARTICLES</span></h3>
-              
-                <div className="grid sm:gap-4 gap-2 grid-cols-2 md:grid-cols-4">
-                    <div>
-                      <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
-                      <div className="col-span-1">
-                        <h1 className="pt-2 mb-2 md:text-xl font-extrabold leading-snug text-gray-800">
-                          <Link href="/words/plerp" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">Process Documents Using Artificial Intelligence For RPA Bots</Link>
-                        </h1>
-                        <p className="mb-3 text-sm hidden md:visible font-normal text-gray-500">
-                          Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical
-                          Character Recognition) and Machine Learning, RPA bots are capable of extracting these data …
-                        </p>
-                        <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
-                      </div>
-                    </div>
-                    <div>
-                      <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
-                      <div className="col-span-1">
-                        
-                        
-                        <h1 className="pt-2 mb-2 md:text-xl font-extrabold leading-snug text-gray-800">
-                          <a href="#" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">Process Documents Using Artificial Intelligence For RPA Bots</a>
-                        </h1>
-                        <p className="mb-3 text-sm hidden md:visible font-normal text-gray-500">
-                          Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical
-                          Character Recognition) and Machine Learning, RPA bots are capable of extracting these data …
-                        </p>
-                        <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
-                      </div>
-                    </div> 
-                    <div>
-                      <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
-                      <div className="col-span-1">
-                        
-                        
-                        <h1 className="pt-2 mb-2 md:text-xl font-extrabold leading-snug text-gray-800">
-                          <a href="#" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">Process Documents Using Artificial Intelligence For RPA Bots</a>
-                        </h1>
-                        <p className="mb-3 text-sm hidden md:visible font-normal text-gray-500">
-                          Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical
-                          Character Recognition) and Machine Learning, RPA bots are capable of extracting these data …
-                        </p>
-                        <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
-                      </div>
-                    </div> 
-                    <div>
-                      <img src="https://placedog.net/650/450/r" className="object-cover w-full col-span-1 bg-center" alt="Doggo" loading="lazy" />
-                      <div className="col-span-1">
-                        
-                        
-                        <h1 className="pt-2 mb-2 md:text-xl font-extrabold leading-snug text-gray-800">
-                          <a href="#" className="duration-300 transition ease-in-out  text-gray-900 hover:text-red-500">Process Documents Using Artificial Intelligence For RPA Bots</a>
-                        </h1>
-                        <p className="mb-3 text-sm hidden md:visible font-normal text-gray-500">
-                          Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical
-                          Character Recognition) and Machine Learning, RPA bots are capable of extracting these data …
-                        </p>
-                        <a href="#" className="hidden md:visible btn btn-light btn-sm">Read More</a>
-                      </div>
-                    </div> 
+    
+
+        <div className="bg-white py-12 sm:py-12 lg:py-20">
+          <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
+              <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+                  <div className="flex flex-col items-start gap-4">
+                    <h1 className="text-4xl font-black tracking-tight text-black sm:text-6xl uppercase mb-2">SOME OF OUR <span style={{"color":"red"}}>WORK</span></h1>
+                    <div className="header__underline"></div>      
+                  </div> 
+                       
+              </div>
+
+           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+           
+            <a href="#"
+                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Minh Pham" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                <div
+                    className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                 </div>
-          
-          </section>
+
+                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">TNW</span>
+            </a>
+      
+            <a href="#"
+                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                <img src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000" loading="lazy" alt="Photo by Magicle" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                <div
+                    className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Web Summit</span>
+            </a>
+
+            <a href="#"
+                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                <img src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000" loading="lazy" alt="Photo by Martin Sanchez" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                <div
+                    className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Nutriband</span>
+            </a>
+
+            <a href="#"
+                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Lorenzo Herrera" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                <div
+                    className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Run Republic</span>
+            </a>
+ 
+            <a href="#"
+                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Minh Pham" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                <div
+                    className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Algarve Music Series</span>
+            </a>
+
+            <a href="#"
+                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Lorenzo Herrera" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                <div
+                    className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Dicpic</span>
+            </a>
+            <a href="#"
+                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Lorenzo Herrera" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                <div
+                    className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Retro</span>
+            </a>
+        </div>
+    </div>
+</div>
         </main>
         </FadeIn>
     </>

@@ -36,8 +36,11 @@ export default async function About() {
           <Team headline={'ABOUT THE '}/>
           <RenderBlocks content={layout} />      
         </main>
+       
       </FadeIn>
     </>
 
   )
 }
+
+
