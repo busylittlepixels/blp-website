@@ -103,7 +103,7 @@ const posts = [
                     </svg>
                 </div>
             </div> */}
-            <div className="absolute inset-x-0 bottom-0 top-10 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
+            <div className="absolute inset-x-0 bottom-10 top-0 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
               <svg aria-hidden="true" className="absolute inset-0 h-full w-full">
                 <defs>
                   <pattern id=":ra:" width="128" height="128" patternUnits="userSpaceOnUse" x="50%" y="100%">
@@ -148,7 +148,7 @@ const posts = [
                             </a>
                             </div>
                             <div className="group relative max-w-xl">
-                            <h3 className="mt-3 text-2xl font-black leading-6 text-gray-900 group-hover:text-gray-600">
+                            <h3 className="mt-3 text-2xl font-black leading-6 text-black group-hover:text-red-500 transition-all">
                                 <Link href={post.href}>
                                 <span className="absolute inset-0" />
                                 {post.title}
