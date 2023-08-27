@@ -18,22 +18,16 @@ const nav = [
         label: 'About Us'
     },
     {
-        link: 'Our Mission',
-        href: '/our-mission',
-        pageLink: '/our-mission',
-        label: 'Our Mission'
-    },
-    {
         link: 'Services',
         href: '/services',
         pageLink: '/services',
         label: 'Services'
     },
     {
-        link: 'Work & Studio',
-        href: '/#',
-        pageLink: '/work-and-studio',
-        label: 'Work & Studio'
+        link: 'Studio',
+        href: '/studio',
+        pageLink: '/studio',
+        label: 'Studio'
     },
     {
         link: 'Blog',
@@ -41,6 +35,12 @@ const nav = [
         pageLink: '/blog/future-of-web-development',
         label: 'Blog'
     },
+    // {
+    //     link: 'Mission',
+    //     href: '/our-mission',
+    //     pageLink: '/our-mission',
+    //     label: 'Mission'
+    // },
     {
         link: 'Contact',
         href: '/contact',

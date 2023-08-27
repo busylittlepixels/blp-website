@@ -35,6 +35,16 @@ const people = [
 
     return ( 
       <div className="bg-black py-24 sm:py-32 overflow-hidden w-full">
+        <div className="relative inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
+        <svg aria-hidden="true" className="absolute inset-0 h-full w-full">
+          <defs>
+            <pattern id=":ra:" width="128" height="128" patternUnits="userSpaceOnUse" x="50%" y="100%">
+              <path d="M0 128V.5H128" fill="none" stroke="currentColor"></path>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#:ra:)"></rect>
+        </svg>
+      </div>
         <div className="hidden md:block relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
             <svg className="absolute left-full transform" width="400" height="384" fill="none" viewBox="0 0 400 384">
                 <defs>

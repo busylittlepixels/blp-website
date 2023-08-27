@@ -1,16 +1,18 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-'use client';
 import Link from 'next/link'
-import { motion } from "framer-motion";
-// import { Video } from '../../../../components/layout/Video'
-import { FadeIn, FadeInRight } from '../../../../components/shared/FadeIn';
+import FadeIn from '../../../components/shared/FadeIn';
+import { Metadata } from 'next'
 
 const dummy = `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis in accusamus quisquam nemo nulla cupiditate iusto ullam amet maxime eius soluta, ab, maiores nobis? Corrupti ut illo voluptas optio enim fugiat accusantium error quod aliquid. <br /><br />Eligendi, temporibus. Rem temporibus a assumenda nam voluptatem aperiam alias eius repellat mollitia sit possimus officiis dolorum iste nemo est, sequi blanditiis hic atque earum vitae quos? Illum consequatur, eligendi quam, 
-fugiat amet dolores voluptates soluta quia vero ratione aliquid nostrum sunt velit earum consectetur, ea recusandae porro. Sunt ex pariatur neque molestias nulla recusandae perferendis, dolores temporibus excepturi modi. Accusantium tempore, eaque perferendis ex consequatur veritatis nobis similique, quae nihil repellat animi eius incidunt mollitia cupiditate vero dolorum expedita delectus magnam suscipit nesciunt sequi. <br /><br />Nisi minima voluptas, est, alias quam maiores voluptate quis fugiat laborum corrupti sunt enim aperiam mollitia exercitationem iste numquam dolorem dolore minus! Veniam ea voluptates saepe minus porro dolor illum aliquid a possimus eius dicta iusto quis eveniet quasi hic sapiente consequatur, fugit corporis, assumenda illo alias architecto excepturi eaque officiis. 
-Ut perspiciatis accusantium hic eius cum fugiat, at dignissimos deleniti qui laboriosam. Quisquam deserunt eaque atque totam reprehenderit corporis repellat consequuntur, minus iure, sed, nihil quidem aliquam porro possimus quam est labore dolorem itaque recusandae incidunt! Fugit neque temporibus vel nesciunt odio dolore non consequuntur aut ut, veniam hic nam magnam, inventore aspernatur molestias voluptatum necessitatibus? Aut, debitis aperiam!
-Minima, magnam illum fuga quia consequatur tenetur modi officia ipsam laudantium repellendus architecto laborum voluptate, repellat perspiciatis veniam. Quam reiciendis a assumenda aspernatur laudantium quibusdam nemo? Assumenda sunt id maiores, illo tenetur exercitationem. Accusamus facere quo deleniti a aspernatur, repudiandae at, voluptatibus, modi iusto officiis ipsum vel doloremque. Illo incidunt facilis aspernatur ex voluptatum possimus deleniti aliquid, labore, accusamus necessitatibus impedit velit culpa itaque cumque. <br /><br />
-Ad, beatae incidunt neque aperiam exercitationem quia odio. Ipsum ducimus quisquam itaque porro dolores, hic sapiente excepturi eum reiciendis culpa cupiditate tempore praesentium, et exercitationem placeat odit commodi veniam? <br /><br /><h3 class="font-black">In praesentium impedit</h3> blanditiis eum, placeat ratione doloremque hic, nemo vel ex deserunt? Quia sequi aperiam quam voluptatum 
-cumque provident mollitia perspiciatis eum quasi omnis, eius ratione et minima. Tempora molestiae qui sunt commodi, quibusdam eveniet ullam ipsum ipsam vero ea aliquid deserunt dolorem nisi voluptates libero inventore adipisci rerum doloribus, architecto, impedit dicta! Perferendis explicabo illo eaque id nostrum fugit repellendus? Tempore ad eius eveniet est quod consequuntur, quaerat sed magni fugiat earum itaque impedit accusamus aliquam consectetur assumenda voluptatibus cupiditate pariatur! <br /><br />Repellat laborum eveniet maiores nobis rerum nihil enim et, esse sapiente! Laborum natus aspernatur odio doloribus dolore voluptate repellendus labore fugit rerum quaerat magnam soluta aliquid, eligendi consequuntur maiores aperiam corporis tempora quam repudiandae quod quis nostrum et! Minus laboriosam harum aut et numquam. Obcaecati quae voluptates, magnam, dolorum necessitatibus quas fugiat officiis et tenetur impedit saepe sed libero facere fuga consequatur eius explicabo ex error optio. Sunt, voluptatum! Ullam eveniet fugiat vero rem maiores obcaecati rerum numquam laboriosam iure tempore. Provident magni inventore molestias sapiente eos voluptate in repellat. Repellat temporibus saepe illo eligendi quos vel distinctio dolores quaerat sed id magni, modi accusantium debitis ipsum. Rem commodi fuga recusandae voluptatum aut hic autem! Ipsum provident, aperiam optio voluptates quas voluptatum expedita eaque eius illum, odio necessitatibus fugit id cum voluptatem possimus, repellat ullam est error! Dolores exercitationem, consectetur eius voluptates expedita neque nam adipisci nesciunt itaque qui voluptas ad, nemo molestias illo at laboriosam rem sequi, minima officia corrupti! Illum asperiores incidunt molestiae nulla eveniet porro earum ad sequi sit quos, optio voluptatibus eligendi, ratione saepe accusamus tempora quis assumenda iusto recusandae odit maiores, repellendus unde hic.`;
+fugiat amet dolores voluptates soluta quia vero ratione aliquid nostrum sunt velit earum consectetur, ea recusandae porro. Sunt ex pariatur neque molestias nulla recusandae perferendis, dolores temporibus excepturi modi. Accusantium tempore, eaque perferendis ex consequatur veritatis nobis similique, quae nihil repellat animi eius incidunt mollitia cupiditate vero dolorum expedita delectus magnam suscipit nesciunt sequi.
+cumque provident mollitia perspiciatis eum quasi omnis, eius ratione et minima. Tempora molestiae qui sunt commodi, quibusdam eveniet ullam ipsum ipsam vero ea aliquid deserunt dolorem nisi voluptates libero inventore adipisci rerum doloribus, architecto, impedit dicta! Perferendis explicabo illo eaque id nostrum fugit repellendus? Tempore ad eius eveniet est quod consequuntur, quaerat sed magni fugiat earum itaque impedit accusamus aliquam consectetur assumenda voluptatibus cupiditate pariatur! <br /><br />Repellat laborum eveniet maiores nobis rerum nihil enim et, esse sapiente! Laborum natus aspernatur odio doloribus dolore voluptate repellendus labore fugit rerum quaerat magnam soluta aliquid, eligendi consequuntur maiores aperiam corporis tempora quam repudiandae quod quis nostrum et! Minus laboriosam harum aut et numquam. Obcaecati quae voluptates, magnam, dolorum necessitatibus quas fugiat officiis et tenetur impedit saepe sed libero facere fuga consequatur eius explicabo ex error optio. Sunt, voluptatum! Ullam eveniet fugiat vero rem maiores obcaecati rerum numquam laboriosam iure tempore. Provident magni inventore molestias sapiente eos voluptate in repellat.s`;
+
+
+export const metadata: Metadata = {
+  title: 'Studio | Busy Little Pixels',
+  description: 'Studio - We are Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events',
+}
+
 
 export default async function Page() {
    
@@ -41,8 +43,8 @@ export default async function Page() {
                   <rect
                     x="0"
                     y="0"
-                    width="4"
-                    height="4"
+                    width="6"
+                    height="6"
                     className="text-gray-200"
                     fill="currentColor"
                   />
@@ -66,32 +68,30 @@ export default async function Page() {
           <section className="px-6 max-sm:pt-10 md:py-20 bg-white pb-0 md:pb-0">
           <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-2">
             <div className="max-full text-center leading-relaxed">
-              <h1 className="composedHeading">REALLY INTERESTING <span style={{ "color": "red"}}>TITLE</span></h1>
+              <h1 className="composedHeading">STEP INTO OUR <span style={{'color': 'red'}}>STUDIO</span></h1>
+              <div className="header__underline"></div>
             </div>
             <div className="max-full text-center leading-relaxed mb-8">
-              <p className="font-semibold tracking-tighter mb-4">By: <a href="#">Paddy Ryan</a> | Category: Tech | Published: Today</p>
               <p className="article_text max-w-5xl mx-auto">Lorem ipsum dolor, adipisicing elit. Eum saepe, quisquam commodi, similique earum facilis vitae vero quasi, dicta maxime atque veniam molestias accusantium laudantium consequatur. Nihil adipisci ratione maiores, illum perspiciatis quaerat voluptatibus quidem laudantium sequi assumenda, deserunt perferendis. Deleniti quia provident voluptate unde earum, maiores modi qui fugiat.</p>
-            
             </div>
           </div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            className="w-full mb-2"
-          >
-          <img alt={'image alt blog'} src={'/assets/images/heart.jpeg'} width={1200} height={300} className="shadow-xl h-1/2 mx-auto" />
+          <FadeIn>
+          <img alt={'image alt blog'} src={'/assets/images/desk.jpeg'} width={1200} height={300} className="shadow-xl h-1/2 mx-auto" />
           
           {/* <Video videoEmbedCode={article ? article.articleVideoEmbed : null} /> */}
-          </motion.div>
+          </FadeIn>
           
             <div className="py-8 flex flex-col md:flex-row">
               <div className="mx-auto w-full max-w-3xl">
                   <div dangerouslySetInnerHTML={{__html: dummy }} className={'article_text mt-8 flex-col'}  />        
               </div>
             </div>
-              <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
+            <div className="w-full mt-20 mb-32" style={{"opacity": 1}}>
+                <img alt="image alt blog" src="/assets/images/desk.jpeg" width="1200" height="300" className="shadow-xl h-1/2 mx-auto" />
+            </div>
+            <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
                 <svg
-                  className="absolute bottom-12 right-full -translate-x-32 transform"
+                  className="absolute bottom-12 right-full -translate-x-32 transform mix-blend-darken"
                   width="400"
                   height="384"
                   fill="none"
@@ -213,7 +213,7 @@ export default async function Page() {
           
           </section>
         </main>
-      </FadeIn>
+        </FadeIn>
     </>
     )
 }

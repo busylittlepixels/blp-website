@@ -12,7 +12,9 @@ export const Expertise = ({ content }: IExpertise) => {
 
   return (
     <div className="bg-white ">
+      
       <FadeIn>
+     
       <div className="relative">
         <div className="mx-auto max-w-7xl">
           <div className="relative z-10 md:pt-8 lg:w-full lg:max-w-2xl">
@@ -26,7 +28,16 @@ export const Expertise = ({ content }: IExpertise) => {
             </svg>
 
             <div className="relative px-6 py-20 sm:py-40 lg:pr-8 lg:py-20 lg:pr-0">
-           
+            <div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
+              <svg aria-hidden="true" className="absolute inset-0 h-full w-full">
+                <defs>
+                  <pattern id=":ra:" width="128" height="128" patternUnits="userSpaceOnUse" x="50%" y="100%">
+                    <path d="M0 128V.5H128" fill="none" stroke="currentColor"></path>
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#:ra:)"></rect>
+              </svg>
+            </div>
               <div className="mx-auto max-w-7xl px-0 md:px-8">
                 <h1 className="text-4xl font-black tracking-tight text-gray-900 sm:text-6xl mb-4 uppercase">
                 { header ? header : 'We\'re Your '} <span style={{"color":"red"}}>Technology</span> Roadmap

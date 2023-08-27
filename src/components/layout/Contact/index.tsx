@@ -50,6 +50,7 @@ export const Contact = ({ content }: IContact) => {
     return(
 
         <section className="text-black relative mt-2 mb-2 w-full max-w-full" id="contact">
+            
             <div className="absolute inset-0 bg-gray-300 overflow-hidden">
               <iframe width="100%" height="100%" frameBorder="0" marginHeight={0} marginWidth={0} title="map" scrolling="no" src={map_url} style={{ "filter": "grayscale(1) contrast(1.2) opacity(0.4)" }} ></iframe>
             </div>

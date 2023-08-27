@@ -17,40 +17,35 @@ export const images: CustomImage[] = [
     //   { value: "Nature", title: "Nature" },
     //   { value: "Flora", title: "Flora" },
     // ],
-    title: "Never Gonna Give You Up",
-    description: "We're no strangers to love \n You know the rules and so do I (do I) \n A full commitment's what I'm thinking of \n You wouldn't get this from any other guy"
+    title: "We're no strangers to love...."
   },
   {
     src: "/assets/images/devs.jpeg",
     original: "/assets/images/devs.jpeg",
     width: 320,
     height: 212,
-    title: "Hombre",
-    description: "...You wouldn't get this from any other guy",
+    title: "...you know the rules and so do I..."
   },
   {
     src: "/assets/images/blurredscreen.jpeg",
     original: "/assets/images/blurredscreen.jpeg",
     width: 320,
     height: 212,
-    title: "Typescript",
-    // tags: [{ value: "Typescript", title: "Payload CMS" }],
-    description: "Color Pencils (Jeshu John - designerspics.com)",
+    title: "...a full commitment's what I'm thinking of...",
   },
   {
     src: "/assets/images/office2.jpeg",
     original: "/assets/images/office2.jpeg",
     width: 320,
     height: 213,
-    title: "Office",
-    description: "",
+    title: "...you wouldn't get this from any other guy...",
   },
   {
     src: "assets/images/not-a-meeting.jpeg",
     original: "assets/images/not-a-meeting.jpeg",
     width: 320,
     height: 183,
-    title: "Not a Meeting",
+    title: "...I just wanna tell you how I'm feeling...",
     description: "",
   },
   {
@@ -58,30 +53,28 @@ export const images: CustomImage[] = [
     original: "assets/images/monster.jpeg",
     width: 580,
     height: 350,
-    // tags: [{ value: "Nature", title: "Nature" }],
-    description: "8H (gratisography.com)",
+    title: "...gotta make you, understand..."
   },
   {
     src: "/assets/images/code2.jpeg",
     original: "/assets/images/code2.jpeg",
     width: 360,
     height: 190,
-    description: "286H (gratisography.com)",
+    title: "...never gonna give you up..."
   },
   {
     src: "/assets/images/code1.jpeg",
     original: "/assets/images/code1.jpeg",
     width: 320,
     height: 148,
-    // tags: [{ value: "People", title: "People" }],
-    description: "315H (gratisography.com)",
+    title: "...nnever gonna let you down..."
   },
   {
     src: "/assets/images/wireframe.jpg",
     original: "/assets/images/wireframe.jpg",
     width: 320,
     height: 213,
-    description: "201H (gratisography.com)",
+    title: "...never gonna run around and desert you..."
   },
   {
     src: "/assets/images/runner.jpg",
@@ -89,7 +82,7 @@ export const images: CustomImage[] = [
     alt: "Runner - NOT London",
     width: 248,
     height: 320,
-    description: "Runner",
+    title: "...never gonna make you cry..."
   },
   {
     src: "/assets/images/beegee.jpeg",
@@ -97,8 +90,7 @@ export const images: CustomImage[] = [
     alt: "Red Zone - Paris",
     width: 350,
     height: 200,
-    // tags: [{ value: "People", title: "People" }],
-    description: "Red Zone - Paris (Tom Eversley - isorepublic.com)",
+    title: "...never gonna say goodbye..."
   },
   {
     src: "/assets/images/wireframes.png",
@@ -106,16 +98,7 @@ export const images: CustomImage[] = [
     alt: "Wood Glass",
     width: 200,
     height: 120,
-    description: "Wireframes",
-  },
-  {
-
-    src: "/assets/images/desk.jpeg",
-    original: "/assets/images/desk.jpeg",
-    alt: "Desk",
-    width: 650,
-    height: 400,
-    description: "Desk"
+    title: "...never gonna tell a lie..."
   },
   {
     src: "/assets/images/app.jpeg",
@@ -123,7 +106,15 @@ export const images: CustomImage[] = [
     alt: "We Like You Too",
     width: 750,
     height: 450,
-    description: "Nerd Friends",
+    title: "...and hurt you..."
+  },
+  {
+    src: "/assets/images/desk.jpeg",
+    original: "/assets/images/desk.jpeg",
+    alt: "Desk",
+    width: 650,
+    height: 400,
+    description: "Desk"
   }
 ];
 

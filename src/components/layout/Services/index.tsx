@@ -4,7 +4,7 @@ export const Services = () => {
 
     return(
         <div className="container mx-auto w-full px-4 bg-white max-w-auto">
-            <svg className="max-md:hidden absolute right-0 transform mt-12 z-10 mr-20" width="400" height="384" fill="none" viewBox="0 0 400 384"><defs><pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor"></rect></pattern></defs><rect width="400" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)"></rect></svg>
+            <svg className="max-md:hidden absolute right-0 transform mt-12 z-10 mr-20 mix-blend-darken" width="650" height="384" fill="none" viewBox="0 0 400 384"><defs><pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor"></rect></pattern></defs><rect width="650" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)"></rect></svg>
             <div className="mx-auto grid grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-0 md:px-4 sm:py-32 lg:max-w-full lg:grid-cols-2 lg:px-8">
                 <div>
                     <h2 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-12 last:mb-0 uppercase leading-4">OUR <span style={{ "color": "red"}}>SERVICES</span></h2>
@@ -59,14 +59,23 @@ Merging technological mastery with strategic insight and team synergy, we're mor
                 </div>
                 <FadeIn>
                     <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-                        <img src="https://source.unsplash.com/640x640/?code" alt="Walnut card tray with white powder coated steel divider and 3 punchout holes." className="rounded-lg bg-gray-100" />
-                        <img src="https://source.unsplash.com/640x640/?tech" alt="Top down view of walnut card tray with embeped magnets and card groove." className="rounded-lg bg-gray-100"/>
-                        <img src="https://source.unsplash.com/640x640/?mobile" alt="Side of walnut card tray with card groove and recessed card area." className="rounded-lg bg-gray-100"/>
-                        <img src="https://source.unsplash.com/640x640/?app" alt="Walnut card tray filled with cards and card angled in dedicated groove." className="rounded-lg bg-gray-100"/>
+                        <img src="https://source.unsplash.com/640x640/?code" alt="Walnut card tray with white powder coated steel divider and 3 punchout holes." className="rounded-lg bg-gray-100 shadow-xl" />
+                        <img src="https://source.unsplash.com/640x640/?tech" alt="Top down view of walnut card tray with embeped magnets and card groove." className="rounded-lg bg-gray-100 shadow-xl"/>
+                        <img src="https://source.unsplash.com/640x640/?mobile" alt="Side of walnut card tray with card groove and recessed card area." className="rounded-lg bg-gray-100 shadow-xl"/>
+                        <img src="https://source.unsplash.com/640x640/?app" alt="Walnut card tray filled with cards and card angled in dedicated groove." className="rounded-lg bg-gray-100 shadow-xl"/>
                     </div>
                 </FadeIn>
             </div>
-            
+            <div className="absolute inset-x-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
+                <svg aria-hidden="true" className="absolute inset-0 h-full w-full">
+                    <defs>
+                    <pattern id=":ra:" width="128" height="128" patternUnits="userSpaceOnUse" x="50%" y="100%">
+                        <path d="M0 128V.5H128" fill="none" stroke="currentColor"></path>
+                    </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#:ra:)"></rect>
+                </svg>
+            </div>
         </div>
     )
 }

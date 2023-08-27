@@ -31,15 +31,13 @@ export default async function About() {
   
   return (
     <>
-      
+      <FadeIn>
         <main className={`about`}>
           <Team headline={'ABOUT THE '}/>
-          <FadeIn>
-            <RenderBlocks content={layout} />      
-            <Services />
-          </FadeIn>
+          <RenderBlocks content={layout} />      
+          <Services />
         </main>
-      
+      </FadeIn>
     </>
 
   )
