@@ -70,8 +70,53 @@ const posts = [
   
   export default function Page() {
     return (
+        <main className={'blog index'}>
+            {/* <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
+                <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
+                    <svg
+                    className="absolute bottom-5 left-full translate-x-28 transform mix-blend-darken"
+                    width="350"
+                    height="700"
+                    fill="none"
+                    viewBox="0 0 400 384"
+                    >
+                    <defs>
+                        <pattern
+                        id="d3eb07ae-5182-43e6-857d-35c643af9034"
+                        x="0"
+                        y="0"
+                        width="20"
+                        height="20"
+                        patternUnits="userSpaceOnUse"
+                        >
+                        <rect
+                            x="0"
+                            y="0"
+                            width="6"
+                            height="6"
+                            className="text-gray-200"
+                            fill="currentColor"
+                        />
+                        </pattern>
+                    </defs>
+                    <rect width="350" height="700" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
+                    </svg>
+                </div>
+            </div> */}
+            <div className="absolute inset-x-0 bottom-0 top-10 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
+              <svg aria-hidden="true" className="absolute inset-0 h-full w-full">
+                <defs>
+                  <pattern id=":ra:" width="128" height="128" patternUnits="userSpaceOnUse" x="50%" y="100%">
+                    <path d="M0 128V.5H128" fill="none" stroke="currentColor"></path>
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#:ra:)"></rect>
+              </svg>
+            </div>
         <FadeIn>
-            <div className="bg-white py-24 sm:py-32">
+            
+            <div className="py-24 sm:py-32">
+                
                 <div className="container mx-auto w-full px-4 bg-white max-w-auto">
                 <div className="mx-auto max-w-7xl">
                     <h1 className="composedHeading">BUSY<span style={{ "color" : "red"}}>LITTLE</span>BLOG</h1>
@@ -111,7 +156,7 @@ const posts = [
                             </h3>
                             <p className="mt-5 text-sm leading-6 text-gray-600">{post.description}</p>
                             </div>
-                            <div className="mt-6 flex border-t border-gray-900/5 pt-6">
+                            <div className="mt-6 flex pt-6">
                             <div className="relative flex items-center gap-x-4">
                                 <img src={post.author.imageUrl} alt="" className="h-10 w-10 rounded-full bg-gray-50" />
                                 <div className="text-sm leading-6">
@@ -131,8 +176,10 @@ const posts = [
                     </div>
                 </div>
                 </div>
+                
             </div>
         </FadeIn>
+        </main>
     )
   }
   
