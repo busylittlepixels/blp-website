@@ -1,4 +1,4 @@
-
+import Link from 'next/link';
 import { RichText } from '../RichText';
 import { FadeIn } from '../../shared/FadeIn';
 
@@ -46,13 +46,13 @@ export const Expertise = ({ content }: IExpertise) => {
                 <div className="header__underline"></div>
                 <RichText content={content.content} className={`text-gray-600 mt-4 article_text flex-col`} />
                 <div className="mt-10 flex items-center gap-x-6">
-                  <a
-                    href="#"
+                  <Link
+                    href="/services"
                     className="sm:w-12 btn btn-red btn-lg md:w-auto uppercase text-white px-6 py-4"
                    
                   >
                     Learn More
-                  </a>
+                  </Link>
                 </div>
               </div>
               
