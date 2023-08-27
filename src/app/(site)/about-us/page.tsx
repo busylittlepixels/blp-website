@@ -35,7 +35,6 @@ export default async function About() {
         <main className={`about`}>
           <Team headline={'ABOUT THE '}/>
           <RenderBlocks content={layout} />      
-          <Services />
         </main>
       </FadeIn>
     </>

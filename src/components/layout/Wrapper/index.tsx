@@ -31,8 +31,8 @@ const nav = [
     },
     {
         link: 'Blog',
-        href: '/blog/future-of-web-development',
-        pageLink: '/blog/future-of-web-development',
+        href: '/blog',
+        pageLink: '/blog',
         label: 'Blog'
     },
     // {
