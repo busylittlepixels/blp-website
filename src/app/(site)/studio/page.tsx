@@ -3,9 +3,9 @@ import Link from 'next/link'
 import FadeIn from '../../../components/shared/FadeIn';
 import { Metadata } from 'next'
 
-const dummy = `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis in accusamus quisquam nemo nulla cupiditate iusto ullam amet maxime eius soluta, ab, maiores nobis? Corrupti ut illo voluptas optio enim fugiat accusantium error quod aliquid. <br /><br />Eligendi, temporibus. Rem temporibus a assumenda nam voluptatem aperiam alias eius repellat mollitia sit possimus officiis dolorum iste nemo est, sequi blanditiis hic atque earum vitae quos? Illum consequatur, eligendi quam, 
+const dummy = `<h3 class="font-black text-2xl mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3> Perspiciatis in accusamus quisquam nemo nulla cupiditate iusto ullam amet maxime eius soluta, ab, maiores nobis? Corrupti ut illo voluptas optio enim fugiat accusantium error quod aliquid. Eligendi, temporibus. Rem temporibus a assumenda nam voluptatem aperiam alias eius. <br /><br /><h3 class="font-black text-2xl mb-4">Repellat mollitia sit possimus officiis dolorum</h3> Iste nemo est, sequi blanditiis hic atque earum vitae quos? Illum consequatur, eligendi quam, 
 fugiat amet dolores voluptates soluta quia vero ratione aliquid nostrum sunt velit earum consectetur, ea recusandae porro. Sunt ex pariatur neque molestias nulla recusandae perferendis, dolores temporibus excepturi modi. Accusantium tempore, eaque perferendis ex consequatur veritatis nobis similique, quae nihil repellat animi eius incidunt mollitia cupiditate vero dolorum expedita delectus magnam suscipit nesciunt sequi.
-cumque provident mollitia perspiciatis eum quasi omnis, eius ratione et minima. Tempora molestiae qui sunt commodi, quibusdam eveniet ullam ipsum ipsam vero ea aliquid deserunt dolorem nisi voluptates libero inventore adipisci rerum doloribus, architecto, impedit dicta! Perferendis explicabo illo eaque id nostrum fugit repellendus? Tempore ad eius eveniet est quod consequuntur, quaerat sed magni fugiat earum itaque impedit accusamus aliquam consectetur assumenda voluptatibus cupiditate pariatur! <br /><br />Repellat laborum eveniet maiores nobis rerum nihil enim et, esse sapiente! Laborum natus aspernatur odio doloribus dolore voluptate repellendus labore fugit rerum quaerat magnam soluta aliquid, eligendi consequuntur maiores aperiam corporis tempora quam repudiandae quod quis nostrum et! Minus laboriosam harum aut et numquam. Obcaecati quae voluptates, magnam, dolorum necessitatibus quas fugiat officiis et tenetur impedit saepe sed libero facere fuga consequatur eius explicabo ex error optio. Sunt, voluptatum! Ullam eveniet fugiat vero rem maiores obcaecati rerum numquam laboriosam iure tempore. Provident magni inventore molestias sapiente eos voluptate in repellat.s`;
+<br /><br /><h3 class="font-black text-2xl mb-4">Cumque provident mollitia</h3> Perspiciatis eum quasi omnis, eius ratione et minima. Tempora molestiae qui sunt commodi, quibusdam eveniet ullam ipsum ipsam vero ea aliquid deserunt dolorem nisi voluptates libero inventore adipisci rerum doloribus, architecto, impedit dicta! Perferendis explicabo illo eaque id nostrum fugit repellendus? Tempore ad eius eveniet est quod consequuntur, quaerat sed magni fugiat earum itaque impedit accusamus aliquam consectetur assumenda voluptatibus cupiditate pariaturs.`;
 
 
 export const metadata: Metadata = {
@@ -76,7 +76,7 @@ export default async function Page() {
             </div>
           </div>
           <FadeIn>
-          <img alt={'image alt blog'} src={'/assets/images/desk.jpeg'} width={1200} height={300} className="shadow-xl h-1/2 mx-auto" />
+          <img alt={'image alt blog'} src={'/assets/images/desk.jpeg'} width={1200} height={300} className="shadow-lg h-1/2 mx-auto rounded-lg " />
           
           {/* <Video videoEmbedCode={article ? article.articleVideoEmbed : null} /> */}
           </FadeIn>
@@ -87,7 +87,7 @@ export default async function Page() {
               </div>
             </div>
             <div className="w-full mt-20 mb-32" style={{"opacity": 1}}>
-                <img alt="image alt blog" src="/assets/images/desk.jpeg" width="1200" height="300" className="shadow-xl h-1/2 mx-auto" />
+                <img alt="image alt blog" src="/assets/images/desk.jpeg" width="1200" height="300" className="shadow-lg h-1/2 mx-auto rounded-lg" />
             </div>
             <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
                 <svg
@@ -147,7 +147,7 @@ export default async function Page() {
            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
            
             <a href="#"
-                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-xl md:h-80">
+                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
                 <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Minh Pham" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                 <div
@@ -158,7 +158,7 @@ export default async function Page() {
             </a>
       
             <a href="#"
-                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-xl md:col-span-2 md:h-80">
+                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
                 <img src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000" loading="lazy" alt="Photo by Magicle" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                 <div
@@ -169,7 +169,7 @@ export default async function Page() {
             </a>
 
             <a href="#"
-                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-xl md:col-span-2 md:h-80">
+                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
                 <img src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000" loading="lazy" alt="Photo by Martin Sanchez" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                 <div
@@ -180,7 +180,7 @@ export default async function Page() {
             </a>
 
             <a href="#"
-                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-xl md:h-80">
+                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
                 <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Lorenzo Herrera" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                 <div
@@ -191,7 +191,7 @@ export default async function Page() {
             </a>
  
             <a href="#"
-                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-xl md:h-80">
+                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
                 <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Minh Pham" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                 <div
@@ -202,24 +202,24 @@ export default async function Page() {
             </a>
 
             <a href="#"
-                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-xl md:h-80">
+                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
                 <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Lorenzo Herrera" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                 <div
                     className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                 </div>
 
-                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Dicpic</span>
+                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Unit Ops Media</span>
             </a>
             <a href="#"
-                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-xl md:h-80">
+                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
                 <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Lorenzo Herrera" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                 <div
                     className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                 </div>
 
-                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Retro</span>
+                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Danger Ro</span>
             </a>
         </div>
     </div>
