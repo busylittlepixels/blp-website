@@ -114,7 +114,7 @@ export const images: CustomImage[] = [
     alt: "Desk",
     width: 650,
     height: 400,
-    description: "Desk"
+    title: "All set?"
   },
   {
     src: "/assets/images/busypixels.png",
@@ -122,7 +122,7 @@ export const images: CustomImage[] = [
     alt: "Desk",
     width: 1200,
     height: 900,
-    description: "Desk"
+    description: "Let's get pixelling."
   }
 ];
 
