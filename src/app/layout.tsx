@@ -1,6 +1,6 @@
 import React from 'react'
 export const metadata = {
-  title: 'Busy Little Pixels | Web Development and Fractional CTO Services',
+  title: 'Busy Little Pixels | Fractional CTO Services & Web Development',
   description: 'Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events',
   keywords: 'Fractional CTO, CTO, Tech Lead, Business Lead, Online Strategy, Mobile Apps, NextJS, Craft CMS, Strapi',
   viewport: {
@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: { 
       type: "website", 
       url: `https://busylittlepixels.com`, 
-      title: `Busy Little Pixels | Web Development and Fractional CTO Services`,
+      title: `Busy Little Pixels | Fractional CTO Services & Web Development`,
       description: `Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events`,
       siteName: "Busy Little Pixels",
   }

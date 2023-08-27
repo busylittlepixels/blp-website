@@ -14,25 +14,19 @@ export const LogoCloud = ({ content }:any) => {
             <div className="mx-auto mt-10 grid grid-cols-4 items-start gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:grid-cols-4">
               <img
                 className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
-                src="https://tailwindui.com/img/logos/transistor-logo-white.svg"
+                src="/assets/images/tnw.svg"
                 alt="Transistor"
                 width={158}
                 height={48}
               />
               <img
-                className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
-                src="https://tailwindui.com/img/logos/reform-logo-white.svg"
+                className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1 h-full"
+                src="/assets/images/ws.svg"
                 alt="Reform"
                 width={158}
                 height={48}
               />
-              <img
-                className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
-                src="https://tailwindui.com/img/logos/tuple-logo-white.svg"
-                alt="Tuple"
-                width={158}
-                height={48}
-              />
+              
               {/* {/* <img
                 className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
                 src="https://tailwindui.com/img/logos/savvycal-logo-white.svg"
@@ -41,12 +35,19 @@ export const LogoCloud = ({ content }:any) => {
                 height={48}
               /> */}
               <img
-                className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
+                className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1 md:ml-6"
                 src="https://tailwindui.com/img/logos/statamic-logo-white.svg"
                 alt="Statamic"
                 width={158}
                 height={48}
               /> 
+              <img
+                className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1 md:ml-6"
+                src="https://tailwindui.com/img/logos/tuple-logo-white.svg"
+                alt="Tuple"
+                width={158}
+                height={48}
+              />
             </div>
           </div>
         </div>
