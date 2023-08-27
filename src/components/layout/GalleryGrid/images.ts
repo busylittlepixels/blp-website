@@ -80,7 +80,7 @@ export const images: CustomImage[] = [
     src: "/assets/images/runner.jpg",
     original: "/assets/images/runner.jpg",
     alt: "Runner - NOT London",
-    width: 248,
+    width: 350,
     height: 320,
     title: "...never gonna make you cry..."
   },
@@ -115,6 +115,15 @@ export const images: CustomImage[] = [
     width: 650,
     height: 400,
     description: "Desk"
+  },
+  {
+    src: "/assets/images/busypixels.png",
+    original: "/assets/images/busypixels.png",
+    alt: "Desk",
+    width: 1200,
+    height: 900,
+    description: "Desk"
   }
 ];
+
 

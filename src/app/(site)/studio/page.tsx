@@ -87,7 +87,7 @@ export default async function Page() {
               </div>
             </div>
             <div className="w-full mt-20 mb-32" style={{"opacity": 1}}>
-                <img alt="image alt blog" src="/assets/images/desk.jpeg" width="1200" height="300" className="shadow-lg h-1/2 mx-auto rounded-lg" />
+                <img alt="image alt blog" src="/assets/images/studio2.png" width="800" height="200" className="shadow-lg h-1/2 mx-auto rounded-lg" />
             </div>
             <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
                 <svg
