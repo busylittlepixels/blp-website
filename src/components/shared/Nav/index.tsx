@@ -20,7 +20,7 @@ export const Nav = ({ menu }) => {
     <header className="px-6 text-black body-font md:sticky w-full bg-black logoShadow">
         <div className="mx-auto flex flex-wrap py-5 md:flex-row items-center justify-between">
             <Link href="/">
-                <h1 className="text-2xl font-black leading-tight text-white shake">busy<span style={{"color": "red"}}>little</span>pixels<span style={{"color": "red"}}>.</span></h1>
+                <h1 className="text-3xl font-black leading-tightest text-white">busy<span style={{"color": "red"}}>little</span>pixels<span style={{"color": "red"}}>.</span></h1>
             </Link>
            
             <nav className={`nav`}>
