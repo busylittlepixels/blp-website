@@ -52,8 +52,8 @@ export const Footer = () => {
         <FadeIn>
           <SignUpForm />
         </FadeIn>
-        <div className="mx-auto w-full max-w-3xl text-center text-xs font-semibold tracking-tight text-white">
-          © 2023 <a href="https://busylittlepixelsv2.vercel.app">busy<span style={{"color": "red"}}>little</span>pixels.</a> Made with <span style={{"color": "red"}}>&hearts;</span> in Amsterdam
+        <div className="mx-auto w-full max-w-3xl text-center text-xs font-black tracking-tight text-white">
+          © 2023 <a href="https://busylittlepixelsv2.vercel.app">busy<span style={{"color": "red"}}>little</span>pixels.</a> Made with <a href="https://nextjs.org" target="_blank">NextJS</a>, <a href="https://payloadcms.com" target="_blank">PayloadCMS</a> and (of course) <span style={{"color": "red"}}>&hearts;</span> in Amsterdam.
         </div>
       </div>
     </footer>
