@@ -16,7 +16,7 @@ const HeadingContainer = tw.div`
 `
 
 const Heading = tw.h1`
-    px-6 font-black text-4xl md:text-6xl mb-6 last:mb-0 uppercase tracking-tight
+    px-6 font-black text-4xl md:text-6xl mb-6 last:mb-0 uppercase tracking-tighter
 `
 
 export const TitleContainer = ({ title, subtitle }) => {
@@ -28,7 +28,7 @@ export const TitleContainer = ({ title, subtitle }) => {
             <SectionGrid className="homeAdjust">
                
                 <HeadingContainer>
-                    <Heading>WE ARE BUSY<span style={{ "color": "red" }}>{title}</span>PIXELS.<br/><span style={{ "color": "red" }}>WE</span> MAKE<span style={{ "color": "red" }}> YOUR TECH</span> GO.</Heading>
+                    <Heading>WE ARE BUSY<span style={{ "color": "red" }}>{title}</span>PIXELS.<br/> <span style={{ "color": "red" }}>WE</span> MAKE<span style={{ "color": "red" }}> YOUR TECH</span> GO.</Heading>
                     <div className="header__underline ml-6"></div>
                 </HeadingContainer>
                
