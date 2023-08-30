@@ -13,6 +13,15 @@ module.exports = withPayload(
     },
     reactStrictMode: true,
     transpilePackages: ["@payloadcms/plugin-seo"],
+    images: {
+      formats: ['image/webp'],
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'images.unsplash.com',
+        },
+      ],
+    },
   },
   {
     // The second argument to `withPayload`
@@ -22,14 +31,6 @@ module.exports = withPayload(
     configPath: path.resolve(__dirname, "./src/payload/payload.config.ts"),
     // Point to your exported, initialized Payload instance (optional, default shown below`)
     payloadPath: path.resolve(process.cwd(), "./src/payload/payloadClient.ts"),
-    basePath: '/',
-    images: {
-      remotePatterns: [
-        {
-          protocol: 'https',
-          hostname: 'images.unsplash.com',
-        },
-      ],
-    },
+    basePath: '/'
   }
 );

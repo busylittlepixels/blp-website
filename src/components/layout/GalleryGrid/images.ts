@@ -10,7 +10,7 @@ export interface CustomImage extends Image {
 export const images: CustomImage[] = [
   {
     src: "/assets/images/heart-sm.jpg",
-    original: "/assets/images/heart.jpeg",
+    original: "/assets/images/heart.webp",
     width: 320,
     height: 174,
     // tags: [
@@ -41,16 +41,16 @@ export const images: CustomImage[] = [
     title: "...you wouldn't get this from any other guy...",
   },
   {
-    src: "assets/images/not-a-meeting.jpeg",
-    original: "assets/images/not-a-meeting.jpeg",
+    src: "assets/images/not-a-meeting.webp",
+    original: "assets/images/not-a-meeting.webp",
     width: 320,
     height: 183,
     title: "...I just wanna tell you how I'm feeling...",
     description: "",
   },
   {
-    src: "assets/images/monster.jpeg",
-    original: "assets/images/monster.jpeg",
+    src: "assets/images/monster.webp",
+    original: "assets/images/monster.webp",
     width: 580,
     height: 350,
     title: "...gotta make you, understand..."
@@ -63,8 +63,8 @@ export const images: CustomImage[] = [
     title: "...never gonna give you up..."
   },
   {
-    src: "/assets/images/code1.jpeg",
-    original: "/assets/images/code1.jpeg",
+    src: "/assets/images/code1.webp",
+    original: "/assets/images/code1.webp",
     width: 320,
     height: 148,
     title: "...nnever gonna let you down..."
