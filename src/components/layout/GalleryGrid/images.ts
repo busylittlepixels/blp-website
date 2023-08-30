@@ -9,7 +9,7 @@ export interface CustomImage extends Image {
 
 export const images: CustomImage[] = [
   {
-    src: "/assets/images/heart-sm.jpg",
+    src: "/assets/images/heart.webp",
     original: "/assets/images/heart.webp",
     width: 320,
     height: 174,
