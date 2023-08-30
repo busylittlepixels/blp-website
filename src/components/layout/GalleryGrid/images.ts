@@ -85,9 +85,9 @@ export const images: CustomImage[] = [
     title: "...never gonna make you cry..."
   },
   {
-    src: "/assets/images/beegee.jpeg",
-    original: "/assets/images/beegee.jpeg",
-    alt: "Red Zone - Paris",
+    src: "/assets/images/headless-toon.jpeg",
+    original: "/assets/images/headless.jpeg",
+    alt: "Specialists in Headless",
     width: 350,
     height: 200,
     title: "...never gonna say goodbye..."

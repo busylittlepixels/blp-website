@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { RichText } from '../RichText';
 import { FadeIn } from '../../shared/FadeIn';
 
@@ -61,10 +62,12 @@ export const Expertise = ({ content }: IExpertise) => {
         </div>
         <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
  
-          <img
+          <Image
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
             src={"/assets/images/cerd.jpg"}
-            alt=""
+            alt="exeprtise image"
+            height={500}
+            width={1000}
           />
           
         </div>
