@@ -18,7 +18,6 @@ export const LogoCloud = ({ content }:any) => {
                 alt="The Next Web - A Financial Times Company"
                 width={158}
                 height={48}
-                
               />
               <Image
                 className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1 h-full"
@@ -26,16 +25,8 @@ export const LogoCloud = ({ content }:any) => {
                 alt="Web Summit"
                 width={158}
                 height={48}
-                
               />
               
-              {/* {/* <img
-                className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
-                src="https://tailwindui.com/img/logos/savvycal-logo-white.svg"
-                alt="SavvyCal"
-                width={158}
-                height={48}
-              /> */}
               <Image
                 className="col-span-2 h-1/2 object-contain object-center md:object-right lg:col-span-1 md:ml-6"
                 src="/assets/images/picnic.webp"

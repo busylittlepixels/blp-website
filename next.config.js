@@ -23,6 +23,13 @@ module.exports = withPayload(
     // Point to your exported, initialized Payload instance (optional, default shown below`)
     payloadPath: path.resolve(process.cwd(), "./src/payload/payloadClient.ts"),
     basePath: '/',
-    
+    images: {
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'images.unsplash.com',
+        },
+      ],
+    },
   }
 );
