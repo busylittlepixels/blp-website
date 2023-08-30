@@ -22,7 +22,7 @@ export default async function Page() {
         <FadeIn>
         <main className={`blog`}>
         
-        <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
+        {/* <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
           <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
             <svg
               className="absolute bottom-5 left-full translate-x-28 transform mix-blend-darken"
@@ -53,8 +53,9 @@ export default async function Page() {
               <rect width="350" height="700" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
             </svg>
           </div>
-        </div>
-        
+        </div> */}
+          <svg className="max-md:hidden absolute right-0 transform mt-12 z-10 mr-20 mix-blend-darken" width="650" height="384" fill="none" viewBox="0 0 400 384"><defs><pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor"></rect></pattern></defs><rect width="650" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)"></rect></svg>
+            
           <div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
               <svg aria-hidden="true" className="absolute inset-0 h-full w-full">
                 <defs>

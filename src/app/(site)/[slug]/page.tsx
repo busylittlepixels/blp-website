@@ -7,7 +7,7 @@ import { RenderBlocks } from '../../../components/layout/RenderBlocks'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '%s | Busy Little Pixels',
+  title: 'Contact | Busy Little Pixels',
   description: '%s - We are Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events',
 }
 
