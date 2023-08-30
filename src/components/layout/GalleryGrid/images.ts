@@ -20,22 +20,22 @@ export const images: CustomImage[] = [
     title: "We're no strangers to love...."
   },
   {
-    src: "/assets/images/devs.jpeg",
-    original: "/assets/images/devs.jpeg",
+    src: "/assets/images/devs.webp",
+    original: "/assets/images/devs.webp",
     width: 320,
     height: 212,
     title: "...you know the rules and so do I..."
   },
   {
-    src: "/assets/images/blurredscreen.jpeg",
-    original: "/assets/images/blurredscreen.jpeg",
+    src: "/assets/images/blurredscreen.webp",
+    original: "/assets/images/blurredscreen.webp",
     width: 320,
     height: 212,
     title: "...a full commitment's what I'm thinking of...",
   },
   {
-    src: "/assets/images/office2.jpeg",
-    original: "/assets/images/office2.jpeg",
+    src: "/assets/images/office2.webp",
+    original: "/assets/images/office2.webp",
     width: 320,
     height: 213,
     title: "...you wouldn't get this from any other guy...",
@@ -56,8 +56,8 @@ export const images: CustomImage[] = [
     title: "...gotta make you, understand..."
   },
   {
-    src: "/assets/images/code2.jpeg",
-    original: "/assets/images/code2.jpeg",
+    src: "/assets/images/code2.webp",
+    original: "/assets/images/code2.webp",
     width: 360,
     height: 190,
     title: "...never gonna give you up..."
@@ -77,8 +77,8 @@ export const images: CustomImage[] = [
     title: "...never gonna run around and desert you..."
   },
   {
-    src: "/assets/images/runner.jpg",
-    original: "/assets/images/runner.jpg",
+    src: "/assets/images/runner.webp",
+    original: "/assets/images/runner.webp",
     alt: "Runner - NOT London",
     width: 350,
     height: 320,
@@ -101,24 +101,24 @@ export const images: CustomImage[] = [
     title: "...never gonna tell a lie..."
   },
   {
-    src: "/assets/images/app.jpeg",
-    original: "/assets/images/app.jpeg",
+    src: "/assets/images/app.webp",
+    original: "/assets/images/app.webp",
     alt: "We Like You Too",
     width: 750,
     height: 450,
     title: "...and hurt you..."
   },
   {
-    src: "/assets/images/desk.jpeg",
-    original: "/assets/images/desk.jpeg",
+    src: "/assets/images/desk.webp",
+    original: "/assets/images/desk.webp",
     alt: "Desk",
     width: 650,
     height: 400,
     title: "All set?"
   },
   {
-    src: "/assets/images/busypixels.png",
-    original: "/assets/images/busypixels.png",
+    src: "/assets/images/busypixels.webp",
+    original: "/assets/images/busypixels.webp",
     alt: "Desk",
     width: 1200,
     height: 900,
