@@ -93,9 +93,9 @@ export const images: CustomImage[] = [
     title: "...never gonna say goodbye..."
   },
   {
-    src: "/assets/images/wireframes.png",
-    original: "/assets/images/wireframes.png",
-    alt: "Wood Glass",
+    src: "/assets/images/coffee.jpeg",
+    original: "/assets/images/coffee.jpeg",
+    alt: "Coffee Makes Code",
     width: 200,
     height: 120,
     title: "...never gonna tell a lie..."
