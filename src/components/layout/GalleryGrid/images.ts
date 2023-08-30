@@ -70,8 +70,8 @@ export const images: CustomImage[] = [
     title: "...nnever gonna let you down..."
   },
   {
-    src: "/assets/images/wireframe.jpg",
-    original: "/assets/images/wireframe.jpg",
+    src: "/assets/images/design.webp",
+    original: "/assets/images/design.webp",
     width: 320,
     height: 213,
     title: "...never gonna run around and desert you..."
@@ -85,16 +85,16 @@ export const images: CustomImage[] = [
     title: "...never gonna make you cry..."
   },
   {
-    src: "/assets/images/headless-toon.jpeg",
-    original: "/assets/images/headless.jpeg",
+    src: "/assets/images/headless.webp",
+    original: "/assets/images/headless.webp",
     alt: "Specialists in Headless",
     width: 350,
     height: 200,
     title: "...never gonna say goodbye..."
   },
   {
-    src: "/assets/images/coffee.jpeg",
-    original: "/assets/images/coffee.jpeg",
+    src: "/assets/images/coffee.webp",
+    original: "/assets/images/coffee.webp",
     alt: "Coffee Makes Code",
     width: 200,
     height: 120,
