@@ -48,6 +48,7 @@ export const CarouselBlock = ({ content }: CarouselContainerProps) => {
             unoptimized={true}
             alt={`carousel image ${index}`}
             className="w-full"
+            loading="lazy"
           />
         </div>
         )

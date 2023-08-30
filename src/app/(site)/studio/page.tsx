@@ -76,7 +76,7 @@ export default async function Page() {
             </div>
           </div>
           <FadeIn>
-          <img alt={'image alt blog'} src={'/assets/images/desk.webp'} width={1200} height={300} className="shadow-lg h-1/2 mx-auto rounded-lg " />
+          <img alt={'image alt blog'} src={'/assets/images/desk.webp'} width={1200} height={300} className="shadow-lg h-1/2 mx-auto rounded-lg" loading="lazy" />
           
           {/* <Video videoEmbedCode={article ? article.articleVideoEmbed : null} /> */}
           </FadeIn>
