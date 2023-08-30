@@ -31,7 +31,7 @@ const people = [
   
   export const Team =  ({ headline }:ITeam) => {
 
-    console.log(headline);
+    // console.log(headline);
 
     return ( 
       <div className="bg-black py-24 sm:py-32 overflow-hidden w-full">

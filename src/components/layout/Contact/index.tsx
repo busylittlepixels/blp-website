@@ -38,7 +38,7 @@ export const Contact = ({ content }: IContact) => {
           },
       })
       // print to screen
-      console.log(rawResponse)
+      //   console.log(rawResponse)
       // Reset the form fields
       setMessage('')
       setName('')
