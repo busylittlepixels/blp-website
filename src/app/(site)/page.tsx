@@ -1,13 +1,11 @@
-'use client';
 import { notFound } from 'next/navigation'
 import { Page } from '../../payload/payload-types'
 import { Team } from '../../components/layout/Team'
 import { TitleContainer } from '../../components/layout/TitleContainer'
 import { RenderBlocks } from '../../components/layout/RenderBlocks'
-import { BigTextLittleText } from '../../components/layout/BigTextLittleText'
 import { GalleryGrid } from '../../components/layout/GalleryGrid'
 import { FadeIn } from '../../components/shared/FadeIn'
-import { ParallaxProvider } from "react-scroll-parallax";
+import { Parallax } from '../../components/shared/Parallax'
 
 export default async function Home() {
   const home: Page = await fetch(
@@ -30,9 +28,7 @@ export default async function Home() {
           <GalleryGrid />
           <RenderBlocks content={layout} />
           <Team />
-          <ParallaxProvider>
-            <BigTextLittleText />
-          </ ParallaxProvider>
+          <Parallax />
         </FadeIn>
       </main>
    

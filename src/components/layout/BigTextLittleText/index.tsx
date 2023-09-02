@@ -15,7 +15,7 @@ export const BigTextLittleText = (props:any) => {
 
        
         <div className="w-full relative overflow-x-hidden bg-black">
-            
+            {/* @ts-ignore */}
             <div ref={parallax.ref} className="background-big-text absolute w-full text-center font-bold mx-auto my-0 hidden md:block">
                 PIXELS
             </div>
