@@ -214,3 +214,17 @@
     top: 0;
     left: 0;
   }
+
+  
+
+.background-big-text {
+  font-size: 380px;
+  color: #E1171E;
+}
+
+.foreground-little-text {
+  color: #ffffff;
+  max-width: 1060px;
+  padding-top: 170px;
+  padding-bottom: 170px;
+}

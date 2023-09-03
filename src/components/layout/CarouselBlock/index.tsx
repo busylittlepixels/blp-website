@@ -32,12 +32,10 @@ interface CarouselContainerProps {
 
 export const CarouselBlock = ({ content }: CarouselContainerProps) => {
   
-  // console.log('anything?')
-  
   
   const carouselPanels = content ? Object.entries(content.carouselblock).map((item:any, index:number) => {
-        // console.log(item[1]['carouselImageUrl']);
-        return(
+  
+    return(
         <div className="mr-2" id={item[1]['carouselImageUrl']} key={item[1]['carouselImageUrl']}>
           <Image
             // @ts-ignore
