@@ -9,7 +9,7 @@ export const ImageSlider: Block = {
       label: 'Image Slider',
       minRows: 1,
       maxRows: 10,
-      interfaceName: 'CardSlider', // optional
+      interfaceName: 'ImageSlider', // optional
       labels: {
         singular: 'Slide',
         plural: 'Slides',

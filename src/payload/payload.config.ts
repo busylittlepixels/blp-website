@@ -24,18 +24,6 @@ export default buildConfig({
   routes: {
     admin: '/admin'
   },
-  admin: {
-    meta: {
-      titleSuffix: '- Busy Little Pixels',
-      favicon: '/assets/favicon.ico',
-      ogImage: '/assets/images/logo.png',
-    },
-    components: {
-      graphics: {
-        Logo
-      },
-    },
-  },
   plugins: [
     nestedDocs({
       collections: ["pages"],
