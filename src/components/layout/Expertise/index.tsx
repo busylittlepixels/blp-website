@@ -64,7 +64,7 @@ export const Expertise = ({ content }: IExpertise) => {
  
           <Image
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-            src={"/assets/images/cerd.jpg"}
+            src={"/assets/images/cerd.webp"}
             alt="exeprtise image"
             height={500}
             width={1000}
