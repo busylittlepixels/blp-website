@@ -5,6 +5,7 @@ import { Team } from '../../components/layout/Team'
 import { TitleContainer } from '../../components/layout/TitleContainer'
 import { RenderBlocks } from '../../components/layout/RenderBlocks'
 import { GalleryGrid } from '../../components/layout/GalleryGrid'
+import { BigTextLittleText } from '../../components/layout/BigTextLittleText'
 import { FadeIn } from '../../components/shared/FadeIn'
 
 export default async function Home() {
@@ -29,6 +30,7 @@ export default async function Home() {
           <RenderBlocks content={layout} />
           <Team />
         </FadeIn>
+        <BigTextLittleText />
       </main>
    
   )
