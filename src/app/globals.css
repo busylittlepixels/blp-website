@@ -283,3 +283,9 @@ svg:hover #sail-group > line {
     transform: rotate(360deg);
   }
 }
+
+.windmill{
+  position: absolute;
+  bottom: 2%;
+  right: 3%;
+}
