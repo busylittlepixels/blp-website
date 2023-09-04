@@ -12,10 +12,6 @@ export const images: CustomImage[] = [
     original: "/assets/images/heart.webp",
     width: 320,
     height: 174,
-    // tags: [
-    //   { value: "Nature", title: "Nature" },
-    //   { value: "Flora", title: "Flora" },
-    // ],
     title: "We're no strangers to love...."
   },
   {
@@ -101,14 +97,21 @@ export const images: CustomImage[] = [
     height: 200,
     title: "...never gonna say goodbye..."
   },
-  
+  {
+    src: "https://media.giphy.com/media/WTjXuYA2y4o3UZly3W/giphy.gif",
+    original: "https://media.giphy.com/media/WTjXuYA2y4o3UZly3W/giphy.gif",
+    alt: "Desk",
+    width: 500,
+    height: 350,
+    title: "...never gonna tell a lie..."
+  },
   {
     src: "/assets/images/busypixels.webp",
     original: "/assets/images/busypixels.webp",
     alt: "Desk",
     width: 1200,
     height: 900,
-    title: "Let's get pix-ical."
+    title: "...and hurt you..."
   },
   {
     src: "/assets/images/app.webp",
@@ -116,7 +119,7 @@ export const images: CustomImage[] = [
     alt: "We Like You Too",
     width: 750,
     height: 450,
-    title: "...and hurt you..."
+    title: "...We Like You Too..."
   },
   {
     src: "/assets/images/desk.webp",
@@ -126,22 +129,21 @@ export const images: CustomImage[] = [
     height: 400,
     title: "All set?"
   },
-  {
-    src: "/assets/images/coffee.webp",
-    original: "/assets/images/coffee.webp",
-    alt: "Coffee Makes Code",
-    width: 200,
-    height: 120,
-    title: "...never gonna tell a lie..."
-  },
-  
+
   {
     src: "https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif",
     original: "https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif",
     alt: "Desk",
-    width: 1200,
-    height: 900,
+    width: 500,
+    height: 300,
     title: "Let's get pix-ical."
-  }
+  },
+  {
+    src: "https://media.giphy.com/media/Q7SKqn3G97xpmfSOvG/giphy.gif",
+    original: "https://media.giphy.com/media/Q7SKqn3G97xpmfSOvG/giphy.gif",
+    alt: "Desk",
+    width: 700,
+    height: 500,
+    title: "busy like a busy little pixel."
+  } 
 ];
-
