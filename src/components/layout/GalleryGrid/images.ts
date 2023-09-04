@@ -22,9 +22,9 @@ export const images: CustomImage[] = [
     title: "...you know the rules and so do I..."
   },
   {
-    src: "/assets/images/blurredscreen.webp",
-    original: "/assets/images/blurredscreen.webp",
-    width: 320,
+    src: "/assets/images/coffee.webp",
+    original: "/assets/images/coffee.webp",
+    width: 350,
     height: 212,
     title: "...a full commitment's what I'm thinking of...",
   },
@@ -71,15 +71,6 @@ export const images: CustomImage[] = [
     height: 213,
     title: "...never gonna run around and desert you..."
   },
-  {
-    src: "/assets/images/runner.webp",
-    original: "/assets/images/runner.webp",
-    alt: "Runner - NOT London",
-    width: 350,
-    height: 320,
-    title: "...never gonna make you cry..."
-  },
-  //kitty
   {
     src: "https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif",
     original: "https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif",
