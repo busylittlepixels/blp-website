@@ -29,10 +29,10 @@ export const images: CustomImage[] = [
     title: "...a full commitment's what I'm thinking of...",
   },
   {
-    src: "/assets/images/office2.webp",
-    original: "/assets/images/office2.webp",
-    width: 320,
-    height: 213,
+    src: "https://media.giphy.com/media/QyVZ1BCz9Fh6J0qblM/giphy.gif",
+    original: "https://media.giphy.com/media/QyVZ1BCz9Fh6J0qblM/giphy.gif",
+    width: 480,
+    height: 240,
     title: "...you wouldn't get this from any other guy...",
   },
   {
@@ -137,13 +137,5 @@ export const images: CustomImage[] = [
     width: 500,
     height: 300,
     title: "Let's get pix-ical."
-  },
-  {
-    src: "https://media.giphy.com/media/Q7SKqn3G97xpmfSOvG/giphy.gif",
-    original: "https://media.giphy.com/media/Q7SKqn3G97xpmfSOvG/giphy.gif",
-    alt: "Desk",
-    width: 700,
-    height: 500,
-    title: "busy like a busy little pixel."
-  } 
+  }
 ];

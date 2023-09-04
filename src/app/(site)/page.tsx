@@ -7,6 +7,7 @@ import { RenderBlocks } from '../../components/layout/RenderBlocks'
 import { GalleryGrid } from '../../components/layout/GalleryGrid'
 import { BigTextLittleText } from '../../components/layout/BigTextLittleText'
 import { FadeIn } from '../../components/shared/FadeIn'
+// import { MarqueeBanner } from '../../components/layout/MarqueeBanner'
 
 export default async function Home() {
   const home: Page = await fetch(
@@ -24,6 +25,7 @@ export default async function Home() {
   
   return (  
       <main className={'page'}>
+        {/* <MarqueeBanner /> */}
         <FadeIn>
           <TitleContainer title={'little'} subtitle={'ass'}/>
           <GalleryGrid />

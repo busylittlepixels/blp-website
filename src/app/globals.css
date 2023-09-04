@@ -289,3 +289,28 @@ svg:hover #sail-group > line {
   bottom: 2%;
   right: 3%;
 }
+
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  background: red;
+}
+
+.marquee-content {
+  animation: marquee 20s linear infinite;
+  color: white;
+  padding: 5px;
+  font-weight: bolder;
+  text-transform: uppercase;
+
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
