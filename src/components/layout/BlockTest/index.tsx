@@ -8,7 +8,6 @@ interface ITextBlock {
 }
 
 export const BlockTest = ({ content }: ITextBlock) => {
-  
   return (
     <FadeIn>
     <section className={'w-full boundedContainer'}>
