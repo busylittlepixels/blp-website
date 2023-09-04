@@ -1,6 +1,5 @@
 import { Image } from "react-grid-gallery";
 
-
 export interface CustomImage extends Image {
   original: string;
   title?: string;
@@ -20,10 +19,10 @@ export const images: CustomImage[] = [
     title: "We're no strangers to love...."
   },
   {
-    src: "/assets/images/devs.webp",
-    original: "/assets/images/devs.webp",
-    width: 320,
-    height: 212,
+    src: "https://media.giphy.com/media/ibqNLl44qRLJyKv7rU/giphy-downsized-large.gif",
+    original: "https://media.giphy.com/media/ibqNLl44qRLJyKv7rU/giphy-downsized-large.gif",
+    width: 350,
+    height: 250,
     title: "...you know the rules and so do I..."
   },
   {
@@ -63,11 +62,11 @@ export const images: CustomImage[] = [
     title: "...never gonna give you up..."
   },
   {
-    src: "/assets/images/code1.webp",
-    original: "/assets/images/code1.webp",
-    width: 320,
-    height: 148,
-    title: "...nnever gonna let you down..."
+    src: "https://media.giphy.com/media/xUPGcB7dYAIBjMG2CQ/giphy.gif",
+    original: "https://media.giphy.com/media/xUPGcB7dYAIBjMG2CQ/giphy.gif",
+    width: 200,
+    height: 140,
+    title: "...never gonna let you down..."
   },
   {
     src: "/assets/images/design.webp",
@@ -84,6 +83,16 @@ export const images: CustomImage[] = [
     height: 320,
     title: "...never gonna make you cry..."
   },
+  //kitty
+  {
+    src: "https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif",
+    original: "https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif",
+    alt: "Desk",
+    width: 1200,
+    height: 900,
+    title: "...never gonna say goodbye..."
+    
+  },
   {
     src: "/assets/images/headless.webp",
     original: "/assets/images/headless.webp",
@@ -92,13 +101,14 @@ export const images: CustomImage[] = [
     height: 200,
     title: "...never gonna say goodbye..."
   },
+  
   {
-    src: "/assets/images/coffee.webp",
-    original: "/assets/images/coffee.webp",
-    alt: "Coffee Makes Code",
-    width: 200,
-    height: 120,
-    title: "...never gonna tell a lie..."
+    src: "/assets/images/busypixels.webp",
+    original: "/assets/images/busypixels.webp",
+    alt: "Desk",
+    width: 1200,
+    height: 900,
+    title: "Let's get pix-ical."
   },
   {
     src: "/assets/images/app.webp",
@@ -117,13 +127,21 @@ export const images: CustomImage[] = [
     title: "All set?"
   },
   {
-    src: "/assets/images/busypixels.webp",
-    original: "/assets/images/busypixels.webp",
+    src: "/assets/images/coffee.webp",
+    original: "/assets/images/coffee.webp",
+    alt: "Coffee Makes Code",
+    width: 200,
+    height: 120,
+    title: "...never gonna tell a lie..."
+  },
+  
+  {
+    src: "https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif",
+    original: "https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif",
     alt: "Desk",
     width: 1200,
     height: 900,
     title: "Let's get pix-ical."
   }
 ];
-
 
