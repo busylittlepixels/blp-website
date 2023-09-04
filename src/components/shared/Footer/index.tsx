@@ -1,5 +1,6 @@
 import { FadeIn } from '../FadeIn'
 import { CustomSVG } from '../Windmill'
+import Link from 'next/link';
 
 // const currentYear = () => {
 //   let currentTime = new Date()
@@ -51,7 +52,9 @@ export const Footer = () => {
   return (
     <footer className="bg-black py-20 text-slate-300 md:pb-12 footer relative">
       <div className='windmill max-sm:hidden block'>
-        <CustomSVG />
+        <Link href={`/`} scroll={true}>
+          <CustomSVG />
+        </Link>
       </div>
       <div className="grid grid-cols-1 justify-items-center gap-10 md:gap-20">
         <FadeIn>
