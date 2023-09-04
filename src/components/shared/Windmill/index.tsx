@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export const CustomSVG = () => {
   return (
     <>   
-     <svg xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 65 65" viewBox="0 0 80 80" height="250" width="250">
+     <svg xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 65 65" viewBox="0 0 80 80" height="150" width="75">
       <line x1="1.5" x2="63.5" y1="63.5" y2="63.5" fill="none" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="2"/>
         <path fill="none" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="2" d="M27.6 29.2l1-1-3.4-3.4-4.3 4.3h-2.5c.7-4 5.6-7.5 9.4-9.6l.7.7 2.3-2.3 0 0c1-.4 1.6-.7 1.6-.7s2.1.8 4.7 2.3l-.7.7 3.4 3.4 1.5-1.5c2.6 1.9 4.9 4.3 5.3 7L27.6 29.2 27.6 29.2z"/>
         <path fill="none" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="2" d="M53.4,63.5H11.6c4-8.5,6.9-17.2,8.1-26.5l7.8-7.8h7.9L33,31.6l13.7,13.7C48.4,51.5,50.6,57.6,53.4,63.5z"/>
