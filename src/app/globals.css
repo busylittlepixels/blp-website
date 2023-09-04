@@ -228,3 +228,45 @@
   padding-top: 170px;
   padding-bottom: 170px;
 }
+
+#sail-group {
+  transform-origin: 32.5px 24.5px;
+  transition: transform 2s ease-in-out;
+}
+
+svg:hover #sail-group {
+  transform: rotate(360deg);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
+.main-circle {
+  background-color: #0c272e;
+  border-radius: 50%;
+  height: 300px;
+  margin: 15px auto;
+  position: relative;
+  width: 300px;
+}
+
+.main-circle > svg {
+  animation: rotate 5s infinite linear;
+  height: 362px;
+  left: -31px;
+  position: absolute;
+  top: -31px;
+  width: 362px;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
