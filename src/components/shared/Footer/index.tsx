@@ -1,11 +1,12 @@
+'use client';
 import { FadeIn } from '../FadeIn'
 import { CustomSVG } from '../Windmill'
-import Link from 'next/link';
 
-// const currentYear = () => {
-//   let currentTime = new Date()
-//   return currentTime.getFullYear()
-// }
+const currentYear = () => {
+  let currentTime = new Date()
+  let year:number = currentTime.getFullYear()
+  return year;
+}
 
 const SignUpForm = () => {
   return (
@@ -49,12 +50,21 @@ const SignUpForm = () => {
 };
 
 export const Footer = () => {
+
+
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+  
   return (
     <footer className="bg-black py-20 text-slate-300 md:pb-12 footer relative">
       <div className='windmill max-sm:hidden block'>
-        <Link href={`/`} scroll={true}>
+        <div onClick={goToTop} className={'cursor-pointer'}>
           <CustomSVG />
-        </Link>
+        </div>
       </div>
       <div className="grid grid-cols-1 justify-items-center gap-10 md:gap-20">
         <FadeIn>
@@ -62,7 +72,7 @@ export const Footer = () => {
         </FadeIn>
         
         <div className="mx-auto w-full max-w-3xl text-center text-xs font-black tracking-tight text-white">
-          © 2023 <a href="https://busylittlepixelsv2.vercel.app">busy<span style={{"color": "red"}}>little</span>pixels.</a> Made with <a href="https://nextjs.org" target="_blank">NextJS</a>, <a href="https://payloadcms.com" target="_blank">PayloadCMS</a> and (of course) <span style={{"color": "red"}}>&hearts;</span> in Amsterdam.
+          © {currentYear()} <a href="https://busylittlepixelsv2.vercel.app">busy<span style={{"color": "red"}}>little</span>pixels.</a> Made with <a href="https://nextjs.org" target="_blank">NextJS</a>, <a href="https://payloadcms.com" target="_blank">PayloadCMS</a> and <span style={{"color": "red"}}>&hearts;</span> in Amsterdam.
           
         </div>
       </div>

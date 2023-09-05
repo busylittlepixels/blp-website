@@ -77,7 +77,7 @@ export const images: CustomImage[] = [
     alt: "Desk",
     width: 1200,
     height: 900,
-    title: "...never gonna say goodbye..."
+    title: "...never gonna make you cry..."
     
   },
   {
@@ -97,21 +97,31 @@ export const images: CustomImage[] = [
     title: "...never gonna tell a lie..."
   },
   {
-    src: "/assets/images/busypixels.webp",
-    original: "/assets/images/busypixels.webp",
-    alt: "Desk",
-    width: 1200,
-    height: 900,
-    title: "...and hurt you..."
-  },
-  {
     src: "/assets/images/app.webp",
     original: "/assets/images/app.webp",
     alt: "We Like You Too",
     width: 750,
     height: 450,
-    title: "...We Like You Too..."
+    title: "...and hurt you..."
   },
+  
+  {
+    src: "https://media.tenor.com/jhsMAREYalUAAAAC/pacman-gaming.gif",
+    original: "https://media.tenor.com/jhsMAREYalUAAAAC/pacman-gaming.gif",
+    alt: "Nyom Nyom Nyom",
+    width: 750,
+    height: 450,
+    title: "...nyom nyom nyom..."
+  },
+  {
+    src: "/assets/images/busypixels.webp",
+    original: "/assets/images/busypixels.webp",
+    alt: "BusyLittlePixels",
+    width: 600,
+    height: 450,
+    title: "...PIXELS..."
+  },
+
   {
     src: "/assets/images/desk.webp",
     original: "/assets/images/desk.webp",

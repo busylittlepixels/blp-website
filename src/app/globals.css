@@ -231,24 +231,23 @@
 
 #sail-group {
   transform-origin: 32.5px 24.5px;
-  transition: transform 2s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 svg:hover #sail-group {
   transform: rotate(360deg);
-  transition: all 2s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 svg #sail-group > rect,
 svg #sail-group > line {
   fill: none;
-  transition: all 2s ease-in-out;
 }
 
 svg:hover #sail-group > rect,
 svg:hover #sail-group > line {
   fill: #f00;
-  transition: all 2s ease-in-out;
+  
 }
 
 @keyframes rotate {

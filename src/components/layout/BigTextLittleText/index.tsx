@@ -23,7 +23,7 @@ export const BigTextLittleText = props => {
             >
                 
                     <div className="background-big-text relative text-center font-bold mx-auto my-0 hidden md:block">
-                        busy.
+                        busy?
                     </div>
             </motion.div>
             <BigText bigText="block sm:hidden" />
@@ -33,7 +33,7 @@ export const BigTextLittleText = props => {
                 transition={{ type: "spring", duration: 2 }}
                 exit={{ opacity: 0.1, y: -50 }}
                 className="foreground-little-text relative left-0 right-0 text-4xl sm:text-4xl text-center font-bold mx-auto my-0 p-2 top-0">
-                <h1 className="font-black tracking-tighter text-7xl md:text-[3.5rem] mb-12 last:mb-0 uppercase leading-4">LET'S GET</h1>
+                <h1 className="font-black tracking-tighter text-7xl md:text-[3.5rem] mb-12 last:mb-0 uppercase leading-4">READY TO GET</h1>
                 <p>
                 What are you still doing in the office? It's 17:00 on a Friday, and you're after having been ghosted by 
                 a stakeholder who requested work several weeks ago, and who have now run out of time.
