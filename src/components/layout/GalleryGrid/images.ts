@@ -65,8 +65,8 @@ export const images: CustomImage[] = [
     title: "...never gonna let you down..."
   },
   {
-    src: "/assets/images/design.webp",
-    original: "/assets/images/design.webp",
+    src: "/assets/images/office2.webp",
+    original: "/assets/images/office2.webp",
     width: 320,
     height: 213,
     title: "...never gonna run around and desert you..."
