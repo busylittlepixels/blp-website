@@ -7991,6 +7991,11 @@ react-animate-height@^2.1.2:
     classnames "^2.2.5"
     prop-types "^15.6.1"
 
+react-animated-cursor@^2.8.1:
+  version "2.8.1"
+  resolved "https://registry.npmjs.org/react-animated-cursor/-/react-animated-cursor-2.8.1.tgz"
+  integrity sha512-cCYgR1m5AdK69eJROxTGMZrRLrvOY7KhZSHLFUlG3IFW88+JTXMfv91y/uyFugF10w2oPrkWUXOFaTj8rXYMWA==
+
 react-datepicker@^4.10.0:
   version "4.16.0"
   resolved "https://registry.npmjs.org/react-datepicker/-/react-datepicker-4.16.0.tgz"
