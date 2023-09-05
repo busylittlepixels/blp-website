@@ -109,8 +109,8 @@ export const images: CustomImage[] = [
     src: "https://media.tenor.com/jhsMAREYalUAAAAC/pacman-gaming.gif",
     original: "https://media.tenor.com/jhsMAREYalUAAAAC/pacman-gaming.gif",
     alt: "Nyom Nyom Nyom",
-    width: 750,
-    height: 450,
+    width: 600,
+    height: 350,
     title: "...nyom nyom nyom..."
   },
   {
