@@ -16,7 +16,7 @@ import { RichText } from '../../../components/layout/RichText';
     
     const blog: Page = await fetch(
       `${process.env.NEXT_PUBLIC_SERVER_URL}/api/posts`,
-      { next: { revalidate: 3000 } },
+      { next: { revalidate: 10 } },
     )
       .then(res => res.json())
       .then(res => res?.docs)
@@ -82,7 +82,7 @@ import { RichText } from '../../../components/layout/RichText';
                       Navigate the ever-changing landscape of technology with BLP.<br />
                       From industry and tech commentary, to emerging trends, we've always got something to say. 
                     </p>
-                    </div>
+                    
                 
                     <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
                     {posts.map((post:any, _id) => {
@@ -135,6 +135,7 @@ import { RichText } from '../../../components/layout/RichText';
                         </article>
                       )})}
                     </div>
+                  </div>
               </div>
             </div>
         </FadeIn>
