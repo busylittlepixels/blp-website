@@ -2,11 +2,9 @@
 import type { CollectionConfig } from 'payload/types'
 
 import formatSlug from '../utilities/formatSlug'
-import { BlockTest } from '../blocks/BlockTest'
-import { ImageSlider } from '../blocks/ImageSlider'
 
 export const Posts: CollectionConfig = {
-  slug: 'post',
+  slug: 'posts',
   admin: {
     useAsTitle: 'title',
   },
@@ -44,7 +42,7 @@ export const Posts: CollectionConfig = {
       {
         name: 'body_content1',
         type: 'richText',
-        label: 'Content',
+        label: 'Body Content 1',
       },
       {
         name: 'postImage',
@@ -55,11 +53,6 @@ export const Posts: CollectionConfig = {
         name: 'postImageCaption',
         type: 'text',
         label: 'postImageCaption',
-      },
-      {
-        name: 'bodyContent1',
-        type: 'richText',
-        label: 'Body Content 1',
       },
       {
         name: 'displayMore',
