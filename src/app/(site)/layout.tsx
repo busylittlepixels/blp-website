@@ -1,6 +1,6 @@
 import Wrapper from '../../components/layout/Wrapper'
 import tw from 'tailwind-styled-components'
-import './../globals.css';
+import '../../styles/globals.css';
 
 const Notice = tw.div`
   text-center bg-red-600 text-white text-4xl font-black py-8 mb-4
