@@ -61,7 +61,7 @@ export const Footer = () => {
   
   return (
     <footer className="bg-black py-20 text-slate-300 md:pb-12 footer relative">
-      <div className='windmill max-sm:hidden block'>
+      <div className='windmill block'>
         <div onClick={goToTop} className={'cursor-pointer'}>
           <CustomSVG />
         </div>

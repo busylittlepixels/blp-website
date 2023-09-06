@@ -33,7 +33,7 @@ export const BigTextLittleText = props => {
                 transition={{ type: "spring", duration: 2 }}
                 exit={{ opacity: 0.1, y: -50 }}
                 className="foreground-little-text relative left-0 right-0 text-4xl sm:text-4xl text-center font-bold mx-auto my-0 p-2 top-0">
-                <h1 className="font-black tracking-tighter text-7xl md:text-[3.5rem] mb-12 last:mb-0 uppercase leading-4">READY TO GET</h1>
+                <h1 className="font-black tracking-tighter text-4xl md:text-7xl mb-12 last:mb-0 uppercase leading-4">HEARD ENOUGH?</h1>
                 <p>
                 What are you still doing in the office? It's 17:00 on a Friday, and you're after having been ghosted by 
                 a stakeholder who requested work several weeks ago, and who have now run out of time.

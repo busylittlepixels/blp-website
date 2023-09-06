@@ -105,14 +105,14 @@ export const images: CustomImage[] = [
     title: "...and hurt you..."
   },
   
-  // {
-  //   src: "https://media.tenor.com/jhsMAREYalUAAAAC/pacman-gaming.gif",
-  //   original: "https://media.tenor.com/jhsMAREYalUAAAAC/pacman-gaming.gif",
-  //   alt: "Nyom Nyom Nyom",
-  //   width: 600,
-  //   height: 350,
-  //   title: "...nyom nyom nyom..."
-  // },
+  {
+    src: "https://media.giphy.com/media/SpopD7IQN2gK3qN4jS/giphy.gif",
+    original: "https://media.giphy.com/media/SpopD7IQN2gK3qN4jS/giphy.gif",
+    alt: "Code Code Code",
+    width: 600,
+    height: 350,
+    title: "...Code Code Code..."
+  },
   {
     src: "/assets/images/busypixels.webp",
     original: "/assets/images/busypixels.webp",

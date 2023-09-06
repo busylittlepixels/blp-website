@@ -382,3 +382,18 @@ svg:hover #sail-group > line {
       background-color: rgba(var(--color-cursor), var(--cursor-outline-shade));
   }
     
+
+#windmillIcon{
+  height: 150px; 
+  width: 75px; 
+}
+  
+@media screen and (max-width: 670px){
+  #windmillIcon{
+    margin: 0 auto;
+    width: 50%;
+    height: 50px; 
+    width: 50px;
+    right: 0!important; 
+  }
+}
