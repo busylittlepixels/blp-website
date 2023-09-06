@@ -15,8 +15,8 @@ import { RichText } from '../../../components/layout/RichText';
     
     
     const blog: Page = await fetch(
-      `${process.env.NEXT_PUBLIC_SERVER_URL}/api/post`,
-      { next: { revalidate: 10 } },
+      `${process.env.NEXT_PUBLIC_SERVER_URL}/api/posts`,
+      { next: { revalidate: 3000 } },
     )
       .then(res => res.json())
       .then(res => res?.docs)
