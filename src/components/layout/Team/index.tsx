@@ -12,8 +12,8 @@ const people = [
       location: 'Dublin, Ireland'
     },
     {
-      name: 'Bobby Summers Ryan',
-      role: 'Co-Founder & CEO',
+      name: 'Bobby Sommers',
+      role: 'Co-Founder & CTO',
       imageUrl: '/assets/images/person2.avif',
       bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
       twitterUrl: '#',
