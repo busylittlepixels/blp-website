@@ -13,58 +13,73 @@ export const Posts: CollectionConfig = {
   access: {
     read: () => true,
   },
-  //   fields: [
-  //     {
-  //       name: 'title',
-  //       label: 'Title',
-  //       type: 'text',
-  //       required: true,
-  //     },
-  //     {
-  //       name: 'richText',
-  //       type: 'richText',
-  //       label: 'Content',
-  //     },
-  //     {
-  //       name: 'slug',
-  //       label: 'Slug',
-  //       type: 'text',
-  //       admin: {
-  //         position: 'sidebar',
-  //       },
-  //       hooks: {
-  //         beforeValidate: [formatSlug('title')],
-  //       },
-  //     },
-  //     {
-  //       name: 'subtitle',
-  //       label: 'Subtitle',
-  //       type: 'text',
-  //     },
-  //     {
-  //       name: 'onemore',
-  //       label: 'One More',
-  //       type: 'text',
-  //     },
-  //   ],
-  // }
-
-  // export default Pages
-  fields: [
-    {
-      name: 'title',
-      type: 'text',
-    },
-    {
-      name: 'slug',
-      label: 'Page Slug',
-      type: 'text',
-      admin: {
-        position: 'sidebar',
+    fields: [
+      {
+        name: 'slug',
+        label: 'Slug',
+        type: 'text',
+        admin: {
+          position: 'sidebar',
+        },
+        hooks: {
+          beforeValidate: [formatSlug('title')],
+        },
       },
-      hooks: {
-        beforeValidate: [formatSlug('title')],
+      {
+        name: 'title',
+        label: 'Title',
+        type: 'text',
+        required: true,
       },
-    },
-  ],
-}
+      {
+        name: 'featuredImage',
+        type: 'text',
+        label: 'Featured Image',
+      },
+      {
+        name: 'excerpt',
+        type: 'richText',
+        label: 'Excerpt',
+      },
+      {
+        name: 'body_content1',
+        type: 'richText',
+        label: 'Content',
+      },
+      {
+        name: 'postImage',
+        type: 'text',
+        label: 'Post Image',
+      },
+      {
+        name: 'postImageCaption',
+        type: 'text',
+        label: 'postImageCaption',
+      },
+      {
+        name: 'bodyContent1',
+        type: 'richText',
+        label: 'Body Content 1',
+      },
+      {
+        name: 'displayMore',
+        type: 'checkbox',
+        label: 'Add more content fields',
+        defaultValue: true,
+      },
+      {
+        name: 'bodyContent2',
+        type: 'richText',
+        label: 'Body Content2',
+        admin: {
+          condition: (data, siblingData, { user }) => {
+            if (siblingData.displayMore) {
+              return true;
+            } else {
+              return false;
+            }
+          }
+        }
+      },
+    ],
+  }
