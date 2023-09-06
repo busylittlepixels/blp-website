@@ -6,6 +6,8 @@
  * and re-run `payload generate:types` to regenerate this file.
  */
 
+import { ReactNode } from "react";
+
 export type CardSlider = {
   title?: string;
   textSub?: string;
@@ -141,6 +143,9 @@ export interface LogoCloud {
   blockType: 'LogoCloud';
 }
 export interface Post {
+  bodyContent1: any;
+  excerpt: ReactNode;
+  featuredImage: string | undefined;
   id: string;
   title?: string;
   slug?: string;
