@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { motion } from "framer-motion";
 // import { Video } from '../../../../components/layout/Video'
-import { FadeIn, FadeInRight } from '../../../../components/shared/FadeIn';
+import { FadeIn, FadeInRight } from '../../../../../components/shared/FadeIn';
 
 const dummy = `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis in accusamus quisquam nemo nulla cupiditate iusto ullam amet maxime eius soluta, ab, maiores nobis? Corrupti ut illo voluptas optio enim fugiat accusantium error quod aliquid. <br /><br /><h3 class="font-black text-2xl mb-2">Eligendi, temporibus.</h3> Rem temporibus a assumenda nam voluptatem aperiam alias eius repellat mollitia sit possimus officiis dolorum iste nemo est, sequi blanditiis hic atque earum vitae quos? Illum consequatur, eligendi quam, 
 fugiat amet dolores voluptates soluta quia vero ratione aliquid nostrum sunt velit earum consectetur, ea recusandae porro. Sunt ex pariatur neque molestias nulla recusandae perferendis, dolores temporibus excepturi modi. Accusantium tempore, eaque perferendis ex consequatur veritatis nobis similique, quae nihil repellat animi eius incidunt mollitia cupiditate vero dolorum expedita delectus magnam suscipit nesciunt sequi. <br /><br />Nisi minima voluptas, est, alias quam maiores voluptate quis fugiat laborum corrupti sunt enim aperiam mollitia exercitationem iste numquam dolorem dolore minus! Veniam ea voluptates saepe minus porro dolor illum aliquid a possimus eius dicta iusto quis eveniet quasi hic sapiente consequatur, fugit corporis, assumenda illo alias architecto excepturi eaque officiis. 

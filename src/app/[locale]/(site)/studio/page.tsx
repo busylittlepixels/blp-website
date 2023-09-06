@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Link from 'next/link'
-import FadeIn from '../../../components/shared/FadeIn';
+import FadeIn from '../../../../components/shared/FadeIn';
 import { Metadata } from 'next'
 
 const dummy = `<h3 class="font-black text-2xl mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3> Perspiciatis in accusamus quisquam nemo nulla cupiditate iusto ullam amet maxime eius soluta, ab, maiores nobis? Corrupti ut illo voluptas optio enim fugiat accusantium error quod aliquid. Eligendi, temporibus. Rem temporibus a assumenda nam voluptatem aperiam alias eius. <br /><br /><h3 class="font-black text-2xl mb-4">Repellat mollitia sit possimus officiis dolorum</h3> Iste nemo est, sequi blanditiis hic atque earum vitae quos? Illum consequatur, eligendi quam, 

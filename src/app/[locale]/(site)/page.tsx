@@ -1,15 +1,20 @@
+'use client';
 import dynamic from 'next/dynamic'
 import { notFound } from 'next/navigation'
-import { Page } from '../../payload/payload-types'
-import { Team } from '../../components/layout/Team'
-import { TitleContainer } from '../../components/layout/TitleContainer'
-import { RenderBlocks } from '../../components/layout/RenderBlocks'
-import { GalleryGrid } from '../../components/layout/GalleryGrid'
-import { BigTextLittleText } from '../../components/layout/BigTextLittleText'
-import { FadeIn } from '../../components/shared/FadeIn'
+import { Page } from '../../../payload/payload-types'
+import { Team } from '../../../components/layout/Team'
+import { TitleContainer } from '../../../components/layout/TitleContainer'
+import { RenderBlocks } from '../../../components/layout/RenderBlocks'
+import { GalleryGrid } from '../../../components/layout/GalleryGrid'
+import { BigTextLittleText } from '../../../components/layout/BigTextLittleText'
+import { FadeIn } from '../../../components/shared/FadeIn'
+import { useTranslations } from 'next-intl';
 // import { MarqueeBanner } from '../../components/layout/MarqueeBanner'
 
 export default async function Home() {
+
+  const t = useTranslations('Home');
+
   const home: Page = await fetch(
     `${process.env.NEXT_PUBLIC_SERVER_URL}/api/pages?where[slug][equals]=home&depth=2`,
     { next: { revalidate: 10 } },
@@ -25,8 +30,8 @@ export default async function Home() {
   
   return (  
       <main className={'page'}>
-        {/* <MarqueeBanner /> */}
         <FadeIn>
+          <h1 className="font-bold">{t('greeting')}</h1>
           <TitleContainer title={'little'} subtitle={'ass'}/>
           <GalleryGrid />
           <RenderBlocks content={layout} />
