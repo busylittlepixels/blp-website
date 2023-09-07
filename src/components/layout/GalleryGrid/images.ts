@@ -72,13 +72,12 @@ export const images: CustomImage[] = [
     title: "...never gonna run around and desert you..."
   },
   {
-    src: "https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif",
-    original: "https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif",
-    alt: "Desk",
-    width: 1200,
-    height: 900,
+    src: "/assets/images/busypixels.webp",
+    original: "/assets/images/busypixels.webp",
+    alt: "BusyLittlePixels",
+    width: 600,
+    height: 450,
     title: "...never gonna make you cry..."
-    
   },
   {
     src: "/assets/images/headless.webp",
@@ -113,15 +112,6 @@ export const images: CustomImage[] = [
     height: 350,
     title: "...Code Code Code..."
   },
-  {
-    src: "/assets/images/busypixels.webp",
-    original: "/assets/images/busypixels.webp",
-    alt: "BusyLittlePixels",
-    width: 600,
-    height: 450,
-    title: "...PIXELS..."
-  },
-
   {
     src: "/assets/images/desk.webp",
     original: "/assets/images/desk.webp",
