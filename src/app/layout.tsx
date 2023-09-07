@@ -5,8 +5,9 @@ export const metadata = {
   keywords: 'Fractional CTO, CTO, Tech Lead, Business Lead, Online Strategy, Mobile Apps, NextJS, Craft CMS, Strapi',
   viewport: {
     width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
+    initialScale: 2,
+    maximumScale: 2,
+    userScalable: 1.0
   },
   openGraph: { 
       type: "website", 
