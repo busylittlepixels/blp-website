@@ -15,8 +15,7 @@ import { RichText } from '../../../components/layout/RichText';
     
     
     const blog: Page = await fetch(
-      `${process.env.NEXT_PUBLIC_SERVER_URL}/api/posts`,
-      { next: { revalidate: 10 } },
+      `${process.env.NEXT_PUBLIC_SERVER_URL}/api/posts`
     )
       .then(res => res.json())
       .then(res => res?.docs)
@@ -91,7 +90,7 @@ import { RichText } from '../../../components/layout/RichText';
                           <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
                             <img
                             src={post.featuredImage}
-                            alt=""
+                            alt={`${post.title} main image`}
                             className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
                             />
                             <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
@@ -115,7 +114,7 @@ import { RichText } from '../../../components/layout/RichText';
                                   {post.title}
                                   </Link>
                               </h3>
-                              <RichText content={post.excerpt} className={`mt-5 text-sm leading-6 text-gray-600l`} />
+                              <RichText content={post.excerpt} className={`mt-5 text-sm leading-6 text-gray-600 article_text`} />
                               </div>
                               <div className="mt-6 flex pt-6">
                               <div className="relative flex items-center gap-x-4">
