@@ -6,6 +6,7 @@ import Markdown from "markdown-to-jsx"
 import Link from 'next/link'
 import { MotionImage } from '../../../../components/layout/MotionImage';
 import { RichText } from '../../../../components/layout/RichText';
+import FadeIn from '../../../../components/shared/FadeIn';
 
 // import Blog1 from '../../../../content/the-importance-of-a-modern-website-and-engaging-online-experience-for-businesses.mdx'
 
@@ -72,12 +73,11 @@ const PostPage = (props: any) => {
                 <rect width="100%" height="100%" fill="url(#:ra:)"></rect>
                 </svg>
             </div>
-
+            <FadeIn>
             <section className="px-6 max-sm:pt-10 md:py-20 bg-white pb-0 md:pb-0">
                 <div className="grid grid-cols-1 justify-items-center homeAdjust">
                     <div className="max-full text-center leading-relaxed">
                         <h1 className="composedHeading">{post.data.title}</h1>
-                        <div className="header__underline"></div>
                     </div>
                     <div className="max-full text-center leading-relaxed mb-8">
                         <p className="font-semibold tracking-tighter mt-8 mb-8">By: <a href="#">{post.data.author}</a> | Category: <span className="relative z-10 rounded-full bg-red-600 px-3 py-1.5 font-medium text-white hover:bg-red-400 cursor-pointer">Tech</span> | Posted: {post.data.postdate}</p>
@@ -149,6 +149,7 @@ const PostPage = (props: any) => {
                     </div>
                 </div>
             </section>
+            </FadeIn>
         </main>   
 	)
 }
