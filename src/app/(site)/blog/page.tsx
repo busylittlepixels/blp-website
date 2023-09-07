@@ -77,7 +77,7 @@ import { RichText } from '../../../components/layout/RichText';
                   <div className="mx-auto max-w-7xl">
                     <h1 className="composedHeading">BUSY<span style={{ "color" : "red"}}>LITTLE</span>BLOG</h1>
                     <div className="header__underline"></div>
-                    <p className="mt-8 text-2xl leading-8 text-gray-600">
+                    <p className="mt-8 text-2xl leading-8 text-gray-600 article_text">
                       Navigate the ever-changing landscape of technology with BLP.<br />
                       From industry and tech commentary, to emerging trends, we've always got something to say. 
                     </p>
