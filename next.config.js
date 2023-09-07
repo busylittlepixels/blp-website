@@ -29,11 +29,3 @@ module.exports = withPayload(
     payloadPath: path.resolve(process.cwd(), "./src/payload/payloadClient.ts"),
   }
 );
-
-const withMDX = require('@next/mdx')({
-  // ...
-  options: {
-    providerImportSource: '@mdx-js/react',
-  },
-})
-module.exports = withMDX(withPayload)

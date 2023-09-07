@@ -3,7 +3,6 @@ import * as fs from 'fs';
 import matter from 'gray-matter'
 import  path from 'path'
 import Markdown from "markdown-to-jsx"
-import getPostMetadata from "@/components/getPostMetadata"
 import Link from 'next/link'
 
 import { RichText } from '../../../../components/layout/RichText';
