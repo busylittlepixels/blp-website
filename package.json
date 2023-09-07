@@ -20,13 +20,20 @@
     "lint:fix": "eslint --fix --ext .ts,.tsx src"
   },
   "dependencies": {
+    "@mdx-js/loader": "^2.3.0",
+    "@mdx-js/react": "^2.3.0",
+    "@next/mdx": "^13.4.19",
     "@payloadcms/next-payload": "^0.0.33",
     "@payloadcms/plugin-nested-docs": "^1.0.6",
+    "@types/mdx": "^2.0.7",
     "dotenv": "^8.2.0",
     "escape-html": "^1.0.3",
     "express": "^4.17.1",
     "framer-motion": "^10.15.0",
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.3",
     "gsap": "^3.12.2",
+    "markdown-to-jsx": "^7.3.2",
     "next": "^13.4.12",
     "nprogress": "^0.2.0",
     "payload": "^1.13.4",
@@ -71,5 +78,10 @@
     "ts-node": "^10.9.1",
     "typescript": "5.1.6",
     "webpack-cli": "^5.1.4"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
   }
 }

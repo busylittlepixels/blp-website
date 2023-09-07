@@ -14,7 +14,13 @@ module.exports = withPayload(
     reactStrictMode: true,
     transpilePackages: ["@payloadcms/plugin-seo"],
     basePath: '',
-    fallback: { "util": require.resolve("util/") }
+    fallback: { 
+      "util": require.resolve("util/"),
+      fs: false,
+    },
+    experimental: {
+      mdxRs: true,
+    },
   },
   {
     // The second argument to `withPayload`
@@ -26,3 +32,11 @@ module.exports = withPayload(
     payloadPath: path.resolve(process.cwd(), "./src/payload/payloadClient.ts"),
   }
 );
+
+const withMDX = require('@next/mdx')({
+  // ...
+  options: {
+    providerImportSource: '@mdx-js/react',
+  },
+})
+module.exports = withMDX(withPayload)
