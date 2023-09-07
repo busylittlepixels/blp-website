@@ -80,7 +80,7 @@ const PostPage = (props: any) => {
                         <h1 className="composedHeading">{post.data.title}</h1>
                     </div>
                     <div className="max-full text-center leading-relaxed mb-8">
-                        <p className="font-semibold tracking-tighter mt-8 mb-8">By: <a href="#">{post.data.author}</a> | Category: <span className="relative z-10 rounded-full bg-red-600 px-3 py-1.5 font-medium text-white hover:bg-red-400 cursor-pointer">Tech</span> | Posted: {post.data.postdate}</p>
+                        <p className="font-semibold tracking-tighter mt-8 mb-8">By: <a href="#">{post.data.author}</a> | Category: <span className="relative z-10 rounded-full bg-red-600 px-3 py-1.5 font-medium text-white hover:bg-red-400 cursor-pointer">{post.data.category}</span> | Posted: {post.data.postdate}</p>
                         {/* <RichText className="article_text max-w-5xl mx-auto" content={post.excerpt} /> */}
                     </div>
                 </div>
