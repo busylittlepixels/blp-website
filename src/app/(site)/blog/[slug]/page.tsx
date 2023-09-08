@@ -77,7 +77,7 @@ const PostPage = (props: any) => {
             <section className="px-6 max-sm:pt-10 md:py-20 bg-white pb-0 md:pb-0">
                 <div className="grid grid-cols-1 justify-items-center homeAdjust">
                     <div className="max-full text-center leading-relaxed">
-                        <h1 className="composedHeading_blog">{post.data.title}</h1>
+                        <h1 className="composedHeading">{post.data.title}</h1>
                     </div>
                     <div className="max-full text-center leading-relaxed mb-8">
                         <p className="font-semibold tracking-tighter mt-8 mb-8">By: <a href="#">{post.data.author}</a> | Category: <span className="relative z-10 rounded-full bg-red-600 px-3 py-1.5 font-medium text-white hover:bg-red-400 cursor-pointer">{post.data.category}</span> | Posted: {post.data.postdate}</p>
