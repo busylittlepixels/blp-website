@@ -8,6 +8,7 @@ import { GalleryGrid } from '../../components/layout/GalleryGrid'
 import { BigTextLittleText } from '../../components/layout/BigTextLittleText'
 import { FadeIn } from '../../components/shared/FadeIn'
 // import { MarqueeBanner } from '../../components/layout/MarqueeBanner'
+import { Overlap } from '../../components/layout/Overlap'
 
 export default async function Home() {
   const home: Page = await fetch(
@@ -31,8 +32,12 @@ export default async function Home() {
           <GalleryGrid />
           <RenderBlocks content={layout} />
           <Team />
+          <Overlap />
         </FadeIn>
+        
         <BigTextLittleText />
+        
+       
       </main>
    
   )

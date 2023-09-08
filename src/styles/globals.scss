@@ -402,3 +402,98 @@ svg:hover #sail-group > line {
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   border-radius: 1%;
 }
+
+@media only screen and (min-width: 640px) {
+  .overlapContent {
+    max-width: 1600px;
+    margin-bottom: 120px;
+  }
+}
+
+.toutCopy {
+  padding-left: 20px;
+}
+
+.overlap {
+  
+  @media only screen and (max-width: 640px) {
+    background-size: cover; 
+  }
+  background-image: url('/assets/images/heart.webp');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  padding-bottom: 70px;
+  padding-top: 70px;
+  border-radius: 25px 0 25px 0;
+}
+
+.toutCopy--overlap {
+  padding: 70px;
+  color: #fff;
+  background-color: #E1171E;
+  position: relative;
+  font-weight: bolder;
+  border-radius: 25px 0 25px 0;
+}
+
+.toutHeader--overlap {
+  color: #fff;
+  font-size: 34px;
+  margin-bottom: 1rem;
+}
+
+.text--overlap {
+  max-width: 470px;
+}
+
+.text-overlap-copy--parallax-right {
+  margin-left: auto;
+}
+
+.text-overlap-copy--parallax-left {
+  margin-right: auto;
+}
+
+.shiney-wrapper{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 1.6;
+}
+
+
+
+.shine {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    background: linear-gradient(
+      to right,
+      fade_out(#fff, 1) 0%,
+      fade_out(#fff, 0.7) 100%
+    );
+    content: "";
+    display: block;
+    height: 100%;
+    left: -75%;
+    position: absolute;
+    top: 0;
+    transform: skewX(-25deg);
+    width: 50%;
+    z-index: 2;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      animation: shine 0.85s;
+    }
+  }
+
+  @keyframes shine {
+    100% {
+      left: 125%;
+    }
+  }
+}

@@ -84,8 +84,9 @@ const PostPage = (props: any) => {
                         {/* <RichText className="article_text max-w-5xl mx-auto" content={post.excerpt} /> */}
                     </div>
                 </div>
-                <MotionImage alt={`${post.data.title}`} src={post.data.featuredImage} />
-                                
+                <div className={'shiney-wrapper shine'}>
+                    <MotionImage alt={`${post.data.title}`} src={post.data.featuredImage} />
+                </div>               
                 <div className="py-8 flex flex-col">
                     <div className="mx-auto w-full max-w-3xl">
                         <Markdown className={`flex-col article_text max-w-5xl mx-auto`}>{post.content}</Markdown>

@@ -64,7 +64,7 @@ export const Wrapper = ({
             <Nav menu={nav}/>
             {/* <Notice>HERE'S AN OBNOXIOUSLY DISTRACTING CTA!</Notice> */}
                 {children}
-            <AnimatedCursor
+            {/* <AnimatedCursor
             //@ts-ignore
             innerSize={8}
             outerSize={8}
@@ -91,7 +91,7 @@ export const Wrapper = ({
             outerStyle={{
             borderRadius: '0'
             }}
-            />
+            /> */}
             <Footer />
         </>
     
