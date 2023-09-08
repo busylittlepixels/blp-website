@@ -98,9 +98,12 @@
   }
   
   .composedHeading{
-    @apply font-black tracking-tighter text-2xl md:text-[5rem] mb-6 last:mb-0 uppercase;
+    @apply font-black tracking-tighter text-5xl md:text-[5rem] mb-6 last:mb-0 uppercase;
   }
 
+  .composedHeading_blog{
+    @apply font-black tracking-tighter text-3xl md:text-[5rem] mb-6 last:mb-0 uppercase;
+  }
   
   .nav__link .text-white .font-black .uppercase .active{
     color: red!important;
