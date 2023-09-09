@@ -3,6 +3,7 @@ import { Nav } from '../../shared/Nav'
 import { Footer } from '../../shared/Footer'
 import tw from 'tailwind-styled-components'
 import dynamic from 'next/dynamic'
+import { AnimatePresence } from 'framer-motion';
 
 
 const Notice = tw.div`
@@ -62,8 +63,9 @@ export const Wrapper = ({
     return(
         <>
             <Nav menu={nav}/>
-            {/* <Notice>HERE'S AN OBNOXIOUSLY DISTRACTING CTA!</Notice> */}
+            <AnimatePresence>
                 {children}
+            </AnimatePresence>
             {/* <AnimatedCursor
             //@ts-ignore
             innerSize={8}

@@ -1,24 +1,35 @@
 "use client"
 import React, { useState, useRef } from "react";
-import { useScroll, useInView, useTransform, motion, AnimatePresence } from 'framer-motion';
+import {
+    motion,
+    MotionValue,
+    useMotionValueEvent,
+    useScroll,
+    useTransform,
+} from 'framer-motion';
 
 export const Overlap = () => {
-    const parallax = useRef(null); 
-    const { scrollY } = useScroll();
-    const y1 = useTransform(scrollY, [0, 30], [0, -30]);
-
-    console.log(y1);
-    
+    const [dist, setDist] = useState('30%');
+    const target = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target,
+        offset: ['start end', 'end start'],
+    });
+    const parallax = useTransform(scrollYProgress, [0, 1], [-100, 100]);
+    console.log(parallax)
+    // @ts-ignore
+    useMotionValueEvent(parallax, 'change', (v) => setDist(v));
+    console.log(dist)
     return(
-        <AnimatePresence>
-        <div className={`w-full overlapContent mx-auto my-20`}>
+        
+        <div className={`w-full overlapContent mx-auto my-20`} ref={target}>
             <div className={`overlap mx-auto my-0 bg-left`}>
-                <motion.div 
+                <div 
                     id="panel"
                     key="panel"
-                    style={{ y: y1 }}
                     className={`toutCopy--overlap w-full md:w-1/2 ml-auto bg-red`}
-                    ref={parallax}>
+                    style={{ "transform": `translateY(${dist}%)`}}// @ts-ignore
+                    parallax={parallax}>
                     <h1 className="toutHeader--overlap uppercase font-bold">We <span style={{ "color": "#000"}}>Heart </span>Code</h1>
                     <div className="text--overlap text-white mt-6 text-lg leading-8">
                         <p>
@@ -28,11 +39,10 @@ export const Overlap = () => {
                             dicta sunt explicabo. 
                         </p>
                     </div>
-                </motion.div>
+                </div>
             
             </div>
         </div>
-        </AnimatePresence>
         )
     }
 
