@@ -15,15 +15,15 @@ export const Overlap = () => {
         target,
         offset: ['start end', 'end start'],
     });
-    const parallax = useTransform(scrollYProgress, [0, 1], [-100, 100]);
-    console.log(parallax)
+    const parallax = useTransform(scrollYProgress, [0, 1], [-30, 30]);
+    
     // @ts-ignore
     useMotionValueEvent(parallax, 'change', (v) => setDist(v));
-    console.log(dist)
+    
     return(
         
-        <div className={`w-full overlapContent mx-auto my-20`} ref={target}>
-            <div className={`overlap mx-auto my-0 bg-left`}>
+        <div className={`w-full overlapContent mx-auto my-20`}>
+            <div className={`overlap mx-auto my-0 bg-left`} ref={target}>
                 <div 
                     id="panel"
                     key="panel"
