@@ -30,7 +30,7 @@ const PostPage = (props: any) => {
     
         <main className={`blog`}>
         
-            <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
+            {/* <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
                 <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
                     <svg
                         className="absolute bottom-5 left-full translate-x-28 transform mix-blend-darken"
@@ -61,7 +61,7 @@ const PostPage = (props: any) => {
                         <rect width="350" height="700" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
                     </svg>
                 </div>
-            </div>
+            </div> */}
         
             <div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
                 <svg aria-hidden="true" className="absolute inset-0 h-full w-full">
