@@ -1,5 +1,5 @@
 
-'use client';
+"use client";
 import React, { useRef } from 'react';
 import BigText from "./BigText";
 import { useInView, motion } from "framer-motion";

@@ -1,31 +1,26 @@
-'use client';
+"use client"
 import React, { useState, useRef } from "react";
-import { useTransform, useScroll, useInView, motion } from 'framer-motion';
+import { useScroll, useInView, useTransform, motion, AnimatePresence } from 'framer-motion';
 
-export const Overlap = (props: any) => {
-    
-    const parallax = useRef(null);
-    const [dimension, setDimension] = useState({width:0, height:0});
-    const isInView = useInView(parallax);
-
-    const { scrollYProgress } = useScroll({
-        target: parallax,
-        offset: ['start end', 'end start']
-    })
-    const { height } = dimension;
-    const y = useTransform(scrollYProgress, [0, 1], [0, height * 2])
+export const Overlap = () => {
+   
+    const { scrollY } = useScroll();
+    const y1 = useTransform(scrollY, [0, 300], [0, -100]);
+    const parallax = useRef(null); 
+    // const isInView = useInView(parallax); 
 
     return(
-        
-        <div className={`w-full overlapContent mx-auto my-20`} >
+        <AnimatePresence>
+        <div className={`w-full overlapContent mx-auto my-20`} ref={parallax}>
             <div className={`overlap mx-auto my-0 bg-left`}>
-                
                 <motion.div 
-                    initial={{ y: -100 }}
-                    animate={{ y: isInView ? 30 : -30 }}
-                    transition={{ type: "linear", duration: .5 }}
-                    exit={{ y: 0 }}
-                    className={`toutCopy--overlap w-full md:w-1/2 ml-auto bg-red`} ref={parallax}>
+                    id="panle"
+                    key='panel'
+                    initial={{ opacity: 0, y: '-100%' }}
+                    exit={{ opacity: 0, y: '-100%' }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, ease: 'easeOut' }}
+                    className={`toutCopy--overlap w-full md:w-1/2 ml-auto bg-red`}>
                     <h1 className="toutHeader--overlap uppercase font-bold">We <span style={{ "color": "#000"}}>Heart </span>Code</h1>
                     <div className="text--overlap text-white mt-6 text-lg leading-8">
                         <p>
@@ -39,7 +34,8 @@ export const Overlap = (props: any) => {
             
             </div>
         </div>
-        );
+        </AnimatePresence>
+        )
     }
 
 export default Overlap;

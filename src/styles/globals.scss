@@ -420,7 +420,7 @@ svg:hover #sail-group > line {
     background-size: cover; 
   }
   background-image: url('/assets/images/heart.webp');
-  background-size: cover; 
+  background-size: 75% 100%; 
   background-repeat: no-repeat;
   padding-bottom: 70px;
   padding-top: 70px;
@@ -496,4 +496,13 @@ svg:hover #sail-group > line {
       left: 125%;
     }
   }
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border-radius: 1em;
+  background-color: #f9f07e;
+  margin-left: auto;
+  margin-right: auto;
 }

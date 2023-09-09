@@ -1,14 +1,13 @@
-import dynamic from 'next/dynamic'
-import { notFound } from 'next/navigation'
-import { Page } from '../../payload/payload-types'
-import { Team } from '../../components/layout/Team'
-import { TitleContainer } from '../../components/layout/TitleContainer'
-import { RenderBlocks } from '../../components/layout/RenderBlocks'
-import { GalleryGrid } from '../../components/layout/GalleryGrid'
-import { BigTextLittleText } from '../../components/layout/BigTextLittleText'
-import { FadeIn } from '../../components/shared/FadeIn'
-// import { MarqueeBanner } from '../../components/layout/MarqueeBanner'
-import { Overlap } from '../../components/layout/Overlap'
+import { notFound } from "next/navigation"
+import { Page } from "../../payload/payload-types"
+import { Team } from "../../components/layout/Team"
+import { TitleContainer } from "../../components/layout/TitleContainer"
+import { RenderBlocks } from "../../components/layout/RenderBlocks"
+import { GalleryGrid } from "../../components/layout/GalleryGrid"
+import { BigTextLittleText } from "../../components/layout/BigTextLittleText"
+import { FadeIn } from "../../components/shared/FadeIn"
+// import { MarqueeBanner } from "../../components/layout/MarqueeBanner"
+import { Overlap } from "../../components/layout/Overlap"
 
 export default async function Home() {
   const home: Page = await fetch(
@@ -32,9 +31,8 @@ export default async function Home() {
           <GalleryGrid />
           <RenderBlocks content={layout} />
           <Team />
-          <Overlap />
         </FadeIn>
-        
+        <Overlap />
         <BigTextLittleText />
         
        
