@@ -33,10 +33,8 @@ export const Overlap = () => {
                     <h1 className="toutHeader--overlap uppercase font-bold">We <span style={{ "color": "#000"}}>Heart </span>Code</h1>
                     <div className="text--overlap text-white mt-6 text-lg leading-8">
                         <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                            quae ab illo inventore veritatis et quasi architecto beatae vitae
-                            dicta sunt explicabo. 
+                            Our passion for tech, and programming in general, is evident in every line of code we write. We believe that coding is an art—a symphony of logic and creativity that has the power to innovate and inspire. Our team is driven by the excitement of problem-solving, the joy of crafting elegant solutions, the belief that technology can be a force for good, and the
+                            desire to guide business on their path to technical and commercial success.  
                         </p>
                     </div>
                 </div>
