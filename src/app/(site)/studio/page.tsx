@@ -3,9 +3,9 @@ import Link from 'next/link'
 import FadeIn from '../../../components/shared/FadeIn';
 import { Metadata } from 'next'
 
-const dummy = `<h3 class="font-black text-2xl mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3> Perspiciatis in accusamus quisquam nemo nulla cupiditate iusto ullam amet maxime eius soluta, ab, maiores nobis? Corrupti ut illo voluptas optio enim fugiat accusantium error quod aliquid. Eligendi, temporibus. Rem temporibus a assumenda nam voluptatem aperiam alias eius. <br /><br /><h3 class="font-black text-2xl mb-4">Repellat mollitia sit possimus officiis dolorum</h3> Iste nemo est, sequi blanditiis hic atque earum vitae quos? Illum consequatur, eligendi quam, 
-fugiat amet dolores voluptates soluta quia vero ratione aliquid nostrum sunt velit earum consectetur, ea recusandae porro. Sunt ex pariatur neque molestias nulla recusandae perferendis, dolores temporibus excepturi modi. Accusantium tempore, eaque perferendis ex consequatur veritatis nobis similique, quae nihil repellat animi eius incidunt mollitia cupiditate vero dolorum expedita delectus magnam suscipit nesciunt sequi.
-<br /><br /><h3 class="font-black text-2xl mb-4">Cumque provident mollitia</h3> Perspiciatis eum quasi omnis, eius ratione et minima. Tempora molestiae qui sunt commodi, quibusdam eveniet ullam ipsum ipsam vero ea aliquid deserunt dolorem nisi voluptates libero inventore adipisci rerum doloribus, architecto, impedit dicta! Perferendis explicabo illo eaque id nostrum fugit repellendus? Tempore ad eius eveniet est quod consequuntur, quaerat sed magni fugiat earum itaque impedit accusamus aliquam consectetur assumenda voluptatibus cupiditate pariaturs.`;
+const studioP1 = `<h3 class="font-black text-2xl mb-4">You're not just entering a web development studio</h3><p>Ours is a digital ecosystem crafted for scale-ups. As part of our broader fractional CTO vision, we've opted to work with the best tooling in the business: Javascript, React, NextJS, Astro for web, and React-Native for mobile. Your content, enriched by Payload or Craft CMS, becoming more than just words...it's a narrative. And with our prowess in third-party API integrations and cutting-edge hosting solutions, we promise a journey that's smooth, efficient, and memorable. Ready to redefine your digital footprint?<p>`;
+const studioP2 = `<h3 class="font-black text-2xl mb-4">Expertise in web and mobile development</h3><p>mobile isn't just a platform; it's a passion. Our journey has seen us partnering with global icons like Web Summit and The Next Web, to infrastructural pillars such as:... With impactful projects spanning Ireland to the Netherlands in governmental tech initiatives, we've always been at the cusp of what's next in mobile. Dive in with us, and let's craft a mobile narrative that captures hearts and minds.<p>`;
+const studioP3 = `<h3 class="font-black text-2xl mb-4">More than a service; we're your digital compass</h3><p>Navigating the ever-evolving digital landscape can be daunting, but our seasoned team is here to guide you from your current position to your envisioned pinnacle. As trusted advisors, we'll share insights that illuminate your path. As builders, we craft robust solutions tailored to your unique needs. And as technical facilitators and enablers, we ensure a seamless transition and implementation, empowering your business every step of the way. With Busy Little Pixels by your side, your journey towards growth and innovation is not just assured; it's inspired.<p>`;
 
 
 export const metadata: Metadata = {
@@ -73,7 +73,7 @@ export default async function Page() {
               <div className="header__underline"></div>
             </div>
             <div className="max-full text-center leading-relaxed mb-8">
-              <p className="article_text max-w-5xl mx-auto">Lorem ipsum dolor, adipisicing elit. Eum saepe, quisquam commodi, similique earum facilis vitae vero quasi, dicta maxime atque veniam molestias accusantium laudantium consequatur. Nihil adipisci ratione maiores, illum perspiciatis quaerat voluptatibus quidem laudantium sequi assumenda, deserunt perferendis. Deleniti quia provident voluptate unde earum, maiores modi qui fugiat.</p>
+              <p className="article_text max-w-5xl mx-auto">Welcome to the heartbeat of our innovative digital craftsmanship. As a central pillar of our fractional CTO umbrella, we fuse creativity with state-of-the-art tech tools. Scaling up? No problem. With a vast array of tools in our stack, we fuel our Javascript future.  We carefully craft web and technical solutions that scale with your ambitions and objectives. Be it project ideation, planning, preparation or execution, from integrating third-party APIs to employing robust hosting solutions - we're here to elevate every busy little pixel of your digital journey.</p>
             </div>
           </div>
           <FadeIn>
@@ -85,11 +85,15 @@ export default async function Page() {
           
             <div className="py-8 flex flex-col md:flex-row">
               <div className="mx-auto w-full max-w-3xl">
-                  <div dangerouslySetInnerHTML={{__html: dummy }} className={'article_text mt-8 flex-col'}  />        
+                  <div dangerouslySetInnerHTML={{__html: studioP1 }} className={'article_text mt-8 flex-col'}  />        
+                  <div dangerouslySetInnerHTML={{__html: studioP2 }} className={'article_text mt-8 flex-col'}  />        
               </div>
             </div>
             <div className="w-full mt-20 mb-32" style={{"opacity": 1}}>
                 <img alt="image alt blog" src="/assets/images/studio2.png" width="800" height="200" className="shadow-lg h-1/2 mx-auto rounded-lg" />
+            </div>
+            <div className="mx-auto w-full max-w-3xl">
+                <div dangerouslySetInnerHTML={{__html: studioP3 }} className={'article_text mt-8 flex-col'}  />        
             </div>
             <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
                 <svg
