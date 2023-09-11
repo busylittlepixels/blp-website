@@ -139,7 +139,7 @@ const PostPage = (props: any) => {
                 <div className="relative mx-auto max-w-5xl sm:px-6">
                     <div className="bg-slate-50 max-sm:pt-12 px sm:rounded-6xl">
                     <div className="relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-slate-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
-                        <img alt="" sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem" src="/assets/images/paddy.jpeg" width="576" height="576" decoding="async" data-nimg="1" className="absolute inset-0 h-full w-full object-cover shadow-xl" loading="lazy" style={{ "color": "transparent"}} />
+                        <img alt="" sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem" src="/assets/images/paddy.jpeg" width="576" height="576" decoding="async" data-nimg="1" className="absolute inset-0 h-full w-full object-top object-cover shadow-xl" loading="lazy" style={{ "color": "transparent"}} />
                     </div>
                     <div className="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32 rounded shadow-xl">
                         
