@@ -5,7 +5,7 @@ const people = [
     {
       name: 'Paddy Ryan',
       role: 'Co-Founder & CEO',
-      imageUrl: '/assets/images/person1.avif',
+      imageUrl: '/assets/images/paddy.jpeg',
       bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
       twitterUrl: '#',
       linkedinUrl: '#',
