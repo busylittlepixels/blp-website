@@ -89,7 +89,7 @@ export default async function Page() {
                   <div dangerouslySetInnerHTML={{__html: studioP2 }} className={'article_text mt-8 flex-col'}  />        
               </div>
             </div>
-            <div className="w-full mt-20 mb-32" style={{"opacity": 1}}>
+            <div className="w-full mt-20 mb-32 shiney-wrapper shine" style={{"opacity": 1}}>
                 <img alt="image alt blog" src="/assets/images/studio2.png" width="800" height="200" className="shadow-lg h-1/2 mx-auto rounded-lg" />
             </div>
             <div className="mx-auto w-full max-w-3xl">
