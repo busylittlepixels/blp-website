@@ -139,13 +139,13 @@ const PostPage = (props: any) => {
                 <div className="relative mx-auto max-w-5xl sm:px-6">
                     <div className="bg-slate-50 max-sm:pt-12 px sm:rounded-6xl">
                     <div className="relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-slate-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
-                        <img alt="" sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem" src="https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" width="576" height="576" decoding="async" data-nimg="1" className="absolute inset-0 h-full w-full object-cover shadow-xl" loading="lazy" style={{ "color": "transparent"}} />
+                        <img alt="" sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem" src="/assets/images/paddy.jpeg" width="576" height="576" decoding="async" data-nimg="1" className="absolute inset-0 h-full w-full object-cover shadow-xl" loading="lazy" style={{ "color": "transparent"}} />
                     </div>
                     <div className="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32 rounded shadow-xl">
                         
                         <p className="mt-8 font-display font-extrabold tracking-tight text-slate-900 sm:text-4xl">
                             <span className="block text-red-600">Paddy Ryan –</span> Hey there, I’m the author behind 'Through the Keystroke'.</p>
-                        <p className="mt-4 text-md tracking-tight text-slate-700 article_text">I’ve been designing and developing professionally for over a decade and have worked with dozens of the biggest brands to create custom sets for their products. I’ve worked with devel of all skill levels and honed my way of teaching to really click for anyone who has the itch to start designing their own icons.</p>
+                        <p className="mt-4 text-md tracking-tight text-slate-700 article_text">I’ve been designing and developing professionally for over a decade and have worked with dozens of the biggest brands to create roadmaps to success for their products and tech. I’ve worked with companies from startups to Nasdaq listed enterprises, and honed my abilities to navigate the brave new world that is all things tech.</p>
                     </div>
                     </div>
                 </div>
