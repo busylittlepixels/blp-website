@@ -35,8 +35,7 @@ export const BigTextLittleText = props => {
                 className="foreground-little-text relative left-0 right-0 text-4xl sm:text-4xl text-center font-bold mx-auto my-0 p-2 top-0">
                 <h1 className="font-black tracking-tighter text-4xl md:text-7xl mb-12 last:mb-0 uppercase leading-4">HEARD ENOUGH?</h1>
                 <p>
-                Sound like a fit? All set to go? Ready to transform your tech objectives into outstanding results? <small>(Perhaps even the odd case-study maybe?)</small>
-                </p>
+                Sound like a fit? All set to go? Ready to transform your tech objectives into outstanding results?</p>
                 <div id="line-trigger" />
             </motion.div>
         </div>
