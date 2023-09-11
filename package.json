@@ -36,7 +36,7 @@
     "markdown-to-jsx": "^7.3.2",
     "next": "^13.4.12",
     "nprogress": "^0.2.0",
-    "payload": "^1.13.4",
+    "payload": "^1.15.5",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.8.1",
     "react-dom": "^18.2.0",
@@ -78,10 +78,5 @@
     "ts-node": "^10.9.1",
     "typescript": "5.1.6",
     "webpack-cli": "^5.1.4"
-  },
-  "browser": {
-    "fs": false,
-    "path": false,
-    "os": false
   }
 }
