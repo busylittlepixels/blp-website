@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { Page } from '../../../payload/payload-types'
-import FadeIn from '../../../components/shared/FadeIn';
-import { RichText } from '../../../components/layout/RichText';
+import { Page } from '../../../../payload/payload-types'
+import FadeIn from '../../../../components/shared/FadeIn';
+import { RichText } from '../../../../components/layout/RichText';
 
 // export const metadata: Metadata = {
 //   title: 'Blog | Busy Little Pixels',

@@ -1,14 +1,16 @@
 // src/components/Marquee.js
 import React from 'react';
 
-export const MarqueeBanner = () => {
+type MarqueeProps = {
+  text?: string
+}
+
+export const MarqueeBanner = ({ text }:MarqueeProps) => {
   return (
     <div className="marquee-container">
       <div className="marquee-content">
         {/* Repeat your content here */}
-        Async flows like streams,
-        Functions dance with curly braces,
-        Code's art in keystrokes.
+        {text ? text : 'Nada'}
       </div>
     </div>
   );

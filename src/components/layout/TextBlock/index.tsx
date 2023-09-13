@@ -2,8 +2,9 @@
 import tw from 'tailwind-styled-components'
 import { RichText } from '../RichText'
 import { FadeIn } from '../../shared/FadeIn'
+import { useTranslations } from 'next-intl';
 
-interface ITextBlock {
+type ITextBlock = {
   content?: any
 }
 
@@ -14,10 +15,11 @@ const Section = tw.section`
 `
 
 export const TextBlock = ({ content }: ITextBlock) => {
-
+  const t = useTranslations('Home');
   const hello = `${content.LeadString} style={{"color":"red"}}>${content.StyledString}</span> ${content.EndString}`;
 
-
+  const i18nContent = content.content ? t('textBlockIntro') : '';
+  
   return (
     <section className={'w-full boundedContainer'}>
       <FadeIn className="text-left">
@@ -61,6 +63,7 @@ export const TextBlock = ({ content }: ITextBlock) => {
               {/* {hello ? decodeURIComponent(hello) : content.header} {content.displayMeta ? content.subtitle : null} */}
             </h1>
             <div className="header__underline"></div>
+            <div className={`text-gray-600 mt-4 article_text flex-col`}>{t('textBlockIntro')}</div>
             <RichText content={content.content} className={`text-gray-600 mt-4 article_text flex-col`} />
           </div>
         </section>

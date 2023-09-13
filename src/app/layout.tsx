@@ -1,4 +1,5 @@
 import React from 'react'
+import {createTranslator, NextIntlClientProvider} from 'next-intl';
 export const metadata = {
   title: 'Busy Little Pixels | Fractional CTO Services & Web Development',
   description: 'Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events',
