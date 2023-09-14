@@ -3,7 +3,7 @@ import path from 'path'
 import nestedDocs from "@payloadcms/plugin-nested-docs";
 
 dotenv.config({
-  path: path.resolve(__dirname, '../.env'),
+  path: path.resolve(__dirname, './../.env'),
 })
 
 import { buildConfig } from 'payload/config'
