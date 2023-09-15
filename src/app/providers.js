@@ -4,7 +4,7 @@ import { PostHogProvider } from "posthog-js/react"
 
 if (typeof window !== 'undefined') {
   posthog.init('phc_QIQK9JpZRqXHyIi97QIkQtER7fBGuS32lO52i693oFo', {
-    api_host: 'https://app.posthog.com'
+    api_host: 'https://eu.posthog.com'
   })
 }
 
