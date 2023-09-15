@@ -1,4 +1,9 @@
 import React from 'react'
+// app/layout.js
+import './../styles/globals.scss';
+import { PHProvider } from './providers'
+import CookieBanner from './../components/layout/CookieBanner'
+
 export const metadata = {
   title: 'Busy Little Pixels | Fractional CTO Services & Web Development',
   description: 'Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events',
@@ -25,7 +30,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang={'en'}>
-      <body>{children}</body>
+      <PHProvider>
+        <body>{children}</body>
+        <CookieBanner />
+      </PHProvider>
     </html>
   )
 }
+
