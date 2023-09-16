@@ -68,8 +68,8 @@ export default async function Page() {
             </div>
           <section className="px-6 max-sm:pt-10 md:py-20 bg-white pb-0 md:pb-0">
           <div className="grid grid-cols-1 justify-items-center gap-10 homeAdjust mb-2">
-            <div className="max-full text-center leading-relaxed">
-              <h1 className="composedHeading">STEP INTO OUR <span style={{'color': 'red'}}>STUDIO</span></h1>
+            <div className="max-full text-left leading-relaxed">
+              <h1 className="composedHeading">BUSY<span style={{'color': 'red'}}>LITTLE</span>STUDIO</h1>
               <div className="header__underline"></div>
             </div>
             <div className="max-full text-center leading-relaxed mb-8">
