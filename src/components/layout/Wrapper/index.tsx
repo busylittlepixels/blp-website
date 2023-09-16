@@ -1,4 +1,5 @@
 'use client';
+import React from 'react'
 import { Nav } from '../../shared/Nav'
 import { Footer } from '../../shared/Footer'
 import tw from 'tailwind-styled-components'
@@ -101,3 +102,5 @@ export const Wrapper = ({
 }
 
 export default Wrapper
+
+

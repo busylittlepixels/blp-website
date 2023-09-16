@@ -1,6 +1,5 @@
 import React from 'react'
 // app/layout.js
-import './../styles/globals.scss';
 import { PHProvider } from './providers'
 import CookieBanner from './../components/layout/CookieBanner'
 
