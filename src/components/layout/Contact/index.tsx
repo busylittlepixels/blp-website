@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { FormEvent, useState } from 'react';
 import { FadeIn } from '../../shared/FadeIn';
 
