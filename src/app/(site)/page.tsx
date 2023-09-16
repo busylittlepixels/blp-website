@@ -1,3 +1,4 @@
+import React from 'react'
 import { notFound } from "next/navigation"
 import { Page } from "../../payload/payload-types"
 import { Team } from "../../components/layout/Team"

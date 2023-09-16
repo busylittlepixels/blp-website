@@ -1,5 +1,6 @@
 
 import * as fs from 'fs';
+import React from 'react'
 import matter from 'gray-matter'
 import path from 'path'
 import Markdown from "markdown-to-jsx"

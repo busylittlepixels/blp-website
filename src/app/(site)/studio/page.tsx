@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
+import React from 'react'
 import Link from 'next/link'
 import FadeIn from '../../../components/shared/FadeIn';
 import { Metadata } from 'next'

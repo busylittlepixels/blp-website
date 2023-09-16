@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 // 'use client';
+import React from 'react'
 import dynamic from 'next/dynamic'
 import { notFound } from 'next/navigation'
 import { Page } from '../../../payload/payload-types'

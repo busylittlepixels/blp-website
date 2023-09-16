@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+import React from 'react'
 import { notFound } from 'next/navigation'
 import { Page } from '../../../payload/payload-types'
 // import { RenderBlocks } from '../../../components/layout/RenderBlocks'
