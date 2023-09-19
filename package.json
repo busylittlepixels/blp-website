@@ -33,6 +33,7 @@
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "gsap": "^3.12.2",
+    "imagesloaded": "^5.0.0",
     "markdown-to-jsx": "^7.3.2",
     "next": "^13.4.12",
     "nprogress": "^0.2.0",

@@ -9,6 +9,7 @@ import { BigTextLittleText } from "../../components/layout/BigTextLittleText"
 import { FadeIn } from "../../components/shared/FadeIn"
 // import { MarqueeBanner } from "../../components/layout/MarqueeBanner"
 import { Overlap } from "../../components/layout/Overlap"
+import { ScrollTrigger } from "../../components/layout/ScrollTriggerGallery"
 
 export default async function Home() {
   const home: Page = await fetch(
@@ -27,15 +28,18 @@ export default async function Home() {
   return (  
       <main className={'page'}>
         {/* <MarqueeBanner /> */}
+        <ScrollTrigger />
         <FadeIn>
           <TitleContainer title={'little'} subtitle={'ass'}/>
           <GalleryGrid />
           <RenderBlocks content={layout} />
           <Team />
         </FadeIn>
+        
         <Overlap />
         <BigTextLittleText />
         
+       
        
       </main>
    
