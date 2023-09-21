@@ -34,13 +34,9 @@ export default async function Home() {
           <GalleryGrid />
           <RenderBlocks content={layout} />
           <Team />
-        </FadeIn>
-        
+        </FadeIn>    
         <Overlap />
         <BigTextLittleText />
-        
-       
-       
       </main>
    
   )

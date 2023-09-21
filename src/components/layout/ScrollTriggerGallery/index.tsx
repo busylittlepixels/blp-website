@@ -1,12 +1,24 @@
 "use client";
 import React from "react";
 import useGSAPAnimation from "./../../../hooks/useGSAPAnimation"; // Adjust path accordingly
+import { useModal } from "../../../hooks/useModal";
+import images from './images'; 
+import { Modal } from './Modal';
 
 export const ScrollTrigger = () => {
-  const { loaderRef } = useGSAPAnimation();
+  	const { loaderRef } = useGSAPAnimation();
+	const modal = useModal<any>();
+
+	const triggerScreenModal = (e, data) => {
+		e.preventDefault(); 
+		modal.openModal(data);	
+	}
 
     return(
-        <div className="scrollTriggerGallery">
+        <div className="scrollTriggerGallery mt-4">
+			{modal.isVisible && (
+				<Modal data={modal.data} closeModal={modal.closeModal} isTriggered={modal.isVisible} />
+			)}
 			<div className="loader flex items-center justify-center">
 				<div className="text" ref={loaderRef}>0%</div>
 			</div>
@@ -14,57 +26,56 @@ export const ScrollTrigger = () => {
 				
 				<section className="demo-gallery">
 					<ul className="wrapper">
-					<li>
-						<img height="874" src="https://source.unsplash.com/random/1240x874?sig=45" width="1240" />
-					</li>
-					<li>
-						<img height="874" src="https://source.unsplash.com/random/1240x874?sig=153" width="1240" />
-					</li>
-					<li>
-						<img height="874" src="https://source.unsplash.com/random/1240x874?sig=15" width="1240" />
-					</li>
+						{images.map((img:any) => {
+							return(
+								<li key={img.src}>
+									<img height="874" src={img.src} width="1240" onClick={(e) => triggerScreenModal(e, img)} />
+								</li>
+							); 
+						}).slice(0,4)}
+					</ul>
+				</section>
+				<section className='demo-text'>
+					<div className='wrapper text'>
+						BUSY<span style={{"color":"red"}}>LITTLE</span>PIXELS
+					</div>
+				</section>
+				<section className="demo-gallery">
+					<ul className="wrapper">
+						{images.map((img:any) => {
+							return(
+								<li key={img.src}>
+									<img height="874" src={img.src} width="1240" onClick={(e) => triggerScreenModal(e, img)} />
+								</li>
+							); 
+						}).slice(5,8)}
 					</ul>
 				</section>
 				<section className="demo-gallery">
 					<ul className="wrapper">
-					<li>
-						<img height="874" src="https://source.unsplash.com/random/1240x874?sig=156" width="1240" />
-					</li>
-					<li>
-						<img height="874" src="https://source.unsplash.com/random/1240x874?sig=100" width="1240" />
-					</li>
-					<li>
-						<img height="874" src="https://source.unsplash.com/random/1240x874?sig=131" width="1240" />
-					</li>
-					<li>
-						<img height="874" src="https://source.unsplash.com/random/1240x874?sig=53" width="1240" />
-					</li>
+						{images.map((img:any) => {
+							return(
+								<li key={img.src}>
+									<img height="874" src={img.src} width="1240" onClick={(e) => triggerScreenModal(e, img)} />
+								</li>
+							); 
+						}).slice(9,12)}
 					</ul>
+				</section>
+				<section className='demo-text'>
+					<div className='wrapper text'>
+					WEMAKE<span style={{"color":"red"}}>YOURTECH</span>GO!
+					</div>
 				</section>
 				<section className="demo-gallery">
 					<ul className="wrapper">
-						<li>
-							<img height="874" src="https://source.unsplash.com/random/1240x874?sig=129" width="1240" />
-						</li>
-						<li>
-							<img height="874" src="https://source.unsplash.com/random/1240x874?sig=83" width="1240" />
-						</li>
-						<li>
-							<img height="874" src="https://source.unsplash.com/random/1240x874?sig=143" width="1240" />
-						</li>
-					</ul>
-				</section>
-				<section className="demo-gallery">
-					<ul className="wrapper">
-						<li>
-							<img height="874" src="https://source.unsplash.com/random/1240x874?sig=56" width="1240" />
-						</li>
-						<li>
-							<img height="874" src="https://source.unsplash.com/random/1240x874?sig=132" width="1240" />
-						</li>
-						<li>
-							<img height="874" src="https://source.unsplash.com/random/1240x874?sig=148" width="1240" />
-						</li>
+						{images.map((img:any) => {
+							return(
+								<li key={img.src}>
+									<img height="874" src={img.src} width="1240" onClick={(e) => triggerScreenModal(e, img)} />
+								</li>
+							); 
+						}).slice(9,12)}
 					</ul>
 				</section>
 				
