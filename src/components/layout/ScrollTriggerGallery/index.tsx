@@ -19,9 +19,9 @@ export const ScrollTrigger = () => {
 			{modal.isVisible && (
 				<Modal data={modal.data} closeModal={modal.closeModal} isTriggered={modal.isVisible} />
 			)}
-			<div className="loader flex items-center justify-center">
+			{/* <div className="loader flex items-center justify-center">
 				<div className="text" ref={loaderRef}>0%</div>
-			</div>
+			</div> */}
 			<div className="demo-wrapper">	
 				
 				<section className="demo-gallery">
@@ -51,17 +51,7 @@ export const ScrollTrigger = () => {
 						}).slice(5,8)}
 					</ul>
 				</section>
-				<section className="demo-gallery">
-					<ul className="wrapper">
-						{images.map((img:any) => {
-							return(
-								<li key={img.src}>
-									<img height="874" src={img.src} width="1240" onClick={(e) => triggerScreenModal(e, img)} />
-								</li>
-							); 
-						}).slice(9,12)}
-					</ul>
-				</section>
+				
 				<section className='demo-text'>
 					<div className='wrapper text'>
 					WEMAKE<span style={{"color":"red"}}>YOURTECH</span>GO!

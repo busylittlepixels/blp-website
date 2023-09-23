@@ -25,7 +25,7 @@ const useGSAPAnimation = () => {
       gsap.to(loader, { autoAlpha: 0 });
 
       gsap.utils.toArray("section").forEach((section:any, index:number) => {
-        const w = section.querySelector(".wrapper");
+        const w = section.querySelector(".wrapper") ? section.querySelector(".wrapper") : window.innerWidth;
         const [x, xEnd] = index % 2
           ? ["100%", (w.scrollWidth - section.offsetWidth) * -1]
           : [w.scrollWidth * -1, 0];
