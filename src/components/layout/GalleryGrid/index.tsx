@@ -29,7 +29,7 @@ export const GalleryGrid = ({ content }: any) => {
     >("start");
 
     return (
-        <div>
+        <div id="gallery">
             <Gallery
                 images={images}
                 onClick={handleClick}

@@ -3,6 +3,8 @@ import { useHeroAnimation } from '../../../hooks/useHeroAnimation';
 
 export const MotionHero = () => {
     useHeroAnimation(); 
+    
+
     return(
         
         <div className="motionHero">
@@ -15,7 +17,8 @@ export const MotionHero = () => {
                         <div className="hero-info">
                             <h2>Travel the</h2>
                             <h1>World</h1>
-                            <h3>Pragser Wildsee, Italy</h3>
+                            {/* @ts-ignore */}
+                            <h3></h3>
                         </div>
                         <div className="hero-image hi-1"></div>
                     </article>

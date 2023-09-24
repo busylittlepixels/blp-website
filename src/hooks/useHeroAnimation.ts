@@ -6,40 +6,29 @@ import gsap from 'gsap';
 export const useHeroAnimation = () => {
   
     useEffect(() => {
-    let repeats = 0;
-    let loaded = false;
-    let tl = gsap.timeline({
-      repeat: -1,
-      yoyo: true,
-      stagger: 0.1,
-      onRepeat() {
-        if (loaded) {
-          repeats += 1;
-          if (repeats > 2) {
-            // animatePreloaderPane();
-            console.log('repeated more than twice')
+        let tl = gsap.timeline({
+          repeat: -1,
+          yoyo: true,
+          stagger: 0.1,
+          ease: "expo.out"
+        });
+
+        gsap.set(["#hero-1 h2, #hero-1 h1, #hero-1 h3"], {
+          clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
+        });
+    
+        gsap.set(
+          [
+            `#hero-2 h2, #hero-3 h2, #hero-4 h2, #hero-5 h2,
+             #hero-2 h1, #hero-3 h1, #hero-4 h1, #hero-5 h1,
+             #hero-2 h3, #hero-3 h3, #hero-4 h3, #hero-5 h3`
+          ],
+          {
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
           }
-        }
-      },
-      ease: "expo.out"
-    });
+        );
 
-    gsap.set(["#hero-1 h2, #hero-1 h1, #hero-1 h3"], {
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
-    });
-
-    gsap.set(
-      [
-        `#hero-2 h2, #hero-3 h2, #hero-4 h2, #hero-5 h2,
-         #hero-2 h1, #hero-3 h1, #hero-4 h1, #hero-5 h1,
-         #hero-2 h3, #hero-3 h3, #hero-4 h3, #hero-5 h3`
-      ],
-      {
-        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
-      }
-    );
-
-    let del = 3;
+    let del = 4;
     let i = 1;
 
     
