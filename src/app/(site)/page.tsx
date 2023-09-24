@@ -10,6 +10,7 @@ import { FadeIn } from "../../components/shared/FadeIn"
 // import { MarqueeBanner } from "../../components/layout/MarqueeBanner"
 import { Overlap } from "../../components/layout/Overlap"
 import { ScrollTrigger } from "../../components/layout/ScrollTriggerGallery"
+import { MotionHero } from "../../components/layout/MotionHero"
 
 export default async function Home() {
   const home: Page = await fetch(
@@ -30,6 +31,7 @@ export default async function Home() {
         {/* <MarqueeBanner /> */}
        
         <FadeIn>
+          <MotionHero />
           <TitleContainer title={'little'} subtitle={'ass'}/>
           <GalleryGrid />
           <RenderBlocks content={layout} />
