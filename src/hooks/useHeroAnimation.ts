@@ -4,10 +4,23 @@ import { useEffect } from 'react';
 import gsap from 'gsap';
 
 export const useHeroAnimation = () => {
-  useEffect(() => {
+  
+    useEffect(() => {
+    let repeats = 0;
+    let loaded = false;
     let tl = gsap.timeline({
       repeat: -1,
       yoyo: true,
+      stagger: 0.1,
+      onRepeat() {
+        if (loaded) {
+          repeats += 1;
+          if (repeats > 2) {
+            // animatePreloaderPane();
+            console.log('repeated more than twice')
+          }
+        }
+      },
       ease: "expo.out"
     });
 
@@ -22,7 +35,7 @@ export const useHeroAnimation = () => {
          #hero-2 h3, #hero-3 h3, #hero-4 h3, #hero-5 h3`
       ],
       {
-        clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
       }
     );
 

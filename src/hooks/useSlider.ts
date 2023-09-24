@@ -23,7 +23,7 @@ export const useSlider = () => {
     
     useEffect(() => {
         canvasInit();
-
+        // @ts-ignore
         const footerButtons = sliderRef.current?.querySelectorAll('.footer-wrapper .box');
         footerButtons?.forEach(button => 
             button.addEventListener('click', (event) => changeButton(event.currentTarget))
@@ -31,7 +31,7 @@ export const useSlider = () => {
 
         // Equivalent of $(document).ready
         window.addEventListener('DOMContentLoaded', canvasInit);
-
+        // @ts-ignore
         const handleResize = debounce(() => canvasInit(), 250);
         window.addEventListener('resize', handleResize);
 
@@ -45,9 +45,11 @@ export const useSlider = () => {
     }, []);
 
     const canvasInit = () => {
+        // @ts-ignore
         const canvas = sliderRef.current?.querySelector('.canvas');
         if (canvas) {
             const ctx = canvas.getContext('2d');
+            // @ts-ignore
             const activeSlide = sliderRef.current?.querySelector('.slide.active');
             const w = activeSlide?.offsetWidth;
             const h = activeSlide?.offsetHeight;

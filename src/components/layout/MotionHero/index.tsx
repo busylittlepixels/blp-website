@@ -40,7 +40,7 @@ export const MotionHero = () => {
                         <div className="hero-image hi-3"></div>
                     </article>
                     {/* @ts-ignore */}
-                    <article id="hero-4" style={{"--i": "2"}}>
+                    <article id="hero-4" style={{"--i":"2"}}>
                             
                         <div className="hero-info">
                             <h2>Explore and</h2>
@@ -50,8 +50,8 @@ export const MotionHero = () => {
                         <div className="hero-image hi-4"></div>
 
                     </article>
-                {/* @ts-ignore */}
-                    <article id="hero-5" style={{"--i": "1"}}>
+                    {/* @ts-ignore */}
+                    <article id="hero-5" style={{"--i":"1"}}>
                         <div className="hero-info">
                             <h2>Change Your</h2>
                             <h1>Perspective</h1>

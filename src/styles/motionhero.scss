@@ -24,7 +24,7 @@
     /*  MAIN: Slider Section
     ----------------------------------------------- */
     .motionHeroUnit {
-        width: 100%;
+        width: 110%;
         height: 100vh;
         position: relative;
         overflow: hidden;
@@ -84,23 +84,28 @@
         }
 
         .hi-1 {
-            background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+            background-image: url("/assets/images/heart.webp");
+            object-fit: cover; 
         }
 
         .hi-2 {
-            background-image: url("https://media.giphy.com/media/WTjXuYA2y4o3UZly3W/giphy.gif");
+            background-image: url("/assets/images/app.webp");
             background-position: top;
+            object-fit: cover; 
         }
         
         .hi-3 {
-            background-image: url("https://images.unsplash.com/flagged/photo-1552035791-b3cc1632e933?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80");
+            background-image: url("https://source.unsplash.com/random/1240x875/?code");
+            object-fit: cover; 
         }
         .hi-4 {
-            background-image: url("https://images.unsplash.com/photo-1574700273608-7962d3602a9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+            background-image: url("https://source.unsplash.com/random/1240x875/?tech");
+            object-fit: cover; 
         }
 
         .hi-5 {
-            background-image: url("https://images.unsplash.com/photo-1605045544284-d13c6d6a60a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+            background-image: url("https://source.unsplash.com/random/1240x875/?css");
+            object-fit: cover; 
         }
     
     }
