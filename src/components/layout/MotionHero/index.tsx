@@ -1,73 +1,39 @@
 "use client";
-import { useHeroAnimation } from '../../../hooks/useHeroAnimation';
 
 export const MotionHero = () => {
-    useHeroAnimation(); 
     
-
     return(
-        
-        <div className="motionHero">
-           
-            <div className="page-wrap">
-                <header className="page-header">
-                    <div className="motionHeroUnit">
-                    {/* @ts-ignore */}
-                    <article id="hero-1" style={{"--i": "5"}}>
-                        <div className="hero-info">
-                            <h2>Travel the</h2>
-                            <h1>World</h1>
-                            {/* @ts-ignore */}
-                            <h3></h3>
-                        </div>
-                        <div className="hero-image hi-1"></div>
-                    </article>
-
-                    {/* @ts-ignore */}
-                    <article id="hero-2" style={{"--i": "4"}}>
-                        <div className="hero-info">
-                            <h2>Savour the</h2>
-                            <h1>Journey</h1>
-                            <h3>Marignier, France</h3>
-                        </div>
-                        <div className="hero-image hi-2"></div>
-                    </article>
-
-                    {/* @ts-ignore */}
-                    <article id="hero-3" style={{"--i": "3"}}>
-                        <div className="hero-info">
-                            <h2>Expand Your</h2>
-                            <h1>Horizons</h1>
-                            <h3>Hooker Valley Track, New Zealand</h3>
-                        </div>
-                        <div className="hero-image hi-3"></div>
-                    </article>
-                    {/* @ts-ignore */}
-                    <article id="hero-4" style={{"--i":"2"}}>
-                            
-                        <div className="hero-info">
-                            <h2>Explore and</h2>
-                            <h1>Reflect</h1>
-                            <h3>Dolmites, Italy</h3>
-                        </div>
-                        <div className="hero-image hi-4"></div>
-
-                    </article>
-                    {/* @ts-ignore */}
-                    <article id="hero-5" style={{"--i":"1"}}>
-                        <div className="hero-info">
-                            <h2>Change Your</h2>
-                            <h1>Perspective</h1>
-                            <h3>Phuket, Thailand</h3>
-                        </div>
-                        <div className="hero-image hi-5"></div>
-                    </article>
-                    </div>
-                </header>
-                <section></section>
+        <div className='motionHeroComponent'>
+            <div className="scrollDist"></div>
+            <div className="main">
+                <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+                    
+                    <mask id="m">
+                        <g className="cloud1">
+                            <rect fill="#fff" width="100%" height="801" y="799" />
+                            <image xlinkHref="https://assets.codepen.io/721952/cloud1Mask.jpg" width="1200" height="800"/>
+                        </g>
+                    </mask>
+                    
+                    <image className="sky" xlinkHref="https://assets.codepen.io/721952/sky.jpg"  width="1200" height="590" />
+                    <image className="mountBg" xlinkHref="https://assets.codepen.io/721952/mountBg.png" width="1200" height="800"/>    
+                    <image className="mountMg" xlinkHref="https://assets.codepen.io/721952/mountMg.png" width="1200" height="800"/>    
+                    <image className="cloud2" xlinkHref="https://assets.codepen.io/721952/cloud2.png" width="1200" height="800"/>    
+                    <image className="mountFg" xlinkHref="https://assets.codepen.io/721952/mountFg.png" width="1200" height="800"/>
+                    <image className="cloud1" xlinkHref="https://assets.codepen.io/721952/cloud1.png" width="1200" height="800"/>
+                    <image className="cloud3" xlinkHref="https://assets.codepen.io/721952/cloud3.png" width="1200" height="800"/>
+                    <text fill="#fff" x="12.5%" y="250">DicPic</text>
+                
+                    
+                    <g mask="url(#m)">
+                        <rect fill="#fff" width="100%" height="100%" />      
+                        <text fill="#f00" x="12.5%" y="250">DicPic</text>
+                        <text fill="#000" x="20%" y="325" fontSize=".25em">Supermarkt op wielen</text>
+                    </g>
+                    
+                </svg>
             </div>
-        </div>
-       
+        </div>   
     )
 }
 
