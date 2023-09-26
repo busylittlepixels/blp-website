@@ -154,7 +154,7 @@ a.nav__link:hover{
 
 .menu__icon {
   width: 40px;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   transition: all 0.3s ease-out;
 }
@@ -424,7 +424,7 @@ a.nav__link:hover{
 
 .menu__icon {
   width: 40px;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   transition: all 0.3s ease-out;
 }

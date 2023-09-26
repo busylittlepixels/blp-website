@@ -1,5 +1,7 @@
+@import './motionhero.scss';
 @import './nav/nav.css';
 @import './slider/slider.css';
+@import './scrollTrigger/scrollTrigger.scss';
 
 
 @tailwind base;
@@ -518,4 +520,18 @@ svg:hover #sail-group > line {
   bottom: 0;
   z-index: 99999;
   width: 100%;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
 }

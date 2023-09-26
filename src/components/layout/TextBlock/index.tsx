@@ -19,7 +19,7 @@ export const TextBlock = ({ content }: ITextBlock) => {
 
 
   return (
-    <section className={'w-full boundedContainer'}>
+    <section className={'w-full boundedContainer'} id="intro">
       <FadeIn className="text-left">
       <div className="relative overflow-hidden bg-white md:pt-16 md:pb-16">
         <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
