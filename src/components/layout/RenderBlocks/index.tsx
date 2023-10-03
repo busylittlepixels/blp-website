@@ -13,6 +13,7 @@ const Expertise = dynamic(() => import('../Expertise'));
 const TextBlock = dynamic(() => import('../TextBlock'));
 const LogoCloud = dynamic(() => import('../LogoCloud')); 
 const ImageSlider = dynamic(() => import('../ImageSlider')); 
+const ScrollTriggerGallery = dynamic(() => import('../ScrollTriggerGallery')); 
 
 export const RenderBlocks = ({ content }: any) => {
   const components: { [key: string]: React.ComponentType<any> } = {
@@ -23,7 +24,8 @@ export const RenderBlocks = ({ content }: any) => {
     Contact,
     CallToAction,
     LogoCloud,
-    Expertise
+    Expertise,
+    ScrollTriggerGallery
   };
 
   const pageBlocks = Object.entries(content).map(([blockName, blockContent]: [string, any], index: number) => {

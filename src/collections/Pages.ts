@@ -7,6 +7,7 @@ import { CallToAction } from '../blocks/CallToAction'
 import { CarouselBlock } from '../blocks/Carousel'
 import { Contact } from '../blocks/Contact'
 import { Expertise } from '../blocks/Expertise'
+import { ScrollTriggerGallery } from '../blocks/ScrollTriggerGallery'
 import { ImageSlider } from '../blocks/ImageSlider'
 import { LogoCloud } from '../blocks/LogoCloud'
 import { TextBlock } from '../blocks/TextBlock'
@@ -121,7 +122,7 @@ export const Pages: CollectionConfig = {
               label: 'Layout',
               type: 'blocks',
               minRows: 0,
-              blocks: [ImageSlider, BlockTest, TextBlock, CarouselBlock, Contact, CallToAction, LogoCloud, Expertise],
+              blocks: [ImageSlider, BlockTest, TextBlock, CarouselBlock, Contact, CallToAction, LogoCloud, Expertise, ScrollTriggerGallery],
             },
           ],
         },
