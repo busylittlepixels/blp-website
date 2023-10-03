@@ -82,8 +82,9 @@ export const Testimonials = () => {
 	return (
 		<div className="bg-white py-20">
 			<FadeIn>
-				<div className={`mx-auto max-w-7xl px-6 lg:px-8`}>
-					<h2 className="text-4xl font-black tracking-tight text-black sm:text-6xl uppercase mb-4">WHAT OUR <span style={{"color": "red"}}>CLIENTS</span> SAY...</h2>
+				<div className={`mx-auto max-w-7xl px-6 lg:px-8 mb-6`}>
+					<h1 className="text-4xl font-black tracking-tight text-black sm:text-6xl uppercase mb-4">WHAT OUR <span style={{"color": "red"}}>CLIENTS</span> SAY...</h1>
+					<div className="header__underline"></div>
 				</div>
 				<div className={`w-full`}>
 					<div className="testimonial-container">
