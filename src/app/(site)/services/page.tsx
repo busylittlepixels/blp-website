@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { Page } from '../../../payload/payload-types'
 // import { RenderBlocks } from '../../../components/layout/RenderBlocks'
 import { Services } from '../../../components/layout/Services'
+import { Overlap } from '../../../components/layout/Overlap'
 import { FadeIn } from '../../../components/shared/FadeIn'
 import { Metadata } from 'next'
 
@@ -34,6 +35,7 @@ export default async function ServicesPage() {
       <FadeIn>
         <main className={`services`}>
           <Services />
+          <Overlap />
         </main>
       </FadeIn>
     </>
