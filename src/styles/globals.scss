@@ -1,8 +1,10 @@
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../node_modules/slick-carousel/slick/slick-theme.scss';
 @import './motionhero.scss';
 @import './nav/nav.css';
 @import './slider/slider.css';
 @import './scrollTrigger/scrollTrigger.scss';
-
+@import './testimonials/testimonials.scss';
 
 @tailwind base;
 @tailwind components;

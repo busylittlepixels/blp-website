@@ -26,12 +26,10 @@ export const TitleContainer = ({ title, subtitle }) => {
     return (
         <section className={`w-full md:boundedContainer`}>
             <SectionGrid className="homeAdjust">
-               
                 <HeadingContainer>
                     <Heading>WE ARE BUSY<span style={{ "color": "red" }}>{title}</span>PIXELS.<br/> <span style={{ "color": "red" }}>WE</span> MAKE<span style={{ "color": "red" }}> YOUR TECH</span> GO.</Heading>
                     <div className="header__underline ml-6"></div>
                 </HeadingContainer>
-               
             </SectionGrid>
         </section>
     );

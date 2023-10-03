@@ -7,10 +7,10 @@ import { RenderBlocks } from "../../components/layout/RenderBlocks"
 import { GalleryGrid } from "../../components/layout/GalleryGrid"
 // import { BigTextLittleText } from "../../components/layout/BigTextLittleText"
 import { FadeIn } from "../../components/shared/FadeIn"
-import { MarqueeBanner } from "../../components/layout/MarqueeBanner"
-import { Overlap } from "../../components/layout/Overlap"
+// import { MarqueeBanner } from "../../components/layout/MarqueeBanner"
+// import { Overlap } from "../../components/layout/Overlap"
 import { ScrollTrigger } from "../../components/layout/ScrollTriggerGallery"
-// import { MotionHero } from "../../components/layout/MotionHero"
+import { Testimonials } from "../../components/layout/Testimonials"
 
 export default async function Home() {
   const home: Page = await fetch(
@@ -31,15 +31,16 @@ export default async function Home() {
         {/* <MarqueeBanner /> */}
        
         <FadeIn>
-          {/* <MotionHero /> */}
           <TitleContainer title={'little'} subtitle={'ass'}/>
           <GalleryGrid />
           <RenderBlocks content={layout} />
           <Team />
+          <Testimonials />
         </FadeIn>    
-        <Overlap />
+        {/* <Overlap /> */}
         <ScrollTrigger />
         {/* <BigTextLittleText /> */}
+       
       </main>
    
   )

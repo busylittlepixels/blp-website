@@ -41,7 +41,7 @@
         overflow: hidden;
     }
 
-    .demo-wrapper {
+    .scrollTriggerWrapper {
         overflow-x: hidden;
     }
 
@@ -49,11 +49,11 @@
         display: flex;
     }
 
-    .demo-gallery:not(.last) {
+    .scrollTrack:not(.last) {
         padding-bottom: 1rem;
     }
 
-    .demo-text, .text, --text {
+    .scrollerText, .text, --text {
         font-size: clamp(8rem, 15vw, 16rem);
         line-height: 1;
         font-weight: 900;
