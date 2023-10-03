@@ -35,7 +35,7 @@ export const Testimonials = () => {
 	};
 
 	const contentA: SlideContent = {
-		bodyCopy: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a sapien vestibulum, cursus tortor eu, maximus dolor. Sed ut gravida lectus, ac suscipit augue. Donec et sapien maximus, rhoncus nisi at, egestas est. Fusce mauris lacus, molestie vel pretium nec, aliquam vel nibh. Donec a aliquet lorem. Donec et sapien maximus, rhoncus nisi at, egestas est. Fusce mauris lacus, molestie vel pretium nec.”",
+		bodyCopy: "“Before any talk of design or a line of code has been written, the team talks with you to understand a project's end goal. By running through this process with you, you can see they're committed to acquiring a deep understanding of the projects goals, and organisational objectives. The team guide you through the project workflow and help you, as a client or a collaborator, to develop a better understanding of the potential issues that may crop up during a project's development.”",
 		creditName: "Ross O'Kelly",
 		creditTitle: "Tech lead",
 		creditCompany: " Dublin",
@@ -53,7 +53,7 @@ export const Testimonials = () => {
 	};
 
 	const contentC: SlideContent = {
-		bodyCopy: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a sapien vestibulum, cursus tortor eu, maximus dolor. Sed ut gravida lectus, ac suscipit augue. Donec et sapien maximus, rhoncus nisi at, egestas est. Fusce mauris lacus, molestie vel pretium nec, aliquam vel nibh. Donec a aliquet lorem. Donec et sapien maximus, rhoncus nisi at, egestas est. Fusce mauris lacus, molestie vel pretium nec.”",
+		bodyCopy: "“BLP not only have a deep technical understanding, but they also knows how to apply that knowledge in the most efficient way. A humble, intelligent and hard working team, that will go out of their way to ensure the success of any project. 10/10 would recommend!”",
 		creditName: "Pablo Roman",
 		creditTitle: "CTO",
 		creditCompany: " Squares",
@@ -62,7 +62,7 @@ export const Testimonials = () => {
 	};
 
 	const contentD: SlideContent = {
-		bodyCopy: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a sapien vestibulum, cursus tortor eu, maximus dolor. Sed ut gravida lectus, ac suscipit augue. Donec et sapien maximus, rhoncus nisi at, egestas est. Fusce mauris lacus, molestie vel pretium nec, aliquam vel nibh. Donec a aliquet lorem. Donec et sapien maximus, rhoncus nisi at, egestas est. Fusce mauris lacus, molestie vel pretium nec.”",
+		bodyCopy: "BLP are a pleasure to deal with. The team strives to understand your needs as a client and always impresses with the latest technology that can completely change your train of thought into something more positive than you had anticipated. Great crew to deal with and extremely hard working.”",
 		creditName: "Patrick De Laive",
 		creditTitle: "Co-Founder",
 		creditCompany: " TNW",
