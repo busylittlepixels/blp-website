@@ -35,7 +35,7 @@ export const Testimonials = () => {
 	};
 
 	const contentA: SlideContent = {
-		bodyCopy: "“Before any talk of design or a line of code has been written, the team talks with you to understand a project's end goal. By running through this process with you, you can see they're committed to acquiring a deep understanding of the projects goals, and organisational objectives. The team guide you through the project workflow and help you, as a client or a collaborator, to develop a better understanding of the potential issues that may crop up during a project's development.”",
+		bodyCopy: "“Before any talk of design or a line of code has been written, BLP guide you through the project workflow and help you, as a client or a collaborator, to develop a better understanding of the potential issues that may crop up during a project's development.”",
 		creditName: "Ross O'Kelly",
 		creditTitle: "Tech lead",
 		creditCompany: " Dublin",
@@ -44,7 +44,7 @@ export const Testimonials = () => {
 	};
 
 	const contentB: SlideContent = {
-		bodyCopy: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a sapien vestibulum, cursus tortor eu, maximus dolor. Sed ut gravida lectus, ac suscipit augue. Donec et sapien maximus, rhoncus nisi at, egestas est. Fusce mauris lacus, molestie vel pretium nec, aliquam vel nibh. Donec a aliquet lorem. Donec et sapien maximus, rhoncus nisi at, egestas est. Fusce mauris lacus, molestie vel pretium nec.”",
+		bodyCopy: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a sapien vestibulum, cursus tortor eu, maximus dolor. Sed ut gravida lectus, ac suscipit augue. Donec et sapien maximus, rhoncus nisi at, egestas est. Fusce mauris lacus, molestie vel pretium nec.”",
 		creditName: "Aoibhinn Cooper",
 		creditTitle: "Creative Director",
 		creditCompany: " Snooze Creative",
@@ -62,7 +62,7 @@ export const Testimonials = () => {
 	};
 
 	const contentD: SlideContent = {
-		bodyCopy: "BLP are a pleasure to deal with. The team strives to understand your needs as a client and always impresses with the latest technology that can completely change your train of thought into something more positive than you had anticipated. Great crew to deal with and extremely hard working.”",
+		bodyCopy: "BLP are a pleasure to deal with. The team strives to understand your needs as a client and always impresses with the latest technology that can completely change your train of thought into something more positive than you had anticipated. Great crew to deal with.”",
 		creditName: "Patrick De Laive",
 		creditTitle: "Co-Founder",
 		creditCompany: " TNW",
@@ -71,7 +71,7 @@ export const Testimonials = () => {
 	};
 
 	const contentE: SlideContent = {
-		bodyCopy: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a sapien vestibulum, cursus tortor eu, maximus dolor. Sed ut gravida lectus, ac suscipit augue. Donec et sapien maximus, rhoncus nisi at, egestas est. Fusce mauris lacus, molestie vel pretium nec, aliquam vel nibh. Donec a aliquet lorem. Donec et sapien maximus, rhoncus nisi at, egestas est. Fusce mauris lacus, molestie vel pretium nec.”",
+		bodyCopy: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a sapien vestibulum, cursus tortor eu, maximus dolor. Sed ut gravida lectus, ac suscipit augue. Donec et sapien maximus, rhoncus nisi at, egestas est. Fusce mauris lacus, molestie vel pretium nec.”",
 		creditName: "Heather Hickey",
 		creditTitle: "CEO",
 		creditCompany: " Hickey's of Wicklow",
