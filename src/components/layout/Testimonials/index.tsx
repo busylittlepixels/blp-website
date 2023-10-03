@@ -1,22 +1,20 @@
-	"use client";
+"use client";
+import React, { useRef } from "react";
+import Slider from "react-slick";
+import Slide from "./Slide";
+import { FadeIn } from "../../shared/FadeIn";
 
-	import React, { useRef } from "react";
-	import Slider from "react-slick";
-	import Slide from "./Slide";
-	import { FadeIn } from "../../shared/FadeIn";
+interface SlideContent {
+	bodyCopy: string;
+	creditName: string;
+	creditTitle: string;
+	creditCompany: string;
+	city: string;
+	country: string;
+}
 
-	interface SlideContent {
-		bodyCopy: string;
-		creditName: string;
-		creditTitle: string;
-		creditCompany: string;
-		city: string;
-		country: string;
-	}
-
-	export const Testimonials = () => {
+export const Testimonials = () => {
 	const slide = useRef<Slider | null>(null);
-
 	const settings = {
 		infinite: true,
 		centerMode: true,
@@ -82,7 +80,7 @@
 	};
 
 	return (
-		<div className="block relative row py-12">
+		<div className="bg-white py-20">
 			<FadeIn>
 				<div className={`mx-auto max-w-7xl px-6 lg:px-8`}>
 					<h2 className="text-4xl font-black tracking-tight text-black sm:text-6xl uppercase mb-4">WHAT OUR <span style={{"color": "red"}}>CLIENTS</span> SAY...</h2>
@@ -102,7 +100,6 @@
 								<Slide {...contentC} />
 								<Slide {...contentD} />
 								<Slide {...contentE} />
-							
 							</Slider>
 						</div>
 					</div>
@@ -110,6 +107,6 @@
 			</FadeIn>
 		</div>
 	);
-	}
+}
 
-	export default Testimonials;
+export default Testimonials;

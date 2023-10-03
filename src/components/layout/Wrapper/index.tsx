@@ -43,12 +43,7 @@ const nav = [
         pageLink: '/blog',
         label: 'Blog'
     },
-    // {
-    //     link: 'Mission',
-    //     href: '/our-mission',
-    //     pageLink: '/our-mission',
-    //     label: 'Mission'
-    // },
+   
     {
         link: 'Contact',
         href: '/contact',
