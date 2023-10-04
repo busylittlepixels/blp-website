@@ -36,27 +36,27 @@ export const Testimonials = () => {
 
 	const contentA: SlideContent = {
 		bodyCopy: "“Before any talk of design or a line of code has been written, BLP guide you through the project workflow and help you, as a client or a collaborator, to develop a better understanding of the potential issues that may crop up during a project's development.”",
-		creditName: "Ross O'Kelly",
-		creditTitle: "Tech lead",
+		creditName: "Ross Kelly",
+		creditTitle: "CEO",
 		creditCompany: " Dublin",
 		city: "Dublin", 
 		country: "Ireland 🇮🇪"
 	};
 
-	const contentB: SlideContent = {
-		bodyCopy: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a sapien vestibulum, cursus tortor eu, maximus dolor. Sed ut gravida lectus, ac suscipit augue. Donec et sapien maximus, rhoncus nisi at, egestas est. Fusce mauris lacus, molestie vel pretium nec.”",
-		creditName: "Aoibhinn Cooper",
-		creditTitle: "Creative Director",
-		creditCompany: " Snooze Creative",
-		city: "Dublin", 
-		country: "Ireland 🇮🇪"
-	};
+	// const contentB: SlideContent = {
+	// 	bodyCopy: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a sapien vestibulum, cursus tortor eu, maximus dolor. Sed ut gravida lectus, ac suscipit augue. Donec et sapien maximus, rhoncus nisi at, egestas est. Fusce mauris lacus, molestie vel pretium nec.”",
+	// 	creditName: "Aoibhinn Cooper",
+	// 	creditTitle: "Creative Director",
+	// 	creditCompany: " Snooze Creative",
+	// 	city: "Dublin", 
+	// 	country: "Ireland 🇮🇪"
+	// };
 
 	const contentC: SlideContent = {
-		bodyCopy: "“BLP not only have a deep technical understanding, but they also knows how to apply that knowledge in the most efficient way. A humble, intelligent and hard working team, that will go out of their way to ensure the success of any project. 10/10 would recommend!”",
+		bodyCopy: "“Busy Little Pixels not only have a deep technical understanding, but they also knows how to apply that knowledge in the most efficient way. A humble, intelligent and hard working team, that will go out of their way to ensure the success of any project. 10/10 would recommend!”",
 		creditName: "Pablo Roman",
 		creditTitle: "CTO",
-		creditCompany: " Squares",
+		creditCompany: " Shapes and Places",
 		city: "Amsterdam", 
 		country: "The Netherlands 🇳🇱"
 	};
@@ -70,14 +70,14 @@ export const Testimonials = () => {
 		country: "The Netherlands 🇳🇱"
 	};
 
-	const contentE: SlideContent = {
-		bodyCopy: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a sapien vestibulum, cursus tortor eu, maximus dolor. Sed ut gravida lectus, ac suscipit augue. Donec et sapien maximus, rhoncus nisi at, egestas est. Fusce mauris lacus, molestie vel pretium nec.”",
-		creditName: "Heather Hickey",
-		creditTitle: "CEO",
-		creditCompany: " Hickey's of Wicklow",
-		city: "Dublin", 
-		country: "Ireland 🇮🇪"
-	};
+	// const contentE: SlideContent = {
+	// 	bodyCopy: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a sapien vestibulum, cursus tortor eu, maximus dolor. Sed ut gravida lectus, ac suscipit augue. Donec et sapien maximus, rhoncus nisi at, egestas est. Fusce mauris lacus, molestie vel pretium nec.”",
+	// 	creditName: "Heather Hickey",
+	// 	creditTitle: "CEO",
+	// 	creditCompany: " Hickey's of Wicklow",
+	// 	city: "Dublin", 
+	// 	country: "Ireland 🇮🇪"
+	// };
 
 	return (
 		<div className="bg-white py-20">
@@ -97,10 +97,8 @@ export const Testimonials = () => {
 								swipeToSlide={true}
 							>
 								<Slide {...contentA} />
-								<Slide {...contentB} />
 								<Slide {...contentC} />
 								<Slide {...contentD} />
-								<Slide {...contentE} />
 							</Slider>
 						</div>
 					</div>
