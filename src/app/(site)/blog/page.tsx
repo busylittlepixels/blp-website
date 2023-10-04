@@ -14,7 +14,6 @@ import { RichText } from '../../../components/layout/RichText';
 
   export default async function Blog() {
     
-    
     const blog: Page = await fetch(
       `${process.env.NEXT_PUBLIC_SERVER_URL}/api/posts`
     )
