@@ -6,10 +6,10 @@ import { Page } from '../../../payload/payload-types'
 import FadeIn from '../../../components/shared/FadeIn';
 import { RichText } from '../../../components/layout/RichText';
 
-// export const metadata: Metadata = {
-//   title: 'Blog | Busy Little Pixels',
-//   description: 'Busy Little Blog - We are Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events',
-// }
+export const metadata: Metadata = {
+  title: 'Blog | Busy Little Pixels',
+  description: 'Busy Little Blog - We are Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events',
+}
 
 
   export default async function Blog() {
@@ -104,7 +104,7 @@ import { RichText } from '../../../components/layout/RichText';
                                   href={`/blog/${post.slug}`}
                                   className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
                               >
-                                  {post.category}
+                                  {post.category ? post.category : 'Strategy'}
                               </Link>
                               </div>
                               <div className="group relative max-w-xl">
