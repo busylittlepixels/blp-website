@@ -104,7 +104,7 @@ import { RichText } from '../../../components/layout/RichText';
                                   href={`/blog/${post.slug}`}
                                   className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
                               >
-                                  {post.title}
+                                  {post.category}
                               </Link>
                               </div>
                               <div className="group relative max-w-xl">
