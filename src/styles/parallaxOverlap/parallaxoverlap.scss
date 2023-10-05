@@ -1,0 +1,52 @@
+
+@media only screen and (min-width: 640px) {
+    .overlapContent {
+      max-width: 1600px;
+      margin-bottom: 120px;
+    }
+  }
+  
+  .overlapCopy {
+    padding-left: 20px;
+  }
+  
+  .overlap {
+    
+    @media only screen and (max-width: 640px) {
+      background-size: cover; 
+    }
+    background-image: url('/assets/images/heart.webp');
+    background-size: 75% 100%; 
+    background-repeat: no-repeat;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    border-radius: 25px 0 25px 0;
+  }
+  
+  .overlapCopy--overlap {
+    padding: 70px;
+    color: #fff;
+    background-color: #E1171E;
+    position: relative;
+    font-weight: bolder;
+    border-radius: 25px 0 25px 0;
+  }
+  
+  .overlapHeader--overlap {
+    color: #fff;
+    font-size: 34px;
+    margin-bottom: 1rem;
+  }
+  
+  .overlapText--overlap {
+    max-width: 470px;
+  }
+  
+  .overlapText-overlap-copy--parallax-right {
+    margin-left: auto;
+  }
+  
+  .overlapText-overlap-copy--parallax-left {
+    margin-right: auto;
+  }
+  

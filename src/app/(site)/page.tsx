@@ -37,9 +37,6 @@ export default async function Home() {
           <Team />
           <Testimonials />
         </FadeIn>    
-        {/* <Overlap /> */}
-        {/* <ScrollTrigger /> */}
-        {/* <BigTextLittleText /> */}
        
       </main>
    
