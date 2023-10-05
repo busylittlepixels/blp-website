@@ -24,6 +24,34 @@ export const Posts: CollectionConfig = {
         },
       },
       {
+        name: 'category', // required
+        type: 'select', // required
+        hasMany: true,
+        admin: {
+          position: 'sidebar',
+          isClearable: true,
+          isSortable: true, // use mouse to drag and drop different values, and sort them according to your choice
+        },
+        options: [
+          {
+            label: 'Tech',
+            value: 'tech',
+          },
+          {
+            label: 'Strategy',
+            value: 'strategy',
+          },
+          {
+            label: 'Web Development',
+            value: 'web-development',
+          },
+          {
+            label: 'Fractional CTO',
+            value: 'fractional-cto',
+          }
+        ],
+      },
+      {
         name: 'title',
         label: 'Title',
         type: 'text',
