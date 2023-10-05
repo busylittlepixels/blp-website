@@ -17,7 +17,7 @@ export const Nav = ({ menu }) => {
         return;
     }
   return (
-    <header className="px-6 text-black body-font md:sticky w-full bg-black logoShadow">
+    <header className="px-4 text-black body-font md:sticky w-full bg-black logoShadow">
         <div className="mx-auto flex flex-wrap py-5 md:flex-row items-center justify-between">
             <Link href="/">
                 <h1 className="text-3xl md:hover:text-4xl transition-all ease-in-out duration-150 font-black leading-tightest text-white">busy<span style={{"color": "red"}}>little</span>pixels<span style={{"color": "red"}}>.</span></h1>
@@ -32,7 +32,7 @@ export const Nav = ({ menu }) => {
                     <div></div>
                     <div></div>
                 </div>
-                <ul className={`nav__menu-list px-6 ${navActive ? "active" : ""}`}>
+                <ul className={`nav__menu-list px-4 ${navActive ? "active" : ""}`}>
                     {/* {isMobile ? 
                     <div className={'flex'}>
                         <input className={'mobileSearch'} type={'text'} name={'search'} placeholder={'Search...'} />

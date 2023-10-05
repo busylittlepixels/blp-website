@@ -69,7 +69,12 @@ opacity: 1;
 transition: opacity 1s ease-in-out;
 }
 
-// .testimonial-slider__slides .slick-dots {}
+.testimonial-slider__slides .slick-dots {
+    bottom: -45px;
+    @media screen and (max-width: 759px) {
+        bottom: -25px; 
+    }
+}
 
 .slick-dots li.slick-active {
     background-color: red;
