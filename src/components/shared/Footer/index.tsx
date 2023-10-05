@@ -1,6 +1,6 @@
 'use client';
 import { FadeIn } from '../FadeIn'
-import { CustomSVG } from '../Windmill'
+// import { CustomSVG } from '../Windmill'
 
 const currentYear = () => {
   let currentTime = new Date()
@@ -52,20 +52,20 @@ const SignUpForm = () => {
 export const Footer = () => {
 
 
-  const goToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
+  // const goToTop = () => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: 'smooth',
+  //   });
+  // };
   
   return (
     <footer className="bg-black py-20 text-slate-300 md:pb-12 footer relative">
-      <div className='windmill block'>
+      {/* <div className='windmill block'>
         <div onClick={goToTop} className={'cursor-pointer'}>
           <CustomSVG />
         </div>
-      </div>
+      </div> */}
       <div className="grid grid-cols-1 justify-items-center gap-10 md:gap-20">
         <FadeIn>
           <SignUpForm />
