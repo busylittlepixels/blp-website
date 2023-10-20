@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 import React from 'react'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Page } from '../../../payload/payload-types'
 import { RenderBlocks } from '../../../components/layout/RenderBlocks'
@@ -43,7 +44,7 @@ export default async function About() {
                   <h1 className="pb-4 font-black text-4xl md:text-6xl last:mb-0 uppercase max-w-3xl mx-auto">OUR CORE <span style={{"color":"red"}}>VALUES</span>
                     <div className="header__underline"></div>
                   </h1>
-                  <p className="contact_intro mx-auto mb-6 max-w-3xl md:px-6 lg:px-8">At Busy Little Pixels, we understand the challenges faced by businesses in today's fast-paced digital landscape. Our founders have accumulated years of hands-on experience across various industries, working on groundbreaking projects that have transformed businesses and pushed the boundaries of technology.</p>
+                  <p className="contact_intro mx-auto mb-6 max-w-3xl md:px-6 lg:px-8">At BLP, we understand the challenges faced by businesses in today's fast-paced digital landscape. Our founders have accumulated years of hands-on experience across various industries, working on groundbreaking projects that have transformed businesses and pushed the boundaries of technology.</p>
                   <p className="contact_intro mx-auto mb-6 max-w-3xl md:px-6 lg:px-8">We thrive on delivering exceptional results, providing tailored solutions that align with our clients' unique goals and aspirations. Whether you need strategic guidance, technical expertise, or a comprehensive technology roadmap, our team of fractional CTOs is here to empower your business and accelerate its growth. Join us on this exciting journey as we harness the power of pixels to unlock your full digital potential.</p>
                   <figure className="my-16"><img className="aspect-video rounded-xl bg-gray-50 object-cover shadow-md" src="/assets/images/heart.webp" alt="" /></figure>
                   
@@ -65,18 +66,17 @@ export default async function About() {
 
                   <br /><br />
                   <h2 className="pb-4 font-black text-3xl md:text-4xl last:mb-0 uppercase max-w-3xl mx-auto">We guide you to your <span style={{"color":"red"}}>digital goals</span></h2>
-                  <p className="contact_intro mx-auto mb-6 max-w-3xl md:px-6 lg:px-8">At BusyLittlePixels, we{'’'}re not just about building websites or offering guidance; we’re about crafting digital journeys. Let us be your compass in the vast digital sea, guiding you towards uncharted territories of success and innovation.
+                  <p className="contact_intro mx-auto max-w-3xl md:px-6 lg:px-8">At BLP, we{'’'}re not just about building websites or offering guidance; we’re about crafting digital journeys. Let us be your compass in the vast digital sea, guiding you towards uncharted territories of success and innovation.
                     Come with us. Dare to dream. Dare to innovate. With BLP by your side, the future is vibrant. <br/>
-                    For more information, checkout our services.
                   </p>
+                  <p className='mx-auto mb-6 max-w-3xl md:px-6 lg:px-8 text-gray-600'><br/>
+                    To learn more, check out our <Link href={'/services'} className='text-red'>services</Link> page.</p>
                 </div>
-                <div className="header__underline"></div>
               </div>
             </section>
           </section>
           <RenderBlocks content={layout} />      
         </main>
-       
       </FadeIn>
     </>
 

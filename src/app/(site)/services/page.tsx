@@ -34,7 +34,7 @@ export default async function ServicesPage() {
     <>
       <FadeIn>
         <main className={`services`}>
-          <div className="bg-white px-6 lg:px-8 md:mt-20">
+          <div className="bg-white px-6 lg:px-8 mt-20">
             <div className="mx-auto max-w-3xl text-base leading-7 text-black">
                 <h3 className="font-black text-4xl md:text-6xl mb-6 last:mb-0 uppercase">WHY DO I NEED A <span style={{"color":"red"}}>FRACTIONAL CTO?</span></h3>
                 <div className="header__underline"></div>
