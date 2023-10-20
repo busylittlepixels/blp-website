@@ -9,7 +9,7 @@ import { GalleryGrid } from "../../components/layout/GalleryGrid"
 import { FadeIn } from "../../components/shared/FadeIn"
 // import { MarqueeBanner } from "../../components/layout/MarqueeBanner"
 // import { Overlap } from "../../components/layout/Overlap"
-// import { ScrollTrigger } from "../../components/layout/ScrollTriggerGallery"
+// import { ScrollTriggerSlide } from "../../components/layout/ScrollTriggerSlide"
 import { Testimonials } from "../../components/layout/Testimonials"
 
 export default async function Home() {
