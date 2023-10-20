@@ -1,9 +1,9 @@
 
 .scrollTriggerSlide{
-    @font-face {
-        font-family: "Bandeins Sans & Strange Variable";
-        src: url("https://res.cloudinary.com/dldmpwpcp/raw/upload/v1566406079/BandeinsStrangeVariable_esetvq.ttf");
-       }
+    // @font-face {
+    //     font-family: "Bandeins Sans & Strange Variable";
+    //     src: url("https://res.cloudinary.com/dldmpwpcp/raw/upload/v1566406079/BandeinsStrangeVariable_esetvq.ttf");
+    //    }
        @import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
        
        * {
@@ -61,11 +61,7 @@
         position: fixed;
         visibility: hidden;
         
-        &.active {
-            div.slide__outer {
-                overflow-y: unset;
-            }
-        }
+        
             
 
 
@@ -73,8 +69,16 @@
         &__inner {
          width: 100%;
          height: 100%;
-         overflow-y: hidden;
-         
+        //  overflow-y: hidden;
+        }
+
+        &.active {
+
+            > div.slide__inner,
+            > div.slide__outer{
+                overflow-y: hidden!important;
+            }
+           
         }
        
         &__content {

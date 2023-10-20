@@ -30,35 +30,86 @@ const useGSAPScrollSlide = () => {
 
       const tl = gsap.timeline({
         defaults: { duration: 1, ease: "expo.inOut" },
-        onComplete: () => setAnimating(false)
+       
       });
+
+      setAnimating(false);
 
       const currentSection = sections[currentIndex] as HTMLElement;
       const heading = currentSection.querySelector(".slide__heading");
       const nextSection = sections[index] as HTMLElement;
       const nextHeading = nextSection.querySelector(".slide__heading");
 
-
-
-      tl.set([sections, images], { zIndex: 0, autoAlpha: 0 })
-        .set([sections[currentIndex], images[index]], { zIndex: 1, autoAlpha: 1 })
-        .set([sections[index], images[currentIndex]], { zIndex: 2, autoAlpha: 1 })
+      
+      gsap.set([sections, images], { zIndex: 0, autoAlpha: 0 });
+      gsap.set([sections[currentIndex], images[index]], { zIndex: 1, autoAlpha: 1 });
+      gsap.set([sections[index], images[currentIndex]], { zIndex: 2, autoAlpha: 1 });
+    
+     tl
+    //  @ts-ignore
+      .set(count, { text: index + 1 }, 0.32)
+      .fromTo(
         // @ts-ignore
-        .set(count, { text: index + 1 }, 0.32)
-         // @ts-ignore
-        .fromTo(outerWrappers[index], { xPercent: 100 * direction }, { xPercent: 0 }, 0)
-         // @ts-ignore
-        .fromTo(innerWrappers[index], { xPercent: -100 * direction }, { xPercent: 0 }, 0)
-        .to(heading, { "--width": 800, xPercent: 30 * direction }, 0)
-        .fromTo(nextHeading, { "--width": 800, xPercent: -30 * direction }, { "--width": 200, xPercent: 0 }, 0)
-         // @ts-ignore
-        .fromTo(images[index], { xPercent: 125 * direction, scaleX: 1.5, scaleY: 1.3 }, { xPercent: 0, scaleX: 1, scaleY: 1, duration: 1 }, 0)
-         // @ts-ignore
-        .fromTo(images[currentIndex], { xPercent: 0, scaleX: 1, scaleY: 1 }, { xPercent: -125 * direction, scaleX: 1.5, scaleY: 1.3 }, 0)
-         // @ts-ignore
-        .fromTo(slideImages[index], { scale: 2 }, { scale: 1 }, 0)
-        .timeScale(0.8);
-
+       outerWrappers[index],{xPercent: 100 * direction},{ xPercent: 0 },0)
+      .fromTo(
+         //  @ts-ignore
+       innerWrappers[index],{xPercent: -100 * direction
+       },
+       { xPercent: 0 },
+       0
+      )
+      .to(
+       heading,
+       {
+        "--width": 800,
+        xPercent: 30 * direction
+       },
+       0
+      )
+      .fromTo(
+       nextHeading,
+       {
+        "--width": 800,
+        xPercent: -30 * direction
+       },
+       {
+        "--width": 200,
+        xPercent: 0
+       },
+       0
+      )
+      .fromTo(
+         //  @ts-ignore
+       images[index],
+       {
+        xPercent: 125 * direction,
+        scaleX: 1.5,
+        scaleY: 1.3
+       },
+       { xPercent: 0, scaleX: 1, scaleY: 1, duration: 1 },
+       0
+      )
+      .fromTo(
+         //  @ts-ignore
+       images[currentIndex],
+       { xPercent: 0, scaleX: 1, scaleY: 1 },
+       {
+        xPercent: -125 * direction,
+        scaleX: 1.5,
+        scaleY: 1.3
+       },
+       0
+      )
+       //  @ts-ignore
+      .fromTo(slideImages[index],
+       {
+        scale: 2
+       },
+       { scale: 1 },
+       0
+      )
+      .timeScale(0.8);
+    
       setCurrentIndex(index);
     };
 
@@ -67,22 +118,41 @@ const useGSAPScrollSlide = () => {
       preventDefault: true,
       wheelSpeed: -1,
       onUp: () => {
-        if (!animating) gotoSection(currentIndex + 1, +1);
+       console.log("down");
+       if (animating) return;
+       gotoSection(currentIndex + 1, +1);
       },
       onDown: () => {
-        if (!animating) gotoSection(currentIndex - 1, -1);
+       console.log("up");
+       if (animating) return;
+       gotoSection(currentIndex - 1, -1);
       },
       tolerance: 10
-    });
+     });
 
     const logKey = (e: KeyboardEvent) => {
-      if (e.code === "ArrowUp" || e.code === "ArrowLeft" && !animating) {
-        gotoSection(currentIndex - 1, -1);
+      console.log(e.code);
+      if ((e.code === "ArrowUp" || e.code === "ArrowLeft") && !animating) {
+       gotoSection(currentIndex - 1, -1);
       }
-      if ((e.code === "ArrowDown" || e.code === "ArrowRight" || e.code === "Space" || e.code === "Enter") && !animating) {
-        gotoSection(currentIndex + 1, 1);
+      if (
+       (e.code === "ArrowDown" ||
+        e.code === "ArrowRight" ||
+        e.code === "Space" ||
+        e.code === "Enter") &&
+       !animating
+      ) {
+       gotoSection(currentIndex + 1, 1);
       }
-    };
+     }
+    // const logKey = (e: KeyboardEvent) => {
+    //   if (e.code === "ArrowUp" || e.code === "ArrowLeft" && !animating) {
+    //     gotoSection(currentIndex - 1, -1);
+    //   }
+    //   if ((e.code === "ArrowDown" || e.code === "ArrowRight" || e.code === "Space" || e.code === "Enter") && !animating) {
+    //     gotoSection(currentIndex + 1, 1);
+    //   }
+    // };
 
     document.addEventListener("keydown", logKey);
 
@@ -99,3 +169,6 @@ const useGSAPScrollSlide = () => {
 };
 
 export default useGSAPScrollSlide;
+
+
+

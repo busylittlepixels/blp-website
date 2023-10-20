@@ -12,7 +12,7 @@ const people = [
       location: 'Dublin, Ireland'
     },
     {
-      name: 'Bobby Sommers',
+      name: 'Bobbi Summers',
       role: 'Co-Founder & CTO',
       imageUrl: '/assets/images/person2.avif',
       bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
@@ -21,13 +21,22 @@ const people = [
       location: 'Amsterdam, Netherlands'
     },
     {
-      name: 'Marieke Van Der Valk',
-      role: 'Head of Branding and Design',
+      name: 'Orsi Kneitner',
+      role: 'Head of Operations',
       imageUrl: '/assets/images/person1.avif',
       bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
       twitterUrl: '#',
       linkedinUrl: '#',
-      location: 'Amsterdam, The Netherlands'
+      location: 'Vienna, Austria'
+    },
+    {
+      name: 'Harry Laird',
+      role: 'Product and Technology Lead',
+      imageUrl: '/assets/images/harry.png',
+      bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
+      twitterUrl: '#',
+      linkedinUrl: '#',
+      location: 'Middlesbrough, United Kingdom'
     }
     // More people...
   ]
@@ -65,16 +74,15 @@ const people = [
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h1 className="text-4xl font-black tracking-tight text-white sm:text-6xl uppercase mb-4">{headline ? headline : 'MEET THE ' }<span style={{ "color": "red"}}>PIXELS</span>...</h1>
-            <div className="header__underline"></div>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
-              best results for our clients.
-            </p>
+              <h1 className="text-4xl font-black tracking-tight text-white sm:text-6xl uppercase mb-4">{headline ? headline : 'MEET THE ' }<span style={{ "color": "red"}}>PIXELS</span>...</h1>
+              <div className="header__underline"></div>
+              <p className="mt-6 text-lg leading-8 text-gray-300">
+                We are a dynamic and distributed fractional CTO company founded by a team of experienced professionals who have walked the path of CTOs, Tech Leads, Developers, and Marketing Specialists. With our studios headquartered in the bustling tech hub of Dublin, we bring together a wealth of expertise and a passion for driving technological innovation.
+              </p>
           </div>
           <ul
             role="list"
-            className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-3 relative z-10"
+            className="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4 xl:grid-cols-4 relative z-10"
           >
             {people.map((person) => (
               <li key={person.name}>
