@@ -59,7 +59,7 @@ export const ContactPage = ({ content }: any) => {
                 </div>
                 <FadeIn>
                 <div className="container px-5 py-24 mx-auto flex">
-                    <div className="w-1/2 max-md:w-2/3 bg-white rounded-lg p-8 flex flex-col md:ml-auto  mt-10 md:mt-0 relative z-10 shadow-md">          
+                    <div className="lg:w-1/3 md:w-2/3 bg-white rounded-lg p-8 flex flex-col md:ml-auto  mt-10 md:mt-0 relative z-10 shadow-md">          
                     
                     <>
                         <h2 className="text-black text-lg mb-1 font-black uppercase">{form_title} <span style={{ "color": "red"}}></span></h2>
