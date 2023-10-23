@@ -112,7 +112,7 @@ return (
                         <h2 className="text-black text-lg mb-1 font-black uppercase">{form_title} <span style={{ "color": "red"}}></span></h2>
                         <div className="header__underline"></div>
                         <p className="leading-relaxed mt-5 text-black">Please complete the form below. We aim to reply to all messages within 24 hours.</p>
-                        
+                        <br />
                         <HubSpotForm />
                         
                     </>
