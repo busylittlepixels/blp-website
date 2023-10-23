@@ -14,7 +14,6 @@ module.exports = withPayload(
     reactStrictMode: true,
     transpilePackages: ["@payloadcms/plugin-seo"],
     basePath: '',
-    fallback: { "util": require.resolve("util/")},
     experimental: {
       mdxRs: true,
     },
