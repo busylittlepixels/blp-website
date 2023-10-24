@@ -143,6 +143,24 @@
   font-size: 1.125rem;
   line-height: 2.5rem;
   text-align: justify;
+
+  h2{
+    font-weight: bolder;
+    padding: 1em 0;
+  }
+
+  h3{
+    font-weight: bolder;
+  }
+  
+  ul{
+    list-style-type: disc;
+    margin-left: 2em;
+  }
+
+  p{
+    padding: 1em 0;
+  }
 }
 
 .block_text{

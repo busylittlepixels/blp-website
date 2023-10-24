@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link'
 import { FadeIn } from '../FadeIn'
 // import { CustomSVG } from '../Windmill'
 
@@ -71,10 +72,12 @@ export const Footer = () => {
           <SignUpForm />
         </FadeIn>
         
-        <div className="mx-auto w-full max-w-3xl text-center text-xs font-black tracking-tight text-white">
-          © {currentYear()} <a href="https://busylittlepixelsv2.vercel.app">busy<span style={{"color": "red"}}>little</span>pixels.</a> Made with <span style={{"color": "red"}}>&hearts;</span> in Amsterdam.
-          
+        <div className="mx-auto w-full max-w-3xl text-center text-xs tracking-tight text-white">
+          © {currentYear()} <a href="https://busylittlepixelsv2.vercel.app" className='font-black'>busy<span style={{"color": "red"}}>little</span>pixels.</a> Made with <span style={{"color": "red"}}>&hearts;</span> in Amsterdam.
+          <br />
+          <div className='text-center'><Link href={`/privacy-policy`} className={`text-white hover:text-[#f00000] text-xs`}>Privacy Policy</Link></div>
         </div>
+       
       </div>
 
     </footer>
