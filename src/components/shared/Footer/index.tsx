@@ -53,12 +53,12 @@ const SignUpForm = () => {
 export const Footer = () => {
 
 
-  // const goToTop = () => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: 'smooth',
-  //   });
-  // };
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   
   return (
     <footer className="bg-black py-20 text-slate-300 md:pb-12 footer relative">
@@ -73,9 +73,12 @@ export const Footer = () => {
         </FadeIn>
         
         <div className="mx-auto w-full max-w-3xl text-center text-xs tracking-tight text-white">
-          © {currentYear()} <a href="https://busylittlepixelsv2.vercel.app" className='font-black'>busy<span style={{"color": "red"}}>little</span>pixels.</a> Made with <span style={{"color": "red"}}>&hearts;</span> in Amsterdam.
+          © {currentYear()} <a href="https://busylittlepixelsv2.vercel.app" className='font-black'>busy<span style={{"color": "red"}}>little</span>pixels.</a><span className='font-black'> Made with <span style={{"color": "red"}}>&hearts;</span> in Amsterdam.</span> 
           <br />
-          <div className='text-center'><Link href={`/privacy-policy`} className={`text-white hover:text-[#f00000] text-xs`}>Privacy Policy</Link></div>
+          <div className='justify-center flex flex-row gap-2 pt-2'>
+            <Link href={`/privacy-policy`} className={`text-white hover:text-[#f00000] font-bold text-xs`}>Privacy Policy</Link>
+            <a onClick={goToTop} className={'cursor-pointer hover:text-[#f00000] font-bold'}>Back to top</a>
+          </div>
         </div>
        
       </div>
