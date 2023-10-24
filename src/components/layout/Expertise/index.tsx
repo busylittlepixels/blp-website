@@ -28,7 +28,7 @@ export const Expertise = ({ content }: IExpertise) => {
               <polygon points="0,0 90,0 50,100 0,100" />
             </svg>
 
-            <div className="relative px-6 py-20 sm:py-40 lg:pr-8 lg:py-20 lg:pr-0">
+            <div className="relative px-6 py-10 md:py-20 lg:pr-8 lg:py-20">
             <div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)] -z-1">
               <svg aria-hidden="true" className="absolute inset-0 h-full w-full">
                 <defs>
