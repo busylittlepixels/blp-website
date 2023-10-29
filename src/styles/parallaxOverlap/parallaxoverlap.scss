@@ -30,12 +30,19 @@
     position: relative;
     font-weight: bolder;
     border-radius: 25px 0 25px 0;
+
+    @media only screen and (max-width: 640px) {
+      padding: 40px;
+    }
   }
   
   .overlapHeader--overlap {
     color: #fff;
     font-size: 34px;
     margin-bottom: 1rem;
+    @media only screen and (max-width: 640px) {
+      font-size: 25px;
+    }
   }
   
   .overlapText--overlap {
