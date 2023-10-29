@@ -48,7 +48,7 @@ export const Services = () => {
 
                     <div className="pt-4">
                         <h3 className="font-black text-gray-900">Solutions Architecture</h3>
-                        <p className="mt-2 text-gray-500 services_text flex-col">Languages & Frameworks: From Python to React, Ruby on Rails to Vue.js, we handpick the perfect tech for your unique requirements.</p>
+                        <p className="mt-2 text-gray-500 services_text flex-col">Languages & Frameworks: NextJS, Svelte, React, Vue.js, PHP, Twig, Infra...we handpick the perfect tech for your unique requirements.</p>
                     </div>
 
                     <div className="pt-4">
