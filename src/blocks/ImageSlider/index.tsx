@@ -36,12 +36,12 @@ export const ImageSlider: Block = {
           name: 'textBackground',
           type: 'text',
         },
-        {
-          name: 'slideImage',
-          type: 'upload',
-          relationTo: 'media',
-          required: false,
-        },
+        // {
+        //   name: 'slideImage',
+        //   type: 'upload',
+        //   relationTo: 'media',
+        //   required: false,
+        // },
         {
           name: 'slideColor',
           type: 'select', // required
