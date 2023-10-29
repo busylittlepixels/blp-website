@@ -2,6 +2,7 @@ import React from 'react'
 // app/layout.js
 import { PHProvider } from './providers'
 import CookieBanner from './../components/layout/CookieBanner'
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
 	title: 'Busy Little Pixels | Fractional CTO Services & Web Development',
@@ -30,7 +31,10 @@ export default function RootLayout({
 	return (
 		<html lang={'en'}>
 			<PHProvider>
-				<body>{children}</body>
+				<body>
+					{children}
+					<Analytics />	
+				</body>
 				<CookieBanner />
 			</PHProvider>
 		</html>
