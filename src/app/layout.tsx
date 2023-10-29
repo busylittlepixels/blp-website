@@ -9,7 +9,20 @@ export const metadata = {
 	metadataBase: new URL('https://busylittlepixels.com'),
 	title: 'Busy Little Pixels | Fractional CTO Services & Web Development',
 	description: 'Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events',
-	keywords: 'Fractional CTO, CTO, Tech Lead, Business Lead, Online Strategy, Mobile Apps, NextJS, Craft CMS, Strapi',
+	keywords: 'Fractional CTO, CTO, Tech Lead, Business Lead, Online Strategy, Mobile Apps, NextJS, PayloadCMS, Craft CMS, Svelte',
+	images: [
+		{
+		  url: 'https://busylittlepixels.com/assets/images/heart.webp',
+		  width: 800,
+		  height: 600,
+		},
+		{
+		  url: 'https://busylittlepixels.com/assets/images/heart.webp',
+		  width: 1800,
+		  height: 1600,
+		  alt: 'Busy Little Pixels | Fractional CTO Services & Web Development',
+		},
+	  ],
 	viewport: {
 		width: 'device-width',
 		initialScale: 1,
@@ -22,6 +35,19 @@ export const metadata = {
 		title: `Busy Little Pixels | Fractional CTO Services & Web Development`,
 		description: `Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events`,
 		siteName: "Busy Little Pixels",
+		images: [
+			{
+			  url: 'https://busylittlepixels.com/assets/images/heart.webp',
+			  width: 800,
+			  height: 600,
+			},
+			{
+			  url: 'https://busylittlepixels.com/assets/images/heart.webp',
+			  width: 1800,
+			  height: 1600,
+			  alt: 'Busy Little Pixels | Fractional CTO Services & Web Development',
+			},
+		],
 	}
 }
 
