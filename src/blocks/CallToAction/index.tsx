@@ -7,7 +7,7 @@ export const CallToAction: Block = {
         name: 'ctaImage',
         type: 'upload',
         relationTo: 'media',
-        required: true,
+        required: false,
     },
     {
         name: 'headerStart',
