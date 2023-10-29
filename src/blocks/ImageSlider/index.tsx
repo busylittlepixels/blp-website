@@ -40,7 +40,7 @@ export const ImageSlider: Block = {
           name: 'slideImage',
           type: 'upload',
           relationTo: 'media',
-          required: true,
+          required: false,
         },
         {
           name: 'slideColor',
