@@ -12,15 +12,15 @@ export const images: CustomImage[] = [
     original: "/assets/images/heart.webp",
     width: 320,
     height: 174,
-    title: "We're no strangers to love...."
+    title: "We're no strangers to love...you know the rules and so do I..."
   },
-  {
-    src: "https://media.giphy.com/media/ibqNLl44qRLJyKv7rU/giphy-downsized-large.gif",
-    original: "https://media.giphy.com/media/ibqNLl44qRLJyKv7rU/giphy-downsized-large.gif",
-    width: 350,
-    height: 250,
-    title: "...you know the rules and so do I..."
-  },
+  // {
+  //   src: "https://media.giphy.com/media/ibqNLl44qRLJyKv7rU/giphy-downsized-large.gif",
+  //   original: "https://media.giphy.com/media/ibqNLl44qRLJyKv7rU/giphy-downsized-large.gif",
+  //   width: 350,
+  //   height: 250,
+  //   title: "..."
+  // },
   {
     src: "/assets/images/coffee.webp",
     original: "/assets/images/coffee.webp",
