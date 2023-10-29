@@ -151,6 +151,13 @@ export const Serialize: SerializeFunction = ({ content, customRenderers }) => {
               </li>
             )
 
+          case 'upload':
+            return (
+              <figure key={i} className="my-8 shiney-wrapper shine">
+                <img className="aspect-video rounded-xl bg-gray-50 object-cover shadow-md" src={node.value?.url} />
+              </figure>
+            )
+  
           case 'link':
             return (
               <Link

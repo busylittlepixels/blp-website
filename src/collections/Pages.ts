@@ -1,5 +1,6 @@
 /* eslint-disable import/extensions */
 import type { CollectionConfig } from 'payload/types'
+import { slateEditor } from '@payloadcms/richtext-slate'
 
 import formatSlug from '../utilities/formatSlug'
 import { BlockTest } from '../blocks/BlockTest'
@@ -25,43 +26,6 @@ export const Pages: CollectionConfig = {
   access: {
     read: () => true,
   },
-  
-  //   fields: [
-  //     {
-  //       name: 'title',
-  //       label: 'Title',
-  //       type: 'text',
-  //       required: true,
-  //     },
-  //     {
-  //       name: 'richText',
-  //       type: 'richText',
-  //       label: 'Content',
-  //     },
-  //     {
-  //       name: 'slug',
-  //       label: 'Slug',
-  //       type: 'text',
-  //       admin: {
-  //         position: 'sidebar',
-  //       },
-  //       hooks: {
-  //         beforeValidate: [formatSlug('title')],
-  //       },
-  //     },
-  //     {
-  //       name: 'subtitle',
-  //       label: 'Subtitle',
-  //       type: 'text',
-  //     },
-  //     {
-  //       name: 'onemore',
-  //       label: 'One More',
-  //       type: 'text',
-  //     },
-  //   ],
-  // }
-
   // export default Pages
   fields: [
     {
@@ -87,12 +51,55 @@ export const Pages: CollectionConfig = {
               name: 'richText',
               type: 'richText', // required
               label: 'Content',
-              defaultValue: [
-                {
-                  children: [{ text: 'Here is some default content for this field' }],
-                },
-              ],
-              required: true
+              editor: slateEditor({
+                admin: {
+                  elements: [
+                    'h1',
+                    'h2',
+                    'h3',
+                    'h4',
+                    'link',
+                    'relationship',
+                    'textAlign',
+                    'ol',
+                    'ul',
+                    'indent',
+                    'blockquote',
+                    'upload',
+                  ],
+                  leaves: [
+                    'bold',
+                    'italic',
+                    'strikethrough',
+                    'code',
+                    'underline'
+                  ],
+                  link: {
+                    // Inject your own fields into the Link element
+                    fields: [
+                      {
+                        name: 'rel',
+                        label: 'Rel Attribute',
+                        type: 'select',
+                        hasMany: true,
+                        options: ['noopener', 'noreferrer', 'nofollow'],
+                      },
+                    ],
+                  },
+                  upload: {
+                    collections: {
+                      media: {
+                        fields: [
+                          // any fields that you would like to save
+                          // on an upload element in the `media` collection  
+
+                                            
+                        ],
+                      },
+                    },
+                  },
+                }
+              })
               
             },
             // {

@@ -11,6 +11,7 @@ export const Media: CollectionConfig = {
     staticDir: '../../public/assets/media',
     // Specify the size name that you'd like to use as admin thumbnail
     adminThumbnail: 'thumbnail',
+    mimeTypes: ['image/*'],
     imageSizes: [
       {
         height: 400,
@@ -26,5 +27,10 @@ export const Media: CollectionConfig = {
       },
     ],
   },
-  fields: [],
+  fields: [
+    {
+      name: 'alt',
+      type: 'text',
+    },
+  ],
 }

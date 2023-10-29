@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default async function About() {
   
   const about: Page = await fetch(
-    `${process.env.NEXT_PUBLIC_SERVER_URL}/api/pages?where[slug][equals]=about-us&depth=2`,
+    `${process.env.NEXT_PUBLIC_SERVER_URL}/api/pages?where[slug][equals]=about-us&depth=4`,
     { next: { revalidate: 10 } },
   )
     .then(res => res.json())
@@ -30,7 +30,8 @@ export default async function About() {
   }
   
   const { layout } = about
-  
+
+
   return (
     <>
       <FadeIn>
