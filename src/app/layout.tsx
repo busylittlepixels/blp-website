@@ -10,6 +10,7 @@ export const metadata = {
 	title: 'Busy Little Pixels | Fractional CTO Services & Web Development',
 	description: 'Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events',
 	keywords: 'Fractional CTO, CTO, Tech Lead, Business Lead, Online Strategy, Mobile Apps, NextJS, PayloadCMS, Craft CMS, Svelte',
+	url: "https://busylittlepixels.com", 
 	images: [
 		{
 		  url: 'https://busylittlepixels.com/assets/images/heart.webp',
@@ -31,9 +32,9 @@ export const metadata = {
 
 	openGraph: { 
 		type: "website", 
-		url: `https://busylittlepixels.com`, 
+		url: "https://busylittlepixels.com", 
 		title: `Busy Little Pixels | Fractional CTO Services & Web Development`,
-		description: `Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events`,
+		description: `Busy Little Pixels | We are Fractional CTOs, specialising in roadmapping your technical projects, web and custom app development, devops, project management, digital strategy, media and eCommerce.`,
 		siteName: "Busy Little Pixels",
 		images: [
 			{
