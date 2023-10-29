@@ -7,6 +7,7 @@ export const Media: CollectionConfig = {
     read: (): boolean => true, // Everyone can read Media
   },
   upload: {
+    staticURL: '/assets/media',
     staticDir: '../../public/assets/media',
     // Specify the size name that you'd like to use as admin thumbnail
     adminThumbnail: 'thumbnail',
