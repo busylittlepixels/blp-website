@@ -1,12 +1,11 @@
 import path from 'path'
-
 import nestedDocs from "@payloadcms/plugin-nested-docs"
 import { mongooseAdapter } from "@payloadcms/db-mongodb"
 import { slateEditor } from "@payloadcms/richtext-slate"
 import { webpackBundler } from "@payloadcms/bundler-webpack"
 import { buildConfig } from 'payload/config'
 
-import { Media } from '../collections/Media'
+// import { Media } from '../collections/Media'
 import { Pages } from '../collections/Pages'
 import { Posts } from '../collections/Posts'
 import { MainMenu } from '../globals/MainMenu'
@@ -14,7 +13,7 @@ import Logo from '../components/custom/Logo'
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_PUBLIC_SERVER_URL,
-  collections: [Pages, Posts, Media],
+  collections: [Pages, Posts],
   globals: [MainMenu],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),

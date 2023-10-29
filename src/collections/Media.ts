@@ -7,7 +7,7 @@ export const Media: CollectionConfig = {
     read: (): boolean => true, // Everyone can read Media
   },
   upload: {
-    staticDir: path.resolve(__dirname, '../../../uploads'),
+    staticDir: path.resolve(__dirname, '/uploads'),
     adminThumbnail: 'thumbnail',
     imageSizes: [
       {
