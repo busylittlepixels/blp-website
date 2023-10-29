@@ -11,6 +11,7 @@ import { FadeIn } from "../../components/shared/FadeIn"
 // import { Overlap } from "../../components/layout/Overlap"
 // import { ScrollTriggerSlide } from "../../components/layout/ScrollTriggerSlide"
 import { Testimonials } from "../../components/layout/Testimonials"
+import { HeroCarousel } from "../../components/layout/HeroCarousel"
 
 export default async function Home() {
   const home: Page = await fetch(

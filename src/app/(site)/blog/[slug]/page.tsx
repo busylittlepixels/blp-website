@@ -1,5 +1,5 @@
 
-import * as fs from 'fs';
+import fs from "fs"
 import React from 'react'
 import matter from 'gray-matter'
 import path from 'path'

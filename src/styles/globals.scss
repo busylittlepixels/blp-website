@@ -2,6 +2,7 @@
 @import '@../../node_modules/slick-carousel/slick/slick-theme.scss';
 @import './bigTextLittleText/bigtextlittletext.scss';
 @import './heroCarousel/herocarousel.scss';
+@import './imageShimmer/imageShimmer.scss';
 @import './motionHero/motionhero.scss';
 @import './nav/nav.css';
 @import './parallaxOverlap/parallaxoverlap.scss';
@@ -419,50 +420,6 @@ svg:hover #sail-group > line {
 }
 
 
-.shiney-wrapper{
-  display: flex;
-  align-items: center;
-  text-align: center;
-  line-height: 1.6;
-}
-
-
-
-.shine {
-  position: relative;
-  overflow: hidden;
-
-  &::before {
-    background: linear-gradient(
-      to right,
-      fade_out(#fff, 1) 0%,
-      fade_out(#fff, 0.7) 100%
-    );
-    content: "";
-    display: block;
-    height: 100%;
-    left: -75%;
-    position: absolute;
-    top: 0;
-    transform: skewX(-25deg);
-    width: 50%;
-    z-index: 2;
-  }
-
-  &:hover,
-  &:focus {
-    &::before {
-      animation: shine 0.85s;
-    }
-  }
-
-  @keyframes shine {
-    100% {
-      left: 125%;
-    }
-  }
-}
-
 .box {
   width: 150px;
   height: 150px;
@@ -471,8 +428,6 @@ svg:hover #sail-group > line {
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 .nyomNyomCookie{
   background: red;

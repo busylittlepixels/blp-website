@@ -4,10 +4,11 @@ import gsap from 'gsap';
 	
 interface CarouselProps {
 	images?: any;
+	mapImages?: any;
 	duration?: number; // duration for each slide, in seconds
 }
 	
-export const useCarousel = ({ images, duration }: CarouselProps) => {
+export const useCarousel = ({ images, mapImages, duration }: CarouselProps) => {
 	const [currentIndex, setCurrentIndex] = useState(0);
 	
 	useEffect(():any => {
