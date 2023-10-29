@@ -1,16 +1,10 @@
-
-import dotenv from 'dotenv'
 import path from 'path'
-import fs from 'fs'
+
 import nestedDocs from "@payloadcms/plugin-nested-docs"
 import { mongooseAdapter } from "@payloadcms/db-mongodb"
 import { slateEditor } from "@payloadcms/richtext-slate"
 import { webpackBundler } from "@payloadcms/bundler-webpack"
 import { buildConfig } from 'payload/config'
-
-dotenv.config({
-  path: path.resolve(__dirname, './../.env'),
-})
 
 import { Media } from '../collections/Media'
 import { Pages } from '../collections/Pages'
@@ -19,7 +13,7 @@ import { MainMenu } from '../globals/MainMenu'
 import Logo from '../components/custom/Logo'
 
 export default buildConfig({
-  serverURL: process.env.PAYLOAD_PUBLIC_SERVER_URL || '',
+  serverURL: process.env.PAYLOAD_PUBLIC_SERVER_URL,
   collections: [Pages, Posts, Media],
   globals: [MainMenu],
   typescript: {
@@ -43,7 +37,7 @@ export default buildConfig({
   },
   plugins: [
     nestedDocs({
-      collections: ["pages", "posts"],
+      collections: ["pages", "posts", "media"],
       generateLabel: (_, doc): any => doc.title as string,
       generateURL: (docs) => docs.reduce((url, doc) => `${url}/${doc.slug}`, ""),
     }),

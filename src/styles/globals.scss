@@ -146,12 +146,19 @@
   text-align: justify;
 
   h2{
-    font-weight: bolder;
-    padding: 1em 0;
+    @apply pb-4 font-black text-3xl md:text-4xl last:mb-0 uppercase max-w-3xl text-left
   }
 
   h3{
     font-weight: bolder;
+  }
+
+  figure{
+    @apply my-8 shiney-wrapper shine;
+
+    img{
+      @apply aspect-video rounded-xl bg-gray-50 object-cover shadow-md;
+    }
   }
   
   ul{
@@ -453,3 +460,8 @@ svg:hover #sail-group > line {
   height: 100vh;
   overflow-y: scroll;
 }
+
+
+
+// editor
+

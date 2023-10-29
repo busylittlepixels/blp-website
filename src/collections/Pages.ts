@@ -91,7 +91,7 @@ export const Pages: CollectionConfig = {
             {
               name: 'enableSubtitle',
               type: 'checkbox',
-              // /defaultValue: true,
+              defaultValue: true,
             },
             {
               name: 'subtitle',
