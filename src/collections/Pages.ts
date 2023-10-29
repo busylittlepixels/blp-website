@@ -166,16 +166,16 @@ export const Pages: CollectionConfig = {
         beforeValidate: [formatSlug('title')],
       },
     },
-    {
-      name: "testButton", // required
-      label: "Test Field",
-      type: "ui", // required
-      admin: {
-        position: 'sidebar',
-        components: {
-          Field: CustomButton,
-        },
-      },
-    },
+    // {
+    //   name: "testButton", // required
+    //   label: "Test Field",
+    //   type: "ui", // required
+    //   admin: {
+    //     position: 'sidebar',
+    //     components: {
+    //       Field: CustomButton,
+    //     },
+    //   },
+    // },
   ],
 }
