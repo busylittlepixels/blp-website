@@ -77,7 +77,7 @@ const people = [
               <h1 className="text-4xl font-black tracking-tight text-white sm:text-6xl uppercase mb-4">{headline ? headline : 'MEET THE ' }<span style={{ "color": "red"}}>PIXELS</span>...</h1>
               <div className="header__underline"></div>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                We are a dynamic and distributed fractional CTO company founded by a team of experienced professionals who have walked the path of CTOs, Tech Leads, Developers, and Marketing Specialists. <br /><br />With our studios headquartered in the bustling tech hub of Dublin, and distributed bases in Austria, the UK and The Netherlands - we bring together a wealth of expertise and a passion for driving technological innovation.
+                We are a dynamic and distributed fractional CTO company founded by a team of experienced professionals who have walked the path of CTOs, Technical Leads, Developers, and Marketing Specialists. <br /><br />With our studios headquartered in the bustling tech hub of Dublin, and distributed bases in Austria, the UK and The Netherlands - we bring together a wealth of expertise and a passion for driving technological innovation.
               </p>
           </div>
           <ul

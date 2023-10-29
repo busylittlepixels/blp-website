@@ -145,8 +145,14 @@
   line-height: 2.5rem;
   text-align: justify;
 
-  h2{
-    @apply pb-4 font-black text-3xl md:text-4xl last:mb-0 uppercase max-w-3xl text-left
+  @media screen and (max-width: 768px) {
+    line-height: 2rem;
+    font-size: 18px;
+}  
+
+  h2,
+  h2 > span{
+    @apply pb-4 font-black text-black text-3xl md:text-4xl last:mb-0 uppercase max-w-3xl text-left
   }
 
   h3{
@@ -179,20 +185,6 @@
   line-height: 2.5rem;
   text-align: justify;
   flex-direction: column;
-}
-
-.article_text{
-    letter-spacing: -0.5px;
-    font-weight: 300;
-    @apply flex;
-    font-size: 1.125rem;
-    line-height: 2.5rem;
-    text-align: justify;
-  
-    @media screen and (max-width: 768px) {
-      line-height: 2rem;
-      font-size: 18px;
-  }  
 }
 
 .carouselLeft{
@@ -465,3 +457,9 @@ svg:hover #sail-group > line {
 
 // editor
 
+.services_text{
+    letter-spacing: -0.5px;
+    font-weight: 300;
+    display: flex;
+    line-height: 2rem;
+}
