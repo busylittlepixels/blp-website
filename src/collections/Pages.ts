@@ -63,7 +63,6 @@ export const Pages: CollectionConfig = {
                     'textAlign',
                     'ol',
                     'ul',
-                    'indent',
                     'blockquote',
                     'upload',
                   ],
@@ -72,7 +71,7 @@ export const Pages: CollectionConfig = {
                     'italic',
                     'strikethrough',
                     'code',
-                    'underline'
+                    'underline',
                   ],
                   link: {
                     // Inject your own fields into the Link element

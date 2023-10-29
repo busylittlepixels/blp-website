@@ -43,7 +43,7 @@ export const Serialize: SerializeFunction = ({ content, customRenderers }) => {
           }
 
           if (node.italic) {
-            text = <em key={i}>{text}</em>
+            text = <span style={{"color":"red"}}>{text}</span>
           }
 
           if (node.underline) {

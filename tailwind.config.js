@@ -8,6 +8,9 @@ module.exports = {
     extend: {
       zIndex: {
         '-1': '-1',
+      },
+      text:{
+        'red': '#f00000'
       }
     }
   },
