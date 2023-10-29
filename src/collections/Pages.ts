@@ -85,33 +85,40 @@ export const Pages: CollectionConfig = {
             },
             {
               name: 'richText',
-              type: 'richText',
+              type: 'richText', // required
               label: 'Content',
+              defaultValue: [
+                {
+                  children: [{ text: 'Here is some default content for this field' }],
+                },
+              ],
+              required: true
+              
             },
-            {
-              name: 'enableSubtitle',
-              type: 'checkbox',
-              defaultValue: true,
-            },
-            {
-              name: 'subtitle',
-              label: 'Subtitle',
-              type: 'text',
-              admin: {
-                condition: (data, siblingData, { user }) => {
-                  if (data.enableSubtitle) {
-                    return true;
-                  } else {
-                    return false;
-                  }
-                }
-              }
-            },
-            {
-              name: 'onemore',
-              label: 'One More',
-              type: 'text',
-            },
+            // {
+            //   name: 'enableSubtitle',
+            //   type: 'checkbox',
+            //   defaultValue: true,
+            // },
+            // {
+            //   name: 'subtitle',
+            //   label: 'Subtitle',
+            //   type: 'text',
+            //   admin: {
+            //     condition: (data, siblingData, { user }) => {
+            //       if (data.enableSubtitle) {
+            //         return true;
+            //       } else {
+            //         return false;
+            //       }
+            //     }
+            //   }
+            // },
+            // {
+            //   name: 'onemore',
+            //   label: 'One More',
+            //   type: 'text',
+            // },
           ],
         },
         {
