@@ -132,8 +132,12 @@ export const Serialize: SerializeFunction = ({ content, customRenderers }) => {
 
           case 'ul':
             return (
-              <ul key={i}>
-                <Serialize content={node.children} customRenderers={customRenderers} />
+              <ul key={i} role="list" className={`max-w-xl space-y-8 text-gray-400`}>
+                <li key={i} className="flex gap-x-3">
+                    <span className="font-normal text-gray-900">
+                      <Serialize content={node.children} customRenderers={customRenderers} />
+                    </span>
+                </li>
               </ul>
             )
 
