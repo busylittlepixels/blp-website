@@ -47,4 +47,8 @@ export default buildConfig({
     // @ts-ignore
     url: process.env.MONGODB_URI,
   }),
+  csrf: [
+    // whitelist of domains to allow cookie auth from
+    'https://busylittlepixels.com',
+  ],
 })

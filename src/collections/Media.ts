@@ -7,8 +7,7 @@ export const Media: CollectionConfig = {
     read: (): boolean => true, // Everyone can read Media
   },
   upload: {
-    staticDir: path.resolve(__dirname, './../../media'),
-    // Specify the size name that you'd like to use as admin thumbnail
+    staticDir: path.resolve(__dirname, '../../../uploads'),
     adminThumbnail: 'thumbnail',
     imageSizes: [
       {
