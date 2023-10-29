@@ -1,27 +1,22 @@
-import { mongooseAdapter } from "@payloadcms/db-mongodb";
-import { slateEditor } from "@payloadcms/richtext-slate";
-import { webpackBundler } from "@payloadcms/bundler-webpack";
-import { buildConfig } from 'payload/config'
 
 import dotenv from 'dotenv'
 import path from 'path'
-import nestedDocs from "@payloadcms/plugin-nested-docs";
+import fs from 'fs'
+import nestedDocs from "@payloadcms/plugin-nested-docs"
+import { mongooseAdapter } from "@payloadcms/db-mongodb"
+import { slateEditor } from "@payloadcms/richtext-slate"
+import { webpackBundler } from "@payloadcms/bundler-webpack"
+import { buildConfig } from 'payload/config'
 
 dotenv.config({
   path: path.resolve(__dirname, './../.env'),
 })
 
-
-
 import { Media } from '../collections/Media'
 import { Pages } from '../collections/Pages'
 import { Posts } from '../collections/Posts'
 import { MainMenu } from '../globals/MainMenu'
-import Logo from '../components/custom/Logo';
-import { BaseDatabaseAdapter } from 'payload/dist/database/types';
-import { Payload } from 'payload/dist/payload';
-import { ValidateOptions, RichTextField } from 'payload/types';
-
+import Logo from '../components/custom/Logo'
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_PUBLIC_SERVER_URL || '',
@@ -55,7 +50,7 @@ export default buildConfig({
   ],
   editor: slateEditor({}),
   db: mongooseAdapter({
-    // @ts-expect-error
+    // @ts-ignore
     url: process.env.MONGODB_URI,
   }),
 })
