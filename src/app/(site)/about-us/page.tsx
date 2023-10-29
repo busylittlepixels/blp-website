@@ -46,22 +46,22 @@ export default async function About() {
                   </h1>
                   <p className="contact_intro mx-auto mb-6 max-w-3xl md:px-6 lg:px-8">At BLP, we understand the challenges faced by businesses in today's fast-paced digital landscape. Our founders have accumulated years of hands-on experience across various industries, working on groundbreaking projects that have transformed businesses and pushed the boundaries of technology.</p>
                   <p className="contact_intro mx-auto mb-6 max-w-3xl md:px-6 lg:px-8">We thrive on delivering exceptional results, providing tailored solutions that align with our clients' unique goals and aspirations. Whether you need strategic guidance, technical expertise, or a comprehensive technology roadmap, our team of fractional CTOs is here to empower your business and accelerate its growth. Join us on this exciting journey as we harness the power of pixels to unlock your full digital potential.</p>
-                  <figure className="my-16"><img className="aspect-video rounded-xl bg-gray-50 object-cover shadow-md" src="/assets/images/heart.webp" alt="" /></figure>
+                  <figure className="my-16 shiney-wrapper shine"><img className="aspect-video rounded-xl bg-gray-50 object-cover shadow-md" src="/assets/images/heart.webp" alt="" /></figure>
                   
                   <br/>
                   <h2 className="pb-4 font-black text-3xl md:text-4xl last:mb-0 uppercase max-w-3xl mx-auto">European Roots, <span style={{"color":"red"}}>Global Vision</span></h2>
                   <p className="contact_intro mx-auto mb-6 max-w-3xl md:px-6 lg:px-8">Positioned at the gateway to Europe, we’re at the crossroads of innovation, drawing inspiration from our distributed bases across Europe, but our reach is global</p>
-                  <figure className="my-8"><img className="aspect-video rounded-xl bg-gray-50 object-cover shadow-md" src="/assets/images/connected-europe.png" alt="" /></figure>
+                  <figure className="my-8 shiney-wrapper shine"><img className="aspect-video rounded-xl bg-gray-50 object-cover shadow-md" src="/assets/images/connected-europe.png" alt="" /></figure>
 
                   <br/>
                   <h2 className="pb-4 font-black text-3xl md:text-4xl last:mb-0 uppercase max-w-3xl mx-auto">Your Challenges, <span style={{"color":"red"}}>Our Solutions</span></h2>
                   <p className="contact_intro mx-auto mb-6 max-w-3xl md:px-6 lg:px-8">We pride ourselves on crafting solutions tailored to your unique needs, ensuring that what we create for you stands out in the digital wilderness.</p><br />
-                  <figure className="mb-8"><img className="aspect-video rounded-xl bg-gray-50 object-cover shadow-md" src="/assets/images/solutions.png" alt="" /></figure>
+                  <figure className="mb-8 shiney-wrapper shine"><img className="aspect-video rounded-xl bg-gray-50 object-cover shadow-md" src="/assets/images/solutions.png" alt="" /></figure>
 
                   <br />
                   <h2 className="pb-4 font-black text-3xl md:text-4xl last:mb-0 uppercase max-w-3xl mx-auto">Trust and <span style={{"color":"red"}}>Transparency</span></h2>
                   <p className="contact_intro mx-auto mb-6 max-w-3xl md:px-6 lg:px-8">Our partnerships are built on a foundation of trust. We’re committed to transparency at every step, ensuring you{'’'}re always in the loop.</p>
-                  <figure className="mt-16"><img className="aspect-video rounded-xl bg-gray-50 object-cover shadow-md" src="/assets/images/heart.webp" alt="" /></figure>
+                  <figure className="mt-16 shiney-wrapper shine"><img className="aspect-video rounded-xl bg-gray-50 object-cover shadow-md" src="/assets/images/heart.webp" alt="" /></figure>
 
 
                   <br /><br />
