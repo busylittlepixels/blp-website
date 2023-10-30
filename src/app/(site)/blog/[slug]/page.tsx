@@ -147,7 +147,7 @@ const PostPage = (props: any) => {
                         <p className="mt-8 font-display font-extrabold tracking-tight text-slate-900 sm:text-4xl">
                             <span className="block text-red-600">Paddy Ryan,</span>
                         </p>
-                        <p className="mt-2 font-display font-extrabold tracking-tight text-slate-900 sm:text-2xl">Co-Founder, BUSY<span style={{ "color":"red"}}>LITTLE</span>PIXELS.</p>
+                        <p className="mt-2 font-display font-extrabold tracking-tight text-slate-900 sm:text-2xl">Co-Founder, busy<span style={{ "color":"red"}}>little</span>pixels.</p>
                         <p className="mt-4 text-md tracking-tight text-slate-700 article_text">I’ve been designing and developing professionally for over a decade and have worked with dozens of the biggest brands to create roadmaps to success for their products and tech. I’ve worked with companies from startups to Nasdaq listed enterprises, and honed my abilities to navigate the brave new world that is all things tech.</p>
                     </div>
                     </div>
