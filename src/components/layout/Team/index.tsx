@@ -72,6 +72,7 @@ const people = [
                 <rect width="400" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
             </svg>
         </div>
+        
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
               <h1 className="text-4xl font-black tracking-tight text-white sm:text-6xl uppercase mb-4">{headline ? headline : 'MEET THE ' }<span style={{ "color": "red"}}>PIXELS</span>...</h1>

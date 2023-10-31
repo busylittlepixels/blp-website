@@ -75,13 +75,11 @@
     @apply bg-red-600 hover:bg-red-400 text-white font-bold p-4 rounded transition ease-in-out
   }
   
-  @layer components{
-    .rd_txt{
-      color: red;
-    }
+
+  .rd_txt{
+    color: red!important;
   }
-  
-  
+    
   .override{
     padding-top: 4rem!important;
     padding-bottom: 0!important;
@@ -466,4 +464,9 @@ svg:hover #sail-group > line {
 
 strong {
   font-weight: 700;
+}
+
+.blogIndexHeading{
+  @apply uppercase font-black text-4xl md:text-7xl;
+  letter-spacing: -0.05em;
 }

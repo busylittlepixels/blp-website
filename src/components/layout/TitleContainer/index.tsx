@@ -19,7 +19,7 @@ const HeadingContainer = tw.div`
 `
 
 const Heading = tw.h1`
-    px-4 font-black text-4xl md:text-6xl mb-6 last:mb-0 uppercase tracking-tighter
+    px-4 font-black text-4xl md:text-6xl mb-4 last:mb-0 uppercase tracking-tighters leading-8
 `
 
 export const TitleContainer = ({ title, subtitle }:TitleContainerProps) => {

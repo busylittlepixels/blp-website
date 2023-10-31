@@ -76,7 +76,7 @@ export const metadata: Metadata = {
             <div className="py-12 sm:py-32">
               <div className="container mx-auto w-full px-4 bg-white max-w-auto">
                   <div className="mx-auto max-w-7xl">
-                    <h1 className="composedHeading">BUSY<span style={{ "color" : "red"}}>LITTLE</span>BLOG</h1>
+                    <h1 className="blogIndexHeading">BUSY<span style={{ "color" : "red"}}>LITTLE</span>BLOG</h1>
                     <div className="header__underline"></div>
                     <p className="mt-8 text-2xl leading-8 text-gray-600 article_text">
                       Navigate the ever-changing landscape of technology with BLP.<br />
