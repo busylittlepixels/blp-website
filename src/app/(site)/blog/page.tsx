@@ -29,38 +29,7 @@ export const metadata: Metadata = {
     
     return (
         <main className={'blog index'}>
-            <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
-                <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
-                    <svg
-                    className="absolute bottom-5 left-full translate-x-28 transform mix-blend-darken"
-                    width="350"
-                    height="700"
-                    fill="none"
-                    viewBox="0 0 400 384"
-                    >
-                    <defs>
-                        <pattern
-                        id="d3eb07ae-5182-43e6-857d-35c643af9034"
-                        x="0"
-                        y="0"
-                        width="20"
-                        height="20"
-                        patternUnits="userSpaceOnUse"
-                        >
-                        <rect
-                            x="0"
-                            y="0"
-                            width="6"
-                            height="6"
-                            className="text-gray-200"
-                            fill="currentColor"
-                        />
-                        </pattern>
-                    </defs>
-                    <rect width="350" height="700" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
-                    </svg>
-                </div>
-            </div>
+           
             <div className="absolute inset-x-0 bottom-10 top-0 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
               <svg aria-hidden="true" className="absolute inset-0 h-full w-full">
                 <defs>
