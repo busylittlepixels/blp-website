@@ -47,8 +47,8 @@ export const metadata: Metadata = {
                   <div className="mx-auto max-w-7xl">
                     <h1 className="blogIndexHeading">BUSY<span style={{ "color" : "red"}}>LITTLE</span>BLOG</h1>
                     <div className="header__underline"></div>
-                    <p className="mt-8 text-2xl leading-8 text-gray-600 article_text">
-                      Navigate the ever-changing landscape of technology with BLP.<br />
+                    <p className="blogIntroString">
+                      At <span><strong> busy</strong></span><span style={{"color": "red"}}><strong>little</strong></span><strong>pixels</strong>, we navigate the ever-changing landscape of business and technology.<br />
                       From industry and tech commentary, to emerging trends, we've always got something to say. 
                     </p>
                     
@@ -78,16 +78,16 @@ export const metadata: Metadata = {
                                   {post.category ? post.category : ''}
                               </Link>
                               </div>
-                              <div className="group relative max-w-xl">
+                              <div className="group relative">
                               <h3 className="mt-3 text-2xl font-black leading-6 text-black group-hover:text-red-500 transition-all">
                                   <Link href={`/blog/${post.slug}`}>
-                                  <span className="absolute inset-0" />
+                                  <span className="absolute" />
                                   {post.title}
                                   </Link>
                               </h3>
-                              <RichText content={post.excerpt} className={`mt-5 text-sm leading-6 text-gray-600 article_text`} />
+                              <RichText content={post.excerpt} className={`text-sm leading-6 text-gray-600 article_text`} />
                               </div>
-                              <div className="mt-6 flex pt-6">
+                              <div className="flex">
                               <div className="relative flex items-center gap-x-4">
                                   <img src={'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80'} alt="" className="h-10 w-10 rounded-full bg-gray-50" />
                                   <div className="text-sm leading-6">
