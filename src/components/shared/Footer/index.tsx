@@ -62,11 +62,7 @@ export const Footer = () => {
   
   return (
     <footer className="bg-black py-20 text-slate-300 md:pb-12 footer relative">
-      {/* <div className='windmill block'>
-        <div onClick={goToTop} className={'cursor-pointer'}>
-          <CustomSVG />
-        </div>
-      </div> */}
+      
       <div className="grid grid-cols-1 justify-items-center gap-10 md:gap-20">
         <FadeIn>
           <SignUpForm />

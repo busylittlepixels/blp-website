@@ -8,6 +8,7 @@ interface IExpertise {
   content?: any
 }
 
+
 export const Expertise = ({ content }: IExpertise) => {
   const { header } = content; 
 

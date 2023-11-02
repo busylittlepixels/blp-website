@@ -6,7 +6,7 @@ export const LogoCloud = ({ content }:any) => {
 
     return (
       <div className="bg-black py-24 sm:py-32">
-        <FadeIn>
+        {/* <FadeIn>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <h1 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-2 md:mb-2 last:mb-0 uppercase text-white pb-8">SOME PLACES WE{`'`}VE <span style={{"color":"red"}}>PIXELLED</span></h1>
@@ -34,7 +34,7 @@ export const LogoCloud = ({ content }:any) => {
                 width={158}
                 height={48}
                 
-              />  */}
+              />  
               <Image
                 className="col-span-2 max-h-12 w-full object-cover object-center lg:col-span-1 md:ml-6"
                 src="/assets/images/unitopsmedia_white.png"
@@ -46,7 +46,7 @@ export const LogoCloud = ({ content }:any) => {
             </div>
           </div>
         </div>
-        </FadeIn>
+        </FadeIn> */}
       </div>
     )
   }
