@@ -1,6 +1,6 @@
 import React from 'react'
 // app/layout.js
-import { PHProvider } from './providers'
+// import { PHProvider } from './providers'
 import CookieBanner from './../components/layout/CookieBanner'
 import { Analytics } from '@vercel/analytics/react';
 
@@ -60,13 +60,13 @@ export default function RootLayout({
 	}) {
 	return (
 		<html lang={'en'}>
-			<PHProvider>
+			
 				<body>
 					{children}
 					<Analytics />	
 				</body>
 				<CookieBanner />
-			</PHProvider>
+			
 		</html>
 	)
 }

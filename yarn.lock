@@ -6797,7 +6797,7 @@ ignore@^5.2.0:
 
 imagesloaded@^5.0.0:
   version "5.0.0"
-  resolved "https://registry.npmjs.org/imagesloaded/-/imagesloaded-5.0.0.tgz"
+  resolved "https://registry.yarnpkg.com/imagesloaded/-/imagesloaded-5.0.0.tgz#e614e5de482769dd7d571ca62d947d0d00183847"
   integrity sha512-/0JGSubc1MTCoDKVmonLHgbifBWHdyLkun+R/151E1c5n79hiSxcd7cB7mPXFgojYu8xnRZv7GYxzKoxW8BetQ==
   dependencies:
     ev-emitter "^2.1.2"
