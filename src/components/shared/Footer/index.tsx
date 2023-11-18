@@ -8,8 +8,8 @@ import createSignup from "../../../app/actions";
 import { FadeIn } from "../FadeIn";
 
 const currentYear = () => {
-  let currentTime = new Date()
-  let year:number = currentTime.getFullYear()
+  let currentTime = new Date();
+  let year:number = currentTime.getFullYear();
   return year;
 }
 
@@ -19,7 +19,7 @@ const initialState = {
   }
 
 function SubmitButton(){
-    const { pending } = useFormStatus()
+    const { pending } = useFormStatus();
 
     return(
         
