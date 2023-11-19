@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { experimental_useFormState as useFormState } from 'react-dom'
 // @ts-expect-error
 import { experimental_useFormStatus as useFormStatus } from 'react-dom'
-import createSignup from "../../../app/(site)/actions";
+import { createSignup } from "../../../app/(site)/actions";
 import { FadeIn } from "../FadeIn";
 import React from 'react';
 
@@ -15,8 +15,8 @@ const currentYear = () => {
 }
 
 
-let initialState:any = {
-    email: "your.name@example.com",
+const initialState = {
+    email: "",
 }
 
 function SubmitButton(){
@@ -35,14 +35,14 @@ function SubmitButton(){
 }
 
 export function SignUpForm(){
-  // @ts-ignore
-  const [state, formAction]= useFormState(createSignup, initialState)
 
+  const [state, formAction]= useFormState(createSignup, initialState)
   return (
     <div className="px-4">
       
       <form
         action={formAction}
+        method="POST"
         className="grid w-full max-w-xl grid-cols-1 gap-6"
       >
         <div className="text-center tracking-tight text-slate-300">
@@ -55,6 +55,7 @@ export function SignUpForm(){
             <label>
               <span className="sr-only">Email address</span>
               <input
+                id="email"
                 name="email"
                 type="email"
                 placeholder="your.name@example.com"
