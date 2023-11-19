@@ -84,9 +84,9 @@ export const Footer = () => {
     <footer className="bg-black py-20 text-slate-300 md:pb-12 footer relative">
       
       <div className="grid grid-cols-1 justify-items-center gap-10 md:gap-20">
-        {/* <FadeIn>
+        <FadeIn>
           <SignUpForm />
-        </FadeIn> */}
+        </FadeIn>
         
         <div className="mx-auto w-full max-w-3xl text-center text-xs tracking-tight text-white">
           © {currentYear()} <a href="https://busylittlepixels.com" className='font-black'>busy<span style={{"color": "red"}}>little</span>pixels.</a><span className='font-black'> Made with <span style={{"color": "red"}}>&hearts;</span> in Amsterdam.</span> 

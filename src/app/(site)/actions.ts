@@ -3,7 +3,7 @@
 import { redirect } from 'next/navigation';
 
 async function createSignup(): Promise<void> {
-  redirect(`/studio`) // Navigate to new route
+  redirect(`/why-blp`) // Navigate to new route
 }
 
 export default createSignup

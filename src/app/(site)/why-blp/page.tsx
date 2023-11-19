@@ -1,17 +1,22 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react'
-import Link from 'next/link'
-import FadeIn from '../../../components/shared/FadeIn';
+import FadeIn from '../../../components/shared/FadeIn'
+
+import { Services } from '../../../components/layout/Services';
+import { LogoCloud } from '../../../components/layout/LogoCloud'
+import { Team } from '../../../components/layout/Team'
 import { Metadata } from 'next'
 
-const studioP1 = `<h2 class="font-black text-2xl">You're not just entering a web development <span class="rd_txt">studio</span></h2><p>Ours is a digital ecosystem crafted for scale-ups. As part of our broader fractional CTO vision, we've opted to work with the best tooling in the business: Javascript, React, NextJS, Astro for web, and React-Native for mobile. Your content, enriched by Payload or Craft CMS, becoming more than just words...it's a narrative. And with our prowess in third-party API integrations and cutting-edge hosting solutions, we promise a journey that's smooth, efficient, and memorable. Ready to redefine your digital footprint?<p>`;
+
+const studioP1 = `<h2 class="font-black text-2xl">We chart a course through the digital ecosystem <span class="rd_txt">studio</span></h2><p>Ours is a digital ecosystem crafted for scale-ups. As part of our broader fractional CTO vision, we've opted to work with the best tooling in the business: Javascript, React, NextJS, Astro for web, and React-Native for mobile. Your content, enriched by Payload or Craft CMS, becoming more than just words...it's a narrative. And with our prowess in third-party API integrations and cutting-edge hosting solutions, we promise a journey that's smooth, efficient, and memorable. Ready to redefine your digital footprint?<p>`;
 const studioP2 = `<h2 class="font-black text-2xl">Expertise in <span class="rd_txt">techical solutions</span></h2><p>mobile isn't just a platform; it's a passion. Our journey has seen us partnering with global icons like Web Summit and The Next Web, to infrastructural pillars such as:... With impactful projects spanning Ireland to the Netherlands in governmental tech initiatives, we've always been at the cusp of what's next in mobile. Dive in with us, and let's craft a mobile narrative that captures hearts and minds.<p>`;
 const studioP3 = `<h2 class="font-black text-2xl">More than a service; we're your <span class="rd_txt">digital compass</span></h2><p>Navigating the ever-evolving digital landscape can be daunting, but our seasoned team is here to guide you from your current position to your envisioned pinnacle. As trusted advisors, we'll share insights that illuminate your path. As builders, we craft robust solutions tailored to your unique needs. And as technical facilitators and enablers, we ensure a seamless transition and implementation, empowering your business every step of the way. With Busy Little Pixels by your side, your journey towards growth and innovation is not just assured; it's inspired.<p>`;
 
 
 export const metadata: Metadata = {
-  title: 'Studio | Busy Little Pixels',
-  description: 'Studio - We are Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events',
+  title: 'Why BLP | Busy Little Pixels',
+  description: 'What We Are is Who We Are. Factional CTOs, Web and mobile application development specialists, technical business architects and trusted advisors',
+  keywords: 'Fractional CTO, Technical Specialists, Professional Services, Technical Roadmap, Web and Application development',
 }
 
 
@@ -71,7 +76,7 @@ export default async function Page() {
           
           <div className="grid grid-cols-1 justify-items-center gap-2 md:gap-10 homeAdjust mb-2">
             <div className="max-full text-left leading-relaxed">
-              <h1 className="font-black text-4xl md:text-7xl mb-6 last:mb-0 text-center">Welcome to our <br /> BUSY<span style={{'color': 'red'}}>LITTLE</span>STUDIO</h1>
+              <h1 className="font-black text-4xl md:text-7xl mb-6 last:mb-0 text-center">WHY B<span style={{'color': 'red'}}>L</span>P?</h1>
               <div className="header__underline"></div>
             </div>
             <div className='RichText_richText__qEmi6 text-gray-600 mt-4 article_text flex-col'>
@@ -131,7 +136,7 @@ export default async function Page() {
               </div>
           
           </section>
-          <div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
+          {/* <div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
               <svg aria-hidden="true" className="absolute inset-0 h-full w-full">
                 <defs>
                   <pattern id=":ra:" width="128" height="128" patternUnits="userSpaceOnUse" x="50%" y="100%">
@@ -140,11 +145,13 @@ export default async function Page() {
                 </defs>
                 <rect width="100%" height="100%" fill="url(#:ra:)"></rect>
               </svg>
-            </div>
-       
+          </div> */}
+          <LogoCloud />
+          <Services />
+          <Team />
     
-
-        <div className="bg-white py-12 sm:py-12 lg:py-20">
+          
+        {/* <div className="bg-white py-12 sm:py-12 lg:py-20">
           <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
               <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
                   <div className="flex flex-col items-start gap-4">
@@ -154,7 +161,7 @@ export default async function Page() {
                        
               </div>
 
-           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
            
             <a href="https://thenextweb.com" target="_blank" rel="noopener noreferrer"
                 className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
@@ -255,8 +262,8 @@ export default async function Page() {
                   </a>
 
                   </div>
-              </div>
-          </div>
+            </div>
+          </div> */}
         </main>
         </FadeIn>
     </>

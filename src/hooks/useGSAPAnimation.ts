@@ -3,7 +3,6 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-//const imagesLoaded = require("imagesloaded"); // Ensure you have imagesLoaded/
 
 gsap.registerPlugin(ScrollTrigger);
 
