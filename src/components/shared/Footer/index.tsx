@@ -1,21 +1,47 @@
 'use client';
 import Link from 'next/link'
-import { FadeIn } from '../FadeIn'
-// import { CustomSVG } from '../Windmill'
+// @ts-ignore
+import { experimental_useFormState as useFormState } from 'react-dom'
+// @ts-expect-error
+import { experimental_useFormStatus as useFormStatus } from 'react-dom'
+import createSignup from "../../../app/(site)/actions";
+import { FadeIn } from "../FadeIn";
 
 const currentYear = () => {
-  let currentTime = new Date()
-  let year:number = currentTime.getFullYear()
+  let currentTime = new Date();
+  let year:number = currentTime.getFullYear();
   return year;
 }
 
-const SignUpForm = () => {
+
+let initialState:any = {
+    message: 'null',
+  }
+
+function SubmitButton(){
+    const { pending } = useFormStatus();
+
+    return(
+        
+    <button type="submit" aria-disabled={pending} className="absolute top-0 right-0 bottom-0 flex items-center justify-center px-3 text-2xl text-slate-400">
+        <span className="sr-only">Submit</span>
+        <span aria-hidden={true}>&rarr;</span>    
+    </button>
+
+        
+    )
+
+}
+
+export function SignUpForm(){
+   
+    const [state, formAction]= useFormState(createSignup, initialState)
+
   return (
     <div className="px-4">
       
       <form
-        action="/api/sign-up"
-        method="post"
+        action={formAction}
         className="grid w-full max-w-xl grid-cols-1 gap-6"
       >
         <div className="text-center tracking-tight text-slate-300">
@@ -35,13 +61,7 @@ const SignUpForm = () => {
                 className="w-full rounded border border-slate-500 bg-slate-600 py-3 pl-3 pr-10 text-white placeholder-slate-400"
               />
             </label>
-            <button
-              type="submit"
-              className="absolute top-0 right-0 bottom-0 flex items-center justify-center px-3 text-2xl text-slate-400"
-            >
-              <span className="sr-only">Submit</span>
-              <span aria-hidden={true}>&rarr;</span>
-            </button>
+            <SubmitButton />
           </div>
           <p className="text-center text-xs text-slate-400">By subscribing to our newsletter you accept to receive recurring emails from our company</p>
         </div>

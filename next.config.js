@@ -16,6 +16,7 @@ module.exports = withPayload(
     basePath: '',
     experimental: {
       mdxRs: true,
+      serverActions: true
     },
   },
   {

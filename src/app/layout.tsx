@@ -23,12 +23,7 @@ export const metadata = {
 		  height: 1600,
 		  alt: 'Busy Little Pixels | Fractional CTO Services & Web Development',
 		},
-	  ],
-	viewport: {
-		width: 'device-width',
-		initialScale: 1,
-		maximumScale: 1,
-	},
+	],
 
 	openGraph: { 
 		type: "website", 
@@ -52,6 +47,12 @@ export const metadata = {
 	}
 }
 
+
+export const viewport = {
+	width: 'device-width',
+	initialScale: 1,
+	maximumScale: 1,
+}
 
 export default function RootLayout({
 	children,

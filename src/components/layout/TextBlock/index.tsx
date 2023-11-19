@@ -3,7 +3,7 @@ import tw from 'tailwind-styled-components'
 import { RichText } from '../RichText'
 import { FadeIn } from '../../shared/FadeIn'
 
-interface ITextBlock {
+type ITextBlock = {
   content?: any
 }
 
