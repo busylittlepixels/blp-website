@@ -4,18 +4,19 @@ import Link from 'next/link'
 import { experimental_useFormState as useFormState } from 'react-dom'
 // @ts-expect-error
 import { experimental_useFormStatus as useFormStatus } from 'react-dom'
-import createSignup from "../../../app/(site)/actions";
+import {createSignup} from "../../../app/(site)/actions";
 import { FadeIn } from "../FadeIn";
+import React from 'react';
 
 const currentYear = () => {
-  let currentTime = new Date();
+  let currentTime:Date = new Date();
   let year:number = currentTime.getFullYear();
   return year;
 }
 
 
 let initialState:any = {
-    message: 'null',
+    email: 'null',
   }
 
 function SubmitButton(){
