@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { experimental_useFormState as useFormState } from 'react-dom'
 // @ts-expect-error
 import { experimental_useFormStatus as useFormStatus } from 'react-dom'
-import {createSignup} from "../../../app/(site)/actions";
+import { createSignup } from "../../../app/(site)/actions";
 import { FadeIn } from "../FadeIn";
 import React from 'react';
 
@@ -16,7 +16,7 @@ const currentYear = () => {
 
 
 let initialState:any = {
-    email: "",
+    email: "your.name@example.com",
 }
 
 function SubmitButton(){
@@ -35,8 +35,8 @@ function SubmitButton(){
 }
 
 export function SignUpForm(){
-   
-    const [state, formAction]= useFormState(createSignup, initialState)
+  
+  const [state, formAction]= useFormState(createSignup, initialState)
 
   return (
     <div className="px-4">
