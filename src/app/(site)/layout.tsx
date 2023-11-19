@@ -1,4 +1,5 @@
 import React from 'react';
+import Script from 'next/script';
 import Wrapper from '../../components/layout/Wrapper'
 import tw from 'tailwind-styled-components'
 import './../../styles/globals.scss';
@@ -10,9 +11,12 @@ const Notice = tw.div`
 const SiteLayout = async ({ children }: { children: React.ReactNode }) => {
   
   return (
+    <>
+    <Script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js" />
     <Wrapper>
       {children}
     </Wrapper>
+    </>
   )
 }
 

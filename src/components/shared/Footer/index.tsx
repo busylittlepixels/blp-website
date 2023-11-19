@@ -33,7 +33,7 @@ function SubmitButton(){
 
 }
 
-const SignUpForm = () => {
+export function SignUpForm(){
     // @ts-ignore
     const [state, formAction]= useFormState(createSignup, initialState)
 
