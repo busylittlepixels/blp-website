@@ -2,7 +2,10 @@
 
 import { redirect } from 'next/navigation';
 
-async function createSignup(): Promise<void> {
+export const createSignup = async (formData: FormData) => {
+  console.log("runninng onn server");
+  console.log(formData.get('message'));
+  // console.log(formData.get('email'));
   redirect(`/why-blp`) // Navigate to new route
 }
 
