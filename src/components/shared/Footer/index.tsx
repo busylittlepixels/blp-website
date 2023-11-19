@@ -16,8 +16,8 @@ const currentYear = () => {
 
 
 let initialState:any = {
-    email: 'null',
-  }
+    email: "",
+}
 
 function SubmitButton(){
     const { pending } = useFormStatus();
