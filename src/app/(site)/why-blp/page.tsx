@@ -30,38 +30,7 @@ export default async function Page() {
         <FadeIn>
         <main className={`blog`}>
         
-        {/* <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
-          <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
-            <svg
-              className="absolute bottom-5 left-full translate-x-28 transform mix-blend-darken"
-              width="350"
-              height="700"
-              fill="none"
-              viewBox="0 0 400 384"
-            >
-              <defs>
-                <pattern
-                  id="d3eb07ae-5182-43e6-857d-35c643af9034"
-                  x="0"
-                  y="0"
-                  width="20"
-                  height="20"
-                  patternUnits="userSpaceOnUse"
-                >
-                  <rect
-                    x="0"
-                    y="0"
-                    width="6"
-                    height="6"
-                    className="text-gray-200"
-                    fill="currentColor"
-                  />
-                </pattern>
-              </defs>
-              <rect width="350" height="700" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
-            </svg>
-          </div>
-        </div> */}
+       
           <svg className="max-md:hidden absolute right-0 transform mt-12 z-10 mr-20 mix-blend-darken" width="650" height="384" fill="none" viewBox="0 0 400 384"><defs><pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor"></rect></pattern></defs><rect width="650" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)"></rect></svg>
             
           <div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
@@ -138,16 +107,7 @@ export default async function Page() {
               </div>
           
           </section>
-          {/* <div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
-              <svg aria-hidden="true" className="absolute inset-0 h-full w-full">
-                <defs>
-                  <pattern id=":ra:" width="128" height="128" patternUnits="userSpaceOnUse" x="50%" y="100%">
-                    <path d="M0 128V.5H128" fill="none" stroke="currentColor"></path>
-                  </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="url(#:ra:)"></rect>
-              </svg>
-          </div> */}
+          
           <LogoCloud />
           <Services />
           <Team />
@@ -156,11 +116,7 @@ export default async function Page() {
             <div className="absolute inset-0 bg-gray-300 overflow-hidden">
                
                     <iframe width={'100%'} height={'100%'} frameBorder="0" marginHeight={0} marginWidth={0} title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152515.6931206764!2d-6.245704099999999!3d53.324320099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin%2C%20Ireland!5e0!3m2!1sen!2snl!4v1692869457747!5m2!1sen!2snl" style={{ "filter": "grayscale(1) contrast(1.2) opacity(0.4)"}}></iframe>
-                    {/* {images.map((img, i) => {
-                        return(
-                            <iframe key={i} width={'100%'} height={'100%'} frameBorder="0" marginHeight={0} marginWidth={0} title={img.title} scrolling="no" src={images[0].map_url} style={{ "filter": "grayscale(1) contrast(1.2) opacity(0.4)", opacity: i === currentIndex ? 1 : 0, transition: 'opacity 1s'}}></iframe>
-                        ); 
-                    }).slice(0,1)} */}
+                  
                
             </div>
             <FadeIn>
@@ -176,119 +132,7 @@ export default async function Page() {
                 </div>
             </FadeIn>
         </section>
-        {/* <div className="bg-white py-12 sm:py-12 lg:py-20">
-          <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-              <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
-                  <div className="flex flex-col items-start gap-4">
-                    <h1 className="text-4xl font-black tracking-tight text-black sm:text-6xl uppercase mb-2">SOME OF OUR <span style={{"color":"red"}}>WORK</span></h1>
-                    <div className="header__underline"></div>      
-                  </div> 
-                       
-              </div>
-
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
-           
-            <a href="https://thenextweb.com" target="_blank" rel="noopener noreferrer"
-                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                <img src="/assets/images/tnw.png" loading="lazy" alt="The Next Web - A Financial Times Company" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                <div
-                    className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                </div>
-
-                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">TNW - a Financial Times Company</span>
-            </a>
-      
-                <a href="https://websummit.com" target="_blank" rel="noopener noreferrer" 
-                    className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-                    <img src="/assets/images/websummit.png" loading="lazy" alt="Photo by Magicle" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                    <div
-                        className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                    </div>
-
-                    <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Web Summit</span>
-                </a>
-
-                <a href="https://nutriband.com" target="_blank" rel="noopener noreferrer"
-                    className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-                    <img src="/assets/images/nutriband.png" loading="lazy" alt="Photo by Martin Sanchez" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                    <div
-                        className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                    </div>
-
-                    <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Nutriband</span>
-                </a>
-
-                <a href="https://runrepublic.com/" target="_blank" rel="noopener noreferrer"
-                    className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                    <img src="/assets/images/runrepublic.png" loading="lazy" alt="Photo by Lorenzo Herrera" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                    <div
-                        className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                    </div>
-
-                    <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Run Republic</span>
-                </a>
-  
-                  <a href="https://izabelvaz.com" target="_blank" rel="noopener noreferrer"
-                    className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                    <img src="/assets/images/isabel.png" loading="lazy" alt="Photo by Minh Pham" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                    <div
-                        className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                    </div>
-
-                    <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Izabel Vaz</span>
-                  </a>
-
-                  <a href="https://thenextweb.com/conference" target="_blank" rel="noopener noreferrer"
-                      className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                      <img src="/assets/images/tnw-conference.png" loading="lazy" alt="TNW Conference" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                      <div
-                          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                      </div>
-
-                      <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">TNW Conference</span>
-                  </a>
-                  <a href="https://ronan-oleary.com" target="_blank" rel="noopener noreferrer"
-                      className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                      <img src="/assets/images/ro-couch-desk.jpeg" loading="lazy" alt="Danger Ro" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                      <div
-                          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                      </div>
-
-                      <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Danger Ro</span>
-                  </a>
-            
-                  <a href="#"
-                      className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                      <img src="/assets/images/mcCf.png" loading="lazy" alt="Photo by Lorenzo Herrera" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                      <div
-                          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                      </div>
-
-                      <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">McCann-Fitzgerald</span>
-                  </a>
-
-                  <a href="https://algarvemusicseries.com" target="_blank" rel="noopener noreferrer"
-                      className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-                      <img src="/assets/images/ams.png" loading="lazy" alt="Photo by Martin Sanchez" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                      <div
-                          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                      </div>
-
-                      <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Algarve Music Series</span>
-                  </a>
-
-                  </div>
-            </div>
-          </div> */}
+        
         </main>
         </FadeIn>
     </>
