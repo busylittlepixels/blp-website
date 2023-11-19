@@ -1,10 +1,10 @@
 'use client';
 import Link from 'next/link'
 // @ts-ignore
-import { useFormState } from 'react-dom'
+import { experimental_useFormState as useFormState } from 'react-dom'
 // @ts-expect-error
-import { useFormStatus } from 'react-dom'
-import createSignup from "../../../app/actions";
+import { experimental_useFormStatus as useFormStatus } from 'react-dom'
+import createSignup from "../../../app/(site)/actions";
 import { FadeIn } from "../FadeIn";
 
 const currentYear = () => {
@@ -14,8 +14,8 @@ const currentYear = () => {
 }
 
 
-const initialState = {
-    message: 'null' as string,
+let initialState:any = {
+    message: 'null',
   }
 
 function SubmitButton(){
@@ -34,7 +34,7 @@ function SubmitButton(){
 }
 
 export function SignUpForm(){
-    // @ts-ignore
+   
     const [state, formAction]= useFormState(createSignup, initialState)
 
   return (

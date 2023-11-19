@@ -29,9 +29,9 @@ const slides = [
 export const ScrollTriggerSlide = () => {
 	const { currentIndex, animating } = useGSAPScrollSlide(); // Use the custom hook here
 	let outputNo = currentIndex + 1; 
-	console.log(animating);
-	console.log(currentIndex);
-	console.log(outputNo);
+	// console.log(animating);
+	// console.log(currentIndex);
+	// console.log(outputNo);
 	return(
 	<>
 		

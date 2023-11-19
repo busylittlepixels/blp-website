@@ -118,12 +118,12 @@ const useGSAPScrollSlide = () => {
       preventDefault: true,
       wheelSpeed: -1,
       onUp: () => {
-       console.log("down");
+      //  console.log("down");
        if (animating) return;
        gotoSection(currentIndex + 1, +1);
       },
       onDown: () => {
-       console.log("up");
+      //  console.log("up");
        if (animating) return;
        gotoSection(currentIndex - 1, -1);
       },
@@ -131,7 +131,7 @@ const useGSAPScrollSlide = () => {
      });
 
     const logKey = (e: KeyboardEvent) => {
-      console.log(e.code);
+      // /console.log(e.code);
       if ((e.code === "ArrowUp" || e.code === "ArrowLeft") && !animating) {
        gotoSection(currentIndex - 1, -1);
       }
