@@ -6,6 +6,8 @@ import { Services } from '../../../components/layout/Services';
 import { LogoCloud } from '../../../components/layout/LogoCloud'
 import { Team } from '../../../components/layout/Team'
 import { Metadata } from 'next'
+import { HubSpotForm } from '../../../components/layout/HubspotForm';
+
 
 
 const studioP1 = `<h2 class="font-black text-2xl">We chart a course through the digital ecosystem <span class="rd_txt">studio</span></h2><p>Ours is a digital ecosystem crafted for scale-ups. As part of our broader fractional CTO vision, we've opted to work with the best tooling in the business: Javascript, React, NextJS, Astro for web, and React-Native for mobile. Your content, enriched by Payload or Craft CMS, becoming more than just words...it's a narrative. And with our prowess in third-party API integrations and cutting-edge hosting solutions, we promise a journey that's smooth, efficient, and memorable. Ready to redefine your digital footprint?<p>`;
@@ -149,8 +151,31 @@ export default async function Page() {
           <LogoCloud />
           <Services />
           <Team />
-    
-          
+          <section className="text-black relative mt-2 mb-2 w-full max-w-full" id="contact">
+            
+            <div className="absolute inset-0 bg-gray-300 overflow-hidden">
+               
+                    <iframe width={'100%'} height={'100%'} frameBorder="0" marginHeight={0} marginWidth={0} title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152515.6931206764!2d-6.245704099999999!3d53.324320099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin%2C%20Ireland!5e0!3m2!1sen!2snl!4v1692869457747!5m2!1sen!2snl" style={{ "filter": "grayscale(1) contrast(1.2) opacity(0.4)"}}></iframe>
+                    {/* {images.map((img, i) => {
+                        return(
+                            <iframe key={i} width={'100%'} height={'100%'} frameBorder="0" marginHeight={0} marginWidth={0} title={img.title} scrolling="no" src={images[0].map_url} style={{ "filter": "grayscale(1) contrast(1.2) opacity(0.4)", opacity: i === currentIndex ? 1 : 0, transition: 'opacity 1s'}}></iframe>
+                        ); 
+                    }).slice(0,1)} */}
+               
+            </div>
+            <FadeIn>
+                <div className="container px-5 py-24 mx-auto flex">
+                    <div className="lg:w-1/3 md:w-2/3 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">          
+                        <>
+                            <h2 className="text-black text-lg mb-1 font-black uppercase">CONTACT US <span style={{ "color": "red"}}>TODAY</span></h2>
+                            <div className="header__underline"></div>
+                            <p className="leading-relaxed my-5 text-black">To contact us, please add your email address and message below.</p>
+                            <HubSpotForm />
+                        </>
+                    </div>
+                </div>
+            </FadeIn>
+        </section>
         {/* <div className="bg-white py-12 sm:py-12 lg:py-20">
           <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
               <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
