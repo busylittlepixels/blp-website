@@ -1,5 +1,7 @@
 import React from 'react'
 // app/layout.js
+
+import GoogleAnalytics from './GoogleAnalytics'
 // @ts-ignore
 import { GoogleTagManager } from '@next/third-parties/google'
 import { PHProvider } from './providers'
@@ -65,6 +67,7 @@ export default function RootLayout({
 		<html lang={'en'}>
 			<PHProvider>
 				<body>
+					<GoogleAnalytics />
 					{children}
 					<Analytics />	
 				</body>
