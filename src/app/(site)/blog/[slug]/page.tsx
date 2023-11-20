@@ -8,6 +8,7 @@ import Link from 'next/link'
 import { MotionImage } from '../../../../components/layout/MotionImage';
 import { RichText } from '../../../../components/layout/RichText';
 import FadeIn from '../../../../components/shared/FadeIn';
+import { Date } from '../../../../components/custom/Date';
 
 // import Blog1 from '../../../../content/the-importance-of-a-modern-website-and-engaging-online-experience-for-businesses.mdx'
 
@@ -23,10 +24,21 @@ const getPostContent = (slug: string) => {
     return matterResult
 }
 
+
+const capitalizeCategory = (c) =>{
+    const cat = c.split(" ");
+    let i; 
+    for (i = 0; i < cat.length; i++) {
+        return cat[i] = cat[i].charAt(0).toUpperCase() + cat[i].slice(1);
+    }
+}
+
+
 const PostPage = (props: any) => {
 	const slug = props.params.slug
 	const post = getPostContent(slug) 
-   
+    const category = capitalizeCategory(post.data.category)
+    console.log(category)
 	return (
     
         <main className={`blog`}>
@@ -81,7 +93,7 @@ const PostPage = (props: any) => {
                         <h1 className="composedHeading">{post.data.title}</h1>
                     </div>
                     <div className="max-full text-center leading-relaxed mb-8">
-                        <p className="font-semibold tracking-tighter mt-8 mb-8">By: <a href="#">{post.data.author}</a> | Category: <span className="relative z-10 rounded-full bg-red-600 px-3 py-1.5 font-medium text-white hover:bg-red-400 cursor-pointer">{post.data.category}</span> | Posted: {post.data.postdate}</p>
+                        <p className="font-semibold tracking-tighter mt-8 mb-8">By: <a href="#">{post.data.author}</a> | Category: <span className="relative z-10 rounded-full bg-red-600 px-3 py-1.5 font-medium text-white hover:bg-red-400 cursor-pointer">{category}</span> | Posted: <Date dateString={post.data.postdate} /></p>
                         {/* <RichText className="article_text max-w-5xl mx-auto" content={post.excerpt} /> */}
                     </div>
                 </div>

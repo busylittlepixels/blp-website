@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import { Page } from '../../../payload/payload-types'
 import FadeIn from '../../../components/shared/FadeIn';
 import { RichText } from '../../../components/layout/RichText';
+import { Date } from '../../../components/custom/Date';
 
 export const metadata: Metadata = {
   title: 'Blog | Busy Little Pixels',
@@ -15,7 +16,8 @@ export const metadata: Metadata = {
   export default async function Blog() {
     
     const blog: Page = await fetch(
-      `${process.env.NEXT_PUBLIC_SERVER_URL}/api/posts`
+      `${process.env.NEXT_PUBLIC_SERVER_URL}/api/posts`,
+      { next: { revalidate: 3600 } },
     )
       .then(res => res.json())
       .then(res => res?.docs)
@@ -69,7 +71,7 @@ export const metadata: Metadata = {
                           <div>
                               <div className="flex items-center gap-x-4 text-xs">
                               <time className="text-gray-500">
-                                06 Sept 2023
+                                <Date dateString={post.createdAt} />
                               </time>
                               <Link
                                   href={`/blog/${post.slug}`}
