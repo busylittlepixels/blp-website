@@ -28,6 +28,14 @@ export default async function Blog() {
     // @ts-ignore 
     const posts:any = blog
    
+    const capitalizeCategory = (c) =>{
+     
+      const cat = c[0].split(" ");
+      let i; 
+      for (i = 0; i < cat.length; i++) {
+          return cat[i] = cat[i].charAt(0).toUpperCase() + cat[i].slice(1);
+      }
+    }
     
     return (
         <main className={'blog index'}>
@@ -57,7 +65,7 @@ export default async function Blog() {
                 
                     <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
                     {posts.map((post:any, _id) => {
-                      console.log(post.category)
+                      
                       return (
                         <article key={post.id} className="relative isolate flex flex-col gap-8 lg:flex-row">
                           <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
@@ -74,10 +82,10 @@ export default async function Blog() {
                                   <Date dateString={post.createdAt} />
                               </time>
                               <Link
-                                  href={`/blog/${post.slug}`}
+                                  href={`/blog/${post.category}/${post.slug}`}
                                   className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
                               >
-                                  {post.category ? post.category.label : ''}
+                                  {post.category ? capitalizeCategory(post.category) : ''}
                               </Link>
                               </div>
                               <div className="group relative">

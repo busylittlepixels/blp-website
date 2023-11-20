@@ -42,7 +42,6 @@ export function SignUpForm(){
       
       <form
         action={formAction}
-        method="POST"
         className="grid w-full max-w-xl grid-cols-1 gap-6"
       >
         <div className="text-center tracking-tight text-slate-300">

@@ -18,6 +18,25 @@ module.exports = withPayload(
       mdxRs: true,
       serverActions: true
     },
+    async redirects() {
+      return [
+        {
+          source: '/blog/accessibility/:slug*',
+          destination: '/blog',
+          permanent: true,
+        },
+        {
+          source: '/blog/tech/:slug*',
+          destination: '/blog',
+          permanent: true,
+        },
+        {
+          source: '/blog/strategy/:slug*',
+          destination: '/blog',
+          permanent: true,
+        },
+      ]
+    },
   },
   {
     // The second argument to `withPayload`

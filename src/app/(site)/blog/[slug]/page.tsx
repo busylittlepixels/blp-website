@@ -38,7 +38,7 @@ const PostPage = (props: any) => {
 	const slug = props.params.slug
 	const post = getPostContent(slug) 
     const category = capitalizeCategory(post.data.category)
-    console.log(category)
+    // console.log(category)
 	return (
     
         <main className={`blog`}>
