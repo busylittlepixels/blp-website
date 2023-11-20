@@ -31,7 +31,7 @@ export const ScrollTrigger = () => {
 						{images.map((img:any) => {
 							return(
 								<li key={img.src}>
-									<img height="874" src={img.src} width="1240" onClick={(e) => triggerScreenModal(e, img)} />
+									<img height="874" alt={img.title} src={img.src} width="1240" onClick={(e) => triggerScreenModal(e, img)} />
 								</li>
 							); 
 						}).slice(0,4)}
@@ -47,7 +47,7 @@ export const ScrollTrigger = () => {
 						{images.map((img:any) => {
 							return(
 								<li key={img.src}>
-									<img height="874" src={img.src} width="1240" onClick={(e) => triggerScreenModal(e, img)} />
+									<img height="874" alt={img.title} src={img.src} width="1240" onClick={(e) => triggerScreenModal(e, img)} />
 								</li>
 							); 
 						}).slice(5,8)}
