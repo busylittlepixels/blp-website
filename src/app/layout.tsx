@@ -1,5 +1,7 @@
 import React from 'react'
 // app/layout.js
+// @ts-ignore
+import { GoogleTagManager } from '@next/third-parties/google'
 import { PHProvider } from './providers'
 import CookieBanner from './../components/layout/CookieBanner'
 import { Analytics } from '@vercel/analytics/react';
@@ -67,6 +69,7 @@ export default function RootLayout({
 					<Analytics />	
 				</body>
 				<CookieBanner />
+				<GoogleTagManager gtmId="GTM-KT6SVVXZ" />
 			</PHProvider>
 		</html>
 	)
