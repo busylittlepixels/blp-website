@@ -48,6 +48,10 @@ export const Posts: CollectionConfig = {
           {
             label: 'Fractional CTO',
             value: 'fractional-cto',
+          },
+          {
+            label: 'Accessibility',
+            value: 'accessibility',
           }
         ],
       },

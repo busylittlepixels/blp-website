@@ -57,7 +57,7 @@ export default async function Blog() {
                 
                     <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
                     {posts.map((post:any, _id) => {
-                      
+                      console.log(post.category)
                       return (
                         <article key={post.id} className="relative isolate flex flex-col gap-8 lg:flex-row">
                           <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
@@ -77,7 +77,7 @@ export default async function Blog() {
                                   href={`/blog/${post.slug}`}
                                   className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
                               >
-                                  {post.category ? post.category : ''}
+                                  {post.category ? post.category.label : ''}
                               </Link>
                               </div>
                               <div className="group relative">
