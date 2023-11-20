@@ -41,7 +41,9 @@ export const Contact = ({ content }: IContact) => {
                             <h2 className="text-black text-lg mb-1 font-black uppercase">{form_title} <span style={{ "color": "red"}}></span></h2>
                             <div className="header__underline"></div>
                             <p className="leading-relaxed my-5 text-black">To contact us, please add your email address and message below.</p>
-                            <HubSpotForm />
+                            <div id="hsf">
+                                <HubSpotForm />
+                            </div>
                         </>
                     </div>
                 </div>
