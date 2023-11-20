@@ -13,8 +13,22 @@ export const metadata: Metadata = {
 }
 
 
-  export default async function Blog() {
-    
+export const PostDate = ({d}:any) => {
+  return (
+    <time>{d}</time>
+  );
+}
+
+
+export default async function Blog() {
+
+
+
+
+
+
+   
+
     const blog: Page = await fetch(
       `${process.env.NEXT_PUBLIC_SERVER_URL}/api/posts`,
       { next: { revalidate: 3600 } },
@@ -57,7 +71,7 @@ export const metadata: Metadata = {
                 
                     <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
                     {posts.map((post:any, _id) => {
-                     
+                      
                       return (
                         <article key={post.id} className="relative isolate flex flex-col gap-8 lg:flex-row">
                           <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
@@ -71,7 +85,7 @@ export const metadata: Metadata = {
                           <div>
                               <div className="flex items-center gap-x-4 text-xs">
                               <time className="text-gray-500">
-                                <Date dateString={post.createdAt} />
+                                  <Date dateString={post.createdAt} />
                               </time>
                               <Link
                                   href={`/blog/${post.slug}`}

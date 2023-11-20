@@ -6,7 +6,6 @@ import { images } from "./images";
 export const HeroCarousel = () => {
     let duration = 5;
     const currentIndex = useCarousel({ images, duration });
-
     return (
         <div className="carousel-wrapper">
             {images.map((img, i) => (
