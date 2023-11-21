@@ -39,10 +39,10 @@ export function SignUpForm() {
 		<div className="px-4">
 			<form action={formAction} className="grid w-full max-w-xl grid-cols-1 gap-6">
 				<div className="text-center tracking-tight text-slate-300">
-					<h3 className="text-center font-black tracking-tighter text-3xl md:text-6xl mb-4 text-white last:mb-0 uppercase">
+					<h1 className="text-center font-black tracking-tighter text-3xl md:text-6xl mb-4 text-white last:mb-0 uppercase">
 						Sign up for our busy
 						<span style={{ color: 'red' }}>little</span>updates
-					</h3>
+					</h1>
 					<p className="mb-4 last:mb-0">
 						We promise we won&apos;t spam you, or do anything nefarious or shifty with your data.{' '}
 						<br />
