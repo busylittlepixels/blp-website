@@ -13,7 +13,10 @@ export const BigTextLittleText = props => {
 
 			<motion.div
 				initial={{ opacity: 0.1 }}
-				animate={{ y: isInView ? 50 : -10, opacity: isInView ? 0.9 : 0 }}
+				animate={{
+					y: isInView ? 50 : -10,
+					opacity: isInView ? 0.9 : 0,
+				}}
 				transition={{ type: 'spring', duration: 3 }}
 				exit={{ opacity: 0.1, y: -10 }}
 				className="leading-none absolute left-0 right-0 pb-32 hidden sm:block"
@@ -34,8 +37,8 @@ export const BigTextLittleText = props => {
 					HEARD ENOUGH?
 				</h1>
 				<p>
-					Sound like a fit? All set to go? Ready to transform your tech objectives into
-					outstanding results?
+					Sound like a fit? All set to go? Ready to transform your
+					tech objectives into outstanding results?
 				</p>
 				<div id="line-trigger" />
 			</motion.div>

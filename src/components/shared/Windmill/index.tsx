@@ -49,7 +49,12 @@ export const CustomSVG = () => {
 					strokeWidth="2"
 					d="M43.5,63.5h-22c2.6-10.4,4.3-21.2,4.6-32.8l1.5-1.5h7.9l-2.4,2.4l6.1,6.1C39.9,46.7,41.4,55.2,43.5,63.5z"
 				/>
-				<circle cx="32.5" cy="32.5" r="21.9" style={{ fill: 'none', stroke: 'none' }} />
+				<circle
+					cx="32.5"
+					cy="32.5"
+					r="21.9"
+					style={{ fill: 'none', stroke: 'none' }}
+				/>
 
 				<g id="mill">
 					<g id="sail-group">

@@ -47,14 +47,19 @@ export const Services = () => {
 						<div className="RichText_richText__qEmi6 text-gray-600 mt-4 services_text flex-col">
 							{/* <RichText content={about.richText} className={`text-gray-600 mt-4 services_text flex-col"`} /> */}
 							<p>
-								Crafting Tomorrow&apos;s Digital Solutions today, with{' '}
+								Crafting Tomorrow&apos;s Digital Solutions
+								today, with{' '}
 								<strong className="font-bold">
-									busy<span style={{ color: 'red' }}>little</span>pixels{' '}
+									busy
+									<span style={{ color: 'red' }}>little</span>
+									pixels{' '}
 								</strong>
-								there to help you every step of the way. Merging technological
-								mastery with strategic insight and team synergy, we&apos;re more
-								than just a service provider. We&apos;re your digital partner, eager
-								to co-create exceptional digital journeys.
+								there to help you every step of the way. Merging
+								technological mastery with strategic insight and
+								team synergy, we&apos;re more than just a
+								service provider. We&apos;re your digital
+								partner, eager to co-create exceptional digital
+								journeys.
 							</p>
 						</div>
 						<dl className="mt-8 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-10 lg:gap-x-8">
@@ -63,45 +68,59 @@ export const Services = () => {
 									Fractional CTO Services
 								</h3>
 								<p className="mt-2 text-gray-500 services_text flex-col">
-									Strategic Technology Leadership: Access top-tier technological
-									expertise without the commitment of a full-time executive. Our
-									Fractional CTOs bring deep industry knowledge to align tech
-									strategies with your business goals.
+									Strategic Technology Leadership: Access
+									top-tier technological expertise without the
+									commitment of a full-time executive. Our
+									Fractional CTOs bring deep industry
+									knowledge to align tech strategies with your
+									business goals.
 								</p>
 							</div>
 
 							<div className="pt-4">
-								<h3 className="font-black text-gray-900">Web Development</h3>
+								<h3 className="font-black text-gray-900">
+									Web Development
+								</h3>
 								<p className="mt-2 text-gray-500 services_text flex-col">
-									Create vibrant, responsive, and engaging websites that captivate
-									your audience. CMS Integration: Manage content effortlessly with
-									seamless Content Management System integrations tailored to your
-									needs.
+									Create vibrant, responsive, and engaging
+									websites that captivate your audience. CMS
+									Integration: Manage content effortlessly
+									with seamless Content Management System
+									integrations tailored to your needs.
 								</p>
 							</div>
 
 							<div className="pt-4">
-								<h3 className="font-black text-gray-900">App Development</h3>
+								<h3 className="font-black text-gray-900">
+									App Development
+								</h3>
 								<p className="mt-2 text-gray-500 services_text flex-col">
-									Cross-Platform Solutions: Reach your audience everywhere with
-									apps optimized for Android, iOS, and the web.
+									Cross-Platform Solutions: Reach your
+									audience everywhere with apps optimized for
+									Android, iOS, and the web.
 								</p>
 							</div>
 
 							<div className="pt-4">
-								<h3 className="font-black text-gray-900">Strategic Planning</h3>
+								<h3 className="font-black text-gray-900">
+									Strategic Planning
+								</h3>
 								<p className="mt-2 text-gray-500 services_text flex-col">
-									Vision Crafting, Competitive Analysis: Gain insights into your
-									industry landscape, identifying opportunities and threats to
+									Vision Crafting, Competitive Analysis: Gain
+									insights into your industry landscape,
+									identifying opportunities and threats to
 									ensure you always stay ahead.{' '}
 								</p>
 							</div>
 
 							<div className="pt-4">
-								<h3 className="font-black text-gray-900">Solutions Architecture</h3>
+								<h3 className="font-black text-gray-900">
+									Solutions Architecture
+								</h3>
 								<p className="mt-2 text-gray-500 services_text flex-col">
-									Languages & Frameworks: NextJS, Svelte, React, Vue.js, PHP,
-									Twig, Infra...we handpick the perfect tech for your unique
+									Languages & Frameworks: NextJS, Svelte,
+									React, Vue.js, PHP, Twig, Infra...we
+									handpick the perfect tech for your unique
 									requirements.
 								</p>
 							</div>
@@ -111,8 +130,9 @@ export const Services = () => {
 									Team Development and Growth
 								</h3>
 								<p className="mt-2 text-gray-500 services_text flex-col">
-									Talent Acquisition, Training & Development: Equip your team with
-									the latest skills and knowledge, keeping them agile and updated.
+									Talent Acquisition, Training & Development:
+									Equip your team with the latest skills and
+									knowledge, keeping them agile and updated.
 								</p>
 							</div>
 						</dl>
@@ -143,7 +163,10 @@ export const Services = () => {
 					</FadeIn>
 				</div>
 				<div className="absolute inset-x-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
-					<svg aria-hidden="true" className="absolute inset-0 h-full w-full">
+					<svg
+						aria-hidden="true"
+						className="absolute inset-0 h-full w-full"
+					>
 						<defs>
 							<pattern
 								id=":ra:"
@@ -153,10 +176,18 @@ export const Services = () => {
 								x="50%"
 								y="100%"
 							>
-								<path d="M0 128V.5H128" fill="none" stroke="currentColor"></path>
+								<path
+									d="M0 128V.5H128"
+									fill="none"
+									stroke="currentColor"
+								></path>
 							</pattern>
 						</defs>
-						<rect width="100%" height="100%" fill="url(#:ra:)"></rect>
+						<rect
+							width="100%"
+							height="100%"
+							fill="url(#:ra:)"
+						></rect>
 					</svg>
 				</div>
 			</div>

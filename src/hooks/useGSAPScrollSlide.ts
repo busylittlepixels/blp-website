@@ -39,8 +39,14 @@ const useGSAPScrollSlide = () => {
 			const nextHeading = nextSection.querySelector('.slide__heading')
 
 			gsap.set([sections, images], { zIndex: 0, autoAlpha: 0 })
-			gsap.set([sections[currentIndex], images[index]], { zIndex: 1, autoAlpha: 1 })
-			gsap.set([sections[index], images[currentIndex]], { zIndex: 2, autoAlpha: 1 })
+			gsap.set([sections[currentIndex], images[index]], {
+				zIndex: 1,
+				autoAlpha: 1,
+			})
+			gsap.set([sections[index], images[currentIndex]], {
+				zIndex: 2,
+				autoAlpha: 1,
+			})
 
 			tl
 				//  @ts-ignore
@@ -134,7 +140,10 @@ const useGSAPScrollSlide = () => {
 
 		const logKey = (e: KeyboardEvent) => {
 			// /console.log(e.code);
-			if ((e.code === 'ArrowUp' || e.code === 'ArrowLeft') && !animating) {
+			if (
+				(e.code === 'ArrowUp' || e.code === 'ArrowLeft') &&
+				!animating
+			) {
 				gotoSection(currentIndex - 1, -1)
 			}
 			if (

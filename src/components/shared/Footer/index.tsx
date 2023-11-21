@@ -37,14 +37,18 @@ export function SignUpForm() {
 	const [state, formAction] = useFormState(createSignup, initialState)
 	return (
 		<div className="px-4">
-			<form action={formAction} className="grid w-full max-w-xl grid-cols-1 gap-6">
+			<form
+				action={formAction}
+				className="grid w-full max-w-xl grid-cols-1 gap-6"
+			>
 				<div className="text-center tracking-tight text-slate-300">
 					<h3 className="text-center font-black tracking-tighter text-3xl md:text-6xl mb-4 text-white last:mb-0 uppercase">
-						Sign up for our busy<span style={{ color: 'red' }}>little</span>updates
+						Sign up for our busy
+						<span style={{ color: 'red' }}>little</span>updates
 					</h3>
 					<p className="mb-4 last:mb-0">
-						We promise we won&apos;t spam you, or do anything nefarious or shifty with
-						your data. <br />
+						We promise we won&apos;t spam you, or do anything
+						nefarious or shifty with your data. <br />
 						Frankly, that&apos;s just not how we roll.{' '}
 					</p>
 				</div>
@@ -65,8 +69,8 @@ export function SignUpForm() {
 						<SubmitButton />
 					</div>
 					<p className="text-center text-xs text-slate-400">
-						By subscribing to our newsletter you accept to receive recurring emails from
-						our company
+						By subscribing to our newsletter you accept to receive
+						recurring emails from our company
 					</p>
 				</div>
 			</form>
@@ -92,12 +96,18 @@ export const Footer = () => {
 
 				<div className="mx-auto w-full max-w-3xl text-center text-xs tracking-tight text-white">
 					© {currentYear()}{' '}
-					<a href="https://busylittlepixels.com" className="font-black">
+					<a
+						href="https://busylittlepixels.com"
+						className="font-black"
+					>
 						busy<span style={{ color: 'red' }}>little</span>pixels.
 					</a>
 					<span className="font-black">
 						{' '}
-						Made with <span style={{ color: 'red' }}>&hearts;</span> in Amsterdam.
+						Made with <span style={{ color: 'red' }}>
+							&hearts;
+						</span>{' '}
+						in Amsterdam.
 					</span>
 					<br />
 					<div className="justify-center flex flex-row gap-2 pt-2">
@@ -110,7 +120,9 @@ export const Footer = () => {
 						<a
 							href="#"
 							onClick={goToTop}
-							className={'cursor-pointer hover:text-[#f00000] font-bold'}
+							className={
+								'cursor-pointer hover:text-[#f00000] font-bold'
+							}
 						>
 							Back to top
 						</a>

@@ -35,12 +35,19 @@ export const ScrollTriggerSlide = () => {
 			<div className="scrollTriggerSlide">
 				{slides.map((slide, i) => {
 					return (
-						<section className={`slide ${currentIndex == i ? 'active' : ''}`} key={i}>
+						<section
+							className={`slide ${
+								currentIndex == i ? 'active' : ''
+							}`}
+							key={i}
+						>
 							<div className="slide__outer">
 								<div className="slide__inner">
 									<div className="slide__content">
 										<div className="slide__container">
-											<h2 className="slide__heading">{slide.title}</h2>
+											<h2 className="slide__heading">
+												{slide.title}
+											</h2>
 											<figure className="slide__img-cont">
 												<img
 													className="slide__img"

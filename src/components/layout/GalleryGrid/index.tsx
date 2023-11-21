@@ -9,13 +9,15 @@ import 'yet-another-react-lightbox/plugins/captions.css'
 
 import { images, CustomImage } from './images'
 
-const slides = images.map(({ original, title, description, width, height }) => ({
-	src: original,
-	title,
-	description,
-	width,
-	height,
-}))
+const slides = images.map(
+	({ original, title, description, width, height }) => ({
+		src: original,
+		title,
+		description,
+		width,
+		height,
+	}),
+)
 
 export const GalleryGrid = ({ content }: any) => {
 	const captionsRef = useRef()
@@ -23,13 +25,17 @@ export const GalleryGrid = ({ content }: any) => {
 
 	const handleClick = (index: number, item: CustomImage) => setIndex(index)
 	const [descriptionMaxLines, setDescriptionMaxLines] = useState(3)
-	const [descriptionTextAlign, setDescriptionTextAlign] = useState<'start' | 'end' | 'center'>(
-		'start',
-	)
+	const [descriptionTextAlign, setDescriptionTextAlign] = useState<
+		'start' | 'end' | 'center'
+	>('start')
 
 	return (
 		<div id="gallery">
-			<Gallery images={images} onClick={handleClick} enableImageSelection={false} />
+			<Gallery
+				images={images}
+				onClick={handleClick}
+				enableImageSelection={false}
+			/>
 			<Lightbox
 				slides={slides}
 				plugins={[Captions]}

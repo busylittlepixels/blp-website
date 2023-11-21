@@ -38,7 +38,9 @@ export const ScrollTrigger = () => {
 											alt={img.title}
 											src={img.src}
 											width="1240"
-											onClick={e => triggerScreenModal(e, img)}
+											onClick={e =>
+												triggerScreenModal(e, img)
+											}
 										/>
 									</li>
 								)
@@ -62,7 +64,9 @@ export const ScrollTrigger = () => {
 											alt={img.title}
 											src={img.src}
 											width="1240"
-											onClick={e => triggerScreenModal(e, img)}
+											onClick={e =>
+												triggerScreenModal(e, img)
+											}
 										/>
 									</li>
 								)

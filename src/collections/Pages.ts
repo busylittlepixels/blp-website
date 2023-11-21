@@ -21,7 +21,9 @@ export const Pages: CollectionConfig = {
 		useAsTitle: 'title',
 		defaultColumns: ['title', 'updatedAt'],
 		preview: doc =>
-			`${process.env.PAYLOAD_PUBLIC_SITE_URL}/api/preview?url=${formatAppURL({ doc })}`,
+			`${
+				process.env.PAYLOAD_PUBLIC_SITE_URL
+			}/api/preview?url=${formatAppURL({ doc })}`,
 	},
 	access: {
 		read: () => true,
@@ -82,7 +84,11 @@ export const Pages: CollectionConfig = {
 												label: 'Rel Attribute',
 												type: 'select',
 												hasMany: true,
-												options: ['noopener', 'noreferrer', 'nofollow'],
+												options: [
+													'noopener',
+													'noreferrer',
+													'nofollow',
+												],
 											},
 										],
 									},

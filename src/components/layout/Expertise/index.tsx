@@ -48,13 +48,19 @@ export const Expertise = ({ content }: IExpertise) => {
 												></path>
 											</pattern>
 										</defs>
-										<rect width="100%" height="100%" fill="url(#:ra:)"></rect>
+										<rect
+											width="100%"
+											height="100%"
+											fill="url(#:ra:)"
+										></rect>
 									</svg>
 								</div>
 								<div className="mx-auto max-w-7xl px-0 md:px-8">
 									<h1 className="text-3xl md:text-[3.5rem] font-black tracking-tight text-gray-900 sm:text-6xl mb-4 uppercase">
 										{header ? header : "We're Your "}{' '}
-										<span style={{ color: 'red' }}>Technology Roadmap</span>
+										<span style={{ color: 'red' }}>
+											Technology Roadmap
+										</span>
 									</h1>
 									<div className="header__underline"></div>
 									<RichText

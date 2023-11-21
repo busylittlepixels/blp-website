@@ -85,7 +85,10 @@ export default async function Page() {
 					</svg>
 
 					<div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
-						<svg aria-hidden="true" className="absolute inset-0 h-full w-full">
+						<svg
+							aria-hidden="true"
+							className="absolute inset-0 h-full w-full"
+						>
 							<defs>
 								<pattern
 									id=":ra:"
@@ -102,7 +105,11 @@ export default async function Page() {
 									></path>
 								</pattern>
 							</defs>
-							<rect width="100%" height="100%" fill="url(#:ra:)"></rect>
+							<rect
+								width="100%"
+								height="100%"
+								fill="url(#:ra:)"
+							></rect>
 						</svg>
 					</div>
 					<section className="px-6 max-sm:pt-10 md:py-20 bg-white pb-0 md:pb-0">
@@ -110,23 +117,30 @@ export default async function Page() {
 							<div className="max-full text-left leading-relaxed">
 								<h1 className="font-black text-4xl md:text-7xl mb-6 last:mb-0 text-center">
 									Welcome to our <br /> BUSY
-									<span style={{ color: 'red' }}>LITTLE</span>STUDIO
+									<span style={{ color: 'red' }}>LITTLE</span>
+									STUDIO
 								</h1>
 								<div className="header__underline"></div>
 							</div>
 							<div className="RichText_richText__qEmi6 text-gray-600 mt-4 article_text flex-col">
 								<div className="max-full text-center leading-relaxed mb-8">
 									<p className="article_text max-w-5xl mx-auto">
-										Welcome to the heartbeat of our innovative digital
-										craftsmanship. As a central pillar of our fractional CTO
-										umbrella, we fuse creativity with state-of-the-art tech
-										tools. Scaling up? No problem. With a vast array of tools in
-										our stack, we fuel our Javascript future. We carefully craft
-										web and technical solutions that scale with your ambitions
-										and objectives. Be it project ideation, planning,
-										preparation or execution, from integrating third-party APIs
-										to employing robust hosting solutions - we&apos;re here to
-										elevate every busy little pixel of your digital journey.
+										Welcome to the heartbeat of our
+										innovative digital craftsmanship. As a
+										central pillar of our fractional CTO
+										umbrella, we fuse creativity with
+										state-of-the-art tech tools. Scaling up?
+										No problem. With a vast array of tools
+										in our stack, we fuel our Javascript
+										future. We carefully craft web and
+										technical solutions that scale with your
+										ambitions and objectives. Be it project
+										ideation, planning, preparation or
+										execution, from integrating third-party
+										APIs to employing robust hosting
+										solutions - we&apos;re here to elevate
+										every busy little pixel of your digital
+										journey.
 									</p>
 								</div>
 							</div>
@@ -148,16 +162,23 @@ export default async function Page() {
 						<div className="py-8 flex flex-col md:flex-row">
 							<div className="mx-auto w-full max-w-3xl">
 								<div
-									dangerouslySetInnerHTML={{ __html: studioP1 }}
+									dangerouslySetInnerHTML={{
+										__html: studioP1,
+									}}
 									className={'article_text mt-8 flex-col'}
 								/>
 								<div
-									dangerouslySetInnerHTML={{ __html: studioP2 }}
+									dangerouslySetInnerHTML={{
+										__html: studioP2,
+									}}
 									className={'article_text mt-2 flex-col'}
 								/>
 							</div>
 						</div>
-						<div className="w-full mb-12 shiney-wrapper shine" style={{ opacity: 1 }}>
+						<div
+							className="w-full mb-12 shiney-wrapper shine"
+							style={{ opacity: 1 }}
+						>
 							<img
 								alt="image alt blog"
 								src="/assets/images/studio2.png"
@@ -211,7 +232,10 @@ export default async function Page() {
 						</div>
 					</section>
 					<div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
-						<svg aria-hidden="true" className="absolute inset-0 h-full w-full">
+						<svg
+							aria-hidden="true"
+							className="absolute inset-0 h-full w-full"
+						>
 							<defs>
 								<pattern
 									id=":ra:"
@@ -228,7 +252,11 @@ export default async function Page() {
 									></path>
 								</pattern>
 							</defs>
-							<rect width="100%" height="100%" fill="url(#:ra:)"></rect>
+							<rect
+								width="100%"
+								height="100%"
+								fill="url(#:ra:)"
+							></rect>
 						</svg>
 					</div>
 
@@ -237,7 +265,10 @@ export default async function Page() {
 							<div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
 								<div className="flex flex-col items-start gap-4">
 									<h1 className="text-4xl font-black tracking-tight text-black sm:text-6xl uppercase mb-2">
-										SOME OF OUR <span style={{ color: 'red' }}>WORK</span>
+										SOME OF OUR{' '}
+										<span style={{ color: 'red' }}>
+											WORK
+										</span>
 									</h1>
 									<div className="header__underline"></div>
 								</div>

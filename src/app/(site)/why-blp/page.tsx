@@ -59,7 +59,10 @@ export default async function Page() {
 					</svg>
 
 					<div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
-						<svg aria-hidden="true" className="absolute inset-0 h-full w-full">
+						<svg
+							aria-hidden="true"
+							className="absolute inset-0 h-full w-full"
+						>
 							<defs>
 								<pattern
 									id=":ra:"
@@ -76,32 +79,43 @@ export default async function Page() {
 									></path>
 								</pattern>
 							</defs>
-							<rect width="100%" height="100%" fill="url(#:ra:)"></rect>
+							<rect
+								width="100%"
+								height="100%"
+								fill="url(#:ra:)"
+							></rect>
 						</svg>
 					</div>
 					<section className="px-6 max-sm:pt-10 md:py-20 bg-white pb-0 md:pb-0">
 						<div className="grid grid-cols-1 justify-items-center gap-2 md:gap-10 homeAdjust mb-2">
 							<div className="max-full text-left leading-relaxed">
 								<h1 className="font-black text-4xl md:text-7xl mb-6 last:mb-0 text-center">
-									WHY B<span style={{ color: 'red' }}>L</span>P?
+									WHY B<span style={{ color: 'red' }}>L</span>
+									P?
 								</h1>
 								<div className="header__underline"></div>
 							</div>
 							<div className="RichText_richText__qEmi6 text-gray-600 mt-4 article_text flex-col">
 								<div className="max-full text-center leading-relaxed mb-8">
 									<p className="article_text max-w-5xl mx-auto">
-										At the core of our operations is a fusion of imaginative
-										design and cutting-edge technology, underpinned by our
-										fractional CTO expertise. Whether you&apos;re scaling up or
-										branching out, our extensive tech toolkit is your ally for
-										the future. We meticulously develop web, technical and
-										business solutions that grow in tandem with your goals and
-										dreams. From the initial spark of an idea to the final
-										stages of execution, encompassing seamless third-party API
-										integration and robust hosting strategies, our team is
-										dedicated to enhancing every aspect of your digital
-										footprint. Join us in a journey where every pixel is a
-										testament to innovation.
+										At the core of our operations is a
+										fusion of imaginative design and
+										cutting-edge technology, underpinned by
+										our fractional CTO expertise. Whether
+										you&apos;re scaling up or branching out,
+										our extensive tech toolkit is your ally
+										for the future. We meticulously develop
+										web, technical and business solutions
+										that grow in tandem with your goals and
+										dreams. From the initial spark of an
+										idea to the final stages of execution,
+										encompassing seamless third-party API
+										integration and robust hosting
+										strategies, our team is dedicated to
+										enhancing every aspect of your digital
+										footprint. Join us in a journey where
+										every pixel is a testament to
+										innovation.
 									</p>
 								</div>
 							</div>
@@ -123,16 +137,23 @@ export default async function Page() {
 						<div className="py-8 flex flex-col md:flex-row">
 							<div className="mx-auto w-full max-w-3xl">
 								<div
-									dangerouslySetInnerHTML={{ __html: studioP1 }}
+									dangerouslySetInnerHTML={{
+										__html: studioP1,
+									}}
 									className={'article_text mt-8 flex-col'}
 								/>
 								<div
-									dangerouslySetInnerHTML={{ __html: studioP2 }}
+									dangerouslySetInnerHTML={{
+										__html: studioP2,
+									}}
 									className={'article_text mt-2 flex-col'}
 								/>
 							</div>
 						</div>
-						<div className="w-full mb-12 shiney-wrapper shine" style={{ opacity: 1 }}>
+						<div
+							className="w-full mb-12 shiney-wrapper shine"
+							style={{ opacity: 1 }}
+						>
 							<img
 								alt="image alt blog"
 								src="/assets/images/studio2.png"
@@ -203,7 +224,9 @@ export default async function Page() {
 								title="map"
 								scrolling="no"
 								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152515.6931206764!2d-6.245704099999999!3d53.324320099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin%2C%20Ireland!5e0!3m2!1sen!2snl!4v1692869457747!5m2!1sen!2snl"
-								style={{ filter: 'grayscale(1) contrast(1.2) opacity(0.4)' }}
+								style={{
+									filter: 'grayscale(1) contrast(1.2) opacity(0.4)',
+								}}
 							></iframe>
 						</div>
 						<FadeIn>
@@ -211,12 +234,15 @@ export default async function Page() {
 								<div className="lg:w-1/3 md:w-2/3 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
 									<>
 										<h2 className="text-black text-lg mb-1 font-black uppercase">
-											CONTACT US <span style={{ color: 'red' }}>TODAY</span>
+											CONTACT US{' '}
+											<span style={{ color: 'red' }}>
+												TODAY
+											</span>
 										</h2>
 										<div className="header__underline"></div>
 										<p className="leading-relaxed my-5 text-black">
-											To contact us, please add your email address and message
-											below.
+											To contact us, please add your email
+											address and message below.
 										</p>
 										<HubSpotForm />
 									</>

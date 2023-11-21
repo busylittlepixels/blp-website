@@ -3,7 +3,9 @@ import type { AfterChangeHook } from 'payload/dist/collections/config/types'
 // ensure that the home page is revalidated at '/' instead of '/home'
 export const formatAppURL = ({ doc }): string => {
 	const pathToUse = doc.slug === 'home' ? '' : doc.slug
-	const { pathname } = new URL(`${process.env.PAYLOAD_PUBLIC_SITE_URL}/${pathToUse}`)
+	const { pathname } = new URL(
+		`${process.env.PAYLOAD_PUBLIC_SITE_URL}/${pathToUse}`,
+	)
 	return pathname
 }
 
@@ -26,7 +28,9 @@ export const revalidatePage: AfterChangeHook = ({ doc, req, operation }) => {
 					req.payload.logger.error(`Error revalidating path ${url}`)
 				}
 			} catch (err: unknown) {
-				req.payload.logger.error(`Error hitting revalidate route for ${url}`)
+				req.payload.logger.error(
+					`Error hitting revalidate route for ${url}`,
+				)
 			}
 		}
 

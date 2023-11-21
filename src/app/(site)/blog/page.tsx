@@ -14,9 +14,12 @@ export const metadata: Metadata = {
 }
 
 export default async function Blog() {
-	const blog: Page = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/posts`, {
-		next: { revalidate: 3600 },
-	})
+	const blog: Page = await fetch(
+		`${process.env.NEXT_PUBLIC_SERVER_URL}/api/posts`,
+		{
+			next: { revalidate: 3600 },
+		},
+	)
 		.then(res => res.json())
 		.then(res => res?.docs)
 
@@ -37,7 +40,10 @@ export default async function Blog() {
 	return (
 		<main className={'blog index'}>
 			<div className="absolute inset-x-0 bottom-10 top-0 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
-				<svg aria-hidden="true" className="absolute inset-0 h-full w-full">
+				<svg
+					aria-hidden="true"
+					className="absolute inset-0 h-full w-full"
+				>
 					<defs>
 						<pattern
 							id=":ra:"
@@ -47,7 +53,11 @@ export default async function Blog() {
 							x="50%"
 							y="100%"
 						>
-							<path d="M0 128V.5H128" fill="none" stroke="currentColor"></path>
+							<path
+								d="M0 128V.5H128"
+								fill="none"
+								stroke="currentColor"
+							></path>
 						</pattern>
 					</defs>
 					<rect width="100%" height="100%" fill="url(#:ra:)"></rect>
@@ -58,7 +68,8 @@ export default async function Blog() {
 					<div className="container mx-auto w-full px-4 bg-white max-w-auto">
 						<div className="mx-auto max-w-7xl">
 							<h1 className="blogIndexHeading">
-								BUSY<span style={{ color: 'red' }}>LITTLE</span>BLOG
+								BUSY<span style={{ color: 'red' }}>LITTLE</span>
+								BLOG
 							</h1>
 							<div className="header__underline"></div>
 							<p className="blogIntroString">
@@ -69,11 +80,12 @@ export default async function Blog() {
 								<span style={{ color: 'red' }}>
 									<strong>little</strong>
 								</span>
-								<strong>pixels</strong>, we navigate the ever-changing landscape of
-								business and technology.
+								<strong>pixels</strong>, we navigate the
+								ever-changing landscape of business and
+								technology.
 								<br />
-								From industry and tech commentary, to emerging trends, we&apos;ve
-								always got something to say.
+								From industry and tech commentary, to emerging
+								trends, we&apos;ve always got something to say.
 							</p>
 
 							<div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
@@ -94,20 +106,28 @@ export default async function Blog() {
 											<div>
 												<div className="flex items-center gap-x-4 text-xs">
 													<time className="text-gray-500">
-														<Date dateString={post.createdAt} />
+														<Date
+															dateString={
+																post.createdAt
+															}
+														/>
 													</time>
 													<Link
 														href={`/blog/${post.category}/${post.slug}`}
 														className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
 													>
 														{post.category
-															? capitalizeCategory(post.category)
+															? capitalizeCategory(
+																	post.category,
+															  )
 															: ''}
 													</Link>
 												</div>
 												<div className="group relative">
 													<h3 className="mt-3 text-2xl font-black leading-6 text-black group-hover:text-red-500 transition-all">
-														<Link href={`/blog/${post.slug}`}>
+														<Link
+															href={`/blog/${post.slug}`}
+														>
 															<span className="absolute" />
 															{post.title}
 														</Link>

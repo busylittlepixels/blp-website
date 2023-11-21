@@ -8,7 +8,8 @@ export const images = [
 	},
 	{
 		src: 'https://media.giphy.com/media/ibqNLl44qRLJyKv7rU/giphy-downsized-large.gif',
-		original: 'https://media.giphy.com/media/ibqNLl44qRLJyKv7rU/giphy-downsized-large.gif',
+		original:
+			'https://media.giphy.com/media/ibqNLl44qRLJyKv7rU/giphy-downsized-large.gif',
 		width: 350,
 		height: 250,
 		title: '...you know the rules and so do I...',

@@ -87,7 +87,8 @@ export const Testimonials = () => {
 			<FadeIn>
 				<div className={`mx-auto max-w-7xl px-6 lg:px-8 mb-6`}>
 					<h1 className="text-4xl font-black tracking-tight text-black sm:text-6xl uppercase mb-4">
-						WHAT OUR <span style={{ color: 'red' }}>CLIENTS</span> SAY...
+						WHAT OUR <span style={{ color: 'red' }}>CLIENTS</span>{' '}
+						SAY...
 					</h1>
 					<div className="header__underline"></div>
 				</div>

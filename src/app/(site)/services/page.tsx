@@ -37,7 +37,9 @@ export default async function ServicesPage() {
 						<div className="mx-auto max-w-3xl text-base leading-7 text-black">
 							<h3 className="font-black text-4xl md:text-6xl mb-6 last:mb-0 uppercase">
 								WHY DO I NEED A{' '}
-								<span style={{ color: 'red' }}>FRACTIONAL CTO?</span>
+								<span style={{ color: 'red' }}>
+									FRACTIONAL CTO?
+								</span>
 							</h3>
 							<div className="header__underline"></div>
 							<div className="md:px-8">

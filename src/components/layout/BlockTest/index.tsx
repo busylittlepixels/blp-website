@@ -58,7 +58,10 @@ export const BlockTest = ({ content }: ITextBlock) => {
 							</h1>
 							<h2>{content.subtitle}</h2>
 							<div className="header__underline"></div>
-							<RichText content={content.blocktext} className={'pt-8 block_text'} />
+							<RichText
+								content={content.blocktext}
+								className={'pt-8 block_text'}
+							/>
 						</div>
 					</section>
 				</div>

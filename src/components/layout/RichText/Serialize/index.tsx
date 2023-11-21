@@ -29,15 +29,24 @@ type SerializeFunction = React.FC<{
 }>
 
 const isText = (value: any): boolean =>
-	typeof value === 'object' && value !== null && typeof value.text === 'string'
+	typeof value === 'object' &&
+	value !== null &&
+	typeof value.text === 'string'
 
 export const Serialize: SerializeFunction = ({ content, customRenderers }) => {
 	return (
 		<Fragment>
 			{content?.map((node, i) => {
 				if (isText(node)) {
-					// @ts-expect-error
-					let text = <span dangerouslySetInnerHTML={{ __html: escapeHTML(node.text) }} />
+					
+					let text = (
+						<span
+							dangerouslySetInnerHTML={{
+								// @ts-expect-error
+								__html: escapeHTML(node.text),
+							}}
+						/>
+					)
 
 					if (node.bold) {
 						text = <strong key={i}>{text}</strong>
@@ -53,7 +62,10 @@ export const Serialize: SerializeFunction = ({ content, customRenderers }) => {
 
 					if (node.underline) {
 						text = (
-							<span style={{ textDecoration: 'underline' }} key={i}>
+							<span
+								style={{ textDecoration: 'underline' }}
+								key={i}
+							>
 								{text}
 							</span>
 						)
@@ -61,7 +73,10 @@ export const Serialize: SerializeFunction = ({ content, customRenderers }) => {
 
 					if (node.strikethrough) {
 						text = (
-							<span style={{ textDecoration: 'line-through' }} key={i}>
+							<span
+								style={{ textDecoration: 'line-through' }}
+								key={i}
+							>
 								{text}
 							</span>
 						)
@@ -79,7 +94,11 @@ export const Serialize: SerializeFunction = ({ content, customRenderers }) => {
 					customRenderers[node.type] &&
 					typeof customRenderers[node.type] === 'function'
 				) {
-					return customRenderers[node.type]({ node, Serialize, index: i })
+					return customRenderers[node.type]({
+						node,
+						Serialize,
+						index: i,
+					})
 				}
 
 				switch (node.type) {
@@ -158,7 +177,11 @@ export const Serialize: SerializeFunction = ({ content, customRenderers }) => {
 
 					case 'ul':
 						return (
-							<ul key={i} role="list" className={`max-w-xl space-y-8 text-gray-400`}>
+							<ul
+								key={i}
+								role="list"
+								className={`max-w-xl space-y-8 text-gray-400`}
+							>
 								<li key={i} className="flex gap-x-3">
 									<span className="font-normal text-gray-900">
 										<Serialize
@@ -192,7 +215,10 @@ export const Serialize: SerializeFunction = ({ content, customRenderers }) => {
 
 					case 'upload':
 						return (
-							<figure key={i} className="my-8 shiney-wrapper shine">
+							<figure
+								key={i}
+								className="my-8 shiney-wrapper shine"
+							>
 								<Image
 									width={100}
 									height={100}

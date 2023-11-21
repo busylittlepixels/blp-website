@@ -19,7 +19,9 @@ export const ImageSlider = ({ content }: any) => {
 	const [activeSlide, setActiveSlide] = useState(initialState.activeSlide)
 	const isAutoPlay = useState(initialState.isAutoPlay)
 
-	const transitionSlide = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+	const transitionSlide = (
+		e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+	) => {
 		e.preventDefault()
 		let wrapper,
 			current,
@@ -40,8 +42,12 @@ export const ImageSlider = ({ content }: any) => {
 
 		assignActive = clickToSlide ? clickToSlide : current
 
-		fadeSl = document.querySelector('.flex__container[data-slide="' + assignActive + '"]')
-		oldActive = document.querySelector('.flex__container[data-slide="' + current + '"]')
+		fadeSl = document.querySelector(
+			'.flex__container[data-slide="' + assignActive + '"]',
+		)
+		oldActive = document.querySelector(
+			'.flex__container[data-slide="' + current + '"]',
+		)
 		if (!fadeSl.classList.contains('flex--preStart')) {
 			fadeSl.classList.add('flex--preStart')
 		}
@@ -108,7 +114,11 @@ export const ImageSlider = ({ content }: any) => {
 								| string
 								| number
 								| boolean
-								| React.ReactElement<any, string | React.JSXElementConstructor<any>>
+								| React.ReactElement<
+										any,
+										| string
+										| React.JSXElementConstructor<any>
+								  >
 								| React.ReactFragment
 								| React.ReactPortal
 								| null
@@ -117,7 +127,11 @@ export const ImageSlider = ({ content }: any) => {
 								| string
 								| number
 								| boolean
-								| React.ReactElement<any, string | React.JSXElementConstructor<any>>
+								| React.ReactElement<
+										any,
+										| string
+										| React.JSXElementConstructor<any>
+								  >
 								| React.ReactFragment
 								| React.ReactPortal
 								| null
@@ -126,7 +140,11 @@ export const ImageSlider = ({ content }: any) => {
 								| string
 								| number
 								| boolean
-								| React.ReactElement<any, string | React.JSXElementConstructor<any>>
+								| React.ReactElement<
+										any,
+										| string
+										| React.JSXElementConstructor<any>
+								  >
 								| React.ReactFragment
 								| React.ReactPortal
 								| null
@@ -135,7 +153,11 @@ export const ImageSlider = ({ content }: any) => {
 								| string
 								| number
 								| boolean
-								| React.ReactElement<any, string | React.JSXElementConstructor<any>>
+								| React.ReactElement<
+										any,
+										| string
+										| React.JSXElementConstructor<any>
+								  >
 								| React.ReactFragment
 								| React.ReactPortal
 								| null
@@ -148,15 +170,23 @@ export const ImageSlider = ({ content }: any) => {
 						return (
 							<div
 								key={++i}
-								className={`flex__container flex--${sl.slideColor} ${
-									activeSlide == current ? `flex--active` : 'animate--start'
+								className={`flex__container flex--${
+									sl.slideColor
+								} ${
+									activeSlide == current
+										? `flex--active`
+										: 'animate--start'
 								}`}
 								data-slide={current}
 							>
 								<div className="flex__item flex__item--left">
 									<div className="flex__content">
-										<p className="text--sub">{sl.textSub}</p>
-										<h1 className="text--big font-serif">{sl.textHeading}</h1>
+										<p className="text--sub">
+											{sl.textSub}
+										</p>
+										<h1 className="text--big font-serif">
+											{sl.textHeading}
+										</h1>
 										<p className="pt-4">{sl.textContent}</p>
 									</div>
 									<p className="text__background font-serif">
@@ -189,7 +219,8 @@ export const ImageSlider = ({ content }: any) => {
 									| boolean
 									| React.ReactElement<
 											any,
-											string | React.JSXElementConstructor<any>
+											| string
+											| React.JSXElementConstructor<any>
 									  >
 									| React.ReactFragment
 									| React.ReactPortal

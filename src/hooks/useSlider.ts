@@ -32,7 +32,8 @@ export const useSlider = () => {
 			const w = activeSlide?.offsetWidth
 			const h = activeSlide?.offsetHeight
 			const img = new Image()
-			img.src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/mask-karlie.jpg'
+			img.src =
+				'https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/mask-karlie.jpg'
 
 			let pos = {
 				x: 150,
@@ -64,9 +65,13 @@ export const useSlider = () => {
 	useEffect(() => {
 		canvasInit()
 		// @ts-ignore
-		const footerButtons = sliderRef.current?.querySelectorAll('.footer-wrapper .box')
+		const footerButtons = sliderRef.current?.querySelectorAll(
+			'.footer-wrapper .box',
+		)
 		footerButtons?.forEach(button =>
-			button.addEventListener('click', event => changeButton(event.currentTarget)),
+			button.addEventListener('click', event =>
+				changeButton(event.currentTarget),
+			),
 		)
 
 		// Equivalent of $(document).ready
@@ -78,7 +83,9 @@ export const useSlider = () => {
 		// Cleanup listeners on component unmount
 		return () => {
 			window.removeEventListener('resize', handleResize)
-			footerButtons?.forEach(button => button.removeEventListener('click'))
+			footerButtons?.forEach(button =>
+				button.removeEventListener('click'),
+			)
 		}
 	}, [canvasInit])
 

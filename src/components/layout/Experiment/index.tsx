@@ -114,7 +114,9 @@ export const Experiment = () => {
 											<span className="mask">Kloss</span>
 										</span>
 									</h1>
-									<span className="gallery">View gallery</span>
+									<span className="gallery">
+										View gallery
+									</span>
 								</div>
 							</div>
 						</div>
@@ -154,7 +156,9 @@ export const Experiment = () => {
 											<span className="mask">Weber</span>
 										</span>
 									</h1>
-									<span className="gallery">View gallery</span>
+									<span className="gallery">
+										View gallery
+									</span>
 								</div>
 							</div>
 						</div>

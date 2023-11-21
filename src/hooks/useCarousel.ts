@@ -18,7 +18,13 @@ export const useCarousel = ({ images, mapImages, duration }: CarouselProps) => {
 		})
 
 		images.forEach((_, i) => {
-			tl.to({}, { duration, onComplete: () => setCurrentIndex((i + 1) % images.length) })
+			tl.to(
+				{},
+				{
+					duration,
+					onComplete: () => setCurrentIndex((i + 1) % images.length),
+				},
+			)
 		})
 
 		return () => tl.kill()

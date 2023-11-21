@@ -29,7 +29,10 @@ const eject = async (): Promise<void> => {
 	// remove `'plugin:@next/next/recommended', ` from `./.eslintrc.js`
 	const eslintConfigFile = path.join(__dirname, './.eslintrc.js')
 	const eslintConfig = fs.readFileSync(eslintConfigFile, 'utf8')
-	const updatedEslintConfig = eslintConfig.replace(`'plugin:@next/next/recommended', `, '')
+	const updatedEslintConfig = eslintConfig.replace(
+		`'plugin:@next/next/recommended', `,
+		'',
+	)
 	fs.writeFileSync(eslintConfigFile, updatedEslintConfig, 'utf8')
 }
 

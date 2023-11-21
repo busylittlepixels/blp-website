@@ -28,7 +28,8 @@ export const TitleContainer = ({ title, subtitle }: TitleContainerProps) => {
 			<SectionGrid className="homeAdjust">
 				<HeadingContainer>
 					<Heading>
-						WE ARE BUSY<span style={{ color: 'red' }}>{title}</span>PIXELS.
+						WE ARE BUSY<span style={{ color: 'red' }}>{title}</span>
+						PIXELS.
 						<br /> <span style={{ color: 'red' }}>WE</span> MAKE
 						<span style={{ color: 'red' }}> YOUR TECH</span> GO.
 					</Heading>

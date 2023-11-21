@@ -1,7 +1,13 @@
 'use client'
 import './stuff.css'
 import { useRef } from 'react'
-import { motion, useScroll, useSpring, useTransform, MotionValue } from 'framer-motion'
+import {
+	motion,
+	useScroll,
+	useSpring,
+	useTransform,
+	MotionValue,
+} from 'framer-motion'
 
 function useParallax(value: MotionValue<number>, distance: number) {
 	return useTransform(value, [0, 1], [-distance, distance])
@@ -25,7 +31,10 @@ const Image = ({ id }: ImageProps) => {
 					alt="A test Image skyscraper"
 				/>
 			</div>
-			<motion.h2 className={'vSlideIndex'} style={{ y }}>{`#00${id}`}</motion.h2>
+			<motion.h2
+				className={'vSlideIndex'}
+				style={{ y }}
+			>{`#00${id}`}</motion.h2>
 		</section>
 	)
 }
