@@ -29,8 +29,8 @@ export const images: CustomImage[] = [
 		title: "...a full commitment's what I'm thinking of...",
 	},
 	{
-		src: 'https://media.giphy.com/media/QyVZ1BCz9Fh6J0qblM/giphy.gif',
-		original: 'https://media.giphy.com/media/QyVZ1BCz9Fh6J0qblM/giphy.gif',
+		src: 'assets/images/studio.webp',
+		original: 'assets/images/studio.webp',
 		width: 480,
 		height: 240,
 		title: "...you wouldn't get this from any other guy...",
@@ -58,8 +58,8 @@ export const images: CustomImage[] = [
 		title: '...never gonna give you up...',
 	},
 	{
-		src: 'https://media.giphy.com/media/xUPGcB7dYAIBjMG2CQ/giphy.gif',
-		original: 'https://media.giphy.com/media/xUPGcB7dYAIBjMG2CQ/giphy.gif',
+		src: '/assets/images/ganglia.webp',
+		original: '/assets/images/ganglia.webp',
 		width: 200,
 		height: 140,
 		title: '...never gonna let you down...',
@@ -88,8 +88,8 @@ export const images: CustomImage[] = [
 		title: '...never gonna say goodbye...',
 	},
 	{
-		src: 'https://media.giphy.com/media/WTjXuYA2y4o3UZly3W/giphy.gif',
-		original: 'https://media.giphy.com/media/WTjXuYA2y4o3UZly3W/giphy.gif',
+		src: '/assets/images/workdesk.webp',
+		original: '/assets/images/workdesk.webp',
 		alt: 'Desk',
 		width: 500,
 		height: 350,
@@ -105,8 +105,8 @@ export const images: CustomImage[] = [
 	},
 
 	{
-		src: 'https://media.giphy.com/media/SpopD7IQN2gK3qN4jS/giphy.gif',
-		original: 'https://media.giphy.com/media/SpopD7IQN2gK3qN4jS/giphy.gif',
+		src: '/assets/images/scrollinnncodin.webp',
+		original: '/assets/images/scrollinnncodin.webp',
 		alt: 'Code Code Code',
 		width: 600,
 		height: 350,
@@ -122,8 +122,8 @@ export const images: CustomImage[] = [
 	},
 
 	{
-		src: 'https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif',
-		original: 'https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif',
+		src: '/assets/images/functions.webp',
+		original: '/assets/images/functions.webp',
 		alt: 'Desk',
 		width: 500,
 		height: 300,
