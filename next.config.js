@@ -17,6 +17,10 @@ module.exports = withPayload(
           protocol: 'https',
           hostname: 'source.unsplash.com'
         },
+        {
+          protocol: 'https',
+          hostname: 'busylittlepixels.com'
+        }
       ],
     },
     reactStrictMode: true,
