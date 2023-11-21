@@ -1,25 +1,25 @@
-'use client';
-import Link from 'next/link';
+'use client'
+import Link from 'next/link'
 // @ts-ignore
-import { experimental_useFormState as useFormState } from 'react-dom';
+import { experimental_useFormState as useFormState } from 'react-dom'
 // @ts-expect-error
-import { experimental_useFormStatus as useFormStatus } from 'react-dom';
-import { createSignup } from '../../../app/(site)/actions';
-import { FadeIn } from '../FadeIn';
-import React from 'react';
+import { experimental_useFormStatus as useFormStatus } from 'react-dom'
+import { createSignup } from '../../../app/(site)/actions'
+import { FadeIn } from '../FadeIn'
+import React from 'react'
 
 const currentYear = () => {
-	let currentTime: Date = new Date();
-	let year: number = currentTime.getFullYear();
-	return year;
-};
+	let currentTime: Date = new Date()
+	let year: number = currentTime.getFullYear()
+	return year
+}
 
 const initialState = {
 	email: '',
-};
+}
 
 function SubmitButton() {
-	const { pending } = useFormStatus();
+	const { pending } = useFormStatus()
 
 	return (
 		<button
@@ -30,25 +30,22 @@ function SubmitButton() {
 			<span className="sr-only">Submit</span>
 			<span aria-hidden={true}>&rarr;</span>
 		</button>
-	);
+	)
 }
 
 export function SignUpForm() {
-	const [state, formAction] = useFormState(createSignup, initialState);
+	const [state, formAction] = useFormState(createSignup, initialState)
 	return (
 		<div className="px-4">
-			<form
-				action={formAction}
-				className="grid w-full max-w-xl grid-cols-1 gap-6"
-			>
+			<form action={formAction} className="grid w-full max-w-xl grid-cols-1 gap-6">
 				<div className="text-center tracking-tight text-slate-300">
 					<h3 className="text-center font-black tracking-tighter text-3xl md:text-6xl mb-4 text-white last:mb-0 uppercase">
 						Sign up for our busy
 						<span style={{ color: 'red' }}>little</span>updates
 					</h3>
 					<p className="mb-4 last:mb-0">
-						We promise we won&apos;t spam you, or do anything nefarious or
-						shifty with your data. <br />
+						We promise we won&apos;t spam you, or do anything nefarious or shifty with your data.{' '}
+						<br />
 						Frankly, that&apos;s just not how we roll.{' '}
 					</p>
 				</div>
@@ -69,23 +66,22 @@ export function SignUpForm() {
 						<SubmitButton />
 					</div>
 					<p className="text-center text-xs text-slate-400">
-						By subscribing to our newsletter you accept to receive recurring
-						emails from our company
+						By subscribing to our newsletter you accept to receive recurring emails from our company
 					</p>
 				</div>
 			</form>
 		</div>
-	);
+	)
 }
 
 export const Footer = () => {
 	const goToTop = e => {
-		e.preventDefault();
+		e.preventDefault()
 		window.scrollTo({
 			top: 0,
 			behavior: 'smooth',
-		});
-	};
+		})
+	}
 
 	return (
 		<footer className="bg-black py-20 text-slate-300 md:pb-12 footer relative">
@@ -101,8 +97,7 @@ export const Footer = () => {
 					</a>
 					<span className="font-black">
 						{' '}
-						Made with <span style={{ color: 'red' }}>&hearts;</span> in
-						Amsterdam.
+						Made with <span style={{ color: 'red' }}>&hearts;</span> in Amsterdam.
 					</span>
 					<br />
 					<div className="justify-center flex flex-row gap-2 pt-2">
@@ -123,7 +118,7 @@ export const Footer = () => {
 				</div>
 			</div>
 		</footer>
-	);
-};
+	)
+}
 
-export default Footer;
+export default Footer

@@ -1,5 +1,5 @@
-import styles from '../styles/Loader.module.css';
-import { BeatLoader } from 'react-spinners';
+import styles from '../styles/Loader.module.css'
+import { BeatLoader } from 'react-spinners'
 const Loader = () => {
 	return (
 		<div className={styles.wrapper}>
@@ -12,7 +12,7 @@ const Loader = () => {
 			/>
 			{/* </div> */}
 		</div>
-	);
-};
+	)
+}
 
-export default Loader;
+export default Loader

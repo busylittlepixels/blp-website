@@ -1,9 +1,9 @@
-import { Image } from 'react-grid-gallery';
+import { Image } from 'react-grid-gallery'
 
 export interface CustomImage extends Image {
-	original: string;
-	title?: string;
-	description?: string;
+	original: string
+	title?: string
+	description?: string
 }
 
 export const images: CustomImage[] = [
@@ -129,4 +129,4 @@ export const images: CustomImage[] = [
 		height: 300,
 		title: "Let's get pix-ical.",
 	},
-];
+]

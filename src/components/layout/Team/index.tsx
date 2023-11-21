@@ -1,5 +1,5 @@
-'use client';
-import Image from 'next/image';
+'use client'
+import Image from 'next/image'
 
 const people = [
 	{
@@ -39,10 +39,10 @@ const people = [
 		location: 'Middlesbrough, United Kingdom',
 	},
 	// More people...
-];
+]
 
 interface ITeam {
-	headline?: string;
+	headline?: string
 }
 
 export const Team = ({ headline }: ITeam) => {
@@ -95,11 +95,7 @@ export const Team = ({ headline }: ITeam) => {
 							/>
 						</pattern>
 					</defs>
-					<rect
-						width="400"
-						height="384"
-						fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)"
-					/>
+					<rect width="400" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
 				</svg>
 			</div>
 
@@ -111,14 +107,13 @@ export const Team = ({ headline }: ITeam) => {
 					</h1>
 					<div className="header__underline"></div>
 					<p className="mt-6 text-lg leading-8 text-gray-300">
-						We are a dynamic and distributed fractional CTO company founded by a
-						team of experienced professionals who have walked the path of CTOs,
-						Technical Leads, Developers, and Marketing Specialists. <br />
+						We are a dynamic and distributed fractional CTO company founded by a team of experienced
+						professionals who have walked the path of CTOs, Technical Leads, Developers, and
+						Marketing Specialists. <br />
 						<br />
-						With our studios headquartered in the bustling tech hub of Dublin,
-						and distributed bases in Austria, the UK and The Netherlands - we
-						bring together a wealth of expertise and a passion for driving
-						technological innovation.
+						With our studios headquartered in the bustling tech hub of Dublin, and distributed bases
+						in Austria, the UK and The Netherlands - we bring together a wealth of expertise and a
+						passion for driving technological innovation.
 					</p>
 				</div>
 				<ul
@@ -141,13 +136,11 @@ export const Team = ({ headline }: ITeam) => {
 								{person.name}
 							</h2>
 							<p className="text-base leading-7 text-gray-300">{person.role}</p>
-							<p className="text-sm leading-6 text-gray-300">
-								{person.location}
-							</p>
+							<p className="text-sm leading-6 text-gray-300">{person.location}</p>
 						</li>
 					))}
 				</ul>
 			</div>
 		</div>
-	);
-};
+	)
+}

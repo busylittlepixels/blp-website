@@ -1,6 +1,6 @@
-import { GlobalConfig } from 'payload/types';
+import { GlobalConfig } from 'payload/types'
 
-const menuColumnBlocks = [];
+const menuColumnBlocks = []
 
 export const MainMenu: GlobalConfig = {
 	slug: 'mainMenu',
@@ -50,6 +50,6 @@ export const MainMenu: GlobalConfig = {
 			],
 		},
 	],
-};
+}
 
-export default MainMenu;
+export default MainMenu

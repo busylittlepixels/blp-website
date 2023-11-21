@@ -1,9 +1,9 @@
-import React from 'react';
-import Image from 'next/image';
-import imageLoader from '../../../../imageLoader';
-import { FadeIn } from '../../shared/FadeIn';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import React from 'react'
+import Image from 'next/image'
+import imageLoader from '../../../../imageLoader'
+import { FadeIn } from '../../shared/FadeIn'
+import Carousel from 'react-multi-carousel'
+import 'react-multi-carousel/lib/styles.css'
 
 const responsive = {
 	superLargeDesktop: {
@@ -23,22 +23,18 @@ const responsive = {
 		breakpoint: { max: 464, min: 0 },
 		items: 1,
 	},
-};
+}
 
 interface CarouselContainerProps {
-	title?: any;
-	content?: any;
+	title?: any
+	content?: any
 }
 
 export const CarouselBlock = ({ content }: CarouselContainerProps) => {
 	const carouselPanels = content
 		? Object.entries(content.carouselblock).map((item: any, index: number) => {
 				return (
-					<div
-						className="mr-2"
-						id={item[1]['carouselImageUrl']}
-						key={item[1]['carouselImageUrl']}
-					>
+					<div className="mr-2" id={item[1]['carouselImageUrl']} key={item[1]['carouselImageUrl']}>
 						<Image
 							// @ts-ignore
 							src={item[1]['carouselImageUrl']}
@@ -51,9 +47,9 @@ export const CarouselBlock = ({ content }: CarouselContainerProps) => {
 							loading="lazy"
 						/>
 					</div>
-				);
+				)
 		  })
-		: null;
+		: null
 
 	return (
 		<section className="bg-white mt-24 carouselLeft mb-2">
@@ -78,7 +74,7 @@ export const CarouselBlock = ({ content }: CarouselContainerProps) => {
 				</Carousel>
 			</FadeIn>
 		</section>
-	);
-};
+	)
+}
 
-export default CarouselBlock;
+export default CarouselBlock

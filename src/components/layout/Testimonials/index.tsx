@@ -1,20 +1,20 @@
-'use client';
-import React, { useRef } from 'react';
-import Slider from 'react-slick';
-import Slide from './Slide';
-import { FadeIn } from '../../shared/FadeIn';
+'use client'
+import React, { useRef } from 'react'
+import Slider from 'react-slick'
+import Slide from './Slide'
+import { FadeIn } from '../../shared/FadeIn'
 
 interface SlideContent {
-	bodyCopy: string;
-	creditName: string;
-	creditTitle: string;
-	creditCompany: string;
-	city: string;
-	country: string;
+	bodyCopy: string
+	creditName: string
+	creditTitle: string
+	creditCompany: string
+	city: string
+	country: string
 }
 
 export const Testimonials = () => {
-	const slide = useRef<Slider | null>(null);
+	const slide = useRef<Slider | null>(null)
 	const settings = {
 		infinite: true,
 		centerMode: true,
@@ -32,7 +32,7 @@ export const Testimonials = () => {
 				},
 			},
 		],
-	};
+	}
 
 	const contentA: SlideContent = {
 		bodyCopy:
@@ -42,7 +42,7 @@ export const Testimonials = () => {
 		creditCompany: ' Dublin',
 		city: 'Dublin',
 		country: 'Ireland 🇮🇪',
-	};
+	}
 
 	// const contentB: SlideContent = {
 	// 	bodyCopy: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a sapien vestibulum, cursus tortor eu, maximus dolor. Sed ut gravida lectus, ac suscipit augue. Donec et sapien maximus, rhoncus nisi at, egestas est. Fusce mauris lacus, molestie vel pretium nec.”",
@@ -61,7 +61,7 @@ export const Testimonials = () => {
 		creditCompany: ' Shapes and Places',
 		city: 'Amsterdam',
 		country: 'The Netherlands 🇳🇱',
-	};
+	}
 
 	const contentD: SlideContent = {
 		bodyCopy:
@@ -71,7 +71,7 @@ export const Testimonials = () => {
 		creditCompany: ' TNW',
 		city: 'Amsterdam',
 		country: 'The Netherlands 🇳🇱',
-	};
+	}
 
 	// const contentE: SlideContent = {
 	// 	bodyCopy: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a sapien vestibulum, cursus tortor eu, maximus dolor. Sed ut gravida lectus, ac suscipit augue. Donec et sapien maximus, rhoncus nisi at, egestas est. Fusce mauris lacus, molestie vel pretium nec.”",
@@ -110,7 +110,7 @@ export const Testimonials = () => {
 				</div>
 			</FadeIn>
 		</div>
-	);
-};
+	)
+}
 
-export default Testimonials;
+export default Testimonials

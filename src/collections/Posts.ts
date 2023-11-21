@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
-import type { CollectionConfig } from 'payload/types';
+import type { CollectionConfig } from 'payload/types'
 
-import formatSlug from '../utilities/formatSlug';
+import formatSlug from '../utilities/formatSlug'
 
 export const Posts: CollectionConfig = {
 	slug: 'posts',
@@ -99,12 +99,12 @@ export const Posts: CollectionConfig = {
 			admin: {
 				condition: (data, siblingData, { user }) => {
 					if (siblingData.displayMore) {
-						return true;
+						return true
 					} else {
-						return false;
+						return false
 					}
 				},
 			},
 		},
 	],
-};
+}

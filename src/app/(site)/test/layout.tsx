@@ -1,5 +1,5 @@
-import React from 'react';
-import Script from 'next/script';
+import React from 'react'
+import Script from 'next/script'
 
 const TestLayout = async ({ children }: { children: React.ReactNode }) => {
 	return (
@@ -8,7 +8,7 @@ const TestLayout = async ({ children }: { children: React.ReactNode }) => {
 
 			{children}
 		</>
-	);
-};
+	)
+}
 
-export default TestLayout;
+export default TestLayout

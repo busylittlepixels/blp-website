@@ -1,7 +1,7 @@
-'use client';
+'use client'
 
-import Script from 'next/script';
-import * as gtag from '../../gtag';
+import Script from 'next/script'
+import * as gtag from '../../gtag'
 
 const GoogleAnalytics = () => {
 	//You can show in the console the GA_TRACKING_ID to confirm
@@ -28,7 +28,7 @@ const GoogleAnalytics = () => {
 				}}
 			/>
 		</>
-	);
-};
+	)
+}
 
-export default GoogleAnalytics;
+export default GoogleAnalytics

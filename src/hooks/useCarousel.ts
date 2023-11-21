@@ -1,21 +1,21 @@
-'use client';
-import { useState, useEffect } from 'react';
-import gsap from 'gsap';
+'use client'
+import { useState, useEffect } from 'react'
+import gsap from 'gsap'
 
 interface CarouselProps {
-	images?: any;
-	mapImages?: any;
-	duration?: number; // duration for each slide, in seconds
+	images?: any
+	mapImages?: any
+	duration?: number // duration for each slide, in seconds
 }
 
 export const useCarousel = ({ images, mapImages, duration }: CarouselProps) => {
-	const [currentIndex, setCurrentIndex] = useState(0);
+	const [currentIndex, setCurrentIndex] = useState(0)
 
 	useEffect((): any => {
 		const tl = gsap.timeline({
 			defaults: { ease: 'power1.out' },
 			repeat: -1,
-		});
+		})
 
 		images.forEach((_, i) => {
 			tl.to(
@@ -24,13 +24,13 @@ export const useCarousel = ({ images, mapImages, duration }: CarouselProps) => {
 					duration,
 					onComplete: () => setCurrentIndex((i + 1) % images.length),
 				},
-			);
-		});
+			)
+		})
 
-		return () => tl.kill();
-	}, [images, duration]);
+		return () => tl.kill()
+	}, [images, duration])
 
-	return currentIndex;
-};
+	return currentIndex
+}
 
-export default useCarousel;
+export default useCarousel

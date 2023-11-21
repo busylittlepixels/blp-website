@@ -1,13 +1,13 @@
-'use client';
-import { useRef, useEffect } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+'use client'
+import { useRef, useEffect } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
 export const useParallaxHero = () => {
-	const mainRef = useRef<HTMLElement>(null);
-	const scrollDistRef = useRef<HTMLElement>(null);
+	const mainRef = useRef<HTMLElement>(null)
+	const scrollDistRef = useRef<HTMLElement>(null)
 
 	useEffect(() => {
 		if (mainRef.current && scrollDistRef.current) {
@@ -19,12 +19,12 @@ export const useParallaxHero = () => {
 				top: 0,
 				left: '50%',
 				x: '-50%',
-			});
+			})
 
 			gsap.set(scrollDistRef.current, {
 				width: '100%',
 				height: '250%',
-			});
+			})
 
 			const tl = gsap.timeline({
 				scrollTrigger: {
@@ -33,7 +33,7 @@ export const useParallaxHero = () => {
 					end: 'bottom bottom',
 					scrub: 1,
 				},
-			});
+			})
 
 			tl.fromTo('.sky', { y: 0 }, { y: -200 }, 0)
 				.fromTo('.cloud1', { y: 100 }, { y: -800 }, 0)
@@ -41,20 +41,20 @@ export const useParallaxHero = () => {
 				.fromTo('.cloud3', { y: -50 }, { y: -650 }, 0)
 				.fromTo('.mountBg', { y: -10 }, { y: -100 }, 0)
 				.fromTo('.mountMg', { y: -30 }, { y: -250 }, 0)
-				.fromTo('.mountFg', { y: -50 }, { y: -600 }, 0);
+				.fromTo('.mountFg', { y: -50 }, { y: -600 }, 0)
 		}
 
 		return () => {
 			if (scrollDistRef.current) {
-				const stInstance = ScrollTrigger.getById(scrollDistRef.current.id);
+				const stInstance = ScrollTrigger.getById(scrollDistRef.current.id)
 				if (stInstance) {
-					stInstance.kill();
+					stInstance.kill()
 				}
 			}
-		};
-	}, []);
+		}
+	}, [])
 
-	return { mainRef, scrollDistRef };
-};
+	return { mainRef, scrollDistRef }
+}
 
-export default useParallaxHero;
+export default useParallaxHero

@@ -1,15 +1,15 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { RichText } from '../RichText';
-import { FadeIn } from '../../shared/FadeIn';
+import Link from 'next/link'
+import Image from 'next/image'
+import { RichText } from '../RichText'
+import { FadeIn } from '../../shared/FadeIn'
 
 interface IExpertise {
-	title?: string;
-	content?: any;
+	title?: string
+	content?: any
 }
 
 export const Expertise = ({ content }: IExpertise) => {
-	const { header } = content;
+	const { header } = content
 
 	return (
 		<div className="bg-white ">
@@ -28,10 +28,7 @@ export const Expertise = ({ content }: IExpertise) => {
 
 							<div className="relative px-6 py-10 md:py-20 lg:pr-8 lg:py-20">
 								<div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)] -z-1">
-									<svg
-										aria-hidden="true"
-										className="absolute inset-0 h-full w-full"
-									>
+									<svg aria-hidden="true" className="absolute inset-0 h-full w-full">
 										<defs>
 											<pattern
 												id=":ra:"
@@ -41,11 +38,7 @@ export const Expertise = ({ content }: IExpertise) => {
 												x="50%"
 												y="100%"
 											>
-												<path
-													d="M0 128V.5H128"
-													fill="none"
-													stroke="currentColor"
-												></path>
+												<path d="M0 128V.5H128" fill="none" stroke="currentColor"></path>
 											</pattern>
 										</defs>
 										<rect width="100%" height="100%" fill="url(#:ra:)"></rect>
@@ -85,7 +78,7 @@ export const Expertise = ({ content }: IExpertise) => {
 				</div>
 			</FadeIn>
 		</div>
-	);
-};
+	)
+}
 
-export default Expertise;
+export default Expertise

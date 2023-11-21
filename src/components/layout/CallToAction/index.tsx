@@ -1,17 +1,23 @@
-import { motion } from 'framer-motion';
-import { RichText } from '../RichText';
-import { FadeIn, FadeInRight } from '../../shared/FadeIn';
+import { motion } from 'framer-motion'
+import { RichText } from '../RichText'
+import { FadeIn, FadeInRight } from '../../shared/FadeIn'
 
-export const CallToAction = ({ content }: any) => {
-	const {
-		headerStart,
-		headerStyled,
-		headerEnd,
-		displayButton,
-		buttonText,
-		buttonLink,
-		ctaImage,
-	} = content;
+type CallToActionProps = {
+	content: {
+		headerStart?: string
+		headerStyled?: string
+		headerEnd?: string
+		buttonText?: string
+		buttonLink?: string
+		displayButton?: boolean
+		ctaImage?: any
+		content?: any
+	}
+}
+
+export const CallToAction = ({ content }: CallToActionProps) => {
+	const { headerStart, headerStyled, headerEnd, displayButton, buttonText, buttonLink, ctaImage } =
+		content
 
 	return (
 		<div className="bg-white ">
@@ -27,13 +33,11 @@ export const CallToAction = ({ content }: any) => {
 							<polygon points="0,0 90,0 50,100 0,100" />
 						</svg>
 
-						<div className="relative px-6 py-20 sm:py-40 lg:pr-8 lg:py-20 lg:pr-0">
+						<div className="relative px-6 py-20 sm:py-40 lg:pr-8 lg:py-20">
 							<FadeInRight>
 								<div className="mx-auto max-w-7xl px-0 md:px-8">
 									<h1 className="composedHeading">
-										{headerStart}{' '}
-										<span style={{ color: 'red' }}>{headerStyled}</span>{' '}
-										{headerEnd}
+										{headerStart} <span style={{ color: 'red' }}>{headerStyled}</span> {headerEnd}
 									</h1>
 									<div className="header__underline"></div>
 									<div className="text-gray-600 mt-8 article_text">
@@ -68,7 +72,7 @@ export const CallToAction = ({ content }: any) => {
 				</div>
 			</div>
 		</div>
-	);
-};
+	)
+}
 
-export default CallToAction;
+export default CallToAction

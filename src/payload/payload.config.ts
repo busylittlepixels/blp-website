@@ -1,15 +1,15 @@
-import path from 'path';
-import nestedDocs from '@payloadcms/plugin-nested-docs';
-import { mongooseAdapter } from '@payloadcms/db-mongodb';
-import { slateEditor } from '@payloadcms/richtext-slate';
-import { webpackBundler } from '@payloadcms/bundler-webpack';
-import { buildConfig } from 'payload/config';
+import path from 'path'
+import nestedDocs from '@payloadcms/plugin-nested-docs'
+import { mongooseAdapter } from '@payloadcms/db-mongodb'
+import { slateEditor } from '@payloadcms/richtext-slate'
+import { webpackBundler } from '@payloadcms/bundler-webpack'
+import { buildConfig } from 'payload/config'
 
-import { Media } from '../collections/Media';
-import { Pages } from '../collections/Pages';
-import { Posts } from '../collections/Posts';
-import { MainMenu } from '../globals/MainMenu';
-import Logo from '../components/custom/Logo';
+import { Media } from '../collections/Media'
+import { Pages } from '../collections/Pages'
+import { Posts } from '../collections/Posts'
+import { MainMenu } from '../globals/MainMenu'
+import Logo from '../components/custom/Logo'
 
 export default buildConfig({
 	serverURL: process.env.PAYLOAD_PUBLIC_SERVER_URL,
@@ -50,4 +50,4 @@ export default buildConfig({
 		// whitelist of domains to allow cookie auth from
 		'https://busylittlepixels.com',
 	],
-});
+})

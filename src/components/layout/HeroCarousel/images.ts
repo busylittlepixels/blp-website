@@ -8,8 +8,7 @@ export const images = [
 	},
 	{
 		src: 'https://media.giphy.com/media/ibqNLl44qRLJyKv7rU/giphy-downsized-large.gif',
-		original:
-			'https://media.giphy.com/media/ibqNLl44qRLJyKv7rU/giphy-downsized-large.gif',
+		original: 'https://media.giphy.com/media/ibqNLl44qRLJyKv7rU/giphy-downsized-large.gif',
 		width: 350,
 		height: 250,
 		title: '...you know the rules and so do I...',
@@ -36,4 +35,4 @@ export const images = [
 		title: "...I just wanna tell you how I'm feeling...",
 		description: '',
 	},
-];
+]

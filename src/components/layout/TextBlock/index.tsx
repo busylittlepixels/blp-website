@@ -1,30 +1,27 @@
 /* eslint-disable no-console */
-import tw from 'tailwind-styled-components';
-import { RichText } from '../RichText';
-import { FadeIn } from '../../shared/FadeIn';
+import tw from 'tailwind-styled-components'
+import { RichText } from '../RichText'
+import { FadeIn } from '../../shared/FadeIn'
 
 type ITextBlock = {
-	content?: any;
-};
+	content?: any
+}
 
 const Section = tw.section`
     bg-white 
     px-6 
     md:pt-20
-`;
+`
 
 export const TextBlock = ({ content }: ITextBlock) => {
-	const hello = `${content.LeadString} style={{"color":"red"}}>${content.StyledString}</span> ${content.EndString}`;
+	const hello = `${content.LeadString} style={{"color":"red"}}>${content.StyledString}</span> ${content.EndString}`
 
 	return (
 		<section className={'w-full boundedContainer'} id="intro">
 			<FadeIn className="text-left">
 				<div className="relative overflow-hidden bg-white md:pt-16 md:pb-16">
 					<div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
-						<div
-							className="relative mx-auto h-full max-w-prose text-lg"
-							aria-hidden="true"
-						>
+						<div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
 							<svg
 								className="absolute bottom-12 left-full translate-x-32 transform"
 								width="400"
@@ -51,11 +48,7 @@ export const TextBlock = ({ content }: ITextBlock) => {
 										/>
 									</pattern>
 								</defs>
-								<rect
-									width="400"
-									height="384"
-									fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)"
-								/>
+								<rect width="400" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
 							</svg>
 						</div>
 					</div>
@@ -82,7 +75,7 @@ export const TextBlock = ({ content }: ITextBlock) => {
 				</div>
 			</FadeIn>
 		</section>
-	);
-};
+	)
+}
 
-export default TextBlock;
+export default TextBlock

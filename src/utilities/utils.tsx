@@ -1,10 +1,7 @@
-export const isActiveLink = (
-	href: string,
-	currentPathname: string,
-): boolean => {
+export const isActiveLink = (href: string, currentPathname: string): boolean => {
 	if (href === '/') {
-		return href === currentPathname;
+		return href === currentPathname
 	}
 
-	return currentPathname.startsWith(href);
-};
+	return currentPathname.startsWith(href)
+}

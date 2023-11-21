@@ -1,11 +1,11 @@
-'use client';
-import React, { useRef } from 'react';
-import BigText from './BigText';
-import { useInView, motion } from 'framer-motion';
+'use client'
+import React, { useRef } from 'react'
+import BigText from './BigText'
+import { useInView, motion } from 'framer-motion'
 
 export const BigTextLittleText = props => {
-	const ref = useRef(null);
-	const isInView = useInView(ref);
+	const ref = useRef(null)
+	const isInView = useInView(ref)
 
 	return (
 		<div className="w-full relative overflow-x-hidden bg-black" ref={ref}>
@@ -37,13 +37,13 @@ export const BigTextLittleText = props => {
 					HEARD ENOUGH?
 				</h1>
 				<p>
-					Sound like a fit? All set to go? Ready to transform your tech
-					objectives into outstanding results?
+					Sound like a fit? All set to go? Ready to transform your tech objectives into outstanding
+					results?
 				</p>
 				<div id="line-trigger" />
 			</motion.div>
 		</div>
-	);
-};
+	)
+}
 
-export default BigTextLittleText;
+export default BigTextLittleText

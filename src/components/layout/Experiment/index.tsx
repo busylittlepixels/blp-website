@@ -1,25 +1,25 @@
-'use client';
-import { useEffect } from 'react';
-import { useSlider } from '../../../hooks/useSlider';
+'use client'
+import { useEffect } from 'react'
+import { useSlider } from '../../../hooks/useSlider'
 
 export const Experiment = () => {
-	const { sliderRef, position, nextPosition } = useSlider();
+	const { sliderRef, position, nextPosition } = useSlider()
 
 	const debounce = (func, wait, immediate) => {
-		let timeout;
+		let timeout
 		return function () {
 			const context = this,
-				args = arguments;
+				args = arguments
 			const later = function () {
-				timeout = null;
-				if (!immediate) func.apply(context, args);
-			};
-			const callNow = immediate && !timeout;
-			clearTimeout(timeout);
-			timeout = setTimeout(later, wait);
-			if (callNow) func.apply(context, args);
-		};
-	};
+				timeout = null
+				if (!immediate) func.apply(context, args)
+			}
+			const callNow = immediate && !timeout
+			clearTimeout(timeout)
+			timeout = setTimeout(later, wait)
+			if (callNow) func.apply(context, args)
+		}
+	}
 
 	return (
 		<div className="experiment">
@@ -287,7 +287,7 @@ export const Experiment = () => {
 				</div>
 			</div>
 		</div>
-	);
-};
+	)
+}
 
-export default Experiment;
+export default Experiment

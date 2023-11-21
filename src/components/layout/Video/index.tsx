@@ -1,6 +1,6 @@
 interface IVideo {
-	videoTitle?: string;
-	videoEmbedCode?: string;
+	videoTitle?: string
+	videoEmbedCode?: string
 }
 
 export const Video = ({ videoTitle, videoEmbedCode }: IVideo) => {
@@ -11,11 +11,7 @@ export const Video = ({ videoTitle, videoEmbedCode }: IVideo) => {
 					className="video"
 					width="560"
 					height="315"
-					src={
-						videoEmbedCode
-							? videoEmbedCode
-							: 'https://www.youtube.com/embed/I1188GO4p1E'
-					}
+					src={videoEmbedCode ? videoEmbedCode : 'https://www.youtube.com/embed/I1188GO4p1E'}
 					title="YouTube video player"
 					frameBorder={'0'}
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -23,7 +19,7 @@ export const Video = ({ videoTitle, videoEmbedCode }: IVideo) => {
 				></iframe>
 			</div>
 		</section>
-	);
-};
+	)
+}
 
-export default Video;
+export default Video

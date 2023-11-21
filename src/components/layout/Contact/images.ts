@@ -13,4 +13,4 @@ export const images = [
 		height: '100%',
 		title: 'Amsterdam',
 	},
-];
+]

@@ -1,13 +1,13 @@
-import React from 'react';
-import Image from 'next/image';
+import React from 'react'
+import Image from 'next/image'
 
 interface SlideProps {
-	bodyCopy: string;
-	creditName: string;
-	creditTitle: string;
-	creditCompany: string;
-	city: string;
-	country: string;
+	bodyCopy: string
+	creditName: string
+	creditTitle: string
+	creditCompany: string
+	city: string
+	country: string
 }
 
 export const Slide = ({ bodyCopy, creditName, city, country }: SlideProps) => {
@@ -32,6 +32,6 @@ export const Slide = ({ bodyCopy, creditName, city, country }: SlideProps) => {
 				</div>
 			</div>
 		</div>
-	);
-};
-export default Slide;
+	)
+}
+export default Slide

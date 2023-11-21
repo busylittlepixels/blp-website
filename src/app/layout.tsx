@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 // app/layout.js
 
-import GoogleAnalytics from './GoogleAnalytics';
+import GoogleAnalytics from './GoogleAnalytics'
 // @ts-ignore
-import { GoogleTagManager } from '@next/third-parties/google';
-import { PHProvider } from './providers';
-import CookieBanner from './../components/layout/CookieBanner';
-import { Analytics } from '@vercel/analytics/react';
+import { GoogleTagManager } from '@next/third-parties/google'
+import { PHProvider } from './providers'
+import CookieBanner from './../components/layout/CookieBanner'
+import { Analytics } from '@vercel/analytics/react'
 
 export const metadata = {
 	metadataBase: new URL('https://busylittlepixels.com'),
@@ -50,19 +50,15 @@ export const metadata = {
 			},
 		],
 	},
-};
+}
 
 export const viewport = {
 	width: 'device-width',
 	initialScale: 1,
 	maximumScale: 1,
-};
+}
 
-export default function RootLayout({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang={'en'}>
 			<PHProvider>
@@ -75,5 +71,5 @@ export default function RootLayout({
 				<GoogleTagManager gtmId="GTM-KT6SVVXZ" />
 			</PHProvider>
 		</html>
-	);
+	)
 }

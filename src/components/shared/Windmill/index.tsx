@@ -1,5 +1,5 @@
-'use client';
-import React from 'react';
+'use client'
+import React from 'react'
 
 export const CustomSVG = () => {
 	return (
@@ -49,12 +49,7 @@ export const CustomSVG = () => {
 					strokeWidth="2"
 					d="M43.5,63.5h-22c2.6-10.4,4.3-21.2,4.6-32.8l1.5-1.5h7.9l-2.4,2.4l6.1,6.1C39.9,46.7,41.4,55.2,43.5,63.5z"
 				/>
-				<circle
-					cx="32.5"
-					cy="32.5"
-					r="21.9"
-					style={{ fill: 'none', stroke: 'none' }}
-				/>
+				<circle cx="32.5" cy="32.5" r="21.9" style={{ fill: 'none', stroke: 'none' }} />
 
 				<g id="mill">
 					<g id="sail-group">
@@ -115,38 +110,10 @@ export const CustomSVG = () => {
 							transform="rotate(-45.001 45.867 14.244)"
 						/>
 
-						<line
-							x1="53.8"
-							x2="34.4"
-							y1="45.5"
-							y2="26.1"
-							stroke="#ffffff"
-							strokeWidth="2"
-						/>
-						<line
-							x1="30.6"
-							x2="11.2"
-							y1="22.4"
-							y2="3"
-							stroke="#ffffff"
-							strokeWidth="2"
-						/>
-						<line
-							x1="11.2"
-							x2="30.6"
-							y1="45.5"
-							y2="26.1"
-							stroke="#ffffff"
-							strokeWidth="2"
-						/>
-						<line
-							x1="34.4"
-							x2="53.8"
-							y1="22.4"
-							y2="3"
-							stroke="#ffffff"
-							strokeWidth="2"
-						/>
+						<line x1="53.8" x2="34.4" y1="45.5" y2="26.1" stroke="#ffffff" strokeWidth="2" />
+						<line x1="30.6" x2="11.2" y1="22.4" y2="3" stroke="#ffffff" strokeWidth="2" />
+						<line x1="11.2" x2="30.6" y1="45.5" y2="26.1" stroke="#ffffff" strokeWidth="2" />
+						<line x1="34.4" x2="53.8" y1="22.4" y2="3" stroke="#ffffff" strokeWidth="2" />
 					</g>
 					<circle cx="32.5" cy="24.5" r="0.5" fill="none" />
 				</g>
@@ -183,7 +150,7 @@ export const CustomSVG = () => {
         />
       </motion.svg> */}
 		</>
-	);
-};
+	)
+}
 
-export default CustomSVG;
+export default CustomSVG

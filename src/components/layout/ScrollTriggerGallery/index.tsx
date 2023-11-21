@@ -1,19 +1,19 @@
-'use client';
-import React from 'react';
-import useGSAPAnimation from './../../../hooks/useGSAPAnimation'; // Adjust path accordingly
-import { useModal } from '../../../hooks/useModal';
-import images from './images';
-import Image from 'next/image';
+'use client'
+import React from 'react'
+import useGSAPAnimation from './../../../hooks/useGSAPAnimation' // Adjust path accordingly
+import { useModal } from '../../../hooks/useModal'
+import images from './images'
+import Image from 'next/image'
 // import { Modal } from './Modal';
 
 export const ScrollTrigger = () => {
-	const { loaderRef } = useGSAPAnimation();
-	const modal = useModal<any>();
+	const { loaderRef } = useGSAPAnimation()
+	const modal = useModal<any>()
 
 	const triggerScreenModal = (e, data) => {
-		e.preventDefault();
-		modal.openModal(data);
-	};
+		e.preventDefault()
+		modal.openModal(data)
+	}
 
 	return (
 		<div className="scrollTriggerGallery mt-4">
@@ -41,7 +41,7 @@ export const ScrollTrigger = () => {
 											onClick={e => triggerScreenModal(e, img)}
 										/>
 									</li>
-								);
+								)
 							})
 							.slice(0, 4)}
 					</ul>
@@ -65,14 +65,14 @@ export const ScrollTrigger = () => {
 											onClick={e => triggerScreenModal(e, img)}
 										/>
 									</li>
-								);
+								)
 							})
 							.slice(5, 8)}
 					</ul>
 				</section>
 			</div>
 		</div>
-	);
-};
+	)
+}
 
-export default ScrollTrigger;
+export default ScrollTrigger

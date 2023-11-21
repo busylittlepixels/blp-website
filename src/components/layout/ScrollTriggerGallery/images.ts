@@ -57,8 +57,7 @@ export const images = [
 	},
 	{
 		src: 'https://source.unsplash.com/random/1240x878/?web+development+studio',
-		original:
-			'https://source.unsplash.com/random/1240x878/?web+development+studio',
+		original: 'https://source.unsplash.com/random/1240x878/?web+development+studio',
 		width: 480,
 		height: 240,
 		title: '...never gonna let you down...',
@@ -84,6 +83,6 @@ export const images = [
 		height: 240,
 		title: "...you wouldn't get this from any other guy...",
 	},
-];
+]
 
-export default images;
+export default images

@@ -1,4 +1,4 @@
-import type { Block } from 'payload/types';
+import type { Block } from 'payload/types'
 
 export const ImageSlider: Block = {
 	fields: [
@@ -81,7 +81,7 @@ export const ImageSlider: Block = {
 			admin: {
 				components: {
 					RowLabel: ({ data, index }: any) => {
-						return data?.title || `Slide ${String(index).padStart(2, '0')}`;
+						return data?.title || `Slide ${String(index).padStart(2, '0')}`
 					},
 				},
 			},
@@ -91,4 +91,4 @@ export const ImageSlider: Block = {
 	imageURL: 'https://images.unsplash.com/photo-1484211318645-c4eb6a7f10c2',
 	imageAltText: 'A component to render an image slider',
 	interfaceName: 'imageSlider', // optional
-};
+}

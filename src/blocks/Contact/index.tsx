@@ -1,4 +1,4 @@
-import type { Block } from 'payload/types';
+import type { Block } from 'payload/types'
 
 export const Contact: Block = {
 	fields: [
@@ -20,9 +20,9 @@ export const Contact: Block = {
 			admin: {
 				condition: (data, siblingData, { user }) => {
 					if (siblingData.enableForm) {
-						return true;
+						return true
 					} else {
-						return false;
+						return false
 					}
 				},
 			},
@@ -32,4 +32,4 @@ export const Contact: Block = {
 	imageURL: 'https://images.unsplash.com/photo-1484211318645-c4eb6a7f10c2',
 	imageAltText: 'A nice thumbnail image to show what this block looks like',
 	interfaceName: 'contact', // optional
-};
+}

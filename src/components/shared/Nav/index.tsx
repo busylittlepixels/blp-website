@@ -1,20 +1,20 @@
-'use client';
-import Link from 'next/link';
-import React, { useState } from 'react';
-import { usePathname } from 'next/navigation';
+'use client'
+import Link from 'next/link'
+import React, { useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 export const Nav = ({ menu }) => {
-	const isMobile = useState(false);
-	const currentRoute = usePathname();
-	const [navActive, setNavActive] = useState(false);
+	const isMobile = useState(false)
+	const currentRoute = usePathname()
+	const [navActive, setNavActive] = useState(false)
 	const closeMobileNavOnClick = () => {
 		if (isMobile) {
 			setTimeout(() => {
-				setNavActive(!navActive);
-			}, 500);
+				setNavActive(!navActive)
+			}, 500)
 		}
-		return;
-	};
+		return
+	}
 	return (
 		<header className="px-4 text-black body-font md:sticky w-full bg-black logoShadow">
 			<div className="mx-auto flex flex-wrap py-5 md:flex-row items-center justify-between">
@@ -53,9 +53,7 @@ export const Nav = ({ menu }) => {
 									href={link.href}
 									className={`nav__link text-white font-black ${
 										// @ts-ignore
-										currentRoute.includes(link.href)
-											? `active ${link.pageLink}`
-											: ''
+										currentRoute.includes(link.href) ? `active ${link.pageLink}` : ''
 									}`}
 									onClick={closeMobileNavOnClick}
 								>
@@ -85,7 +83,7 @@ export const Nav = ({ menu }) => {
 				</nav>
 			</div>
 		</header>
-	);
-};
+	)
+}
 
-export default Nav;
+export default Nav

@@ -1,38 +1,38 @@
-import fs from 'fs';
-import React from 'react';
-import matter from 'gray-matter';
-import path from 'path';
-import Markdown from 'markdown-to-jsx';
-import Link from 'next/link';
-import { MotionImage } from '../../../../components/layout/MotionImage';
-import { RichText } from '../../../../components/layout/RichText';
-import FadeIn from '../../../../components/shared/FadeIn';
-import { Date } from '../../../../components/custom/Date';
+import fs from 'fs'
+import React from 'react'
+import matter from 'gray-matter'
+import path from 'path'
+import Markdown from 'markdown-to-jsx'
+import Image from 'next/image'
+import { MotionImage } from '../../../../components/layout/MotionImage'
+import { RichText } from '../../../../components/layout/RichText'
+import FadeIn from '../../../../components/shared/FadeIn'
+import { Date } from '../../../../components/custom/Date'
 
 // import Blog1 from '../../../../content/the-importance-of-a-modern-website-and-engaging-online-experience-for-businesses.mdx'
 
 const getPostContent = (slug: string) => {
 	// let folder = path.join(process.cwd(), '/src/content/');
-	const file = path.join(process.cwd(), `/src/content/${slug}.mdx`);
+	const file = path.join(process.cwd(), `/src/content/${slug}.mdx`)
 	const content = fs.readFileSync(file, {
 		encoding: 'utf-8',
-	});
-	const matterResult = matter(content);
-	return matterResult;
-};
+	})
+	const matterResult = matter(content)
+	return matterResult
+}
 
 const capitalizeCategory = c => {
-	const cat = c.split(' ');
-	let i;
+	const cat = c.split(' ')
+	let i
 	for (i = 0; i < cat.length; i++) {
-		return (cat[i] = cat[i].charAt(0).toUpperCase() + cat[i].slice(1));
+		return (cat[i] = cat[i].charAt(0).toUpperCase() + cat[i].slice(1))
 	}
-};
+}
 
 const PostPage = (props: any) => {
-	const slug = props.params.slug;
-	const post = getPostContent(slug);
-	const category = capitalizeCategory(post.data.category);
+	const slug = props.params.slug
+	const post = getPostContent(slug)
+	const category = capitalizeCategory(post.data.category)
 	// console.log(category)
 	return (
 		<main className={`blog`}>
@@ -104,10 +104,7 @@ const PostPage = (props: any) => {
 						</div>
 					</div>
 					<div className={'shiney-wrapper shine'}>
-						<MotionImage
-							alt={`${post.data.title}`}
-							src={post.data.featuredImage}
-						/>
+						<MotionImage alt={`${post.data.title}`} src={post.data.featuredImage} />
 					</div>
 					<div className="py-8 flex flex-col">
 						<div className="mx-auto w-full max-w-3xl">
@@ -117,10 +114,7 @@ const PostPage = (props: any) => {
 							<div className="header__underline"></div>
 						</div>
 					</div>
-					<div
-						className="relative mx-auto h-full max-w-prose text-lg"
-						aria-hidden="true"
-					>
+					<div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
 						<svg
 							className="absolute bottom-12 right-full -translate-x-32 transform"
 							width="400"
@@ -147,11 +141,7 @@ const PostPage = (props: any) => {
 									/>
 								</pattern>
 							</defs>
-							<rect
-								width="400"
-								height="384"
-								fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)"
-							/>
+							<rect width="400" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
 						</svg>
 					</div>
 				</section>
@@ -171,11 +161,7 @@ const PostPage = (props: any) => {
 									x="50%"
 									y="100%"
 								>
-									<path
-										d="M0 128V.5H128"
-										fill="none"
-										stroke="currentColor"
-									></path>
+									<path d="M0 128V.5H128" fill="none" stroke="currentColor"></path>
 								</pattern>
 							</defs>
 							<rect width="100%" height="100%" fill="url(#:ra:)"></rect>
@@ -184,7 +170,7 @@ const PostPage = (props: any) => {
 					<div className="relative mx-auto max-w-5xl sm:px-6">
 						<div className="bg-slate-50 max-sm:pt-12 px sm:rounded-6xl">
 							<div className="relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-slate-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
-								<img
+								<Image
 									alt=""
 									sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem"
 									src="/assets/images/paddy.jpeg"
@@ -207,12 +193,11 @@ const PostPage = (props: any) => {
 									pixels.
 								</p>
 								<p className="mt-4 text-md tracking-tight text-slate-700 article_text">
-									I’ve been designing and developing professionally for over a
-									decade and have worked with dozens of the biggest brands to
-									create roadmaps to success for their products and tech. I’ve
-									worked with companies from startups to Nasdaq listed
-									enterprises, and honed my abilities to navigate the brave new
-									world that is all things tech.
+									I’ve been designing and developing professionally for over a decade and have
+									worked with dozens of the biggest brands to create roadmaps to success for their
+									products and tech. I’ve worked with companies from startups to Nasdaq listed
+									enterprises, and honed my abilities to navigate the brave new world that is all
+									things tech.
 								</p>
 							</div>
 						</div>
@@ -220,6 +205,6 @@ const PostPage = (props: any) => {
 				</section>
 			</FadeIn>
 		</main>
-	);
-};
-export default PostPage;
+	)
+}
+export default PostPage
