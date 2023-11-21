@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Observer } from 'gsap/Observer' // Assuming gsap has this, if not you'd need to import it properly from wherever it's defined
 
 gsap.registerPlugin(ScrollTrigger, Observer)
+gsap.config({nullTargetWarn:false});
 
 const useGSAPScrollSlide = () => {
 	const [currentIndex, setCurrentIndex] = useState(0)

@@ -5,9 +5,12 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
+gsap.config({ nullTargetWarn:false });
 
 const useGSAPAnimation = () => {
+	
 	const loaderRef = useRef<HTMLDivElement | null>(null)
+
 	useEffect(() => {
 		const images = gsap.utils.toArray('img.gsapGallery')
 		const loader = loaderRef.current

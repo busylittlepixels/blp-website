@@ -4,6 +4,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
+gsap.config({nullTargetWarn:false});
 
 export const useParallaxHero = () => {
 	const mainRef = useRef<HTMLElement>(null)

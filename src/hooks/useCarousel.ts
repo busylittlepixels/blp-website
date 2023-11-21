@@ -8,7 +8,11 @@ interface CarouselProps {
 	duration?: number // duration for each slide, in seconds
 }
 
+
+
 export const useCarousel = ({ images, mapImages, duration }: CarouselProps) => {
+	gsap.config({nullTargetWarn:false});
+
 	const [currentIndex, setCurrentIndex] = useState(0)
 
 	useEffect((): any => {

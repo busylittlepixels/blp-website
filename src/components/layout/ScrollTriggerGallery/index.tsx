@@ -14,13 +14,12 @@ export const ScrollTrigger = () => {
 		e.preventDefault()
 		modal.openModal(data)
 	}
-
+	
 	return (
 		<div className="scrollTriggerGallery mt-4">
 			{/* {modal.isVisible && (
 				<Modal data={modal.data} closeModal={modal.closeModal} isTriggered={modal.isVisible} />
 			)} */}
-
 			<div className="scrollTriggerWrapper">
 				<section className="scrollTrack">
 					<div className="wrapper text">
