@@ -3,6 +3,7 @@ import React from 'react'
 import useGSAPAnimation from './../../../hooks/useGSAPAnimation' // Adjust path accordingly
 import { useModal } from '../../../hooks/useModal'
 import images from './images'
+import Image from 'next/image'
 // import { Modal } from './Modal';
 
 export const ScrollTrigger = () => {
@@ -32,7 +33,7 @@ export const ScrollTrigger = () => {
 							.map((img: any) => {
 								return (
 									<li key={img.src}>
-										<img
+										<Image
 											height="874"
 											alt={img.title}
 											src={img.src}
@@ -56,7 +57,7 @@ export const ScrollTrigger = () => {
 							.map((img: any) => {
 								return (
 									<li key={img.src}>
-										<img
+										<Image
 											height="874"
 											alt={img.title}
 											src={img.src}

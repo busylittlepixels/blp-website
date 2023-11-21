@@ -22,27 +22,6 @@ export const useSlider = () => {
 		}
 	}
 
-	useEffect(() => {
-		canvasInit()
-		// @ts-ignore
-		const footerButtons = sliderRef.current?.querySelectorAll('.footer-wrapper .box')
-		footerButtons?.forEach(button =>
-			button.addEventListener('click', event => changeButton(event.currentTarget)),
-		)
-
-		// Equivalent of $(document).ready
-		window.addEventListener('DOMContentLoaded', canvasInit)
-		// @ts-ignore
-		const handleResize = debounce(() => canvasInit(), 250)
-		window.addEventListener('resize', handleResize)
-
-		// Cleanup listeners on component unmount
-		return () => {
-			window.removeEventListener('resize', handleResize)
-			footerButtons?.forEach(button => button.removeEventListener('click'))
-		}
-	}, [])
-
 	const canvasInit = () => {
 		// @ts-ignore
 		const canvas = sliderRef.current?.querySelector('.canvas')
@@ -81,6 +60,27 @@ export const useSlider = () => {
 			drawMask(canvas, ctx, pos, img)
 		}
 	}
+
+	useEffect(() => {
+		canvasInit()
+		// @ts-ignore
+		const footerButtons = sliderRef.current?.querySelectorAll('.footer-wrapper .box')
+		footerButtons?.forEach(button =>
+			button.addEventListener('click', event => changeButton(event.currentTarget)),
+		)
+
+		// Equivalent of $(document).ready
+		window.addEventListener('DOMContentLoaded', canvasInit)
+		// @ts-ignore
+		const handleResize = debounce(() => canvasInit(), 250)
+		window.addEventListener('resize', handleResize)
+
+		// Cleanup listeners on component unmount
+		return () => {
+			window.removeEventListener('resize', handleResize)
+			footerButtons?.forEach(button => button.removeEventListener('click'))
+		}
+	}, [canvasInit])
 
 	// ... [all the other methods like drawMask, changeSlide, etc. go here]
 

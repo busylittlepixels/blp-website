@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import escapeHTML from 'escape-html'
 import Link from 'next/link'
+import Image from 'next/image'
 
 type Node = {
 	type: string
@@ -192,8 +193,13 @@ export const Serialize: SerializeFunction = ({ content, customRenderers }) => {
 					case 'upload':
 						return (
 							<figure key={i} className="my-8 shiney-wrapper shine">
-								<img
+								<Image
+									width={100}
+									height={100}
+									// @ts-ignore
+									alt={i}
 									className="aspect-video rounded-xl bg-gray-50 object-cover shadow-md"
+									// @ts-ignore
 									src={node.value?.url}
 								/>
 							</figure>

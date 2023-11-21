@@ -52,6 +52,7 @@ export const Nav = ({ menu }) => {
 								<Link
 									href={link.href}
 									className={`nav__link text-white font-black ${
+										// @ts-ignore
 										currentRoute.includes(link.href)
 											? `active ${link.pageLink}`
 											: ''

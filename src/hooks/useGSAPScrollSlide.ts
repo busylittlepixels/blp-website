@@ -101,8 +101,8 @@ const useGSAPScrollSlide = () => {
 					},
 					0,
 				)
-				//  @ts-ignore
 				.fromTo(
+					//  @ts-ignore
 					slideImages[index],
 					{
 						scale: 2,

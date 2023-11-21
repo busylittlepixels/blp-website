@@ -92,7 +92,7 @@ export default async function Page() {
 									<p className="article_text max-w-5xl mx-auto">
 										At the core of our operations is a fusion of imaginative
 										design and cutting-edge technology, underpinned by our
-										fractional CTO expertise. Whether you're scaling up or
+										fractional CTO expertise. Whether you&apos;re scaling up or
 										branching out, our extensive tech toolkit is your ally for
 										the future. We meticulously develop web, technical and
 										business solutions that grow in tandem with your goals and

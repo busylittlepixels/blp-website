@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 interface SlideProps {
 	bodyCopy: string
@@ -15,7 +16,12 @@ export const Slide = ({ bodyCopy, creditName, city, country }: SlideProps) => {
 			<p className={`p-4 md:pb-6`}>{bodyCopy}</p>
 			<div className="credit pb-6">
 				<div className="image">
-					<img src="https://source.unsplash.com/user/erondu" alt="unsplash" />
+					<Image
+						width={70}
+						height={70}
+						src="https://source.unsplash.com/user/erondu"
+						alt="unsplash"
+					/>
 				</div>
 				<div className="meta">
 					<p className="pb-2 leading-8 text-lg">{creditName}</p>

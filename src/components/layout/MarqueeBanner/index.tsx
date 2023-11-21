@@ -6,7 +6,7 @@ export const MarqueeBanner = () => {
 		<div className="marquee-container">
 			<div className="marquee-content">
 				{/* Repeat your content here */}
-				Async flows like streams, Functions dance with curly braces, Code's art in
+				Async flows like streams, Functions dance with curly braces, Code&apos;s art in
 				keystrokes.
 			</div>
 		</div>

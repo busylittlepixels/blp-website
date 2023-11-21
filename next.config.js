@@ -4,12 +4,20 @@ const path = require("path");
 
 module.exports = withPayload(
   {
-    // Next conffig here
+    // Next config here
     publicRuntimeConfig: {
       SERVER_URL: process.env.PAYLOAD_PUBLIC_SERVER_URL,
     },
     eslint: {
       ignoreDuringBuilds: true,
+    },
+    images: {
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'source.unsplash.com'
+        },
+      ],
     },
     reactStrictMode: true,
     transpilePackages: ["@payloadcms/plugin-seo"],

@@ -47,14 +47,14 @@ export const Services = () => {
 						<div className="RichText_richText__qEmi6 text-gray-600 mt-4 services_text flex-col">
 							{/* <RichText content={about.richText} className={`text-gray-600 mt-4 services_text flex-col"`} /> */}
 							<p>
-								Crafting Tomorrow's Digital Solutions today, with{' '}
+								Crafting Tomorrow&apos;s Digital Solutions today, with{' '}
 								<strong className="font-bold">
 									busy<span style={{ color: 'red' }}>little</span>pixels{' '}
 								</strong>
 								there to help you every step of the way. Merging technological
-								mastery with strategic insight and team synergy, we're more than
-								just a service provider. We're your digital partner, eager to
-								co-create exceptional digital journeys.
+								mastery with strategic insight and team synergy, we&apos;re more
+								than just a service provider. We&apos;re your digital partner, eager
+								to co-create exceptional digital journeys.
 							</p>
 						</div>
 						<dl className="mt-8 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-10 lg:gap-x-8">

@@ -72,8 +72,8 @@ export default async function Blog() {
 								<strong>pixels</strong>, we navigate the ever-changing landscape of
 								business and technology.
 								<br />
-								From industry and tech commentary, to emerging trends, we've always
-								got something to say.
+								From industry and tech commentary, to emerging trends, we&apos;ve
+								always got something to say.
 							</p>
 
 							<div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">

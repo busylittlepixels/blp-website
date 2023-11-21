@@ -125,7 +125,7 @@ export default async function Page() {
 										web and technical solutions that scale with your ambitions
 										and objectives. Be it project ideation, planning,
 										preparation or execution, from integrating third-party APIs
-										to employing robust hosting solutions - we're here to
+										to employing robust hosting solutions - we&apos;re here to
 										elevate every busy little pixel of your digital journey.
 									</p>
 								</div>

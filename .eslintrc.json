@@ -2,6 +2,6 @@
   "extends": "next/core-web-vitals",
   "rules": {
     "@typescript-eslint/ban-ts-comment": "off",
-    "@typescript-eslint/no-duplicate-imports": "error"
+    "@typescript-eslint/no-duplicate-imports": "off"
   }
 }

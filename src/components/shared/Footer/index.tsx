@@ -43,9 +43,9 @@ export function SignUpForm() {
 						Sign up for our busy<span style={{ color: 'red' }}>little</span>updates
 					</h3>
 					<p className="mb-4 last:mb-0">
-						We promise we won't spam you, or do anything nefarious or shifty with your
-						data. <br />
-						Frankly, that's just not how we roll.{' '}
+						We promise we won&apos;t spam you, or do anything nefarious or shifty with
+						your data. <br />
+						Frankly, that&apos;s just not how we roll.{' '}
 					</p>
 				</div>
 
