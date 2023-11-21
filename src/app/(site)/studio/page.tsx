@@ -155,7 +155,7 @@ export default async function Page() {
 						<div className="w-full mb-12 shiney-wrapper shine" style={{ opacity: 1 }}>
 							<Image
 								alt="image alt blog"
-								src="/assets/images/studio2.png"
+								src="/assets/images/studio2.webp"
 								width="800"
 								height="200"
 								className="shadow-lg h-1/2 mx-auto rounded-lg"
