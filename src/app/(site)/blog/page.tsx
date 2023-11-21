@@ -86,6 +86,7 @@ export default async function Blog() {
 											<div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
 												<Image
 													src={post.featuredImage}
+													fill
 													alt={`${post.title} main image`}
 													className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
 												/>
@@ -118,11 +119,11 @@ export default async function Blog() {
 												<div className="flex">
 													<div className="relative flex items-center gap-x-4">
 														<Image
-															src={
-																'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80'
-															}
-															alt=""
-															className="h-10 w-10 rounded-full bg-gray-50"
+															src="/assets/images/paddy.jpeg"
+															alt="author_image"
+															className="h-10 w-10 rounded-full bg-gray-50 author_img"
+															width={100}
+															height={100}
 														/>
 														<div className="text-sm leading-6">
 															<p className="font-semibold text-gray-900">
