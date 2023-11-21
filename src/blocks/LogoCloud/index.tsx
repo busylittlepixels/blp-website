@@ -56,10 +56,7 @@ export const LogoCloud: Block = {
 			admin: {
 				components: {
 					RowLabel: ({ data, index }: any) => {
-						return (
-							data?.title ||
-							`Logo ${String(index).padStart(2, '0')}`
-						)
+						return data?.title || `Logo ${String(index).padStart(2, '0')}`
 					},
 				},
 			},

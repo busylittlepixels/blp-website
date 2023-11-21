@@ -28,9 +28,7 @@ export const revalidatePage: AfterChangeHook = ({ doc, req, operation }) => {
 					req.payload.logger.error(`Error revalidating path ${url}`)
 				}
 			} catch (err: unknown) {
-				req.payload.logger.error(
-					`Error hitting revalidate route for ${url}`,
-				)
+				req.payload.logger.error(`Error hitting revalidate route for ${url}`)
 			}
 		}
 

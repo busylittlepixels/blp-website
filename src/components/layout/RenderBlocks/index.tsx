@@ -37,8 +37,8 @@ export const RenderBlocks = ({ content }: any) => {
 				return (
 					<div key={index}>
 						<h3>
-							{blockContent['blockType']} Not Found. Please check
-							that the component exists.
+							{blockContent['blockType']} Not Found. Please check that the
+							component exists.
 						</h3>
 						<pre>{JSON.stringify(blockContent, null, 2)}</pre>
 					</div>

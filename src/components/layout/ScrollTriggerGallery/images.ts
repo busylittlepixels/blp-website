@@ -43,8 +43,7 @@ export const images = [
 	},
 	{
 		src: 'https://source.unsplash.com/random/1240x878/?app+development',
-		original:
-			'https://source.unsplash.com/random/1240x878/?app+development',
+		original: 'https://source.unsplash.com/random/1240x878/?app+development',
 		width: 480,
 		height: 240,
 		title: '...gotta make you, understand...',
@@ -73,8 +72,7 @@ export const images = [
 	},
 	{
 		src: 'https://source.unsplash.com/random/1240x875/?web+development',
-		original:
-			'https://source.unsplash.com/random/1240x875/?web+development',
+		original: 'https://source.unsplash.com/random/1240x875/?web+development',
 		width: 480,
 		height: 240,
 		title: "...you wouldn't get this from any other guy...",

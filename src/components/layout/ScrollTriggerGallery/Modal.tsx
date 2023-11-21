@@ -11,13 +11,11 @@ export const Modal = ({ data, closeModal, isTriggered }: any) => {
 				<div className={`text-container max-md:pt-4 md:pl-4`}>
 					<h2 className={`font-black text-3xl`}>{data?.title}</h2>
 					<p className={`mt-4`}>
-						Lorem ipsum dolor, sit amet consectetur adipisicing
-						elit. Ullam unde id dolor, illum maiores amet alias
-						saepe sint a, optio expedita quam! Tempore officiis
-						sequi magnam quia at voluptate, sapiente tenetur, ea rem
-						natus repellat, sit aliquid! Atque modi doloribus dolore
-						maiores velit, ut fugiat enim, aut dolores dolorem
-						rerum.
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam unde
+						id dolor, illum maiores amet alias saepe sint a, optio expedita
+						quam! Tempore officiis sequi magnam quia at voluptate, sapiente
+						tenetur, ea rem natus repellat, sit aliquid! Atque modi doloribus
+						dolore maiores velit, ut fugiat enim, aut dolores dolorem rerum.
 					</p>
 				</div>
 			</div>

@@ -83,9 +83,7 @@ export const useSlider = () => {
 		// Cleanup listeners on component unmount
 		return () => {
 			window.removeEventListener('resize', handleResize)
-			footerButtons?.forEach(button =>
-				button.removeEventListener('click'),
-			)
+			footerButtons?.forEach(button => button.removeEventListener('click'))
 		}
 	}, [canvasInit])
 

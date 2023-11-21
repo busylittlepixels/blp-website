@@ -38,8 +38,7 @@ export default buildConfig({
 		nestedDocs({
 			collections: ['pages', 'posts', 'media'],
 			generateLabel: (_, doc): any => doc.title as string,
-			generateURL: docs =>
-				docs.reduce((url, doc) => `${url}/${doc.slug}`, ''),
+			generateURL: docs => docs.reduce((url, doc) => `${url}/${doc.slug}`, ''),
 		}),
 	],
 	editor: slateEditor({}),

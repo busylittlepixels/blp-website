@@ -67,9 +67,7 @@ export const TextBlock = ({ content }: ITextBlock) => {
 							>
 								{content.LeadString ? content.LeadString : ''}{' '}
 								<span style={{ color: 'red' }}>
-									{content.StyledString
-										? content.StyledString
-										: ''}
+									{content.StyledString ? content.StyledString : ''}
 								</span>{' '}
 								{content.EndString ? content.EndString : ''}
 								{/* {hello ? decodeURIComponent(hello) : content.header} {content.displayMeta ? content.subtitle : null} */}

@@ -32,29 +32,27 @@ interface CarouselContainerProps {
 
 export const CarouselBlock = ({ content }: CarouselContainerProps) => {
 	const carouselPanels = content
-		? Object.entries(content.carouselblock).map(
-				(item: any, index: number) => {
-					return (
-						<div
-							className="mr-2"
-							id={item[1]['carouselImageUrl']}
-							key={item[1]['carouselImageUrl']}
-						>
-							<Image
-								// @ts-ignore
-								src={item[1]['carouselImageUrl']}
-								height={300}
-								width={450}
-								loader={imageLoader}
-								unoptimized={true}
-								alt={`carousel image ${index}`}
-								className="w-full"
-								loading="lazy"
-							/>
-						</div>
-					)
-				},
-		  )
+		? Object.entries(content.carouselblock).map((item: any, index: number) => {
+				return (
+					<div
+						className="mr-2"
+						id={item[1]['carouselImageUrl']}
+						key={item[1]['carouselImageUrl']}
+					>
+						<Image
+							// @ts-ignore
+							src={item[1]['carouselImageUrl']}
+							height={300}
+							width={450}
+							loader={imageLoader}
+							unoptimized={true}
+							alt={`carousel image ${index}`}
+							className="w-full"
+							loading="lazy"
+						/>
+					</div>
+				)
+		  })
 		: null
 
 	return (

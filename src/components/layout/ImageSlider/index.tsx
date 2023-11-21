@@ -116,8 +116,7 @@ export const ImageSlider = ({ content }: any) => {
 								| boolean
 								| React.ReactElement<
 										any,
-										| string
-										| React.JSXElementConstructor<any>
+										string | React.JSXElementConstructor<any>
 								  >
 								| React.ReactFragment
 								| React.ReactPortal
@@ -129,8 +128,7 @@ export const ImageSlider = ({ content }: any) => {
 								| boolean
 								| React.ReactElement<
 										any,
-										| string
-										| React.JSXElementConstructor<any>
+										string | React.JSXElementConstructor<any>
 								  >
 								| React.ReactFragment
 								| React.ReactPortal
@@ -142,8 +140,7 @@ export const ImageSlider = ({ content }: any) => {
 								| boolean
 								| React.ReactElement<
 										any,
-										| string
-										| React.JSXElementConstructor<any>
+										string | React.JSXElementConstructor<any>
 								  >
 								| React.ReactFragment
 								| React.ReactPortal
@@ -155,8 +152,7 @@ export const ImageSlider = ({ content }: any) => {
 								| boolean
 								| React.ReactElement<
 										any,
-										| string
-										| React.JSXElementConstructor<any>
+										string | React.JSXElementConstructor<any>
 								  >
 								| React.ReactFragment
 								| React.ReactPortal
@@ -170,23 +166,15 @@ export const ImageSlider = ({ content }: any) => {
 						return (
 							<div
 								key={++i}
-								className={`flex__container flex--${
-									sl.slideColor
-								} ${
-									activeSlide == current
-										? `flex--active`
-										: 'animate--start'
+								className={`flex__container flex--${sl.slideColor} ${
+									activeSlide == current ? `flex--active` : 'animate--start'
 								}`}
 								data-slide={current}
 							>
 								<div className="flex__item flex__item--left">
 									<div className="flex__content">
-										<p className="text--sub">
-											{sl.textSub}
-										</p>
-										<h1 className="text--big font-serif">
-											{sl.textHeading}
-										</h1>
+										<p className="text--sub">{sl.textSub}</p>
+										<h1 className="text--big font-serif">{sl.textHeading}</h1>
 										<p className="pt-4">{sl.textContent}</p>
 									</div>
 									<p className="text__background font-serif">
@@ -219,8 +207,7 @@ export const ImageSlider = ({ content }: any) => {
 									| boolean
 									| React.ReactElement<
 											any,
-											| string
-											| React.JSXElementConstructor<any>
+											string | React.JSXElementConstructor<any>
 									  >
 									| React.ReactFragment
 									| React.ReactPortal

@@ -37,8 +37,8 @@ export const BigTextLittleText = props => {
 					HEARD ENOUGH?
 				</h1>
 				<p>
-					Sound like a fit? All set to go? Ready to transform your
-					tech objectives into outstanding results?
+					Sound like a fit? All set to go? Ready to transform your tech
+					objectives into outstanding results?
 				</p>
 				<div id="line-trigger" />
 			</motion.div>

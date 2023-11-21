@@ -46,9 +46,7 @@ export const useParallaxHero = () => {
 
 		return () => {
 			if (scrollDistRef.current) {
-				const stInstance = ScrollTrigger.getById(
-					scrollDistRef.current.id,
-				)
+				const stInstance = ScrollTrigger.getById(scrollDistRef.current.id)
 				if (stInstance) {
 					stInstance.kill()
 				}

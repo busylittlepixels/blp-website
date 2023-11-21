@@ -59,10 +59,7 @@ export default async function Page() {
 					</svg>
 
 					<div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
-						<svg
-							aria-hidden="true"
-							className="absolute inset-0 h-full w-full"
-						>
+						<svg aria-hidden="true" className="absolute inset-0 h-full w-full">
 							<defs>
 								<pattern
 									id=":ra:"
@@ -79,11 +76,7 @@ export default async function Page() {
 									></path>
 								</pattern>
 							</defs>
-							<rect
-								width="100%"
-								height="100%"
-								fill="url(#:ra:)"
-							></rect>
+							<rect width="100%" height="100%" fill="url(#:ra:)"></rect>
 						</svg>
 					</div>
 					<section className="px-6 max-sm:pt-10 md:py-20 bg-white pb-0 md:pb-0">
@@ -98,24 +91,18 @@ export default async function Page() {
 							<div className="RichText_richText__qEmi6 text-gray-600 mt-4 article_text flex-col">
 								<div className="max-full text-center leading-relaxed mb-8">
 									<p className="article_text max-w-5xl mx-auto">
-										At the core of our operations is a
-										fusion of imaginative design and
-										cutting-edge technology, underpinned by
-										our fractional CTO expertise. Whether
-										you&apos;re scaling up or branching out,
-										our extensive tech toolkit is your ally
-										for the future. We meticulously develop
-										web, technical and business solutions
-										that grow in tandem with your goals and
-										dreams. From the initial spark of an
-										idea to the final stages of execution,
-										encompassing seamless third-party API
-										integration and robust hosting
-										strategies, our team is dedicated to
-										enhancing every aspect of your digital
-										footprint. Join us in a journey where
-										every pixel is a testament to
-										innovation.
+										At the core of our operations is a fusion of imaginative
+										design and cutting-edge technology, underpinned by our
+										fractional CTO expertise. Whether you&apos;re scaling up or
+										branching out, our extensive tech toolkit is your ally for
+										the future. We meticulously develop web, technical and
+										business solutions that grow in tandem with your goals and
+										dreams. From the initial spark of an idea to the final
+										stages of execution, encompassing seamless third-party API
+										integration and robust hosting strategies, our team is
+										dedicated to enhancing every aspect of your digital
+										footprint. Join us in a journey where every pixel is a
+										testament to innovation.
 									</p>
 								</div>
 							</div>
@@ -234,15 +221,12 @@ export default async function Page() {
 								<div className="lg:w-1/3 md:w-2/3 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
 									<>
 										<h2 className="text-black text-lg mb-1 font-black uppercase">
-											CONTACT US{' '}
-											<span style={{ color: 'red' }}>
-												TODAY
-											</span>
+											CONTACT US <span style={{ color: 'red' }}>TODAY</span>
 										</h2>
 										<div className="header__underline"></div>
 										<p className="leading-relaxed my-5 text-black">
-											To contact us, please add your email
-											address and message below.
+											To contact us, please add your email address and message
+											below.
 										</p>
 										<HubSpotForm />
 									</>

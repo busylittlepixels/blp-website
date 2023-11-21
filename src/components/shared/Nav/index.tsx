@@ -36,11 +36,7 @@ export const Nav = ({ menu }) => {
 						<div></div>
 						<div></div>
 					</div>
-					<ul
-						className={`nav__menu-list px-4 ${
-							navActive ? 'active' : ''
-						}`}
-					>
+					<ul className={`nav__menu-list px-4 ${navActive ? 'active' : ''}`}>
 						{/* {isMobile ? 
                     <div className={'flex'}>
                         <input className={'mobileSearch'} type={'text'} name={'search'} placeholder={'Search...'} />

@@ -32,9 +32,7 @@ export const CallToAction = ({ content }: any) => {
 								<div className="mx-auto max-w-7xl px-0 md:px-8">
 									<h1 className="composedHeading">
 										{headerStart}{' '}
-										<span style={{ color: 'red' }}>
-											{headerStyled}
-										</span>{' '}
+										<span style={{ color: 'red' }}>{headerStyled}</span>{' '}
 										{headerEnd}
 									</h1>
 									<div className="header__underline"></div>

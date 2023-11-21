@@ -16,13 +16,8 @@ export const RichText: React.FC<{
 	}
 
 	return (
-		<div
-			className={[classes.richText, className].filter(Boolean).join(' ')}
-		>
-			<SerializeContent
-				content={content}
-				customRenderers={customRenderers}
-			/>
+		<div className={[classes.richText, className].filter(Boolean).join(' ')}>
+			<SerializeContent content={content} customRenderers={customRenderers} />
 		</div>
 	)
 }

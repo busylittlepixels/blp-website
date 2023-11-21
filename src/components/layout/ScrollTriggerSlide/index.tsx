@@ -5,22 +5,26 @@ const slides = [
 	{
 		index: 1,
 		title: 'SCROLL',
-		image: 'https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NjMyMDUzOA&ixlib=rb-1.2.1&q=80&w=400',
+		image:
+			'https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NjMyMDUzOA&ixlib=rb-1.2.1&q=80&w=400',
 	},
 	{
 		index: 2,
 		title: 'SWIPE',
-		image: 'https://images.unsplash.com/photo-1558603668-6570496b66f8?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NjMyMDUzOA&ixlib=rb-1.2.1&q=85&w=400',
+		image:
+			'https://images.unsplash.com/photo-1558603668-6570496b66f8?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NjMyMDUzOA&ixlib=rb-1.2.1&q=85&w=400',
 	},
 	{
 		index: 3,
 		title: 'SCROLL',
-		image: 'https://images.unsplash.com/photo-1537165924986-cc3568f5d454?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NjMyMDU4NA&ixlib=rb-1.2.1&q=85&w=400',
+		image:
+			'https://images.unsplash.com/photo-1537165924986-cc3568f5d454?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NjMyMDU4NA&ixlib=rb-1.2.1&q=85&w=400',
 	},
 	{
 		index: 4,
 		title: 'SLIDE',
-		image: 'https://images.unsplash.com/photo-1537165924986-cc3568f5d454?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NjMyMDU4NA&ixlib=rb-1.2.1&q=85&w=400',
+		image:
+			'https://images.unsplash.com/photo-1537165924986-cc3568f5d454?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NjMyMDU4NA&ixlib=rb-1.2.1&q=85&w=400',
 	},
 ]
 
@@ -36,18 +40,14 @@ export const ScrollTriggerSlide = () => {
 				{slides.map((slide, i) => {
 					return (
 						<section
-							className={`slide ${
-								currentIndex == i ? 'active' : ''
-							}`}
+							className={`slide ${currentIndex == i ? 'active' : ''}`}
 							key={i}
 						>
 							<div className="slide__outer">
 								<div className="slide__inner">
 									<div className="slide__content">
 										<div className="slide__container">
-											<h2 className="slide__heading">
-												{slide.title}
-											</h2>
+											<h2 className="slide__heading">{slide.title}</h2>
 											<figure className="slide__img-cont">
 												<img
 													className="slide__img"

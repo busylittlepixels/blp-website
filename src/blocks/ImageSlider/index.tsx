@@ -81,10 +81,7 @@ export const ImageSlider: Block = {
 			admin: {
 				components: {
 					RowLabel: ({ data, index }: any) => {
-						return (
-							data?.title ||
-							`Slide ${String(index).padStart(2, '0')}`
-						)
+						return data?.title || `Slide ${String(index).padStart(2, '0')}`
 					},
 				},
 			},

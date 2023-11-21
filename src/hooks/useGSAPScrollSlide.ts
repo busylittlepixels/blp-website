@@ -140,10 +140,7 @@ const useGSAPScrollSlide = () => {
 
 		const logKey = (e: KeyboardEvent) => {
 			// /console.log(e.code);
-			if (
-				(e.code === 'ArrowUp' || e.code === 'ArrowLeft') &&
-				!animating
-			) {
+			if ((e.code === 'ArrowUp' || e.code === 'ArrowLeft') && !animating) {
 				gotoSection(currentIndex - 1, -1)
 			}
 			if (

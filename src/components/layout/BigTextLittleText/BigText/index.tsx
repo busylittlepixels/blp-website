@@ -32,12 +32,7 @@ export const BigText = props => (
 						totalProgress={progress}
 						paused
 					>
-						<div
-							className={classnames(
-								'big-text-mobile',
-								props.bigText,
-							)}
-						>
+						<div className={classnames('big-text-mobile', props.bigText)}>
 							busy<span className="text-gray-200">little</span>
 							pixels.
 						</div>

@@ -41,10 +41,7 @@ export default async function About() {
 							<div className="mx-auto max-w-prose text-lg">
 								<div className="mx-auto w-full max-w-6xl">
 									<h1 className="pb-4 font-black text-4xl md:text-6xl last:mb-0 uppercase max-w-3xl mx-auto">
-										OUR CORE{' '}
-										<span style={{ color: 'red' }}>
-											VALUES
-										</span>
+										OUR CORE <span style={{ color: 'red' }}>VALUES</span>
 										<div className="header__underline"></div>
 									</h1>
 									<RichText

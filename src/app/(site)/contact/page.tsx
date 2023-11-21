@@ -53,11 +53,7 @@ export default async function Contact() {
 										></path>
 									</pattern>
 								</defs>
-								<rect
-									width="100%"
-									height="100%"
-									fill="url(#:ra:)"
-								></rect>
+								<rect width="100%" height="100%" fill="url(#:ra:)"></rect>
 							</svg>
 						</div>
 						<div
@@ -100,27 +96,22 @@ export default async function Contact() {
 						<div className="mx-auto max-w-7xl px-6 lg:px-8">
 							<div className="mx-auto max-w-2xl lg:mx-0">
 								<h1 className="text-4xl font-black tracking-tight text-white sm:text-6xl uppercase mb-4">
-									CONTACT{' '}
-									<span style={{ color: 'red' }}>US</span>
+									CONTACT <span style={{ color: 'red' }}>US</span>
 								</h1>
 								<div className="header__underline"></div>
 								<p className="mt-6 text-lg leading-8 text-gray-300">
-									We{`'`}re always happy to hear from you.
-									Feel free to contact us via the form or our
-									social platforms. For general enquires, see
-									contact email below. For feedback, comments,
-									questions or the odd SOS...please use the
-									form on this page. We will endeavour to
-									reply to your messages within 24 hours
+									We{`'`}re always happy to hear from you. Feel free to contact
+									us via the form or our social platforms. For general enquires,
+									see contact email below. For feedback, comments, questions or
+									the odd SOS...please use the form on this page. We will
+									endeavour to reply to your messages within 24 hours
 								</p>
 							</div>
 							<div className="mx-auto max-w-2xl lg:mx-0">
 								<dl className="mt-10 space-y-4 text-base leading-7 text-gray-300">
 									<div className="flex gap-x-4">
 										<dt className="flex-none">
-											<span className="sr-only">
-												Address
-											</span>
+											<span className="sr-only">Address</span>
 											<svg
 												className="h-7 w-6 text-gray-400"
 												fill="none"
@@ -148,9 +139,7 @@ export default async function Contact() {
 									</div>
 									<div className="flex gap-x-4">
 										<dt className="flex-none">
-											<span className="sr-only">
-												Telephone
-											</span>
+											<span className="sr-only">Telephone</span>
 											<svg
 												className="h-7 w-6 text-gray-400"
 												fill="none"
@@ -177,9 +166,7 @@ export default async function Contact() {
 									</div>
 									<div className="flex gap-x-4">
 										<dt className="flex-none">
-											<span className="sr-only">
-												General enquires{' '}
-											</span>
+											<span className="sr-only">General enquires </span>
 											<svg
 												className="h-7 w-6 text-gray-400"
 												fill="none"
@@ -232,14 +219,12 @@ export default async function Contact() {
 							<div className="lg:w-1/3 md:w-2/3 bg-white rounded-lg p-8 flex flex-col md:ml-auto  mt-10 md:mt-0 relative z-10 shadow-md">
 								<>
 									<h2 className="text-black text-lg mb-1 font-black uppercase">
-										{form_title}{' '}
-										<span style={{ color: 'red' }}></span>
+										{form_title} <span style={{ color: 'red' }}></span>
 									</h2>
 									<div className="header__underline"></div>
 									<p className="leading-relaxed mt-5 text-black">
-										Please complete the form below. We aim
-										to reply to all messages within 24
-										hours.
+										Please complete the form below. We aim to reply to all
+										messages within 24 hours.
 									</p>
 									<br />
 									<HubSpotForm />

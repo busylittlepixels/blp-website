@@ -9,10 +9,7 @@ export const CookieBanner = () => {
 
 	useEffect(() => {
 		if (
-			!(
-				posthog.has_opted_in_capturing() ||
-				posthog.has_opted_out_capturing()
-			)
+			!(posthog.has_opted_in_capturing() || posthog.has_opted_out_capturing())
 		) {
 			setShowBanner(true)
 		}
@@ -35,9 +32,8 @@ export const CookieBanner = () => {
 	return (
 		<div className={`nyomNyomCookie`}>
 			<p className={'leading-relaxed text-white'}>
-				We use tracking cookies to understand how you use the product
-				and help us improve it. Please accept cookies to help us
-				improve.
+				We use tracking cookies to understand how you use the product and help
+				us improve it. Please accept cookies to help us improve.
 			</p>
 			<div>
 				<button type="button" onClick={acceptCookies}>
