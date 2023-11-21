@@ -15,9 +15,7 @@ export const metadata: Metadata = {
 }
 
 export default async function Blog() {
-	const blog: Page = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/posts`, {
-		next: { revalidate: 3600 },
-	})
+	const blog: Page = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/posts`)
 		.then(res => res.json())
 		.then(res => res?.docs)
 

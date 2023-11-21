@@ -17,9 +17,7 @@ export default async function Contact() {
 	const form_title = `Get in Touch`
 
 	const about: Page = await fetch(
-		`${process.env.NEXT_PUBLIC_SERVER_URL}/api/pages?where[slug][equals]=contact&depth=2`,
-		{ next: { revalidate: 10 } },
-	)
+		`${process.env.NEXT_PUBLIC_SERVER_URL}/api/pages?where[slug][equals]=contact&depth=2`)
 		.then(res => res.json())
 		.then(res => res?.docs?.[0])
 

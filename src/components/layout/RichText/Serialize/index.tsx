@@ -171,7 +171,7 @@ export const Serialize: SerializeFunction = ({ content, customRenderers }) => {
 							<figure key={i} className="my-8 shiney-wrapper shine">
 								<Image
 									width={768}
-									height={432}
+									height={100}
 									// @ts-ignore
 									alt={i}
 									className="aspect-video rounded-xl bg-gray-50 object-cover shadow-md"
