@@ -1,5 +1,5 @@
-'use client'
-import useGSAPScrollSlide from '../../../hooks/useGSAPScrollSlide'
+'use client';
+import useGSAPScrollSlide from '../../../hooks/useGSAPScrollSlide';
 
 const slides = [
 	{
@@ -26,11 +26,11 @@ const slides = [
 		image:
 			'https://images.unsplash.com/photo-1537165924986-cc3568f5d454?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NjMyMDU4NA&ixlib=rb-1.2.1&q=85&w=400',
 	},
-]
+];
 
 export const ScrollTriggerSlide = () => {
-	const { currentIndex, animating } = useGSAPScrollSlide() // Use the custom hook here
-	let outputNo = currentIndex + 1
+	const { currentIndex, animating } = useGSAPScrollSlide(); // Use the custom hook here
+	let outputNo = currentIndex + 1;
 	// console.log(animating);
 	// console.log(currentIndex);
 	// console.log(outputNo);
@@ -60,7 +60,7 @@ export const ScrollTriggerSlide = () => {
 								</div>
 							</div>
 						</section>
-					)
+					);
 				})}
 
 				<section className="overlay">
@@ -90,7 +90,7 @@ export const ScrollTriggerSlide = () => {
 				</section>
 			</div>
 		</>
-	)
-}
+	);
+};
 
-export default ScrollTriggerSlide
+export default ScrollTriggerSlide;

@@ -1,19 +1,19 @@
 /* eslint-disable no-console */
-import React from 'react'
-import { notFound } from 'next/navigation'
-import { Page } from '../../../payload/payload-types'
+import React from 'react';
+import { notFound } from 'next/navigation';
+import { Page } from '../../../payload/payload-types';
 // import { RenderBlocks } from '../../../components/layout/RenderBlocks'
-import { Services } from '../../../components/layout/Services'
-import { Overlap } from '../../../components/layout/Overlap'
-import { FadeIn } from '../../../components/shared/FadeIn'
-import { Metadata } from 'next'
-import { RichText } from '../../../components/layout/RichText'
+import { Services } from '../../../components/layout/Services';
+import { Overlap } from '../../../components/layout/Overlap';
+import { FadeIn } from '../../../components/shared/FadeIn';
+import { Metadata } from 'next';
+import { RichText } from '../../../components/layout/RichText';
 
 export const metadata: Metadata = {
 	title: 'Services | Busy Little Pixels',
 	description:
 		'Services - We are Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events',
-}
+};
 
 export default async function ServicesPage() {
 	const services: Page = await fetch(
@@ -21,13 +21,13 @@ export default async function ServicesPage() {
 		{ next: { revalidate: 10 } },
 	)
 		.then(res => res.json())
-		.then(res => res?.docs?.[0])
+		.then(res => res?.docs?.[0]);
 
 	if (!services) {
-		return notFound()
+		return notFound();
 	}
 
-	const { layout } = services
+	const { layout } = services;
 
 	return (
 		<>
@@ -53,5 +53,5 @@ export default async function ServicesPage() {
 				</main>
 			</FadeIn>
 		</>
-	)
+	);
 }

@@ -1,18 +1,18 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React from 'react'
-import Link from 'next/link'
-import FadeIn from '../../../components/shared/FadeIn'
-import { Metadata } from 'next'
+import React from 'react';
+import Link from 'next/link';
+import FadeIn from '../../../components/shared/FadeIn';
+import { Metadata } from 'next';
 
-const studioP1 = `<h2 class="font-black text-2xl">You're not just entering a web development <span class="rd_txt">studio</span></h2><p>Ours is a digital ecosystem crafted for scale-ups. As part of our broader fractional CTO vision, we've opted to work with the best tooling in the business: Javascript, React, NextJS, Astro for web, and React-Native for mobile. Your content, enriched by Payload or Craft CMS, becoming more than just words...it's a narrative. And with our prowess in third-party API integrations and cutting-edge hosting solutions, we promise a journey that's smooth, efficient, and memorable. Ready to redefine your digital footprint?<p>`
-const studioP2 = `<h2 class="font-black text-2xl">Expertise in <span class="rd_txt">techical solutions</span></h2><p>mobile isn't just a platform; it's a passion. Our journey has seen us partnering with global icons like Web Summit and The Next Web, to infrastructural pillars such as:... With impactful projects spanning Ireland to the Netherlands in governmental tech initiatives, we've always been at the cusp of what's next in mobile. Dive in with us, and let's craft a mobile narrative that captures hearts and minds.<p>`
-const studioP3 = `<h2 class="font-black text-2xl">More than a service; we're your <span class="rd_txt">digital compass</span></h2><p>Navigating the ever-evolving digital landscape can be daunting, but our seasoned team is here to guide you from your current position to your envisioned pinnacle. As trusted advisors, we'll share insights that illuminate your path. As builders, we craft robust solutions tailored to your unique needs. And as technical facilitators and enablers, we ensure a seamless transition and implementation, empowering your business every step of the way. With Busy Little Pixels by your side, your journey towards growth and innovation is not just assured; it's inspired.<p>`
+const studioP1 = `<h2 class="font-black text-2xl">You're not just entering a web development <span class="rd_txt">studio</span></h2><p>Ours is a digital ecosystem crafted for scale-ups. As part of our broader fractional CTO vision, we've opted to work with the best tooling in the business: Javascript, React, NextJS, Astro for web, and React-Native for mobile. Your content, enriched by Payload or Craft CMS, becoming more than just words...it's a narrative. And with our prowess in third-party API integrations and cutting-edge hosting solutions, we promise a journey that's smooth, efficient, and memorable. Ready to redefine your digital footprint?<p>`;
+const studioP2 = `<h2 class="font-black text-2xl">Expertise in <span class="rd_txt">techical solutions</span></h2><p>mobile isn't just a platform; it's a passion. Our journey has seen us partnering with global icons like Web Summit and The Next Web, to infrastructural pillars such as:... With impactful projects spanning Ireland to the Netherlands in governmental tech initiatives, we've always been at the cusp of what's next in mobile. Dive in with us, and let's craft a mobile narrative that captures hearts and minds.<p>`;
+const studioP3 = `<h2 class="font-black text-2xl">More than a service; we're your <span class="rd_txt">digital compass</span></h2><p>Navigating the ever-evolving digital landscape can be daunting, but our seasoned team is here to guide you from your current position to your envisioned pinnacle. As trusted advisors, we'll share insights that illuminate your path. As builders, we craft robust solutions tailored to your unique needs. And as technical facilitators and enablers, we ensure a seamless transition and implementation, empowering your business every step of the way. With Busy Little Pixels by your side, your journey towards growth and innovation is not just assured; it's inspired.<p>`;
 
 export const metadata: Metadata = {
 	title: 'Studio | Busy Little Pixels',
 	description:
 		'Studio - We are Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events',
-}
+};
 
 export default async function Page() {
 	return (
@@ -434,5 +434,5 @@ export default async function Page() {
 				</main>
 			</FadeIn>
 		</>
-	)
+	);
 }

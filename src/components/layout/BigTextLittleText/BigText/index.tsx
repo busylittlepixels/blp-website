@@ -1,9 +1,9 @@
-'use client'
-import React from 'react'
-import styled from 'styled-components'
-import { Controller, Scene } from 'react-scrollmagic'
-import { Tween } from 'react-gsap'
-import classnames from 'classnames'
+'use client';
+import React from 'react';
+import styled from 'styled-components';
+import { Controller, Scene } from 'react-scrollmagic';
+import { Tween } from 'react-gsap';
+import classnames from 'classnames';
 
 const BigTextStyle = styled.div`
 	overflow-x: hidden;
@@ -17,7 +17,7 @@ const BigTextStyle = styled.div`
 		margin: 0 auto;
 		opacity: 0.9;
 	}
-`
+`;
 
 export const BigText = props => (
 	<BigTextStyle>
@@ -41,6 +41,6 @@ export const BigText = props => (
 			</Scene>
 		</Controller>
 	</BigTextStyle>
-)
+);
 
-export default BigText
+export default BigText;

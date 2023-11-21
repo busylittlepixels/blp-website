@@ -1,30 +1,30 @@
-import React from 'react'
-import { notFound } from 'next/navigation'
-import { Page } from '../../../payload/payload-types'
-import { FormEvent, useState } from 'react'
-import { FadeIn } from '../../../components/shared/FadeIn'
-import { HubSpotForm } from '../../../components/layout/HubspotForm'
-import { Metadata } from 'next'
+import React from 'react';
+import { notFound } from 'next/navigation';
+import { Page } from '../../../payload/payload-types';
+import { FormEvent, useState } from 'react';
+import { FadeIn } from '../../../components/shared/FadeIn';
+import { HubSpotForm } from '../../../components/layout/HubspotForm';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
 	title: 'Contact | Busy Little Pixels',
 	description:
 		'Contact Us - We are Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events',
-}
+};
 
 export default async function Contact() {
-	const map_url = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152515.6931206764!2d-6.245704099999999!3d53.324320099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin%2C%20Ireland!5e0!3m2!1sen!2snl!4v1692869457747!5m2!1sen!2snl`
-	const form_title = `Get in Touch`
+	const map_url = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152515.6931206764!2d-6.245704099999999!3d53.324320099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin%2C%20Ireland!5e0!3m2!1sen!2snl!4v1692869457747!5m2!1sen!2snl`;
+	const form_title = `Get in Touch`;
 
 	const about: Page = await fetch(
 		`${process.env.NEXT_PUBLIC_SERVER_URL}/api/pages?where[slug][equals]=contact&depth=2`,
 		{ next: { revalidate: 10 } },
 	)
 		.then(res => res.json())
-		.then(res => res?.docs?.[0])
+		.then(res => res?.docs?.[0]);
 
 	if (!about) {
-		return notFound()
+		return notFound();
 	}
 
 	return (
@@ -235,5 +235,5 @@ export default async function Contact() {
 				</main>
 			</FadeIn>
 		</>
-	)
+	);
 }

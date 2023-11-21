@@ -1,17 +1,17 @@
-import React from 'react'
-import Link from 'next/link'
-import { Metadata } from 'next'
-import { notFound } from 'next/navigation'
-import { Page } from '../../../payload/payload-types'
-import FadeIn from '../../../components/shared/FadeIn'
-import { RichText } from '../../../components/layout/RichText'
-import { Date } from '../../../components/custom/Date'
+import React from 'react';
+import Link from 'next/link';
+import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import { Page } from '../../../payload/payload-types';
+import FadeIn from '../../../components/shared/FadeIn';
+import { RichText } from '../../../components/layout/RichText';
+import { Date } from '../../../components/custom/Date';
 
 export const metadata: Metadata = {
 	title: 'Blog | Busy Little Pixels',
 	description:
 		'Busy Little Blog - We are Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events',
-}
+};
 
 export default async function Blog() {
 	const blog: Page = await fetch(
@@ -21,21 +21,21 @@ export default async function Blog() {
 		},
 	)
 		.then(res => res.json())
-		.then(res => res?.docs)
+		.then(res => res?.docs);
 
 	if (!blog) {
-		return notFound()
+		return notFound();
 	}
 	// @ts-ignore
-	const posts: any = blog
+	const posts: any = blog;
 
 	const capitalizeCategory = c => {
-		const cat = c[0].split(' ')
-		let i
+		const cat = c[0].split(' ');
+		let i;
 		for (i = 0; i < cat.length; i++) {
-			return (cat[i] = cat[i].charAt(0).toUpperCase() + cat[i].slice(1))
+			return (cat[i] = cat[i].charAt(0).toUpperCase() + cat[i].slice(1));
 		}
-	}
+	};
 
 	return (
 		<main className={'blog index'}>
@@ -143,7 +143,7 @@ export default async function Blog() {
 												</div>
 											</div>
 										</article>
-									)
+									);
 								})}
 							</div>
 						</div>
@@ -151,5 +151,5 @@ export default async function Blog() {
 				</div>
 			</FadeIn>
 		</main>
-	)
+	);
 }

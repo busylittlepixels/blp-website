@@ -1,20 +1,20 @@
 /* eslint-disable no-console */
-import tw from 'tailwind-styled-components'
-import { RichText } from '../RichText'
-import { FadeIn } from '../../shared/FadeIn'
+import tw from 'tailwind-styled-components';
+import { RichText } from '../RichText';
+import { FadeIn } from '../../shared/FadeIn';
 
 type ITextBlock = {
-	content?: any
-}
+	content?: any;
+};
 
 const Section = tw.section`
     bg-white 
     px-6 
     md:pt-20
-`
+`;
 
 export const TextBlock = ({ content }: ITextBlock) => {
-	const hello = `${content.LeadString} style={{"color":"red"}}>${content.StyledString}</span> ${content.EndString}`
+	const hello = `${content.LeadString} style={{"color":"red"}}>${content.StyledString}</span> ${content.EndString}`;
 
 	return (
 		<section className={'w-full boundedContainer'} id="intro">
@@ -82,7 +82,7 @@ export const TextBlock = ({ content }: ITextBlock) => {
 				</div>
 			</FadeIn>
 		</section>
-	)
-}
+	);
+};
 
-export default TextBlock
+export default TextBlock;

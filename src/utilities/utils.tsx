@@ -3,8 +3,8 @@ export const isActiveLink = (
 	currentPathname: string,
 ): boolean => {
 	if (href === '/') {
-		return href === currentPathname
+		return href === currentPathname;
 	}
 
-	return currentPathname.startsWith(href)
-}
+	return currentPathname.startsWith(href);
+};

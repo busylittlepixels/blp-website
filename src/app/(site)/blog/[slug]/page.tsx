@@ -1,38 +1,38 @@
-import fs from 'fs'
-import React from 'react'
-import matter from 'gray-matter'
-import path from 'path'
-import Markdown from 'markdown-to-jsx'
-import Link from 'next/link'
-import { MotionImage } from '../../../../components/layout/MotionImage'
-import { RichText } from '../../../../components/layout/RichText'
-import FadeIn from '../../../../components/shared/FadeIn'
-import { Date } from '../../../../components/custom/Date'
+import fs from 'fs';
+import React from 'react';
+import matter from 'gray-matter';
+import path from 'path';
+import Markdown from 'markdown-to-jsx';
+import Link from 'next/link';
+import { MotionImage } from '../../../../components/layout/MotionImage';
+import { RichText } from '../../../../components/layout/RichText';
+import FadeIn from '../../../../components/shared/FadeIn';
+import { Date } from '../../../../components/custom/Date';
 
 // import Blog1 from '../../../../content/the-importance-of-a-modern-website-and-engaging-online-experience-for-businesses.mdx'
 
 const getPostContent = (slug: string) => {
 	// let folder = path.join(process.cwd(), '/src/content/');
-	const file = path.join(process.cwd(), `/src/content/${slug}.mdx`)
+	const file = path.join(process.cwd(), `/src/content/${slug}.mdx`);
 	const content = fs.readFileSync(file, {
 		encoding: 'utf-8',
-	})
-	const matterResult = matter(content)
-	return matterResult
-}
+	});
+	const matterResult = matter(content);
+	return matterResult;
+};
 
 const capitalizeCategory = c => {
-	const cat = c.split(' ')
-	let i
+	const cat = c.split(' ');
+	let i;
 	for (i = 0; i < cat.length; i++) {
-		return (cat[i] = cat[i].charAt(0).toUpperCase() + cat[i].slice(1))
+		return (cat[i] = cat[i].charAt(0).toUpperCase() + cat[i].slice(1));
 	}
-}
+};
 
 const PostPage = (props: any) => {
-	const slug = props.params.slug
-	const post = getPostContent(slug)
-	const category = capitalizeCategory(post.data.category)
+	const slug = props.params.slug;
+	const post = getPostContent(slug);
+	const category = capitalizeCategory(post.data.category);
 	// console.log(category)
 	return (
 		<main className={`blog`}>
@@ -220,6 +220,6 @@ const PostPage = (props: any) => {
 				</section>
 			</FadeIn>
 		</main>
-	)
-}
-export default PostPage
+	);
+};
+export default PostPage;

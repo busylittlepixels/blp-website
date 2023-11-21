@@ -1,15 +1,15 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import { RichText } from '../RichText'
-import { FadeIn } from '../../shared/FadeIn'
+import Link from 'next/link';
+import Image from 'next/image';
+import { RichText } from '../RichText';
+import { FadeIn } from '../../shared/FadeIn';
 
 interface IExpertise {
-	title?: string
-	content?: any
+	title?: string;
+	content?: any;
 }
 
 export const Expertise = ({ content }: IExpertise) => {
-	const { header } = content
+	const { header } = content;
 
 	return (
 		<div className="bg-white ">
@@ -85,7 +85,7 @@ export const Expertise = ({ content }: IExpertise) => {
 				</div>
 			</FadeIn>
 		</div>
-	)
-}
+	);
+};
 
-export default Expertise
+export default Expertise;

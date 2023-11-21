@@ -1,107 +1,107 @@
-import React, { useEffect, useRef, useState } from 'react'
-import Image from 'next/image'
+import React, { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 
 const imageLoader = ({ src }: { src: string }): string => {
-	return src
-}
+	return src;
+};
 
 let initialState = {
 	activeSlide: 1,
 	isAutoPlay: false,
 	defaultActive: 1,
-}
+};
 
 export const ImageSlider = ({ content }: any) => {
-	const length = content.slider.length
-	const elementRef = useRef<HTMLDivElement>(null)
-	const divElement: any = elementRef.current
+	const length = content.slider.length;
+	const elementRef = useRef<HTMLDivElement>(null);
+	const divElement: any = elementRef.current;
 
-	const [activeSlide, setActiveSlide] = useState(initialState.activeSlide)
-	const isAutoPlay = useState(initialState.isAutoPlay)
+	const [activeSlide, setActiveSlide] = useState(initialState.activeSlide);
+	const isAutoPlay = useState(initialState.isAutoPlay);
 
 	const transitionSlide = (
 		e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
 	) => {
-		e.preventDefault()
+		e.preventDefault();
 		let wrapper,
 			current,
 			currentSlide,
 			clickToSlide,
 			fadeSl: any,
 			assignActive: string | React.SetStateAction<number> | null,
-			oldActive: Element | null
+			oldActive: Element | null;
 
-		wrapper = divElement
+		wrapper = divElement;
 
 		// console.log(wrapper);
-		currentSlide = document.querySelector('.flex--active')
+		currentSlide = document.querySelector('.flex--active');
 		current = currentSlide
 			? currentSlide.getAttribute('data-slide')
-			: initialState.defaultActive
-		clickToSlide = e.currentTarget.getAttribute('data-slide')
+			: initialState.defaultActive;
+		clickToSlide = e.currentTarget.getAttribute('data-slide');
 
-		assignActive = clickToSlide ? clickToSlide : current
+		assignActive = clickToSlide ? clickToSlide : current;
 
 		fadeSl = document.querySelector(
 			'.flex__container[data-slide="' + assignActive + '"]',
-		)
+		);
 		oldActive = document.querySelector(
 			'.flex__container[data-slide="' + current + '"]',
-		)
+		);
 		if (!fadeSl.classList.contains('flex--preStart')) {
-			fadeSl.classList.add('flex--preStart')
+			fadeSl.classList.add('flex--preStart');
 		}
 
 		if (current === assignActive) {
-			return false
+			return false;
 		} else {
 			// @ts-ignore
-			oldActive.classList.add('flex--active', 'animate--end')
-			fadeSl.classList.remove('flex--active', 'animate--end')
-			fadeSl.classList.add('animate--start')
+			oldActive.classList.add('flex--active', 'animate--end');
+			fadeSl.classList.remove('flex--active', 'animate--end');
+			fadeSl.classList.add('animate--start');
 			setTimeout(() => {
 				// @ts-ignore
-				setActiveSlide(assignActive)
-			}, 900)
+				setActiveSlide(assignActive);
+			}, 900);
 		}
-	}
+	};
 
 	useEffect(() => {
-		const activeElement: any = elementRef.current
+		const activeElement: any = elementRef.current;
 
 		const current = document.querySelector('.flex--active')
 			? // @ts-ignore
 			  document.querySelector('.flex--active').getAttribute('data-slide')
-			: initialState.defaultActive
+			: initialState.defaultActive;
 		const autoFadeSl = activeElement.querySelector(
 			'.flex__container[data-slide="' + activeSlide + '"]',
-		)
+		);
 		const oldActive = activeElement.querySelector(
 			'.flex__container[data-slide="' + current + '"]',
-		)
-		let nextSlide = activeSlide
+		);
+		let nextSlide = activeSlide;
 
 		if (isAutoPlay) {
 			const interval = setInterval(() => {
-				autoFadeSl.classList.add('flex--preStart')
-				oldActive.classList.add('flex--active', 'animate--end')
-				autoFadeSl.classList.remove('flex--active', 'animate--end')
-				autoFadeSl.classList.add('animate--start')
+				autoFadeSl.classList.add('flex--preStart');
+				oldActive.classList.add('flex--active', 'animate--end');
+				autoFadeSl.classList.remove('flex--active', 'animate--end');
+				autoFadeSl.classList.add('animate--start');
 
 				if (activeSlide == length) {
-					setActiveSlide(initialState.defaultActive)
+					setActiveSlide(initialState.defaultActive);
 				} else {
-					let nxtSld = ++nextSlide
+					let nxtSld = ++nextSlide;
 					setTimeout(() => {
-						setActiveSlide(nxtSld)
-					}, 900)
+						setActiveSlide(nxtSld);
+					}, 900);
 				}
-			}, 7000)
+			}, 7000);
 			return () => {
-				clearInterval(interval)
-			}
+				clearInterval(interval);
+			};
 		}
-	}, [activeSlide, isAutoPlay, length])
+	}, [activeSlide, isAutoPlay, length]);
 
 	return (
 		<>
@@ -109,7 +109,7 @@ export const ImageSlider = ({ content }: any) => {
 				{content.slider.map(
 					(
 						sl: {
-							slideColor: string
+							slideColor: string;
 							textSub:
 								| string
 								| number
@@ -121,7 +121,7 @@ export const ImageSlider = ({ content }: any) => {
 								| React.ReactFragment
 								| React.ReactPortal
 								| null
-								| undefined
+								| undefined;
 							textHeading:
 								| string
 								| number
@@ -133,7 +133,7 @@ export const ImageSlider = ({ content }: any) => {
 								| React.ReactFragment
 								| React.ReactPortal
 								| null
-								| undefined
+								| undefined;
 							textContent:
 								| string
 								| number
@@ -145,7 +145,7 @@ export const ImageSlider = ({ content }: any) => {
 								| React.ReactFragment
 								| React.ReactPortal
 								| null
-								| undefined
+								| undefined;
 							textBackground:
 								| string
 								| number
@@ -157,12 +157,12 @@ export const ImageSlider = ({ content }: any) => {
 								| React.ReactFragment
 								| React.ReactPortal
 								| null
-								| undefined
-							slideImage: object | string | any
+								| undefined;
+							slideImage: object | string | any;
 						},
 						i: number,
 					): React.JSX.Element => {
-						const current = ++i
+						const current = ++i;
 						return (
 							<div
 								key={++i}
@@ -193,7 +193,7 @@ export const ImageSlider = ({ content }: any) => {
 									unoptimized
 								/>
 							</div>
-						)
+						);
 					},
 				)}
 
@@ -212,11 +212,11 @@ export const ImageSlider = ({ content }: any) => {
 									| React.ReactFragment
 									| React.ReactPortal
 									| null
-									| undefined
+									| undefined;
 							},
 							i: number,
 						) => {
-							const current = ++i
+							const current = ++i;
 							return (
 								// @ts-ignore
 								<a
@@ -230,13 +230,13 @@ export const ImageSlider = ({ content }: any) => {
 								>
 									{sl.slideColor}
 								</a>
-							)
+							);
 						},
 					)}
 				</div>
 			</div>
 		</>
-	)
-}
+	);
+};
 
-export default ImageSlider
+export default ImageSlider;

@@ -1,20 +1,20 @@
 /* eslint-disable no-console */
-import React from 'react'
-import Link from 'next/link'
-import { notFound } from 'next/navigation'
-import { Page } from '../../../payload/payload-types'
-import { RenderBlocks } from '../../../components/layout/RenderBlocks'
-import { Services } from '../../../components/layout/Services'
-import { Team } from '../../../components/layout/Team'
-import { FadeIn } from '../../../components/shared/FadeIn'
-import { Metadata } from 'next'
-import { RichText } from '../../../components/layout/RichText'
+import React from 'react';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { Page } from '../../../payload/payload-types';
+import { RenderBlocks } from '../../../components/layout/RenderBlocks';
+import { Services } from '../../../components/layout/Services';
+import { Team } from '../../../components/layout/Team';
+import { FadeIn } from '../../../components/shared/FadeIn';
+import { Metadata } from 'next';
+import { RichText } from '../../../components/layout/RichText';
 
 export const metadata: Metadata = {
 	title: 'About Us | Busy Little Pixels',
 	description:
 		'About Us - We are Fractional CTO experts. Headless web and app development, devops, project management, digital strategy, media and events',
-}
+};
 
 export default async function About() {
 	const about: Page = await fetch(
@@ -22,13 +22,13 @@ export default async function About() {
 		{ next: { revalidate: 10 } },
 	)
 		.then(res => res.json())
-		.then(res => res?.docs?.[0])
+		.then(res => res?.docs?.[0]);
 
 	if (!about) {
-		return notFound()
+		return notFound();
 	}
 
-	const { layout } = about
+	const { layout } = about;
 
 	return (
 		<>
@@ -56,5 +56,5 @@ export default async function About() {
 				</main>
 			</FadeIn>
 		</>
-	)
+	);
 }

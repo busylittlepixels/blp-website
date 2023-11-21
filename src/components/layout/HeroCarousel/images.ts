@@ -36,4 +36,4 @@ export const images = [
 		title: "...I just wanna tell you how I'm feeling...",
 		description: '',
 	},
-]
+];

@@ -1,33 +1,33 @@
 // app/banner.tsx
-'use client'
-import { useEffect, useState } from 'react'
-import { usePostHog } from 'posthog-js/react'
+'use client';
+import { useEffect, useState } from 'react';
+import { usePostHog } from 'posthog-js/react';
 
 export const CookieBanner = () => {
-	const posthog = usePostHog()
-	const [showBanner, setShowBanner] = useState<boolean>(false)
+	const posthog = usePostHog();
+	const [showBanner, setShowBanner] = useState<boolean>(false);
 
 	useEffect(() => {
 		if (
 			!(posthog.has_opted_in_capturing() || posthog.has_opted_out_capturing())
 		) {
-			setShowBanner(true)
+			setShowBanner(true);
 		}
-	}, [])
+	}, []);
 
 	if (!showBanner) {
-		return null
+		return null;
 	}
 
 	const acceptCookies = () => {
-		posthog.opt_in_capturing()
-		setShowBanner(false)
-	}
+		posthog.opt_in_capturing();
+		setShowBanner(false);
+	};
 
 	const declineCookies = () => {
-		posthog.opt_out_capturing()
-		setShowBanner(false)
-	}
+		posthog.opt_out_capturing();
+		setShowBanner(false);
+	};
 
 	return (
 		<div className={`nyomNyomCookie`}>
@@ -45,7 +45,7 @@ export const CookieBanner = () => {
 				</button>
 			</div>
 		</div>
-	)
-}
+	);
+};
 
-export default CookieBanner
+export default CookieBanner;

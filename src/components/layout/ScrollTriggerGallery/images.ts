@@ -84,6 +84,6 @@ export const images = [
 		height: 240,
 		title: "...you wouldn't get this from any other guy...",
 	},
-]
+];
 
-export default images
+export default images;

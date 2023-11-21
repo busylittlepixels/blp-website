@@ -1,26 +1,26 @@
-'use client'
-import './stuff.css'
-import { useRef } from 'react'
+'use client';
+import './stuff.css';
+import { useRef } from 'react';
 import {
 	motion,
 	useScroll,
 	useSpring,
 	useTransform,
 	MotionValue,
-} from 'framer-motion'
+} from 'framer-motion';
 
 function useParallax(value: MotionValue<number>, distance: number) {
-	return useTransform(value, [0, 1], [-distance, distance])
+	return useTransform(value, [0, 1], [-distance, distance]);
 }
 
 interface ImageProps {
-	id: number
+	id: number;
 }
 
 const Image = ({ id }: ImageProps) => {
-	const ref = useRef<HTMLDivElement | null>(null)
-	const { scrollYProgress } = useScroll({ target: ref })
-	const y = useParallax(scrollYProgress, 500)
+	const ref = useRef<HTMLDivElement | null>(null);
+	const { scrollYProgress } = useScroll({ target: ref });
+	const y = useParallax(scrollYProgress, 500);
 
 	return (
 		<section className={`vslide flex flex-col`}>
@@ -36,16 +36,16 @@ const Image = ({ id }: ImageProps) => {
 				style={{ y }}
 			>{`#00${id}`}</motion.h2>
 		</section>
-	)
-}
+	);
+};
 
 export const Stuff = () => {
-	const { scrollYProgress } = useScroll()
+	const { scrollYProgress } = useScroll();
 	const scaleX = useSpring(scrollYProgress, {
 		stiffness: 100,
 		damping: 30,
 		restDelta: 0.001,
-	})
+	});
 
 	return (
 		<div className={'stuff'}>
@@ -54,7 +54,7 @@ export const Stuff = () => {
 			))}
 			<motion.div className="progress" style={{ scaleX }} />
 		</div>
-	)
-}
+	);
+};
 
-export default Stuff
+export default Stuff;

@@ -1,5 +1,5 @@
-'use client'
-import React from 'react'
+'use client';
+import React from 'react';
 
 export const CustomSVG = () => {
 	return (
@@ -183,7 +183,7 @@ export const CustomSVG = () => {
         />
       </motion.svg> */}
 		</>
-	)
-}
+	);
+};
 
-export default CustomSVG
+export default CustomSVG;

@@ -1,24 +1,24 @@
-'use client'
-import React, { useState, useRef } from 'react'
+'use client';
+import React, { useState, useRef } from 'react';
 import {
 	motion,
 	MotionValue,
 	useMotionValueEvent,
 	useScroll,
 	useTransform,
-} from 'framer-motion'
+} from 'framer-motion';
 
 export const Overlap = () => {
-	const [dist, setDist] = useState('30%')
-	const target = useRef(null)
+	const [dist, setDist] = useState('30%');
+	const target = useRef(null);
 	const { scrollYProgress } = useScroll({
 		target,
 		offset: ['start end', 'end start'],
-	})
-	const parallax = useTransform(scrollYProgress, [0, 1], [-30, 30])
+	});
+	const parallax = useTransform(scrollYProgress, [0, 1], [-30, 30]);
 
 	// @ts-ignore
-	useMotionValueEvent(parallax, 'change', v => setDist(v))
+	useMotionValueEvent(parallax, 'change', v => setDist(v));
 
 	return (
 		<div className={`w-full overlapContent mx-auto my-20`}>
@@ -51,7 +51,7 @@ export const Overlap = () => {
 				</div>
 			</div>
 		</div>
-	)
-}
+	);
+};
 
-export default Overlap
+export default Overlap;

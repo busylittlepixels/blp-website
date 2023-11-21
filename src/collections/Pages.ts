@@ -1,19 +1,19 @@
 /* eslint-disable import/extensions */
-import type { CollectionConfig } from 'payload/types'
-import { slateEditor } from '@payloadcms/richtext-slate'
+import type { CollectionConfig } from 'payload/types';
+import { slateEditor } from '@payloadcms/richtext-slate';
 
-import formatSlug from '../utilities/formatSlug'
-import { BlockTest } from '../blocks/BlockTest'
-import { CallToAction } from '../blocks/CallToAction'
-import { CarouselBlock } from '../blocks/Carousel'
-import { Contact } from '../blocks/Contact'
-import { Expertise } from '../blocks/Expertise'
-import { ScrollTriggerGallery } from '../blocks/ScrollTriggerGallery'
-import { ImageSlider } from '../blocks/ImageSlider'
-import { LogoCloud } from '../blocks/LogoCloud'
-import { TextBlock } from '../blocks/TextBlock'
-import { formatAppURL, revalidatePage } from '../hooks/revalidatePage'
-import { CustomButton } from '../components/custom/CustomButton'
+import formatSlug from '../utilities/formatSlug';
+import { BlockTest } from '../blocks/BlockTest';
+import { CallToAction } from '../blocks/CallToAction';
+import { CarouselBlock } from '../blocks/Carousel';
+import { Contact } from '../blocks/Contact';
+import { Expertise } from '../blocks/Expertise';
+import { ScrollTriggerGallery } from '../blocks/ScrollTriggerGallery';
+import { ImageSlider } from '../blocks/ImageSlider';
+import { LogoCloud } from '../blocks/LogoCloud';
+import { TextBlock } from '../blocks/TextBlock';
+import { formatAppURL, revalidatePage } from '../hooks/revalidatePage';
+import { CustomButton } from '../components/custom/CustomButton';
 
 export const Pages: CollectionConfig = {
 	slug: 'pages',
@@ -194,4 +194,4 @@ export const Pages: CollectionConfig = {
 		//   },
 		// },
 	],
-}
+};

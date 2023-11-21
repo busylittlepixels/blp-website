@@ -1,5 +1,5 @@
 // src/components/Marquee.js
-import React from 'react'
+import React from 'react';
 
 export const MarqueeBanner = () => {
 	return (
@@ -10,7 +10,7 @@ export const MarqueeBanner = () => {
 				art in keystrokes.
 			</div>
 		</div>
-	)
-}
+	);
+};
 
-export default MarqueeBanner
+export default MarqueeBanner;

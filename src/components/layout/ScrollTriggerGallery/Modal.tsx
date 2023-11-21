@@ -1,4 +1,4 @@
-'use client'
+'use client';
 export const Modal = ({ data, closeModal, isTriggered }: any) => {
 	// console.log(closeModal)
 	return (
@@ -42,5 +42,5 @@ export const Modal = ({ data, closeModal, isTriggered }: any) => {
 				</svg>
 			</div>
 		</div>
-	)
-}
+	);
+};

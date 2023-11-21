@@ -1,6 +1,6 @@
 interface IVideo {
-	videoTitle?: string
-	videoEmbedCode?: string
+	videoTitle?: string;
+	videoEmbedCode?: string;
 }
 
 export const Video = ({ videoTitle, videoEmbedCode }: IVideo) => {
@@ -23,7 +23,7 @@ export const Video = ({ videoTitle, videoEmbedCode }: IVideo) => {
 				></iframe>
 			</div>
 		</section>
-	)
-}
+	);
+};
 
-export default Video
+export default Video;

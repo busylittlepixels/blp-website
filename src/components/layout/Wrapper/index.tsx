@@ -1,21 +1,21 @@
-'use client'
-import React from 'react'
-import { Nav } from '../../shared/Nav'
-import { Footer } from '../../shared/Footer'
-import tw from 'tailwind-styled-components'
-import dynamic from 'next/dynamic'
-import { AnimatePresence } from 'framer-motion'
+'use client';
+import React from 'react';
+import { Nav } from '../../shared/Nav';
+import { Footer } from '../../shared/Footer';
+import tw from 'tailwind-styled-components';
+import dynamic from 'next/dynamic';
+import { AnimatePresence } from 'framer-motion';
 
 const Notice = tw.div`
   text-center bg-red-600 text-white text-4xl font-black py-8 mb-4
-`
+`;
 type Props = {
-	children: React.ReactNode
-}
+	children: React.ReactNode;
+};
 
 const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
 	ssr: false,
-})
+});
 
 const nav = [
 	{
@@ -49,7 +49,7 @@ const nav = [
 		pageLink: '/contact',
 		label: 'Contact',
 	},
-]
+];
 
 export const Wrapper = ({ children }: Props): React.ReactElement => {
 	return (
@@ -86,7 +86,7 @@ export const Wrapper = ({ children }: Props): React.ReactElement => {
             /> */}
 			<Footer />
 		</>
-	)
-}
+	);
+};
 
-export default Wrapper
+export default Wrapper;

@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion'
-import { RichText } from '../RichText'
-import { FadeIn, FadeInRight } from '../../shared/FadeIn'
+import { motion } from 'framer-motion';
+import { RichText } from '../RichText';
+import { FadeIn, FadeInRight } from '../../shared/FadeIn';
 
 export const CallToAction = ({ content }: any) => {
 	const {
@@ -11,7 +11,7 @@ export const CallToAction = ({ content }: any) => {
 		buttonText,
 		buttonLink,
 		ctaImage,
-	} = content
+	} = content;
 
 	return (
 		<div className="bg-white ">
@@ -68,7 +68,7 @@ export const CallToAction = ({ content }: any) => {
 				</div>
 			</div>
 		</div>
-	)
-}
+	);
+};
 
-export default CallToAction
+export default CallToAction;

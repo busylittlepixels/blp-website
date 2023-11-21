@@ -1,26 +1,26 @@
-'use client'
+'use client';
 
-import tw from 'tailwind-styled-components'
-import { FadeIn } from '../../shared/FadeIn'
+import tw from 'tailwind-styled-components';
+import { FadeIn } from '../../shared/FadeIn';
 
 interface TitleContainerProps {
-	title?: string
-	subtitle?: string
+	title?: string;
+	subtitle?: string;
 }
 
 const SectionGrid = tw.div`
     grid grid-cols-1 justify-items-center gap-10 py-6
-`
+`;
 
 const HeadingContainer = tw.div`
     mx-auto 
     w-full  
     text-start
-`
+`;
 
 const Heading = tw.h1`
     px-4 font-black text-4xl md:text-6xl mb-4 last:mb-0 uppercase tracking-tighters leading-8
-`
+`;
 
 export const TitleContainer = ({ title, subtitle }: TitleContainerProps) => {
 	return (
@@ -37,7 +37,7 @@ export const TitleContainer = ({ title, subtitle }: TitleContainerProps) => {
 				</HeadingContainer>
 			</SectionGrid>
 		</section>
-	)
-}
+	);
+};
 
-export default TitleContainer
+export default TitleContainer;

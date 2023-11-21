@@ -1,16 +1,16 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React from 'react'
-import FadeIn from '../../../components/shared/FadeIn'
+import React from 'react';
+import FadeIn from '../../../components/shared/FadeIn';
 
-import { Services } from '../../../components/layout/Services'
-import { LogoCloud } from '../../../components/layout/LogoCloud'
-import { Team } from '../../../components/layout/Team'
-import { Metadata } from 'next'
-import { HubSpotForm } from '../../../components/layout/HubspotForm'
+import { Services } from '../../../components/layout/Services';
+import { LogoCloud } from '../../../components/layout/LogoCloud';
+import { Team } from '../../../components/layout/Team';
+import { Metadata } from 'next';
+import { HubSpotForm } from '../../../components/layout/HubspotForm';
 
-const studioP1 = `<h2 class="font-black text-2xl">NAVIGATING THE DIGITAL LANDSCAPE  <span class="rd_txt"> WITH EXPERTISE</span></h2><p>Our company stands as a beacon for ambitious scale-ups and established entities. Embracing a fractional CTO approach, we focus on elevating your content, transforming it from mere text into a compelling narrative. Our expertise in integrating third-party APIs and implementing state-of-the-art hosting solutions ensures a seamless, effective, and unforgettable digital journey. Are you ready to revolutionize your digital presence?<p>`
-const studioP2 = `<h2 class="font-black text-2xl">DRIVING TECHNICAL INNOVATION <span class="rd_txt">FORWARD</span></h2><p>Innovation in technology is our core pursuit, extending beyond any single platform. Our journey includes collaborations with leading global entities and involvement in significant projects from Ireland abd across Europe - especially in the realm of governmental tech initiatives. At the forefront of technological advancements, we're dedicated to crafting solutions that captivate and inspire. Join us in shaping a narrative of innovation that truly impacts and connects.<p>`
-const studioP3 = `<h2 class="font-black text-2xl">More than a service; we're your <span class="rd_txt">digital compass</span></h2><p>Navigating the ever-evolving digital landscape can be daunting, but our seasoned team is here to guide you from your current position to your envisioned pinnacle. As trusted advisors, we'll share insights that illuminate your path. As builders, we craft robust solutions tailored to your unique needs. And as technical facilitators and enablers, we ensure a seamless transition and implementation, empowering your business every step of the way. With Busy Little Pixels by your side, your journey towards growth and innovation is not just assured; it's inspired.<p>`
+const studioP1 = `<h2 class="font-black text-2xl">NAVIGATING THE DIGITAL LANDSCAPE  <span class="rd_txt"> WITH EXPERTISE</span></h2><p>Our company stands as a beacon for ambitious scale-ups and established entities. Embracing a fractional CTO approach, we focus on elevating your content, transforming it from mere text into a compelling narrative. Our expertise in integrating third-party APIs and implementing state-of-the-art hosting solutions ensures a seamless, effective, and unforgettable digital journey. Are you ready to revolutionize your digital presence?<p>`;
+const studioP2 = `<h2 class="font-black text-2xl">DRIVING TECHNICAL INNOVATION <span class="rd_txt">FORWARD</span></h2><p>Innovation in technology is our core pursuit, extending beyond any single platform. Our journey includes collaborations with leading global entities and involvement in significant projects from Ireland abd across Europe - especially in the realm of governmental tech initiatives. At the forefront of technological advancements, we're dedicated to crafting solutions that captivate and inspire. Join us in shaping a narrative of innovation that truly impacts and connects.<p>`;
+const studioP3 = `<h2 class="font-black text-2xl">More than a service; we're your <span class="rd_txt">digital compass</span></h2><p>Navigating the ever-evolving digital landscape can be daunting, but our seasoned team is here to guide you from your current position to your envisioned pinnacle. As trusted advisors, we'll share insights that illuminate your path. As builders, we craft robust solutions tailored to your unique needs. And as technical facilitators and enablers, we ensure a seamless transition and implementation, empowering your business every step of the way. With Busy Little Pixels by your side, your journey towards growth and innovation is not just assured; it's inspired.<p>`;
 
 export const metadata: Metadata = {
 	title: 'Why BLP | Busy Little Pixels',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 		'What We Are is Who We Are. Factional CTOs, Web and mobile application development specialists, technical business architects and trusted advisors',
 	keywords:
 		'Fractional CTO, Technical Specialists, Professional Services, Technical Roadmap, Web and Application development',
-}
+};
 
 export default async function Page() {
 	return (
@@ -237,5 +237,5 @@ export default async function Page() {
 				</main>
 			</FadeIn>
 		</>
-	)
+	);
 }

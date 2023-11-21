@@ -1,10 +1,10 @@
 /* eslint-disable no-console */
 
-import { RichText } from '../RichText'
-import { FadeIn } from '../../shared/FadeIn'
+import { RichText } from '../RichText';
+import { FadeIn } from '../../shared/FadeIn';
 
 interface ITextBlock {
-	content?: any
+	content?: any;
 }
 
 export const BlockTest = ({ content }: ITextBlock) => {
@@ -67,7 +67,7 @@ export const BlockTest = ({ content }: ITextBlock) => {
 				</div>
 			</section>
 		</FadeIn>
-	)
-}
+	);
+};
 
-export default BlockTest
+export default BlockTest;

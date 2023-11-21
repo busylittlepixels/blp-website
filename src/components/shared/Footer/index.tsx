@@ -1,25 +1,25 @@
-'use client'
-import Link from 'next/link'
+'use client';
+import Link from 'next/link';
 // @ts-ignore
-import { experimental_useFormState as useFormState } from 'react-dom'
+import { experimental_useFormState as useFormState } from 'react-dom';
 // @ts-expect-error
-import { experimental_useFormStatus as useFormStatus } from 'react-dom'
-import { createSignup } from '../../../app/(site)/actions'
-import { FadeIn } from '../FadeIn'
-import React from 'react'
+import { experimental_useFormStatus as useFormStatus } from 'react-dom';
+import { createSignup } from '../../../app/(site)/actions';
+import { FadeIn } from '../FadeIn';
+import React from 'react';
 
 const currentYear = () => {
-	let currentTime: Date = new Date()
-	let year: number = currentTime.getFullYear()
-	return year
-}
+	let currentTime: Date = new Date();
+	let year: number = currentTime.getFullYear();
+	return year;
+};
 
 const initialState = {
 	email: '',
-}
+};
 
 function SubmitButton() {
-	const { pending } = useFormStatus()
+	const { pending } = useFormStatus();
 
 	return (
 		<button
@@ -30,11 +30,11 @@ function SubmitButton() {
 			<span className="sr-only">Submit</span>
 			<span aria-hidden={true}>&rarr;</span>
 		</button>
-	)
+	);
 }
 
 export function SignUpForm() {
-	const [state, formAction] = useFormState(createSignup, initialState)
+	const [state, formAction] = useFormState(createSignup, initialState);
 	return (
 		<div className="px-4">
 			<form
@@ -75,17 +75,17 @@ export function SignUpForm() {
 				</div>
 			</form>
 		</div>
-	)
+	);
 }
 
 export const Footer = () => {
 	const goToTop = e => {
-		e.preventDefault()
+		e.preventDefault();
 		window.scrollTo({
 			top: 0,
 			behavior: 'smooth',
-		})
-	}
+		});
+	};
 
 	return (
 		<footer className="bg-black py-20 text-slate-300 md:pb-12 footer relative">
@@ -123,7 +123,7 @@ export const Footer = () => {
 				</div>
 			</div>
 		</footer>
-	)
-}
+	);
+};
 
-export default Footer
+export default Footer;

@@ -1,23 +1,23 @@
-'use client'
+'use client';
 
-import React from 'react'
-import { FormEvent, useState } from 'react'
-import { FadeIn } from '../../shared/FadeIn'
-import HubSpotForm from '../HubspotForm'
-import { useCarousel } from '../../../hooks/useCarousel'
-import { images } from './images'
+import React from 'react';
+import { FormEvent, useState } from 'react';
+import { FadeIn } from '../../shared/FadeIn';
+import HubSpotForm from '../HubspotForm';
+import { useCarousel } from '../../../hooks/useCarousel';
+import { images } from './images';
 
 type IContact = {
 	content: {
-		map_url?: string
-		form_title?: string
-	}
-}
+		map_url?: string;
+		form_title?: string;
+	};
+};
 
 export const Contact = ({ content }: IContact) => {
-	const { map_url, form_title } = content
-	let duration = 10
-	const currentIndex = useCarousel({ images, duration })
+	const { map_url, form_title } = content;
+	let duration = 10;
+	const currentIndex = useCarousel({ images, duration });
 
 	return (
 		<section
@@ -63,7 +63,7 @@ export const Contact = ({ content }: IContact) => {
 				</div>
 			</FadeIn>
 		</section>
-	)
-}
+	);
+};
 
-export default Contact
+export default Contact;

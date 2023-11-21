@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 const linkToPage = e => {
-	e.preventDefault()
+	e.preventDefault();
 	// console.log('clicked');
-	return <p>Clicked</p>
-}
+	return <p>Clicked</p>;
+};
 
 export const CustomButton = () => {
 	return (
@@ -19,7 +19,7 @@ export const CustomButton = () => {
 				Clear Cache
 			</button>
 		</div>
-	)
-}
+	);
+};
 
-export default CustomButton
+export default CustomButton;

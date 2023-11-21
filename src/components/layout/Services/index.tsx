@@ -1,5 +1,5 @@
-import FadeIn from '../../shared/FadeIn'
-import { RichText } from '../../layout/RichText'
+import FadeIn from '../../shared/FadeIn';
+import { RichText } from '../../layout/RichText';
 
 export const Services = () => {
 	return (
@@ -170,7 +170,7 @@ export const Services = () => {
 				</div>
 			</div>
 		</>
-	)
-}
+	);
+};
 
-export default Services
+export default Services;

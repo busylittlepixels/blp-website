@@ -1,11 +1,11 @@
-'use client'
-import React from 'react'
-import { useCarousel } from '../../../hooks/useCarousel'
-import { images } from './images'
+'use client';
+import React from 'react';
+import { useCarousel } from '../../../hooks/useCarousel';
+import { images } from './images';
 
 export const HeroCarousel = () => {
-	let duration = 5
-	const currentIndex = useCarousel({ images, duration })
+	let duration = 5;
+	const currentIndex = useCarousel({ images, duration });
 	return (
 		<div className="carousel-wrapper">
 			{images.map((img, i) => (
@@ -20,7 +20,7 @@ export const HeroCarousel = () => {
 				/>
 			))}
 		</div>
-	)
-}
+	);
+};
 
-export default HeroCarousel
+export default HeroCarousel;

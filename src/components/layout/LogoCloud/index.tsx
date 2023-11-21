@@ -1,5 +1,5 @@
-import { FadeIn } from '../../shared/FadeIn'
-import Image from 'next/image'
+import { FadeIn } from '../../shared/FadeIn';
+import Image from 'next/image';
 
 export const LogoCloud = ({ content }: any) => {
 	return (
@@ -46,7 +46,7 @@ export const LogoCloud = ({ content }: any) => {
         </div>
         </FadeIn> */}
 		</div>
-	)
-}
+	);
+};
 
-export default LogoCloud
+export default LogoCloud;

@@ -1,5 +1,5 @@
-'use client'
-import Image from 'next/image'
+'use client';
+import Image from 'next/image';
 
 const people = [
 	{
@@ -39,10 +39,10 @@ const people = [
 		location: 'Middlesbrough, United Kingdom',
 	},
 	// More people...
-]
+];
 
 interface ITeam {
-	headline?: string
+	headline?: string;
 }
 
 export const Team = ({ headline }: ITeam) => {
@@ -149,5 +149,5 @@ export const Team = ({ headline }: ITeam) => {
 				</ul>
 			</div>
 		</div>
-	)
-}
+	);
+};
