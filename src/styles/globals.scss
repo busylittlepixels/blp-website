@@ -385,3 +385,8 @@ strong {
   font-size: 1.25rem;
   @apply mt-6 text-gray-600;
 }
+
+
+.ReactGridGallery_tile-viewport > img{
+  object-fit:cover;
+}
