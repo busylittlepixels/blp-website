@@ -74,7 +74,8 @@ export function SignUpForm(){
 export const Footer = () => {
 
 
-  const goToTop = () => {
+  const goToTop = (e) => {
+    e.preventDefault();
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
@@ -94,7 +95,7 @@ export const Footer = () => {
           <br />
           <div className='justify-center flex flex-row gap-2 pt-2'>
             <Link href={`/privacy-policy`} className={`text-white hover:text-[#f00000] font-bold text-xs`}>Privacy Policy</Link>
-            <a onClick={goToTop} className={'cursor-pointer hover:text-[#f00000] font-bold'}>Back to top</a>
+            <a href="#" onClick={goToTop} className={'cursor-pointer hover:text-[#f00000] font-bold'}>Back to top</a>
           </div>
         </div>
        
