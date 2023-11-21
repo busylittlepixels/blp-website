@@ -10,7 +10,8 @@ import { Testimonials } from '../../components/layout/Testimonials'
 
 export default async function Home() {
 	const home: Page = await fetch(
-		`${process.env.NEXT_PUBLIC_SERVER_URL}/api/pages?where[slug][equals]=home&depth=2`)
+		`${process.env.NEXT_PUBLIC_SERVER_URL}/api/pages?where[slug][equals]=home&depth=2`,
+	)
 		.then(res => res.json())
 		.then(res => res?.docs?.[0])
 

@@ -17,7 +17,8 @@ export const metadata: Metadata = {
 
 export default async function ServicesPage() {
 	const services: Page = await fetch(
-		`${process.env.NEXT_PUBLIC_SERVER_URL}/api/pages?where[slug][equals]=services&depth=2`)
+		`${process.env.NEXT_PUBLIC_SERVER_URL}/api/pages?where[slug][equals]=services&depth=2`,
+	)
 		.then(res => res.json())
 		.then(res => res?.docs?.[0])
 
