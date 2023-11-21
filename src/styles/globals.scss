@@ -3,6 +3,7 @@
 @import './bigTextLittleText/bigtextlittletext.scss';
 @import './heroCarousel/herocarousel.scss';
 @import './imageShimmer/imageShimmer.scss';
+@import './marqueeCursor/marqueecursor.scss';
 @import './motionHero/motionhero.scss';
 @import './nav/nav.css';
 @import './parallaxOverlap/parallaxoverlap.scss';
@@ -43,31 +44,29 @@
 .redText{
     color: #f00;
 }
-
-
   
-  .pixel_heart {
-    box-shadow: 70px 50px 0 0 rgba(255, 0, 0, 1), 80px 50px 0 0 rgba(255, 0, 0, 1), 120px 50px 0 0 rgba(255, 0, 0, 1), 130px 50px 0 0 rgba(255, 0, 0, 1), 60px 60px 0 0 rgba(255, 0, 0, 1), 70px 60px 0 0 rgba(255, 0, 0, 1), 80px 60px 0 0 rgba(255, 0, 0, 1), 90px 60px 0 0 rgba(255, 0, 0, 1), 110px 60px 0 0 rgba(255, 0, 0, 1), 120px 60px 0 0 rgba(255, 0, 0, 1), 130px 60px 0 0 rgba(255, 0, 0, 1), 140px 60px 0 0 rgba(255, 0, 0, 1), 50px 70px 0 0 rgba(255, 0, 0, 1), 60px 70px 0 0 rgba(255, 0, 0, 1), 70px 70px 0 0 rgba(255, 0, 0, 1), 80px 70px 0 0 rgba(255, 0, 0, 1), 90px 70px 0 0 rgba(255, 0, 0, 1), 100px 70px 0 0 rgba(255, 0, 0, 1), 110px 70px 0 0 rgba(255, 0, 0, 1), 120px 70px 0 0 rgba(255, 0, 0, 1), 130px 70px 0 0 rgba(255, 0, 0, 1), 140px 70px 0 0 rgba(255, 0, 0, 1), 150px 70px 0 0 rgba(255, 0, 0, 1), 50px 80px 0 0 rgba(255, 0, 0, 1), 60px 80px 0 0 rgba(255, 0, 0, 1), 70px 80px 0 0 rgba(255, 0, 0, 1), 80px 80px 0 0 rgba(255, 0, 0, 1), 90px 80px 0 0 rgba(255, 0, 0, 1), 100px 80px 0 0 rgba(255, 0, 0, 1), 110px 80px 0 0 rgba(255, 0, 0, 1), 120px 80px 0 0 rgba(255, 0, 0, 1), 130px 80px 0 0 rgba(255, 0, 0, 1), 140px 80px 0 0 rgba(255, 0, 0, 1), 150px 80px 0 0 rgba(255, 0, 0, 1), 60px 90px 0 0 rgba(255, 0, 0, 1), 70px 90px 0 0 rgba(255, 0, 0, 1), 80px 90px 0 0 rgba(255, 0, 0, 1), 90px 90px 0 0 rgba(255, 0, 0, 1), 100px 90px 0 0 rgba(255, 0, 0, 1), 110px 90px 0 0 rgba(255, 0, 0, 1), 120px 90px 0 0 rgba(255, 0, 0, 1), 130px 90px 0 0 rgba(255, 0, 0, 1), 140px 90px 0 0 rgba(255, 0, 0, 1), 70px 100px 0 0 rgba(255, 0, 0, 1), 80px 100px 0 0 rgba(255, 0, 0, 1), 90px 100px 0 0 rgba(255, 0, 0, 1), 100px 100px 0 0 rgba(255, 0, 0, 1), 110px 100px 0 0 rgba(255, 0, 0, 1), 120px 100px 0 0 rgba(255, 0, 0, 1), 130px 100px 0 0 rgba(255, 0, 0, 1), 80px 110px 0 0 rgba(255, 0, 0, 1), 90px 110px 0 0 rgba(255, 0, 0, 1), 100px 110px 0 0 rgba(255, 0, 0, 1), 110px 110px 0 0 rgba(255, 0, 0, 1), 120px 110px 0 0 rgba(255, 0, 0, 1), 90px 120px 0 0 rgba(255, 0, 0, 1), 100px 120px 0 0 rgba(255, 0, 0, 1), 110px 120px 0 0 rgba(255, 0, 0, 1), 100px 130px 0 0 rgba(255, 0, 0, 1);
-    height: 10px;
-    width: 10px;
-  }
+.pixel_heart {
+  box-shadow: 70px 50px 0 0 rgba(255, 0, 0, 1), 80px 50px 0 0 rgba(255, 0, 0, 1), 120px 50px 0 0 rgba(255, 0, 0, 1), 130px 50px 0 0 rgba(255, 0, 0, 1), 60px 60px 0 0 rgba(255, 0, 0, 1), 70px 60px 0 0 rgba(255, 0, 0, 1), 80px 60px 0 0 rgba(255, 0, 0, 1), 90px 60px 0 0 rgba(255, 0, 0, 1), 110px 60px 0 0 rgba(255, 0, 0, 1), 120px 60px 0 0 rgba(255, 0, 0, 1), 130px 60px 0 0 rgba(255, 0, 0, 1), 140px 60px 0 0 rgba(255, 0, 0, 1), 50px 70px 0 0 rgba(255, 0, 0, 1), 60px 70px 0 0 rgba(255, 0, 0, 1), 70px 70px 0 0 rgba(255, 0, 0, 1), 80px 70px 0 0 rgba(255, 0, 0, 1), 90px 70px 0 0 rgba(255, 0, 0, 1), 100px 70px 0 0 rgba(255, 0, 0, 1), 110px 70px 0 0 rgba(255, 0, 0, 1), 120px 70px 0 0 rgba(255, 0, 0, 1), 130px 70px 0 0 rgba(255, 0, 0, 1), 140px 70px 0 0 rgba(255, 0, 0, 1), 150px 70px 0 0 rgba(255, 0, 0, 1), 50px 80px 0 0 rgba(255, 0, 0, 1), 60px 80px 0 0 rgba(255, 0, 0, 1), 70px 80px 0 0 rgba(255, 0, 0, 1), 80px 80px 0 0 rgba(255, 0, 0, 1), 90px 80px 0 0 rgba(255, 0, 0, 1), 100px 80px 0 0 rgba(255, 0, 0, 1), 110px 80px 0 0 rgba(255, 0, 0, 1), 120px 80px 0 0 rgba(255, 0, 0, 1), 130px 80px 0 0 rgba(255, 0, 0, 1), 140px 80px 0 0 rgba(255, 0, 0, 1), 150px 80px 0 0 rgba(255, 0, 0, 1), 60px 90px 0 0 rgba(255, 0, 0, 1), 70px 90px 0 0 rgba(255, 0, 0, 1), 80px 90px 0 0 rgba(255, 0, 0, 1), 90px 90px 0 0 rgba(255, 0, 0, 1), 100px 90px 0 0 rgba(255, 0, 0, 1), 110px 90px 0 0 rgba(255, 0, 0, 1), 120px 90px 0 0 rgba(255, 0, 0, 1), 130px 90px 0 0 rgba(255, 0, 0, 1), 140px 90px 0 0 rgba(255, 0, 0, 1), 70px 100px 0 0 rgba(255, 0, 0, 1), 80px 100px 0 0 rgba(255, 0, 0, 1), 90px 100px 0 0 rgba(255, 0, 0, 1), 100px 100px 0 0 rgba(255, 0, 0, 1), 110px 100px 0 0 rgba(255, 0, 0, 1), 120px 100px 0 0 rgba(255, 0, 0, 1), 130px 100px 0 0 rgba(255, 0, 0, 1), 80px 110px 0 0 rgba(255, 0, 0, 1), 90px 110px 0 0 rgba(255, 0, 0, 1), 100px 110px 0 0 rgba(255, 0, 0, 1), 110px 110px 0 0 rgba(255, 0, 0, 1), 120px 110px 0 0 rgba(255, 0, 0, 1), 90px 120px 0 0 rgba(255, 0, 0, 1), 100px 120px 0 0 rgba(255, 0, 0, 1), 110px 120px 0 0 rgba(255, 0, 0, 1), 100px 130px 0 0 rgba(255, 0, 0, 1);
+  height: 10px;
+  width: 10px;
+}
   
-  blockquote > p {
-    line-height: 2rem;
-    //margin: 2em 0 3em 0;
-  }
+blockquote > p {
+  line-height: 2rem;
+  //margin: 2em 0 3em 0;
+}
   
-  .border-red-500 {
-    --tw-border-opacity: 1;
-    /* border-color: rgb(115 115 115 / var(--tw-border-opacity)); */
-    border-color: red;
-  }
+.border-red-500 {
+  --tw-border-opacity: 1;
+  /* border-color: rgb(115 115 115 / var(--tw-border-opacity)); */
+  border-color: red;
+}
   
   
-  .yarl__slide_image{
-    max-width: 100%!important;
-    max-height: 100%!important;
-  }
+.yarl__slide_image{
+  max-width: 100%!important;
+  max-height: 100%!important;
+}
   
   
   
@@ -302,98 +301,6 @@ svg:hover #sail-group > line {
   right: 3%;
 }
 
-
-.marquee-container {
-  overflow: hidden;
-  white-space: nowrap;
-  background: red;
-}
-
-.marquee-content {
-  animation: marquee 20s linear infinite;
-  color: white;
-  padding: 5px;
-  font-weight: bolder;
-  text-transform: uppercase;
-
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.cursor {
-  width: 20px;
-  height: 20px;
-  border: 1px solid white;
-  border-radius: 50%;
-  position: absolute;
-  pointer-events: none;
-  }
-  .cursor::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  border: 2px solid blue;
-  border-radius: 50%;
-  opacity: .5;
-  top: -8px;
-  left: -8px;
-  }
-  @keyframes cursorAnim {
-  0% {
-  transform: scale(1);
-  }
-  50% {
-  transform: scale(5);
-  }
-  100% {
-  transform: scale(1);
-  opacity: 0;
-  }
-  }
-  px-6 py-20 md:py-32  {
-  animation: cursorAnim .25s forwards;
-  }
-
-  :root {
-      --color-cursor: 220, 90, 90;
-      --cursor-outline-shade: 0.3;
-      --cursor-size: 10px;
-      --cursor-outline-size: 12px;
-    }
-    
-  
-  #cursor-dot,
-  #cursor-dot-outline {
-      z-index: 999;
-      pointer-events: none;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      border-radius: 50%;
-      opacity: 0;
-      transform: translate(-50%, -50%);
-      transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
-  }
-  
-  #cursor-dot {
-      width: var(--cursor-size);
-      height: var(--cursor-size);
-      background-color: rgba(var(--color-cursor), 1);
-  }
-  
-  #cursor-dot-outline {
-      width: var(--cursor-outline-size);
-      height: var(--cursor-outline-size);
-      background-color: rgba(var(--color-cursor), var(--cursor-outline-shade));
-  }
     
 
 #windmillIcon{
