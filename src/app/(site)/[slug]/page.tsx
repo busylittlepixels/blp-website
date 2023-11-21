@@ -17,9 +17,7 @@ const FadeIn = dynamic(() => import('../../../components/shared/FadeIn'))
 
 export default async function Page({ params }) {
 	const page: Page = await fetch(
-		`${process.env.NEXT_PUBLIC_SERVER_URL}/api/pages?where[slug][equals]=${params.slug}&depth=2`,
-		{ next: { revalidate: 3600 } },
-	)
+		`${process.env.NEXT_PUBLIC_SERVER_URL}/api/pages?where[slug][equals]=${params.slug}&depth=2`)
 		.then(res => res.json())
 		.then(res => res?.docs?.[0])
 
