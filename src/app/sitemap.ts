@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: 'https://busylittlepixels.com',
       lastModified: new Date(),
-      changeFrequency: 'yearly',
+      changeFrequency: 'weekly',
       priority: 1,
     },
     {
@@ -33,16 +33,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-        url: 'https://busylittlepixels.com/contact',
-        lastModified: new Date(),
-        changeFrequency: 'weekly',
-        priority: 0.5,
+      url: 'https://busylittlepixels.com/contact',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.5,
     },
     {
-        url: 'https://busylittlepixels.com/studio',
-        lastModified: new Date(),
-        changeFrequency: 'weekly',
-        priority: 0.5,
+      url: 'https://busylittlepixels.com/studio',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.5,
+    },
+    {
+      url: 'https://busylittlepixels.com/privacy-policy',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.5,
     },
   ]
 }
