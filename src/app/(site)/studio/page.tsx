@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react'
-import Link from 'next/link'
+import Image from 'next/image'
 import FadeIn from '../../../components/shared/FadeIn'
 import { Metadata } from 'next'
 
@@ -124,11 +124,11 @@ export default async function Page() {
 						</div>
 						<FadeIn>
 							<div className="shiney-wrapper shine">
-								<img
+								<Image
 									alt={'image alt blog'}
 									src={'/assets/images/desk.webp'}
 									width={1200}
-									height={300}
+									height={400}
 									className="shadow-lg h-1/2 mx-auto rounded-lg"
 									loading="lazy"
 								/>
@@ -153,7 +153,7 @@ export default async function Page() {
 							</div>
 						</div>
 						<div className="w-full mb-12 shiney-wrapper shine" style={{ opacity: 1 }}>
-							<img
+							<Image
 								alt="image alt blog"
 								src="/assets/images/studio2.png"
 								width="800"

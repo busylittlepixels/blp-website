@@ -102,7 +102,7 @@ export default async function Page() {
 									alt={'image alt blog'}
 									src={'/assets/images/desk.webp'}
 									width={1200}
-									height={300}
+									height={400}
 									className="shadow-lg h-1/2 mx-auto rounded-lg"
 									loading="lazy"
 								/>
@@ -127,9 +127,9 @@ export default async function Page() {
 							</div>
 						</div>
 						<div className="w-full mb-12 shiney-wrapper shine" style={{ opacity: 1 }}>
-							<img
+							<Image
 								alt="image alt blog"
-								src="/assets/images/studio2.png"
+								src="/assets/images/studio2.webp"
 								width="800"
 								height="200"
 								className="shadow-lg h-1/2 mx-auto rounded-lg"
