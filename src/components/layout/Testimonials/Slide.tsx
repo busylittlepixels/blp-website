@@ -1,18 +1,16 @@
-import React from "react";
+import React from 'react'
 
 interface SlideProps {
-	bodyCopy: string;
-	creditName: string;
-	creditTitle: string;
-	creditCompany: string;
-	city: string;
-	country: string;
+	bodyCopy: string
+	creditName: string
+	creditTitle: string
+	creditCompany: string
+	city: string
+	country: string
 }
 
-
-export const Slide = ({ bodyCopy, creditName, city, country }:SlideProps) => {
-  
-    return (
+export const Slide = ({ bodyCopy, creditName, city, country }: SlideProps) => {
+	return (
 		<div className="testimonial-slide p-6 md:p-10 mx-2">
 			<p className={`p-4 md:pb-6`}>{bodyCopy}</p>
 			<div className="credit pb-6">
@@ -28,6 +26,6 @@ export const Slide = ({ bodyCopy, creditName, city, country }:SlideProps) => {
 				</div>
 			</div>
 		</div>
-    );
+	)
 }
-export default Slide;
+export default Slide

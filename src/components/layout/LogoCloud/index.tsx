@@ -1,12 +1,10 @@
-import { FadeIn } from "../../shared/FadeIn"
+import { FadeIn } from '../../shared/FadeIn'
 import Image from 'next/image'
 
-export const LogoCloud = ({ content }:any) => {
-
-
-    return (
-      <div className="bg-black py-4 sm:py-8">
-        {/* <FadeIn>
+export const LogoCloud = ({ content }: any) => {
+	return (
+		<div className="bg-black py-4 sm:py-8">
+			{/* <FadeIn>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <h1 className="font-black tracking-tighter text-3xl md:text-[3.5rem] mb-2 md:mb-2 last:mb-0 uppercase text-white pb-8">SOME PLACES WE{`'`}VE <span style={{"color":"red"}}>PIXELLED</span></h1>
@@ -47,8 +45,8 @@ export const LogoCloud = ({ content }:any) => {
           </div>
         </div>
         </FadeIn> */}
-      </div>
-    )
-  }
-  
-  export default LogoCloud; 
+		</div>
+	)
+}
+
+export default LogoCloud

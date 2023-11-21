@@ -1,39 +1,43 @@
-"use client";
-import Link from 'next/link';
-import React, { useState } from "react";
+'use client'
+import Link from 'next/link'
+import React, { useState } from 'react'
 import { usePathname } from 'next/navigation'
 
 export const Nav = ({ menu }) => {
+	const isMobile = useState(false)
+	const currentRoute = usePathname()
+	const [navActive, setNavActive] = useState(false)
+	const closeMobileNavOnClick = () => {
+		if (isMobile) {
+			setTimeout(() => {
+				setNavActive(!navActive)
+			}, 500)
+		}
+		return
+	}
+	return (
+		<header className="px-4 text-black body-font md:sticky w-full bg-black logoShadow">
+			<div className="mx-auto flex flex-wrap py-5 md:flex-row items-center justify-between">
+				<Link href="/">
+					<h1 className="text-3xl md:hover:text-4xl transition-all ease-in-out duration-150 font-black leading-tightest text-white">
+						busy<span style={{ color: 'red' }}>little</span>pixels
+						<span style={{ color: 'red' }}>.</span>
+					</h1>
+				</Link>
 
-    const isMobile = useState(false);
-    const currentRoute = usePathname();
-    const [navActive, setNavActive] = useState(false);
-    const closeMobileNavOnClick = () => {
-        if(isMobile){
-            setTimeout(() => {
-            setNavActive(!navActive);
-            }, 500)
-        }
-        return;
-    }
-  return (
-    <header className="px-4 text-black body-font md:sticky w-full bg-black logoShadow">
-        <div className="mx-auto flex flex-wrap py-5 md:flex-row items-center justify-between">
-            <Link href="/">
-                <h1 className="text-3xl md:hover:text-4xl transition-all ease-in-out duration-150 font-black leading-tightest text-white">busy<span style={{"color": "red"}}>little</span>pixels<span style={{"color": "red"}}>.</span></h1>
-            </Link>
-           
-            <nav className={`nav`}>
-                <div
-                    onClick={() => setNavActive(!navActive)}
-                    className={`nav__menu-bar md:hidden menu__icon cursor-pointer duration-150 ease-linear ${navActive ? "active" : ""}`}
-                >
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <ul className={`nav__menu-list px-4 ${navActive ? "active" : ""}`}>
-                    {/* {isMobile ? 
+				<nav className={`nav`}>
+					<div
+						onClick={() => setNavActive(!navActive)}
+						className={`nav__menu-bar md:hidden menu__icon cursor-pointer duration-150 ease-linear ${
+							navActive ? 'active' : ''
+						}`}
+					>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<ul className={`nav__menu-list px-4 ${navActive ? 'active' : ''}`}>
+						{/* {isMobile ? 
                     <div className={'flex'}>
                         <input className={'mobileSearch'} type={'text'} name={'search'} placeholder={'Search...'} />
                         <button className="btn inline-block px-6 py-2.5 bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded-r rounded-l-none shadow-md hover:bg-red-400 hover:shadow-lg focus:bg-red-500  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-500 active:shadow-lg transition duration-150 ease-in-out flex items-center" type="button" id="button-addon2">
@@ -42,11 +46,23 @@ export const Nav = ({ menu }) => {
                             </svg>
                         </button>
                     </div> : ''} */}
-                    {menu.map((link, _id) => (
-                        // @ts-ignore
-                        <li id={_id} key={_id}><Link href={link.href} className={`nav__link text-white font-black ${currentRoute.includes(link.href) ? `active ${link.pageLink}` : ""}`} onClick={closeMobileNavOnClick}>{link.label}</Link></li>
-                    ))}
-                    {/* {isMobile ? 
+						{menu.map((link, _id) => (
+							// @ts-ignore
+							<li id={_id} key={_id}>
+								<Link
+									href={link.href}
+									className={`nav__link text-white font-black ${
+										currentRoute.includes(link.href)
+											? `active ${link.pageLink}`
+											: ''
+									}`}
+									onClick={closeMobileNavOnClick}
+								>
+									{link.label}
+								</Link>
+							</li>
+						))}
+						{/* {isMobile ? 
                         <>
                             <hr className={`border-b border-white border-opacity-25`} />
                             <span className="inline-flex">
@@ -64,11 +80,11 @@ export const Nav = ({ menu }) => {
                             </span>
                         </>
                     : ''} */}
-                </ul>
-            </nav>
-        </div>
-    </header>
-  )
+					</ul>
+				</nav>
+			</div>
+		</header>
+	)
 }
 
 export default Nav

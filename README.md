@@ -1,8 +1,8 @@
-# Payload Custom Server Example
+Payload Custom Server Example
 
 This example demonstrates how to serve your front-end alongside [Payload](https://github.com/payloadcms/payload) in a single Express server. This pattern will cut down on hosting costs and can simplify your deployment process.
 
-## Quick Start
+Quick Start
 
 To spin up this example locally, follow these steps:
 

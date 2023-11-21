@@ -3,7 +3,7 @@ import handler from '@payloadcms/next-payload/dist/handlers/[collection]/access/
 export default handler
 
 export const config = {
-  api: {
-    externalResolver: true
-  }
+	api: {
+		externalResolver: true,
+	},
 }

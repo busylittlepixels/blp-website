@@ -3,8 +3,8 @@ import handler from '@payloadcms/next-payload/dist/handlers/[collection]/first-r
 export default handler
 
 export const config = {
-  api: {
-    bodyParser: false,
-    externalResolver: true,
-  }
+	api: {
+		bodyParser: false,
+		externalResolver: true,
+	},
 }
