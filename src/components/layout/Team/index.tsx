@@ -12,15 +12,6 @@ const people = [
 		location: 'Dublin, Ireland',
 	},
 	{
-		name: 'Bobbi Summers',
-		role: 'Co-Founder & CTO',
-		imageUrl: '/assets/images/person2.avif',
-		bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
-		twitterUrl: '#',
-		linkedinUrl: '#',
-		location: 'Amsterdam, Netherlands',
-	},
-	{
 		name: 'Orsi Kneitner',
 		role: 'Head of Operations',
 		imageUrl: '/assets/images/orsi.jpeg',
@@ -118,7 +109,7 @@ export const Team = ({ headline }: ITeam) => {
 				</div>
 				<ul
 					role="list"
-					className="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4 xl:grid-cols-4 relative z-10"
+					className="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-14 sm:grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-3 relative z-10"
 				>
 					{people.map(person => (
 						<li key={person.name}>
