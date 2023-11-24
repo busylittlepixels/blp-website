@@ -22,7 +22,7 @@ const people = [
 	},
 	{
 		name: 'Harry Laird',
-		role: 'Product and Technology Lead',
+		role: 'Technical Lead',
 		imageUrl: '/assets/images/harrylaird.webp',
 		bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
 		twitterUrl: '#',
