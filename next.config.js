@@ -27,8 +27,7 @@ module.exports = withPayload(
     transpilePackages: ["@payloadcms/plugin-seo"],
     basePath: '',
     experimental: {
-      mdxRs: true,
-      serverActions: true
+      mdxRs: true
     },
     async redirects() {
       return [

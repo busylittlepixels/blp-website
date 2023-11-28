@@ -1,9 +1,9 @@
 'use client'
 import Link from 'next/link'
 // @ts-ignore
-import { experimental_useFormState as useFormState } from 'react-dom'
+import { useFormState as useFormState } from 'react-dom'
 // @ts-expect-error
-import { experimental_useFormStatus as useFormStatus } from 'react-dom'
+import { useFormStatus as useFormStatus } from 'react-dom'
 import { createSignup } from '../../../app/(site)/actions'
 import { FadeIn } from '../FadeIn'
 import React from 'react'
